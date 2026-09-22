@@ -1,0 +1,4 @@
+# London Field Atlas
+Read HANDOFF.md. Work in the existing private GitHub project. Run `node serve.cjs` to restore bundled assets and start the map; no npm install is needed. The asset restore is automatic, offline, checksum-validated and preserves existing files. Do not rerun the old all-source extraction workflow.
+Preserve metre scale, fixed orthographic isometric camera, Rhino 6/7 compatibility, OSM attribution and .openai/hosting.json Site identity. Never regenerate or commit the complete binary asset set as part of a UI edit. Restore generated files from the versioned bundle; commit intentional model overrides individually if requested.
+Do not deploy during environment verification. For user-requested product changes follow Sites skills if available; report separately if publishing tools are unavailable. Never store credentials or force-push other work.

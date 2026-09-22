@@ -1,0 +1,140 @@
+import * as T from './vendor/three.module.js';
+import {mergeGeometries} from './vendor/BufferGeometryUtils.js';
+import {recordGeometry,flatGeometry} from './geometry.js';
+const $=s=>document.querySelector(s);
+const material=color=>new T.MeshStandardMaterial({color,roughness:.92,metalness:0,side:T.DoubleSide});
+
+export async function createAtlas(city,onSelect) {
+ const host=$('#canvas-host'),scene=new T.Scene();scene.background=new T.Color(0xe9edf0);
+ const renderer=new T.WebGLRenderer({antialias:true});renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+ renderer.shadowMap.enabled=true;renderer.shadowMap.type=T.PCFSoftShadowMap;renderer.shadowMap.autoUpdate=false;
+ renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.1;host.append(renderer.domElement);
+ const camera=new T.OrthographicCamera(-3000,3000,2000,-2000,1,40000);
+ const offset=new T.Vector3(10000,10000,10000),target=new T.Vector3();
+ const context=new T.Group(),ground=new T.Group();scene.add(context,ground);
+ const original=new Map(),custom=new Map(),markers=new Map();
+ const mats={height:material(0xc2cbd1),levels:material(0xcbd2d6),assumed:material(0xd4d9dc)};
+ const landmarkMat=material(0xf2f0e9),importMat=material(0x93c8cb);
+ let width=1,height=1,view=3700,zoom=1,dirty=true,active='stpauls',fullImport=null,contextVisible=true;
+ scene.add(new T.HemisphereLight(0xffffff,0x939ca6,2.4));
+ const sun=new T.DirectionalLight(0xffffff,2.3);sun.castShadow=true;sun.shadow.mapSize.set(2048,2048);
+ sun.shadow.bias=-.0003;sun.shadow.normalBias=.4;sun.shadow.camera.near=10;sun.shadow.camera.far=15000;scene.add(sun,sun.target);
+ const [xmin,ymin,xmax,ymax]=city.bounds;
+ const plane=new T.Mesh(new T.PlaneGeometry(xmax-xmin+100,ymax-ymin+100),material(0xe2e6e6));
+ plane.rotation.x=-Math.PI/2;plane.position.set((xmin+xmax)/2,-.3,-(ymin+ymax)/2);plane.receiveShadow=true;ground.add(plane);
+ for(const [records,color,y] of [[city.parks,0xc9d6c4,-.1],[city.water,0x94b9c5,0]]){
+  const gs=records.map(r=>flatGeometry(r,y));if(gs.length){const g=mergeGeometries(gs);gs.forEach(g=>g.dispose());const m=new T.Mesh(g,material(color));m.receiveShadow=true;ground.add(m)}
+ }
+ const roadGeos=[];
+ for(const r of city.roads)for(let i=1;i<r.p.length;i++){
+  const [ax,ay]=r.p[i-1],[bx,by]=r.p[i],len=Math.hypot(bx-ax,by-ay);if(len<.1)continue;
+  const g=new T.PlaneGeometry(Math.min(30,r.w),len+.2);g.rotateX(-Math.PI/2);g.rotateY(Math.atan2(bx-ax,-(by-ay)));
+  g.translate((ax+bx)/2,r.bridge?7.5:.06,-(ay+by)/2);roadGeos.push(g);
+ }
+ if(roadGeos.length){const m=new T.Mesh(mergeGeometries(roadGeos),material(0xf0f2f1));m.receiveShadow=true;ground.add(m);roadGeos.forEach(g=>g.dispose())}
+ const batches={height:[],levels:[],assumed:[]},landmarkBatches=new Map(city.landmarks.map(b=>[b.id,[]]));
+ for(let i=0;i<city.buildings.length;i++){
+  const r=city.buildings[i],gs=recordGeometry(r);(r.lm?landmarkBatches.get(r.lm):batches[r.c]).push(...gs);
+  if(i%500===0){$('#loading').textContent=`실제 건물 매스 구성 중 · ${Math.round(i/city.buildings.length*100)}%`;await new Promise(resolve=>setTimeout(resolve,0))}
+ }
+ function mergedMesh(gs,mat,id){if(!gs.length)return new T.Group();const m=new T.Mesh(mergeGeometries(gs),mat);m.name=id;m.userData.id=id;m.castShadow=true;m.receiveShadow=true;gs.forEach(g=>g.dispose());return m}
+ for(const c of Object.keys(batches))context.add(mergedMesh(batches[c],mats[c],'context'));
+ for(const b of city.landmarks){const g=mergedMesh(landmarkBatches.get(b.id),landmarkMat,b.id);scene.add(g);original.set(b.id,g);
+  const el=document.createElement('button');el.className='marker';el.dataset.id=b.id;el.setAttribute('aria-label',b.name+' 선택');
+  el.innerHTML=`<span class="pin">${String(city.landmarks.indexOf(b)+1).padStart(2,'0')}</span><span class="marker-name">${b.name}</span>`;
+  el.onclick=()=>onSelect(b.id);$('#markers').append(el);markers.set(b.id,el);
+ }
+ const boxHelper=new T.Box3Helper(new T.Box3(),0x153bec);scene.add(boxHelper);boxHelper.visible=false;
+ const getObject=id=>custom.get(id)||fullImport?.landmarks.get(id)||original.get(id);
+ function objectBounds(id){const obj=getObject(id);return obj?new T.Box3().setFromObject(obj):new T.Box3()}
+ function sync(){
+  const aspect=width/height;camera.left=-view*aspect/2;camera.right=view*aspect/2;camera.top=view/2;camera.bottom=-view/2;camera.zoom=zoom;
+  camera.position.copy(target).add(offset);camera.lookAt(target);camera.updateProjectionMatrix();camera.updateMatrixWorld();
+  const s=Math.max(700,view/zoom);sun.target.position.copy(target);sun.position.copy(target).add(new T.Vector3(-2500,4500,2000));
+  Object.assign(sun.shadow.camera,{left:-s,right:s,top:s,bottom:-s});sun.shadow.camera.updateProjectionMatrix();renderer.shadowMap.needsUpdate=true;
+  $('#zoom-value').textContent=Math.round(zoom*100)+'%';$('#zoom-in').disabled=zoom>=40;$('#zoom-out').disabled=zoom<=.55;
+  const approx=view/zoom*90/height,nice=[1,2,5,10,20,50,100,200,500,1000,2000].filter(n=>n<=approx).at(-1)||1;
+  $('#scale-line').style.width=(nice*height*zoom/view)+'px';$('#scale-label').textContent=nice>=1000?(nice/1000)+' km':nice+' m';dirty=true;
+ }
+ function reset(){zoom=1;target.set((xmin+xmax)/2,0,-(ymin+ymax)/2);sync()}
+ function resize(){width=host.clientWidth;height=host.clientHeight;renderer.setSize(width,height);view=Math.max(3000,((xmax-xmin)+(ymax-ymin))*.707/(width/height)*1.12);sync()}
+ new ResizeObserver(resize).observe(host);resize();reset();
+ function setZoom(f){zoom=T.MathUtils.clamp(zoom*f,.55,40);sync()}
+ function select(id,focus=true){active=id;const bb=objectBounds(id);boxHelper.box.copy(bb);boxHelper.visible=!bb.isEmpty();
+  if(focus&&!bb.isEmpty()){
+   const size=bb.getSize(new T.Vector3()),span=Math.max(size.x,size.y,size.z,80);bb.getCenter(target);zoom=T.MathUtils.clamp(view/(span*(width<600?3.5:2.4)),.55,40);
+   if(width<600){target.x+=span*.36;target.z+=span*.36}else{target.x+=span*.22;target.z-=span*.22}sync();
+  }dirty=true;
+ }
+ function setContext(value){contextVisible=value;context.visible=value&&!fullImport;if(fullImport)fullImport.context.visible=value;dirty=true;renderer.shadowMap.needsUpdate=true}
+ function setConfidence(value){mats.height.color.setHex(value?0x9db8c8:0xc2cbd1);mats.levels.color.setHex(value?0xd8caad:0xcbd2d6);mats.assumed.color.setHex(value?0xd9abab:0xd4d9dc);dirty=true}
+ const pointers=new Map();let gesture=null,moved=false;
+ function gestureStart(){const p=[...pointers.values()];gesture=p.length===1?{x:p[0].x,y:p[0].y,target:target.clone(),zoom}:p.length>=2?{dist:Math.hypot(p[0].x-p[1].x,p[0].y-p[1].y),zoom}:null}
+ const ray=new T.Raycaster(),mouse=new T.Vector2();
+ host.addEventListener('pointerdown',e=>{pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});host.setPointerCapture(e.pointerId);moved=false;gestureStart()});
+ host.addEventListener('pointermove',e=>{
+  if(!pointers.has(e.pointerId)||!gesture)return;pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});const p=[...pointers.values()];
+  if(p.length>1){moved=true;zoom=T.MathUtils.clamp(gesture.zoom*Math.hypot(p[0].x-p[1].x,p[0].y-p[1].y)/Math.max(1,gesture.dist),.55,40);sync();return}
+  const dx=e.clientX-gesture.x,dy=e.clientY-gesture.y;if(Math.abs(dx)+Math.abs(dy)>5)moved=true;
+  target.copy(gesture.target).add(new T.Vector3(-dx/Math.SQRT2+dy*Math.sqrt(1.5),0,dx/Math.SQRT2+dy*Math.sqrt(1.5)).multiplyScalar(view/height/zoom));sync();
+ });
+ host.addEventListener('pointerup',e=>{
+  const multi=pointers.size>1;pointers.delete(e.pointerId);
+  if(!moved&&!multi){const r=host.getBoundingClientRect();mouse.set((e.clientX-r.left)/width*2-1,-(e.clientY-r.top)/height*2+1);ray.setFromCamera(mouse,camera);
+   const objects=city.landmarks.map(b=>getObject(b.id)).filter(g=>g?.visible);const hit=ray.intersectObjects(objects,true)[0];if(hit?.object.userData.id)onSelect(hit.object.userData.id)}gestureStart();
+ });
+ host.addEventListener('pointercancel',e=>{pointers.delete(e.pointerId);moved=true;gestureStart()});
+ host.addEventListener('wheel',e=>{e.preventDefault();setZoom(Math.exp(-e.deltaY*.0012))},{passive:false});
+ host.addEventListener('keydown',e=>{if(e.key==='+'||e.key==='=')setZoom(1.2);else if(e.key==='-')setZoom(1/1.2);else if(e.key==='Home')reset();else if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key)){const x=e.key==='ArrowRight'?50:e.key==='ArrowLeft'?-50:0,z=e.key==='ArrowDown'?50:e.key==='ArrowUp'?-50:0;target.add(new T.Vector3(x+z,0,-x+z).multiplyScalar(view/3700/zoom));sync()}else return;e.preventDefault()});
+ function dispose(root){root.traverse(o=>{o.geometry?.dispose();if(o.material&&o.material!==importMat)for(const m of Array.isArray(o.material)?o.material:[o.material])m.dispose()})}
+ function restore(id){
+  if(id==='city'&&fullImport){scene.remove(fullImport.root);dispose(fullImport.root);fullImport=null;context.visible=contextVisible;for(const [key,g]of original)g.visible=!custom.has(key)}
+  else if(custom.has(id)){const g=custom.get(id);scene.remove(g);dispose(g);custom.delete(id);if(fullImport?.landmarks.has(id))fullImport.landmarks.get(id).visible=true;else original.get(id).visible=!fullImport}
+  select(active,false);dirty=true;renderer.shadowMap.needsUpdate=true;
+ }
+ function applyImport(prepared,id){
+  restore(id);const g=prepared.root;g.traverse(o=>{if(o.isMesh){o.castShadow=true;o.receiveShadow=true;o.material=importMat}});
+  if(id==='city'){
+   const groups=new Map(),ctx=new T.Group(),root=new T.Group();root.add(ctx);
+   for(const child of [...g.children]){const key=child.userData.id;if(city.landmarks.some(b=>b.id===key)){if(!groups.has(key)){const gr=new T.Group();gr.userData.id=key;groups.set(key,gr);root.add(gr)}groups.get(key).add(child)}else ctx.add(child)}
+   for(const group of [ctx,...groups.values()]){const geometries=[];for(const child of [...group.children]){let geo=child.geometry;if(geo.index){const n=geo.toNonIndexed();geo.dispose();geo=n}for(const key of Object.keys(geo.attributes))if(!['position','normal'].includes(key))geo.deleteAttribute(key);if(!geo.attributes.normal)geo.computeVertexNormals();geometries.push(geo);group.remove(child)}if(geometries.length)group.add(mergedMesh(geometries,importMat,group.userData.id||'context'))}
+   for(const g of original.values())g.visible=false;for(const [id,group]of groups)group.visible=!custom.has(id);context.visible=false;ctx.visible=contextVisible;scene.add(root);fullImport={root,context:ctx,landmarks:groups};
+  }else {
+   const b=city.landmarks.find(b=>b.id===id);g.position.set(b.anchor[0],0,-b.anchor[1]);g.traverse(o=>o.userData.id=id);scene.add(g);custom.set(id,g);original.get(id).visible=false;if(fullImport?.landmarks.has(id))fullImport.landmarks.get(id).visible=false;
+  }
+  renderer.shadowMap.needsUpdate=true;select(active,id===active);
+ }
+ function measurements(id){const b=objectBounds(id);if(b.isEmpty())return null;const s=b.getSize(new T.Vector3());return {east:s.x,north:s.z,height:s.y,top:b.max.y,custom:custom.has(id)||!!fullImport}}
+ function render(){requestAnimationFrame(render);if(!dirty||document.hidden)return;dirty=false;renderer.render(scene,camera);const used=[];
+  for(const b of [...city.landmarks].sort((a,b)=>(b.id===active?1:0)-(a.id===active?1:0))){
+   const bb=objectBounds(b.id),p=bb.isEmpty()?new T.Vector3(b.anchor[0],0,-b.anchor[1]):bb.getCenter(new T.Vector3());p.y=(bb.isEmpty()?b.modelHeight:bb.max.y)+4;p.project(camera);
+   const x=(p.x*.5+.5)*width,y=(-p.y*.5+.5)*height,el=markers.get(b.id);el.style.left=x+'px';el.style.top=y+'px';el.style.display=x>10&&x<width-10&&y>10&&y<height-40?'flex':'none';
+   const collision=used.some(p=>Math.abs(p.x-x)<135&&Math.abs(p.y-y)<29);el.querySelector('.marker-name').style.display=(collision||width<600||zoom<1.4)&&b.id!==active?'none':'';
+   if(!collision)used.push({x,y});el.style.zIndex=b.id===active?'3':'1';
+  }
+ }render();renderer.domElement.addEventListener('webglcontextlost',e=>{e.preventDefault();$('#error').hidden=false});
+ return {select,zoom:setZoom,reset,setContext,setConfidence,measurements,applyImport,restore};
+}
+
+let loader;
+export async function prepareRhino(buffer,unitOverride='auto'){
+ if(!loader){const {Rhino3dmLoader}=await import('./vendor/3DMLoader.js');loader=new Rhino3dmLoader().setLibraryPath('./vendor/rhino/').setWorkerLimit(1)}
+ const decoded=await new Promise((resolve,reject)=>loader.parse(buffer,resolve,reject));
+ const unit=decoded.userData.settings?.modelUnitSystem,value=typeof unit==='object'?unit.value:unit;
+ const units={1:1e-6,2:.001,3:.01,4:1,5:1000,8:.0254,9:.3048};const factor=unitOverride==='auto'?units[value]:Number(unitOverride);
+ if(!factor)throw new Error('파일 단위를 읽을 수 없습니다. 미터 또는 밀리미터를 직접 선택하세요.');
+ const root=new T.Group(),axis=new T.Matrix4().makeRotationX(-Math.PI/2).multiply(new T.Matrix4().makeScale(factor,factor,factor));
+ decoded.updateMatrixWorld(true);let triangles=0;
+ decoded.traverse(obj=>{
+  if(!obj.isMesh)return;let p=obj;while(p){if(!p.visible)return;p=p.parent}
+  const geo=obj.geometry.clone().applyMatrix4(obj.matrixWorld).applyMatrix4(axis);triangles+=(geo.index?geo.index.count:geo.attributes.position.count)/3;
+  const m=new T.Mesh(geo);const name=obj.userData.attributes?.name||obj.name||'';m.name=name;m.userData.id=/^LM:([^|]+)/.exec(name)?.[1]||'context';root.add(m);
+ });
+ const box=new T.Box3().setFromObject(root),size=box.getSize(new T.Vector3());
+ if(root.children.length===0)throw new Error('표시 가능한 메시가 없습니다. Rhino에서 Mesh 명령으로 변환하거나 렌더 메시를 포함해 저장하세요.');
+ if(triangles>3000000)throw new Error('메시가 너무 복잡합니다. Rhino의 ReduceMesh로 300만 삼각형 이하로 줄여 주세요.');
+ if(![box.min.x,box.min.y,box.min.z,box.max.x,box.max.y,box.max.z].every(Number.isFinite)||Math.max(size.x,size.y,size.z)>25000)throw new Error('크기가 25 km를 넘거나 좌표가 잘못되었습니다. 파일 단위와 원점을 확인하세요.');
+ const warnings=(decoded.userData.warnings||[]).length;
+ decoded.traverse(o=>{o.geometry?.dispose();if(o.material)for(const m of Array.isArray(o.material)?o.material:[o.material])m.dispose()});
+ return {root,size:{east:size.x,north:size.z,height:size.y},bounds:box,triangles,objects:root.children.length,factor,warnings};
+}

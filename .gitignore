@@ -1,0 +1,15 @@
+.sites-runtime/
+node_modules/
+*.tar.gz
+
+
+tools/python-libs/
+tools/osm-tiles/
+tools/london-osm.json
+tools/meshes.ndjson
+__pycache__/
+.venv/
+
+# Restored automatically from the versioned asset bundle.
+dist/assets/
+dist/vendor/
