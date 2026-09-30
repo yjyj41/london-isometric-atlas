@@ -11,5 +11,11 @@ __pycache__/
 .venv/
 
 # Restored automatically from the versioned asset bundle.
-dist/assets/
+dist/assets/*
 dist/vendor/
+
+!dist/assets/*city.json
+tools/city-full.json
+
+!dist/assets/city.json
+tools/city-full.json

@@ -166,5 +166,19 @@
     "point": "중심의 화이트 타워와 겹겹의 성벽을 살펴보세요. 강을 향한 방어 체계와 이후 확장된 요새의 층위를 읽는 답사입니다.",
     "source": "https://www.hrp.org.uk/tower-of-london/whats-on/white-tower/",
     "color": 14670281
+  },
+  {
+    "id": "isokon",
+    "name": "Isokon Flats",
+    "ko": "아이소콘 플랫 · 론 로드 플랫",
+    "lat": 51.5514,
+    "lon": -0.1567,
+    "type": "MODERNISM",
+    "year": "1934",
+    "architect": "Wells Coates",
+    "height": 12.8,
+    "point": "길게 이어지는 외부 접근 갤러리와 둥근 끝부분, 작은 주거 단위가 만드는 매스의 비례를 관찰하세요. 1934년의 공동 주거 실험을 소개하는 갤러리가 건물에 있습니다.",
+    "source": "https://isokongallery.org/pages/the-isokon-story",
+    "color": 15921385
   }
 ]

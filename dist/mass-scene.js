@@ -1,6 +1,7 @@
 import * as T from './vendor/three.module.js';
 import {mergeGeometries} from './vendor/BufferGeometryUtils.js';
 import {recordGeometry,flatGeometry} from './geometry.js';
+import {createTileStream} from './tile-stream.js';
 const $=s=>document.querySelector(s);
 const material=color=>new T.MeshStandardMaterial({color,roughness:.92,metalness:0,side:T.DoubleSide});
 
@@ -15,7 +16,7 @@ export async function createAtlas(city,onSelect) {
  const original=new Map(),custom=new Map(),markers=new Map();
  const mats={height:material(0xc2cbd1),levels:material(0xcbd2d6),assumed:material(0xd4d9dc)};
  const landmarkMat=material(0xf2f0e9),importMat=material(0x93c8cb);
- let width=1,height=1,view=3700,zoom=1,dirty=true,active='stpauls',fullImport=null,contextVisible=true;
+ let width=1,height=1,view=3700,zoom=1,dirty=true,active='stpauls',fullImport=null,contextVisible=true,stream=null;
  scene.add(new T.HemisphereLight(0xffffff,0x939ca6,2.4));
  const sun=new T.DirectionalLight(0xffffff,2.3);sun.castShadow=true;sun.shadow.mapSize.set(2048,2048);
  sun.shadow.bias=-.0003;sun.shadow.normalBias=.4;sun.shadow.camera.near=10;sun.shadow.camera.far=15000;scene.add(sun,sun.target);
@@ -45,28 +46,37 @@ export async function createAtlas(city,onSelect) {
   el.onclick=()=>onSelect(b.id);$('#markers').append(el);markers.set(b.id,el);
  }
  const boxHelper=new T.Box3Helper(new T.Box3(),0x153bec);scene.add(boxHelper);boxHelper.visible=false;
+ if(city.tiles)stream=createTileStream(city,context,mats,()=>{dirty=true;renderer.shadowMap.needsUpdate=true});
  const getObject=id=>custom.get(id)||fullImport?.landmarks.get(id)||original.get(id);
  function objectBounds(id){const obj=getObject(id);return obj?new T.Box3().setFromObject(obj):new T.Box3()}
  function sync(){
   const aspect=width/height;camera.left=-view*aspect/2;camera.right=view*aspect/2;camera.top=view/2;camera.bottom=-view/2;camera.zoom=zoom;
   camera.position.copy(target).add(offset);camera.lookAt(target);camera.updateProjectionMatrix();camera.updateMatrixWorld();
+  if(stream){
+   const pts=[];
+   for(const x of [-1,1])for(const y of [-1,1]){
+    const p=new T.Vector3(x,y,-1).unproject(camera),direction=new T.Vector3(0,0,-1).transformDirection(camera.matrixWorld);
+    p.addScaledVector(direction,-p.y/direction.y);pts.push([p.x,-p.z]);
+   }
+   stream.update([Math.min(...pts.map(p=>p[0]))-320,Math.min(...pts.map(p=>p[1]))-320,Math.max(...pts.map(p=>p[0]))+320,Math.max(...pts.map(p=>p[1]))+320],view/zoom,[target.x,-target.z]);
+  }
   const s=Math.max(700,view/zoom);sun.target.position.copy(target);sun.position.copy(target).add(new T.Vector3(-2500,4500,2000));
   Object.assign(sun.shadow.camera,{left:-s,right:s,top:s,bottom:-s});sun.shadow.camera.updateProjectionMatrix();renderer.shadowMap.needsUpdate=true;
-  $('#zoom-value').textContent=Math.round(zoom*100)+'%';$('#zoom-in').disabled=zoom>=40;$('#zoom-out').disabled=zoom<=.55;
+  $('#zoom-value').textContent=Math.round(zoom*100)+'%';$('#zoom-in').disabled=zoom>=120;$('#zoom-out').disabled=zoom<=.55;
   const approx=view/zoom*90/height,nice=[1,2,5,10,20,50,100,200,500,1000,2000].filter(n=>n<=approx).at(-1)||1;
   $('#scale-line').style.width=(nice*height*zoom/view)+'px';$('#scale-label').textContent=nice>=1000?(nice/1000)+' km':nice+' m';dirty=true;
  }
  function reset(){zoom=1;target.set((xmin+xmax)/2,0,-(ymin+ymax)/2);sync()}
  function resize(){width=host.clientWidth;height=host.clientHeight;renderer.setSize(width,height);view=Math.max(3000,((xmax-xmin)+(ymax-ymin))*.707/(width/height)*1.12);sync()}
  new ResizeObserver(resize).observe(host);resize();reset();
- function setZoom(f){zoom=T.MathUtils.clamp(zoom*f,.55,40);sync()}
+ function setZoom(f){zoom=T.MathUtils.clamp(zoom*f,.55,120);sync()}
  function select(id,focus=true){active=id;const bb=objectBounds(id);boxHelper.box.copy(bb);boxHelper.visible=!bb.isEmpty();
   if(focus&&!bb.isEmpty()){
-   const size=bb.getSize(new T.Vector3()),span=Math.max(size.x,size.y,size.z,80);bb.getCenter(target);zoom=T.MathUtils.clamp(view/(span*(width<600?3.5:2.4)),.55,40);
+   const size=bb.getSize(new T.Vector3()),span=Math.max(size.x,size.y,size.z,80);bb.getCenter(target);zoom=T.MathUtils.clamp(view/(span*(width<600?3.5:2.4)),.55,120);
    if(width<600){target.x+=span*.36;target.z+=span*.36}else{target.x+=span*.22;target.z-=span*.22}sync();
   }dirty=true;
  }
- function setContext(value){contextVisible=value;context.visible=value&&!fullImport;if(fullImport)fullImport.context.visible=value;dirty=true;renderer.shadowMap.needsUpdate=true}
+ function setContext(value){contextVisible=value;context.visible=value&&!fullImport;stream?.setEnabled(value&&!fullImport);if(fullImport)fullImport.context.visible=value;sync()}
  function setConfidence(value){mats.height.color.setHex(value?0x9db8c8:0xc2cbd1);mats.levels.color.setHex(value?0xd8caad:0xcbd2d6);mats.assumed.color.setHex(value?0xd9abab:0xd4d9dc);dirty=true}
  const pointers=new Map();let gesture=null,moved=false;
  function gestureStart(){const p=[...pointers.values()];gesture=p.length===1?{x:p[0].x,y:p[0].y,target:target.clone(),zoom}:p.length>=2?{dist:Math.hypot(p[0].x-p[1].x,p[0].y-p[1].y),zoom}:null}
@@ -74,9 +84,9 @@ export async function createAtlas(city,onSelect) {
  host.addEventListener('pointerdown',e=>{pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});host.setPointerCapture(e.pointerId);moved=false;gestureStart()});
  host.addEventListener('pointermove',e=>{
   if(!pointers.has(e.pointerId)||!gesture)return;pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});const p=[...pointers.values()];
-  if(p.length>1){moved=true;zoom=T.MathUtils.clamp(gesture.zoom*Math.hypot(p[0].x-p[1].x,p[0].y-p[1].y)/Math.max(1,gesture.dist),.55,40);sync();return}
+  if(p.length>1){moved=true;zoom=T.MathUtils.clamp(gesture.zoom*Math.hypot(p[0].x-p[1].x,p[0].y-p[1].y)/Math.max(1,gesture.dist),.55,120);sync();return}
   const dx=e.clientX-gesture.x,dy=e.clientY-gesture.y;if(Math.abs(dx)+Math.abs(dy)>5)moved=true;
-  target.copy(gesture.target).add(new T.Vector3(-dx/Math.SQRT2+dy*Math.sqrt(1.5),0,dx/Math.SQRT2+dy*Math.sqrt(1.5)).multiplyScalar(view/height/zoom));sync();
+  target.copy(gesture.target).add(new T.Vector3(-dx/Math.SQRT2-dy*Math.sqrt(1.5),0,dx/Math.SQRT2-dy*Math.sqrt(1.5)).multiplyScalar(view/height/zoom));sync();
  });
  host.addEventListener('pointerup',e=>{
   const multi=pointers.size>1;pointers.delete(e.pointerId);
@@ -88,7 +98,7 @@ export async function createAtlas(city,onSelect) {
  host.addEventListener('keydown',e=>{if(e.key==='+'||e.key==='=')setZoom(1.2);else if(e.key==='-')setZoom(1/1.2);else if(e.key==='Home')reset();else if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key)){const x=e.key==='ArrowRight'?50:e.key==='ArrowLeft'?-50:0,z=e.key==='ArrowDown'?50:e.key==='ArrowUp'?-50:0;target.add(new T.Vector3(x+z,0,-x+z).multiplyScalar(view/3700/zoom));sync()}else return;e.preventDefault()});
  function dispose(root){root.traverse(o=>{o.geometry?.dispose();if(o.material&&o.material!==importMat)for(const m of Array.isArray(o.material)?o.material:[o.material])m.dispose()})}
  function restore(id){
-  if(id==='city'&&fullImport){scene.remove(fullImport.root);dispose(fullImport.root);fullImport=null;context.visible=contextVisible;for(const [key,g]of original)g.visible=!custom.has(key)}
+  if(id==='city'&&fullImport){scene.remove(fullImport.root);dispose(fullImport.root);fullImport=null;context.visible=contextVisible;stream?.setEnabled(contextVisible);for(const [key,g]of original)g.visible=!custom.has(key);sync()}
   else if(custom.has(id)){const g=custom.get(id);scene.remove(g);dispose(g);custom.delete(id);if(fullImport?.landmarks.has(id))fullImport.landmarks.get(id).visible=true;else original.get(id).visible=!fullImport}
   select(active,false);dirty=true;renderer.shadowMap.needsUpdate=true;
  }
@@ -98,7 +108,7 @@ export async function createAtlas(city,onSelect) {
    const groups=new Map(),ctx=new T.Group(),root=new T.Group();root.add(ctx);
    for(const child of [...g.children]){const key=child.userData.id;if(city.landmarks.some(b=>b.id===key)){if(!groups.has(key)){const gr=new T.Group();gr.userData.id=key;groups.set(key,gr);root.add(gr)}groups.get(key).add(child)}else ctx.add(child)}
    for(const group of [ctx,...groups.values()]){const geometries=[];for(const child of [...group.children]){let geo=child.geometry;if(geo.index){const n=geo.toNonIndexed();geo.dispose();geo=n}for(const key of Object.keys(geo.attributes))if(!['position','normal'].includes(key))geo.deleteAttribute(key);if(!geo.attributes.normal)geo.computeVertexNormals();geometries.push(geo);group.remove(child)}if(geometries.length)group.add(mergedMesh(geometries,importMat,group.userData.id||'context'))}
-   for(const g of original.values())g.visible=false;for(const [id,group]of groups)group.visible=!custom.has(id);context.visible=false;ctx.visible=contextVisible;scene.add(root);fullImport={root,context:ctx,landmarks:groups};
+   for(const g of original.values())g.visible=false;for(const [id,group]of groups)group.visible=!custom.has(id);context.visible=false;stream?.setEnabled(false);ctx.visible=contextVisible;scene.add(root);fullImport={root,context:ctx,landmarks:groups};
   }else {
    const b=city.landmarks.find(b=>b.id===id);g.position.set(b.anchor[0],0,-b.anchor[1]);g.traverse(o=>o.userData.id=id);scene.add(g);custom.set(id,g);original.get(id).visible=false;if(fullImport?.landmarks.has(id))fullImport.landmarks.get(id).visible=false;
   }

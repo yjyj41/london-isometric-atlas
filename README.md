@@ -16,3 +16,9 @@ Data: © OpenStreetMap contributors, https://www.openstreetmap.org/copyright, OD
 ## Codex Cloud
 
 Use the private yjyj41/london-isometric-atlas environment and main branch. Read AGENTS.md and HANDOFF.md, then run `node serve.cjs`. The app runs without npm install. No source ZIP or local-computer transfer is needed. Keep binary model and vendor files unchanged unless the task specifically requires updating them; large binary changes can exceed cloud diff limits.
+
+
+Current map: 67,215 masses, 6.84 x 7.12 km, 13 landmarks including Isokon. Streaming manifest + 110 detail tiles, generalized overview, worker geometry, bounded detail memory. Run node serve.cjs (offline asset restore); static-host build command python3 bootstrap.py, publish dist. Rhino 6/7 downloads are regional ZIPs; full data ZIP is available in the download dialog.
+
+
+Current map: 67,215 masses, 6.84 x 7.12 km, 13 landmarks including Isokon. Streaming manifest + 110 detail tiles, generalized overview, worker geometry, bounded detail memory. Run node serve.cjs (offline asset restore); static-host build command python3 bootstrap.py, publish dist. Rhino 6/7 downloads are regional ZIPs; full data ZIP is available in the download dialog.

@@ -1,0 +1,20 @@
+{
+  "masses": 67215,
+  "heights": {
+    "height": 4330,
+    "levels": 25067,
+    "assumed": 37818
+  },
+  "tiles": 110,
+  "tileSize": 750,
+  "overviewMasses": 11637,
+  "detailBytes": 14188826,
+  "maxTileBytes": 322573,
+  "initialBytes": 1088004,
+  "initialGzipBytes": 283489,
+  "extentKm": [
+    6.8405,
+    7.121899999999999
+  ],
+  "rhinoDownloadBytes": 32811121
+}

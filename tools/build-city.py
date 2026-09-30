@@ -9,7 +9,8 @@ ROOT=Path(__file__).parent;OUT=ROOT.parent/'dist/assets'
 raw=json.loads((ROOT/'london-osm.json').read_text(encoding='utf-8'))
 proj='+proj=aeqd +lat_0=51.51 +lon_0=-0.106 +datum=WGS84 +units=m +no_defs'
 tr=Transformer.from_crs('EPSG:4326',CRS.from_proj4(proj),always_xy=True)
-clip=Polygon([tr.transform(x,y) for x,y in [(-.132,51.496),(-.0715,51.496),(-.0715,51.523),(-.132,51.523)]])
+west,south,east,north=raw.get('bbox',[-.132,51.496,-.0715,51.523])
+clip=Polygon([tr.transform(x,y) for x,y in [(west,south),(east,south),(east,north),(west,north)]])
 def points(g):return [tr.transform(p['lon'],p['lat']) for p in g if p and 'lon' in p]
 def polys(g):
  if g.is_empty:return []
@@ -62,6 +63,16 @@ print('Parsed',len(building),'building elements',flush=True)
 bs=json.loads((ROOT/'landmarks.json').read_text(encoding='utf-8'))
 refs={'stpauls':('way',369161987),'shard':('way',31110737),'gherkin':('way',4959489),'tate':('way',24642569),'lloyds':('way',23988892),'westminster':('relation',1567699),'abbey':('way',364313092),'museum':('relation',177044)}
 zones={k:geoms[v] for k,v in refs.items() if v in geoms}
+isokon=[(e,p) for e,p in building if 'isokon' in e.get('tags',{}).get('name','').lower() or 'lawn road flats' in e.get('tags',{}).get('name','').lower()]
+if any(b['id']=='isokon' for b in bs):
+ assert isokon,'Isokon OSM footprint missing'
+ isokon_e,isokon_p=max(isokon,key=lambda pair:pair[1].area)
+ zones['isokon']=isokon_p.buffer(.3)
+ refs['isokon']=(isokon_e['type'],isokon_e['id'])
+ inverse=Transformer.from_crs(CRS.from_proj4(proj),'EPSG:4326',always_xy=True)
+ lon,lat=inverse.transform(isokon_p.centroid.x,isokon_p.centroid.y)
+ for b in bs:
+  if b['id']=='isokon':b['lat']=lat;b['lon']=lon
 for b in bs:
  b['anchor']=[round(v,3) for v in tr.transform(b['lon'],b['lat'])]
  b['modelSource']='OSM footprint + height/levels; simplified roof masses'
@@ -119,9 +130,10 @@ for b in bs:
  b['modelNote']='높이 태그와 층수 추정이 혼합된 OSM 매스입니다. 지붕은 단순화했습니다.'
  if b['id'] in ['shard','gherkin']:b['modelNote']='실제 평면 위치와 참고 높이를 사용한 근사 곡면·테이퍼 매스입니다.'
  if b['id']=='millennium':b['modelNote']='OSM 보행 경로 중심선에 폭 4 m, 데크 레벨 10 m를 가정한 매스입니다.'
+ if b['id']=='isokon':b['modelNote']='실제 OSM 건물 윤곽을 사용한 개략 매스입니다. 높이 태그가 없어 12 m를 가정했습니다. 갤러리·발코니·상부 후퇴부는 단순화했습니다.'
 print('Landmarks',[(b['id'],b['massCount'],b['modelHeight']) for b in bs],flush=True)
 water=polys(unary_union(water));parks=polys(unary_union(parks))
-result={'version':2,'units':'meters','origin':{'lat':51.51,'lon':-.106,'crs':proj,'axes':'X east, Y north, Z up'},'bounds':[round(v,1) for v in clip.bounds],'attribution':'© OpenStreetMap contributors · ODbL 1.0','date':'2026-09-21','buildings':records,'water':[coords(p.simplify(.3)) for p in water if p.area>20],'parks':[coords(p.simplify(.5)) for p in parks if p.area>50],'roads':roads,'landmarks':bs,'stats':{'masses':len(records),'heights':sources}}
+result={'version':2,'units':'meters','origin':{'lat':51.51,'lon':-.106,'crs':proj,'axes':'X east, Y north, Z up'},'bounds':[round(v,1) for v in clip.bounds],'attribution':'© OpenStreetMap contributors · ODbL 1.0','date':raw.get('downloaded','2026-09-21'),'geographicBounds':[west,south,east,north],'buildings':records,'water':[coords(p.simplify(.3)) for p in water if p.area>20],'parks':[coords(p.simplify(.5)) for p in parks if p.area>50],'roads':roads,'landmarks':bs,'stats':{'masses':len(records),'heights':sources}}
 OUT.mkdir(exist_ok=True)
 (OUT/'city.json').write_text(json.dumps(result,separators=(',',':'),ensure_ascii=False),encoding='utf-8')
 print('Saved',len(records),'masses;',len(water),'water polygons;',len(roads),'roads;',sources,flush=True)
