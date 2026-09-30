@@ -25,3 +25,6 @@ tools/city-full.json
 
 # Corrected geographic data overrides the original bootstrap archive.
 !dist/assets/city-data.zip
+
+# Licensed landmark photographs are tracked directly.
+!dist/assets/photos/

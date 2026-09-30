@@ -66,6 +66,12 @@ bs=json.loads((ROOT/'landmarks.json').read_text(encoding='utf-8'))
 refs={'stpauls':('way',369161987),'shard':('way',31110737),'gherkin':('way',4959489),'tate':('way',24642569),'lloyds':('way',23988892),'westminster':('relation',1567699),'abbey':('way',364313092),'museum':('relation',177044)}
 zones={k:geoms[v] for k,v in refs.items() if v in geoms}
 matches_by_id={
+ 'nationaltheatre':['National Theatre'],
+ 'festivalhall':['Royal Festival Hall'],
+ 'hayward':['Hayward Gallery'],
+ 'britishlibrary':['British Library'],
+ 'coaldrops':['Eastern Coal Drops', 'Western Coal Drops'],
+ 'aquatics':['London Aquatics Centre'],
  'battersea':['Battersea Power Station'],
  'peckham':['Peckham Library'],
  'laban':['Laban','Laban Dance Centre','Laban Building','Trinity Laban'],

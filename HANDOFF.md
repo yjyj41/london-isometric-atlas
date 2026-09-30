@@ -78,3 +78,10 @@ node tools/pack-city.mjs는 JSON 타일에서 공유 recordGeometry로 기하를
 Rhino 6/7: 여덟 지역 ZIP(6.5–13.0 MB), 21개 개별 모델. 지역들은 같은 도시 원점, 개별 건물은 각 anchor 원점. 지역 파일의 비압축 용량 합은 약 266 MB이고 전체 도시 삼각형도 웹 300만 제한을 넘으므로 전체를 합친 뒤 재불러올 때 ReduceMesh 필요. 지역 하나를 도시 대상으로 불러오면 그 지역만 표시하는 기존 동작입니다. 개별 모델은 브라우저 로컬 IndexedDB 저장입니다.
 
 현재 재생성 순서는 README.md 참조. detail-landmarks.py를 tile-city.py보다 먼저 실행해야 합니다. Geofabrik 원본·기존 raw snapshot은 ignored files; 일반 UI/모델 편집은 커밋된 JSON/메시와 city-data.zip만 사용합니다. JSON 타일과 압축 메시의 버전을 함께 갱신하세요. GitHub의 bootstrap.py는 새 동·남부 번들 우선 복구 및 이전 번들과 일치하는 생성 파일 업그레이드를 지원합니다. 사용자 수정 파일은 보존하고 충돌을 알립니다.
+
+
+## 2026-09-30 — 랜드마크 상세화·사진 / 현재 구현
+이 절이 위의 랜드마크·매스 개수를 대체합니다. 총 27곳, 151,407개 모델 부재. Isokon은 실제 위치·방향 위에 94개 부재로 재구성: 연속 갤러리, 난간, 외부 계단, 후면 발코니, 옥상 펜트하우스와 낮은 갤러리 별동. 층고 2.8m / 최고 14.25m와 세부 치수는 문화재 기록·사진 기반 근사이며 실측이 아닙니다.
+추가 6곳: National Theatre, Royal Festival Hall, Hayward Gallery, British Library, Coal Drops Yard, London Aquatics Centre. tools/curated_details.py는 detail-landmarks.py 내부에서 실행됩니다. 후자의 입력은 build-city.py의 v2 전체 자료여야 합니다.
+모든 27개 카드에 실제 외관 사진·작가·라이선스·출처 링크. dist/assets/photos에 자체 호스팅, tools/landmarks.json의 photo 메타데이터를 보존할 것. 사진 총 약 2.4 MB, 각 200 KB 미만, 선택 시에만 불러옵니다. 자료 사진의 시점이 현재 건물 상태와 다를 수 있습니다.
+238개 실제 윤곽 타일, 전체 주변 3,251,896 triangles / 다운로드 33.21 MB / GPU 기하 69.46 MB. 초기 색인 약 2.32 MB. 세부 모델을 위해 최대 확대 400으로 확장, 드래그·고정 카메라는 유지. 27개 개별 및 8개 지역 Rhino6 파일 갱신. GitHub의 새 landmark-detail 번들을 기존 번들보다 우선 복구하며 기존 번들은 안전한 사용자 편집 판별을 위해 유지합니다.

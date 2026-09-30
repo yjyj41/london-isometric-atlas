@@ -62,7 +62,7 @@ export async function createAtlas(city,onSelect) {
   }
   const s=Math.max(700,view/zoom);sun.target.position.copy(target);sun.position.copy(target).add(new T.Vector3(-2500,4500,2000));
   Object.assign(sun.shadow.camera,{left:-s,right:s,top:s,bottom:-s});sun.shadow.camera.updateProjectionMatrix();renderer.shadowMap.needsUpdate=true;
-  $('#zoom-value').textContent=Math.round(zoom*100)+'%';$('#zoom-in').disabled=zoom>=120;$('#zoom-out').disabled=zoom<=.55;
+  $('#zoom-value').textContent=Math.round(zoom*100)+'%';$('#zoom-in').disabled=zoom>=400;$('#zoom-out').disabled=zoom<=.55;
   const approx=view/zoom*90/height,nice=[1,2,5,10,20,50,100,200,500,1000,2000].filter(n=>n<=approx).at(-1)||1;
   $('#scale-line').style.width=(nice*height*zoom/view)+'px';$('#scale-label').textContent=nice>=1000?(nice/1000)+' km':nice+' m';dirty=true;
  }
@@ -70,11 +70,11 @@ export async function createAtlas(city,onSelect) {
  function resize(){width=host.clientWidth;height=host.clientHeight;renderer.setSize(width,height);view=Math.max(3000,((xmax-xmin)+(ymax-ymin))*.707/(width/height)*1.12);sync()}
  new ResizeObserver(resize).observe(host);resize();
  // Start at a readable central-London scale. The full-map control includes Isokon.
- target.set(-250,0,120);zoom=T.MathUtils.clamp(view/2200,.55,120);sync();
- function setZoom(f){zoom=T.MathUtils.clamp(zoom*f,.55,120);sync()}
+ target.set(-250,0,120);zoom=T.MathUtils.clamp(view/2200,.55,400);sync();
+ function setZoom(f){zoom=T.MathUtils.clamp(zoom*f,.55,400);sync()}
  function select(id,focus=true){active=id;const bb=objectBounds(id);boxHelper.box.copy(bb);boxHelper.visible=!bb.isEmpty();
   if(focus&&!bb.isEmpty()){
-   const size=bb.getSize(new T.Vector3()),span=Math.max(size.x,size.y,size.z,80);bb.getCenter(target);zoom=T.MathUtils.clamp(view/(span*(width<600?3.5:2.4)),.55,120);
+   const size=bb.getSize(new T.Vector3()),span=Math.max(size.x,size.y,size.z,60);bb.getCenter(target);zoom=T.MathUtils.clamp(view/(span*(width<600?3.5:2.4)),.55,400);
    if(width<600){target.x+=span*.36;target.z+=span*.36}else{target.x+=span*.22;target.z-=span*.22}sync();
   }dirty=true;
  }
@@ -86,7 +86,7 @@ export async function createAtlas(city,onSelect) {
  host.addEventListener('pointerdown',e=>{pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});host.setPointerCapture(e.pointerId);moved=false;gestureStart()});
  host.addEventListener('pointermove',e=>{
   if(!pointers.has(e.pointerId)||!gesture)return;pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});const p=[...pointers.values()];
-  if(p.length>1){moved=true;zoom=T.MathUtils.clamp(gesture.zoom*Math.hypot(p[0].x-p[1].x,p[0].y-p[1].y)/Math.max(1,gesture.dist),.55,120);sync();return}
+  if(p.length>1){moved=true;zoom=T.MathUtils.clamp(gesture.zoom*Math.hypot(p[0].x-p[1].x,p[0].y-p[1].y)/Math.max(1,gesture.dist),.55,400);sync();return}
   const dx=e.clientX-gesture.x,dy=e.clientY-gesture.y;if(Math.abs(dx)+Math.abs(dy)>5)moved=true;
   target.copy(gesture.target).add(new T.Vector3(-dx/Math.SQRT2-dy*Math.sqrt(1.5),0,dx/Math.SQRT2-dy*Math.sqrt(1.5)).multiplyScalar(view/height/zoom));sync();
  });

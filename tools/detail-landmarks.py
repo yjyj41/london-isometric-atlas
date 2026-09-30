@@ -21,6 +21,7 @@ def polys(g):
 def volume(poly,base,top):
  """Closed solid with a planar or sampled height function, preserving holes."""
  out=[];height=top if callable(top) else lambda x,y:top
+ bottom=base if callable(base) else lambda x,y:base
  def tri(a,b,c):out.extend([round(v,5) for p in [a,b,c] for v in p])
  for p in polys(poly):
   p=orient(p,sign=1.0)
@@ -29,12 +30,12 @@ def volume(poly,base,top):
    # Make top faces point upward regardless of triangulator winding.
    if (b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0])<0:b,c=c,b
    tri((*a,height(*a)),(*b,height(*b)),(*c,height(*c)))
-   tri((*c,base),(*b,base),(*a,base))
+   tri((*c,bottom(*c)),(*b,bottom(*b)),(*a,bottom(*a)))
   for ring in [p.exterior,*p.interiors]:
    points=list(ring.coords)
    for a,b in zip(points,points[1:]):
-    tri((*a,base),(*b,base),(*a,height(*a)))
-    tri((*b,base),(*b,height(*b)),(*a,height(*a)))
+    tri((*a,bottom(*a)),(*b,bottom(*b)),(*a,height(*a)))
+    tri((*b,bottom(*b)),(*b,height(*b)),(*a,height(*a)))
  return out
 # Crossrail's centre part is mapped separately; the roof spans the original complete outline.
 source=next(e for e in raw['elements'] if e['type']=='way' and e['id']==281015404)
@@ -75,12 +76,14 @@ notes['laban']='실제 OSM 평면의 휘어진 입면과 건물 분절을 유지
 notes['navalcollege']='실제 네 코트의 건물 평면·중정과 OSM 건물 부재를 사용했습니다. 높이 미기재 부분과 지붕은 근사이며 중앙 시선축을 유지합니다.'
 notes['queenshouse']='실제 OSM 평면·분절을 사용한 고전주의 매스입니다. 높이 미기재 부분은 추정이며 창호와 장식은 생략했습니다.'
 notes['observatory']='Flamsteed House의 실제 평면과 OSM 지붕·부재를 사용했습니다. 미기재 높이는 추정이며 언덕의 지형 고도는 반영하지 않습니다.'
+from curated_details import enrich
+enrich(city,volume,raw)
 for b in city['landmarks']:
  b['massCount']=sum(r.get('lm')==b['id'] for r in city['buildings'])
  b['confidence']={c:sum(r.get('lm')==b['id'] and r['c']==c for r in city['buildings']) for c in ['height','levels','assumed']}
  if b['id'] in notes:b['modelNote']=notes[b['id']];b['modelSource']='OSM footprint and mapped parts; reference-informed approximate mass profile'
  b['modelHeight']=max(r['h'] for r in city['buildings'] if r.get('lm')==b['id'])
- if b['id'] in notes:b['height']=b['modelHeight']
+ b['height']=b['modelHeight']
 city['stats']['masses']=len(city['buildings'])
 city['stats']['heights']={c:sum(r['c']==c for r in city['buildings']) for c in ['height','levels','assumed']}
 path.write_text(json.dumps(city,separators=(',',':'),ensure_ascii=False),encoding='utf8')

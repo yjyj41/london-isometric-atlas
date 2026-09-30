@@ -11,7 +11,20 @@
     "height": 111,
     "point": "서쪽 정면의 쌍탑과 중앙 돔의 비례를 살펴보세요. 밀레니엄 브리지에서는 돔이 도시의 축을 만드는 모습을 볼 수 있습니다.",
     "source": "https://www.stpauls.co.uk/our-timeline",
-    "color": 15260867
+    "color": 15260867,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:St_Paul%27s_Cathedral_Dome_from_One_New_Change_-_Square_Crop.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/St_Paul%27s_Cathedral_Dome_from_One_New_Change_-_Square_Crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Colin",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "alt": "Exterior of St Paul's Cathedral, London",
+      "title": "File:St Paul's Cathedral Dome from One New Change - Square Crop.jpg",
+      "width": 800,
+      "height": 800,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/stpauls.jpg"
+    }
   },
   {
     "id": "shard",
@@ -25,7 +38,20 @@
     "height": 310,
     "point": "서로 어긋난 유리 면과 끝에서 열린 첨두를 관찰해 보세요. 런던 브리지에서 강과 함께 바라보면 수직성이 더 잘 드러납니다.",
     "source": "https://www.rpbw.com/project/the-shard-london-bridge-tower",
-    "color": 9553108
+    "color": 9553108,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Shard_from_Southwark_Bridge,_2017-05-27.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b6/The_Shard_from_Southwark_Bridge%2C_2017-05-27.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Lewis Hulbert",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "alt": "Exterior of The Shard, London",
+      "title": "File:The Shard from Southwark Bridge, 2017-05-27.jpg",
+      "width": 537,
+      "height": 800,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/shard.jpg"
+    }
   },
   {
     "id": "gherkin",
@@ -39,7 +65,20 @@
     "height": 180,
     "point": "중간이 불룩한 회전체와 대각 격자 외피를 비교해 보세요. 주변의 좁은 골목을 이동하면 둥근 매스가 달라 보입니다.",
     "source": "https://www.fosterandpartners.com/projects/the-gherkin/",
-    "color": 7317429
+    "color": 7317429,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:30_St_Mary_Axe,_%27Gherkin%27.JPG",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/30_St_Mary_Axe%2C_%27Gherkin%27.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Paste (English Wikipedia); contrast adjustment by Elekhh",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:30_St_Mary_Axe,_%27Gherkin%27.JPG#Licensing",
+      "alt": "Exterior of 30 St Mary Axe, London",
+      "title": "File:30 St Mary Axe, 'Gherkin'.JPG",
+      "width": 600,
+      "height": 800,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/gherkin.jpg"
+    }
   },
   {
     "id": "towerbridge",
@@ -53,7 +92,20 @@
     "height": 65,
     "point": "두 석조 탑 사이의 상부 보행로와 아래쪽 가동교를 비교하세요. 남쪽 강변에서 보면 현수 구조와 고딕 외피가 함께 드러납니다.",
     "source": "https://www.towerbridge.org.uk/stories/history",
-    "color": 15065038
+    "color": 15065038,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tower_Bridge_London_Feb_2006.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/44/Tower_Bridge_London_Feb_2006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Diliff",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "alt": "Exterior of Tower Bridge, London",
+      "title": "File:Tower Bridge London Feb 2006.jpg",
+      "width": 800,
+      "height": 400,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/towerbridge.jpg"
+    }
   },
   {
     "id": "tate",
@@ -67,7 +119,20 @@
     "height": 99,
     "point": "발전소의 수평 매스와 굴뚝, 뒤편의 비틀린 벽돌 증축을 비교하세요. 터빈 홀은 산업 공간이 공공 공간으로 바뀐 핵심 장면입니다.",
     "source": "https://www.herzogdemeuron.com/projects/263-the-tate-modern-project/",
-    "color": 11832693
+    "color": 11832693,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tate_Modern_London_June_2016.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Tate_Modern_London_June_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "King of Hearts",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "alt": "Exterior of Tate Modern, London",
+      "title": "File:Tate Modern London June 2016.jpg",
+      "width": 800,
+      "height": 600,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/tate.jpg"
+    }
   },
   {
     "id": "millennium",
@@ -81,7 +146,20 @@
     "height": 15,
     "point": "아주 낮게 펼쳐진 현수 구조와 보행자의 눈높이를 살펴보세요. 세인트 폴과 테이트 모던을 연결하는 도시의 축을 걸어볼 수 있습니다.",
     "source": "https://dev.fosterandpartners.com/projects/millennium-bridge",
-    "color": 13031391
+    "color": 13031391,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Millennium_Bridge_London.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/96/Millennium_Bridge_London.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Telemaque MySon",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "alt": "Exterior of Millennium Bridge London, London",
+      "title": "File:Millennium Bridge London.jpg",
+      "width": 800,
+      "height": 531,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/millennium.jpg"
+    }
   },
   {
     "id": "barbican",
@@ -95,7 +173,20 @@
     "height": 123,
     "point": "거친 콘크리트, 반복되는 발코니, 지면 위 보행 데크에 주목하세요. 세 주거 타워와 낮은 문화시설, 수공간을 하나의 도시로 읽어보세요.",
     "source": "https://www.barbican.org.uk/our-story/architecture/our-building",
-    "color": 11976128
+    "color": 11976128,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Barbican-arts-centre-large.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Barbican-arts-centre-large.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Nevilley (English Wikipedia)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "alt": "Exterior of Barbican Centre, London",
+      "title": "File:Barbican-arts-centre-large.jpg",
+      "width": 800,
+      "height": 600,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/barbican.jpg"
+    }
   },
   {
     "id": "lloyds",
@@ -109,7 +200,20 @@
     "height": 84,
     "point": "엘리베이터와 설비를 바깥으로 꺼낸 서비스 타워를 찾아보세요. 건물의 작동 방식이 외관이 되는 하이테크 건축의 대표 사례입니다.",
     "source": "https://rshp.com/projects/office/lloyds-of-london/",
-    "color": 10664130
+    "color": 10664130,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lloyd%27s_building.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Lloyd%27s_building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Lloyd's of London",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "alt": "Exterior of Lloyd's building, London",
+      "title": "File:Lloyd's building.jpg",
+      "width": 534,
+      "height": 800,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/lloyds.jpg"
+    }
   },
   {
     "id": "westminster",
@@ -123,7 +227,20 @@
     "height": 98,
     "point": "강변을 따라 반복되는 고딕 입면과 양 끝 탑의 대비를 살펴보세요. 웨스트민스터 브리지에서는 긴 입면과 엘리자베스 타워가 함께 보입니다.",
     "source": "https://www.parliament.uk/about/living-heritage/building/palace/big-ben/building-clock-tower/designing-a-new-palace-of-westminster/",
-    "color": 14204808
+    "color": 14204808,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Palace_of_Westminster,_London_-_Feb_2007.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/97/Palace_of_Westminster%2C_London_-_Feb_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Diliff",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "alt": "Exterior of Palace of Westminster, London",
+      "title": "File:Palace of Westminster, London - Feb 2007.jpg",
+      "width": 800,
+      "height": 315,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/westminster.jpg"
+    }
   },
   {
     "id": "abbey",
@@ -137,7 +254,20 @@
     "height": 69,
     "point": "길게 뻗은 신랑과 플라잉 버트레스, 서쪽 쌍탑을 관찰하세요. 중세 본체와 1745년에 완성된 서탑의 시간 차이도 흥미롭습니다.",
     "source": "https://www.westminster-abbey.org/history/explore-our-history/architecture",
-    "color": 14865848
+    "color": 14865848,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Westminster_Abbey_West_Front_Facade_by_Nicholas_Hawkmoor,_London.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/84/Westminster_Abbey_West_Front_Facade_by_Nicholas_Hawkmoor%2C_London.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "The New Athens",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "alt": "Exterior of Westminster Abbey, London",
+      "title": "File:Westminster Abbey West Front Facade by Nicholas Hawkmoor, London.jpg",
+      "width": 450,
+      "height": 800,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/abbey.jpg"
+    }
   },
   {
     "id": "museum",
@@ -151,7 +281,20 @@
     "height": 30,
     "point": "정면의 열주에서 안쪽의 Great Court로 들어가 보세요. 고전적인 석조 외곽과 가벼운 유리 지붕 사이의 대비를 읽을 수 있습니다.",
     "source": "https://www.britishmuseum.org/about-us/british-museum-story/architecture",
-    "color": 14868177
+    "color": 14868177,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:British_Museum_(aerial).jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/British_Museum_%28aerial%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Luke Massey & the Greater London National Park City Initiative",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "alt": "Exterior of British Museum, London",
+      "title": "File:British Museum (aerial).jpg",
+      "width": 800,
+      "height": 600,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/museum.jpg"
+    }
   },
   {
     "id": "tower",
@@ -165,7 +308,20 @@
     "height": 27,
     "point": "중심의 화이트 타워와 겹겹의 성벽을 살펴보세요. 강을 향한 방어 체계와 이후 확장된 요새의 층위를 읽는 답사입니다.",
     "source": "https://www.hrp.org.uk/tower-of-london/whats-on/white-tower/",
-    "color": 14670281
+    "color": 14670281,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tower_of_London_viewed_from_the_River_Thames.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Tower_of_London_viewed_from_the_River_Thames.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Bob Collowan",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "alt": "Exterior of Tower of London, London",
+      "title": "File:Tower of London viewed from the River Thames.jpg",
+      "width": 800,
+      "height": 503,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/tower.jpg"
+    }
   },
   {
     "id": "isokon",
@@ -179,7 +335,19 @@
     "height": 12.8,
     "point": "길게 이어지는 외부 접근 갤러리와 둥근 끝부분, 작은 주거 단위가 만드는 매스의 비례를 관찰하세요. 1934년의 공동 주거 실험을 소개하는 갤러리가 건물에 있습니다.",
     "source": "https://isokongallery.org/pages/the-isokon-story",
-    "color": 15921385
+    "color": 15921385,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isokon_Building_Hampstead_2005.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Isokon_Building_Hampstead_2005.jpg",
+      "author": "Justinc; perspective and white balance correction by Jamesmcardle",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "alt": "Isokon Flats, London: white external galleries and staircase",
+      "width": 800,
+      "height": 600,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/isokon.jpg"
+    }
   },
   {
     "id": "battersea",
@@ -193,7 +361,20 @@
     "height": 101,
     "point": "네 개의 굴뚝과 긴 터빈 홀, 중앙 보일러 하우스가 만드는 단면을 비교하세요. 강변에서 산업 건축의 대칭과 새로 연결된 보행 공간을 관찰할 수 있습니다.",
     "source": "https://batterseapowerstation.co.uk/about/heritage-history/",
-    "color": 15921385
+    "color": 15921385,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Battersea_Power_Station_in_London.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/47/Battersea_Power_Station_in_London.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Gaetan Lee from London, UK",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "alt": "Exterior of Battersea Power Station, London",
+      "title": "File:Battersea Power Station in London.jpg",
+      "width": 800,
+      "height": 538,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/battersea.jpg"
+    }
   },
   {
     "id": "peckham",
@@ -207,7 +388,20 @@
     "height": 24,
     "point": "상부 열람실이 돌출된 역 L자 매스와 그 아래 열린 광장을 살펴보세요. 지면에서 띄운 공간이 공공 건물의 입구와 그늘을 함께 만듭니다.",
     "source": "https://all.design/willalsop/peckhamlibrary",
-    "color": 15921385
+    "color": 15921385,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peckham_library_exterior_1.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Peckham_library_exterior_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Mcginnly (attribution stated by Wikimedia Commons)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "alt": "Exterior of Peckham Library, London",
+      "title": "File:Peckham library exterior 1.jpg",
+      "width": 800,
+      "height": 600,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/peckham.jpg"
+    }
   },
   {
     "id": "laban",
@@ -221,7 +415,20 @@
     "height": 15,
     "point": "정원 쪽으로 휘어지는 긴 입면과 낮고 넓은 건물의 비례를 관찰하세요. 반투명 외피와 내부 극장의 관계는 실제 답사에서 함께 확인할 포인트입니다.",
     "source": "https://www.herzogdemeuron.com/projects/160-laban-dance-centre/",
-    "color": 15921385
+    "color": 15921385,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Laban_Dance_Centre_RJL.JPG",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Laban_Dance_Centre_RJL.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Ricjl (English Wikipedia)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "alt": "Exterior of Laban Dance Centre, London",
+      "title": "File:Laban Dance Centre RJL.JPG",
+      "width": 800,
+      "height": 600,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/laban.jpg"
+    }
   },
   {
     "id": "canadasquare",
@@ -235,7 +442,20 @@
     "height": 235,
     "point": "모서리가 파인 정방형 타워와 피라미드 지붕을 확인하세요. 주변 도크와 광장의 축이 이 수직 랜드마크로 모입니다.",
     "source": "https://pcparch.com/work/one-canada-square-and-docklands-light-railway-station",
-    "color": 15921385
+    "color": 15921385,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:One_Canada_Square_(24.04.2021)_(1).jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b5/One_Canada_Square_%2824.04.2021%29_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "QuintusPetillius",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "alt": "Exterior of One Canada Square, London",
+      "title": "File:One Canada Square (24.04.2021) (1).jpg",
+      "width": 600,
+      "height": 800,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/canadasquare.jpg"
+    }
   },
   {
     "id": "crossrail",
@@ -249,7 +469,20 @@
     "height": 28,
     "point": "도크 위에 놓인 긴 선형 매스와 곡면 지붕을 비교하세요. 지붕 정원은 역과 상업 공간 위에서 보행 동선을 이어줍니다.",
     "source": "https://www.adamson-associates.com/project/crossrail-place-canary-wharf/",
-    "color": 15921385
+    "color": 15921385,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crossrail_Place_2025-08-13.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/Crossrail_Place_2025-08-13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Matt Brown",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "alt": "Exterior of Crossrail Place, London",
+      "title": "File:Crossrail Place 2025-08-13.jpg",
+      "width": 800,
+      "height": 600,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/crossrail.jpg"
+    }
   },
   {
     "id": "navalcollege",
@@ -263,7 +496,20 @@
     "height": 50,
     "point": "두 돔과 네 개의 중정, 열주가 만드는 대칭을 살펴보세요. 중앙을 비운 축은 Queen’s House에서 템스강까지 시선을 이어줍니다.",
     "source": "https://ornc.org/our-history/royal-hospital/wrens-vision-for-the-royal-hospital/",
-    "color": 15921385
+    "color": 15921385,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royal_Naval_College_Greenwich_view_from_the_Thames.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Royal_Naval_College_Greenwich_view_from_the_Thames.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Dmitry Tonkonog",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "alt": "Exterior of Old Royal Naval College Greenwich, London",
+      "title": "File:Royal Naval College Greenwich view from the Thames.jpg",
+      "width": 800,
+      "height": 480,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/navalcollege.jpg"
+    }
   },
   {
     "id": "queenshouse",
@@ -277,7 +523,20 @@
     "height": 16,
     "point": "절제된 흰색 입방체와 남북 입면의 차이를 비교하세요. 해군대학 사이로 강을 바라보는 축과 뒤쪽 공원으로 열린 공간이 중요합니다.",
     "source": "https://www.rmg.co.uk/stories/royal-history/history-queens-house",
-    "color": 15921385
+    "color": 15921385,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Queen%27s_House._Greenwich,_UK.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Queen%27s_House._Greenwich%2C_UK.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Ввласенко",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "alt": "Exterior of Queen's House Greenwich, London",
+      "title": "File:Queen's House. Greenwich, UK.jpg",
+      "width": 800,
+      "height": 452,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/queenshouse.jpg"
+    }
   },
   {
     "id": "observatory",
@@ -291,6 +550,181 @@
     "height": 20,
     "point": "팔각형 관측실과 작은 돔, 시보구가 결합된 지붕을 관찰하세요. 실제 현장은 언덕 위에 있지만 이 지도는 건물 높이만 표시하는 평면 지형 모델입니다.",
     "source": "https://www.rmg.co.uk/royal-observatory/attractions/flamsteed-house",
-    "color": 15921385
+    "color": 15921385,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flamsteed_House_Greenwich_2023_01.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Flamsteed_House_Greenwich_2023_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Julian Herzog",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "alt": "Exterior of Flamsteed House Greenwich, London",
+      "title": "File:Flamsteed House Greenwich 2023 01.jpg",
+      "width": 800,
+      "height": 518,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/observatory.jpg"
+    }
+  },
+  {
+    "id": "nationaltheatre",
+    "name": "National Theatre",
+    "ko": "내셔널 시어터",
+    "lat": 51.507,
+    "lon": -0.1142,
+    "type": "BRUTALISM / THEATRE",
+    "year": "1976",
+    "architect": "Denys Lasdun",
+    "height": 32,
+    "point": "층층이 쌓인 테라스와 두 개의 높은 무대 타워를 비교하세요. 강변 보행 공간이 건축의 여러 높이로 이어집니다.",
+    "source": "https://historicengland.org.uk/listing/the-list/list-entry/1272324",
+    "color": 15921385,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:National_Theatre_-_view_of_exterior_terraces.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/National_Theatre_-_view_of_exterior_terraces.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Tom Parnell",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "alt": "Exterior of Royal National Theatre London, London",
+      "title": "File:National Theatre - view of exterior terraces.jpg",
+      "width": 533,
+      "height": 800,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/nationaltheatre.jpg"
+    }
+  },
+  {
+    "id": "festivalhall",
+    "name": "Royal Festival Hall",
+    "ko": "로열 페스티벌 홀",
+    "lat": 51.5058,
+    "lon": -0.1168,
+    "type": "MODERNISM / CONCERT HALL",
+    "year": "1951",
+    "architect": "LCC · Robert Matthew · Leslie Martin · Peter Moro",
+    "height": 24,
+    "point": "외곽 로비와 중앙 공연장의 높이 차이를 살펴보세요. 강변 테라스에서 열린 공공 공간과 홀의 매스가 연결됩니다.",
+    "source": "https://historicengland.org.uk/listing/the-list/list-entry/1249756",
+    "color": 15921385,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Royal_Festival_Hall_2011.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Royal_Festival_Hall_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Andreas Praefcke",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "alt": "Exterior of Royal Festival Hall, London",
+      "title": "File:Royal Festival Hall 2011.jpg",
+      "width": 800,
+      "height": 508,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/festivalhall.jpg"
+    }
+  },
+  {
+    "id": "hayward",
+    "name": "Hayward Gallery",
+    "ko": "헤이워드 갤러리",
+    "lat": 51.5065,
+    "lon": -0.1162,
+    "type": "BRUTALISM / GALLERY",
+    "year": "1968",
+    "architect": "LCC / GLC · Norman Engleback 팀",
+    "height": 18,
+    "point": "콘크리트 전시실과 외부 조각 테라스, 지붕의 피라미드 채광창을 관찰하세요. 서로 다른 레벨이 전시 동선을 만듭니다.",
+    "source": "https://historicengland.org.uk/listing/the-list/list-entry/1492622",
+    "color": 15921385,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hayward-gallery-london_I.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/Hayward-gallery-london_I.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "MykReeve (English Wikipedia)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "alt": "Exterior of Hayward Gallery, London",
+      "title": "File:Hayward-gallery-london I.jpg",
+      "width": 700,
+      "height": 525,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/hayward.jpg"
+    }
+  },
+  {
+    "id": "britishlibrary",
+    "name": "British Library",
+    "ko": "영국도서관 · 세인트 판크라스",
+    "lat": 51.5295,
+    "lon": -0.127,
+    "type": "MODERNISM / LIBRARY",
+    "year": "1997 개관",
+    "architect": "Colin St John Wilson · MJ Long",
+    "height": 30,
+    "point": "낮은 입구와 안쪽으로 높아지는 지붕, 벽돌 외벽과 전면 광장의 관계를 살펴보세요.",
+    "source": "https://historicengland.org.uk/listing/the-list/list-entry/1426345",
+    "color": 15921385,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:British_Library_courtyard_-_geograph.org.uk_-_1869394.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/60/British_Library_courtyard_-_geograph.org.uk_-_1869394.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "David Gearing",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "alt": "Exterior of British Library St Pancras, London",
+      "title": "File:British Library courtyard - geograph.org.uk - 1869394.jpg",
+      "width": 640,
+      "height": 480,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/britishlibrary.jpg"
+    }
+  },
+  {
+    "id": "coaldrops",
+    "name": "Coal Drops Yard",
+    "ko": "콜 드롭스 야드",
+    "lat": 51.5357,
+    "lon": -0.1257,
+    "type": "ADAPTIVE REUSE / RETAIL",
+    "year": "1850년대 · 재생 2018",
+    "architect": "Heatherwick Studio",
+    "height": 22,
+    "point": "길게 놓인 두 창고의 지붕이 가운데서 들어 올려져 만나는 부분을 관찰하세요. 중앙 마당 위의 연결부가 기존 산업 건축을 이어줍니다.",
+    "source": "https://heatherwick.com/projects/buildings/coal-drops-yard/",
+    "color": 15921385,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coal_Drops_Yard_0550.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Coal_Drops_Yard_0550.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "ClemRutter",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "alt": "Exterior of Coal Drops Yard, London",
+      "title": "File:Coal Drops Yard 0550.jpg",
+      "width": 800,
+      "height": 600,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/coaldrops.jpg"
+    }
+  },
+  {
+    "id": "aquatics",
+    "name": "London Aquatics Centre",
+    "ko": "런던 아쿠아틱스 센터",
+    "lat": 51.5403,
+    "lon": -0.0103,
+    "type": "CONTEMPORARY / SPORTS",
+    "year": "2011 · 레거시 전환 2014",
+    "architect": "Zaha Hadid Architects",
+    "height": 45,
+    "point": "물결처럼 올라갔다 내려오는 지붕과 낮게 열린 양쪽 입면을 비교하세요. 올림픽 당시 임시 관람석이 제거된 형태를 기준으로 봅니다.",
+    "source": "https://www.zaha-hadid.com/architecture/london-aquatics-centre/",
+    "color": 15921385,
+    "photo": {
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:London_Aquatics_Centre_-_Olympic_Park.jpg",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e7/London_Aquatics_Centre_-_Olympic_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "author": "Sumit Surai",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "alt": "Exterior of London Aquatics Centre, London",
+      "title": "File:London Aquatics Centre - Olympic Park.jpg",
+      "width": 800,
+      "height": 512,
+      "modifications": "Resized and JPEG compressed for web display; any display crop uses the same image license.",
+      "url": "./assets/photos/aquatics.jpg"
+    }
   }
 ]

@@ -8,9 +8,9 @@ const city=JSON.parse(fs.readFileSync('dist/assets/city.json'));
 assert.equal(city.version,3);assert.equal(city.units,'meters');
 assert.equal(city.origin.lat,51.51);assert.equal(city.origin.lon,-.106);
 assert.deepEqual(city.geographicBounds,[-.17,51.47,.01,51.56]);
-assert.equal(city.landmarks.length,21);
+assert.equal(city.landmarks.length,27);
 for(const b of city.landmarks){
- assert(b.massCount>0);
+ assert(b.massCount>0);assert(b.photo?.author&&b.photo?.license&&b.photo?.sourceUrl);assert(fs.statSync('dist/'+b.photo.url.replace('./','')).size<200000);
  const records=city.buildings.filter(r=>r.lm===b.id);assert.equal(records.length,b.massCount);
  assert(fs.readFileSync(`dist/assets/rhino/${b.id}-rhino6.3dm`).subarray(0,32).toString().endsWith('60'));
  for(const r of records)for(const g of recordGeometry(r)){assert(g.attributes.position.array.every(Number.isFinite));g.dispose()}
@@ -22,7 +22,7 @@ assert.equal(city.landmarks.find(b=>b.id==='navalcollege').osmRefs.length,4);
 assert.equal(city.buildings.filter(r=>r.lm==='battersea'&&r.form==='tapered_chimney').length,4);
 assert.equal(city.landmarks.find(b=>b.id==='canadasquare').modelHeight,235);
 assert.equal(city.rhinoDownloads.length,8);
-const isokon=city.landmarks.find(b=>b.id==='isokon');assert(isokon?.massCount>0);
+const isokon=city.landmarks.find(b=>b.id==='isokon');assert(isokon?.massCount>70);for(const feature of ['gallery-slab','external-stair','penthouse','gallery-annex'])assert(city.buildings.some(r=>r.lm==='isokon'&&r.id.includes(feature)));
 assert(isokon.lat>51.55&&isokon.lon<-.16);
 let count=city.buildings.length,triangles=0,maxBytes=0,totalBytes=0;
 let packedBytes=0,packedDownloadBytes=0,maxError=0;
