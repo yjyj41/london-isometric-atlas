@@ -18,6 +18,8 @@ def polys(g):
  return [p for q in getattr(g,'geoms',[]) for p in polys(q)]
 def shape(e):
  try:
+  if e.get('atlas_polygons'):
+   return unary_union([Polygon([tr.transform(*p) for p in rings[0]],[[tr.transform(*p) for p in ring] for ring in rings[1:]]) for rings in e['atlas_polygons']]).intersection(clip)
   if e['type']=='way':
    p=points(e.get('geometry',[]))
    if len(p)<4 or math.dist(p[0],p[-1])>.5:return None
@@ -63,6 +65,28 @@ print('Parsed',len(building),'building elements',flush=True)
 bs=json.loads((ROOT/'landmarks.json').read_text(encoding='utf-8'))
 refs={'stpauls':('way',369161987),'shard':('way',31110737),'gherkin':('way',4959489),'tate':('way',24642569),'lloyds':('way',23988892),'westminster':('relation',1567699),'abbey':('way',364313092),'museum':('relation',177044)}
 zones={k:geoms[v] for k,v in refs.items() if v in geoms}
+matches_by_id={
+ 'battersea':['Battersea Power Station'],
+ 'peckham':['Peckham Library'],
+ 'laban':['Laban','Laban Dance Centre','Laban Building','Trinity Laban'],
+ 'canadasquare':['One Canada Square'],
+ 'crossrail':['Crossrail Place'],
+ 'navalcollege':['King Charles Court','Queen Anne Court','King William Court','Queen Mary Court'],
+ 'queenshouse':["Queen’s House","Queen's House"],
+ 'observatory':['Flamsteed House'],
+}
+for b in bs:
+ if b['id'] not in matches_by_id:continue
+ names=matches_by_id[b['id']];seed=Point(*tr.transform(b['lon'],b['lat']))
+ matched=[(e,p) for e,p in building if (e.get('tags',{}).get('name') in names or e.get('tags',{}).get('addr:housename') in names) and p.distance(seed)<600]
+ assert matched,f"Missing landmark footprint: {b['id']}"
+ zones[b['id']]=unary_union([p for _,p in matched]).buffer(.25)
+ main=max(matched,key=lambda ep:ep[1].area)
+ refs[b['id']]=(main[0]['type'],main[0]['id'])
+ # Use the mapped geometry for geographic placement, never a guessed seed.
+ inv=Transformer.from_crs(CRS.from_proj4(proj),'EPSG:4326',always_xy=True)
+ b['lon'],b['lat']=inv.transform(zones[b['id']].centroid.x,zones[b['id']].centroid.y)
+ b['osmRefs']=[f"{e['type']}/{e['id']}" for e,_ in matched]
 isokon=[(e,p) for e,p in building if 'isokon' in e.get('tags',{}).get('name','').lower() or 'lawn road flats' in e.get('tags',{}).get('name','').lower()]
 if any(b['id']=='isokon' for b in bs):
  assert isokon,'Isokon OSM footprint missing'

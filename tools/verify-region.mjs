@@ -1,12 +1,27 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
+import {recordGeometry} from '../dist/geometry.js';
 import {buildTileData} from '../dist/tile-geometry.js';
 import {gunzipSync} from 'node:zlib';
 import {decodeCityMesh} from '../dist/city-mesh.js';
 const city=JSON.parse(fs.readFileSync('dist/assets/city.json'));
 assert.equal(city.version,3);assert.equal(city.units,'meters');
 assert.equal(city.origin.lat,51.51);assert.equal(city.origin.lon,-.106);
-assert.deepEqual(city.geographicBounds,[-.17,51.496,-.0715,51.56]);
+assert.deepEqual(city.geographicBounds,[-.17,51.47,.01,51.56]);
+assert.equal(city.landmarks.length,21);
+for(const b of city.landmarks){
+ assert(b.massCount>0);
+ const records=city.buildings.filter(r=>r.lm===b.id);assert.equal(records.length,b.massCount);
+ assert(fs.readFileSync(`dist/assets/rhino/${b.id}-rhino6.3dm`).subarray(0,32).toString().endsWith('60'));
+ for(const r of records)for(const g of recordGeometry(r)){assert(g.attributes.position.array.every(Number.isFinite));g.dispose()}
+}
+for(const id of ['battersea','peckham','laban','canadasquare','crossrail','navalcollege','queenshouse','observatory']){
+ const b=city.landmarks.find(b=>b.id===id);assert(b.osmRefs.length>0);assert(b.lon>=-.17&&b.lon<=.01&&b.lat>=51.47&&b.lat<=51.56);
+}
+assert.equal(city.landmarks.find(b=>b.id==='navalcollege').osmRefs.length,4);
+assert.equal(city.buildings.filter(r=>r.lm==='battersea'&&r.form==='tapered_chimney').length,4);
+assert.equal(city.landmarks.find(b=>b.id==='canadasquare').modelHeight,235);
+assert.equal(city.rhinoDownloads.length,8);
 const isokon=city.landmarks.find(b=>b.id==='isokon');assert(isokon?.massCount>0);
 assert(isokon.lat>51.55&&isokon.lon<-.16);
 let count=city.buildings.length,triangles=0,maxBytes=0,totalBytes=0;
@@ -48,8 +63,8 @@ for(const tile of city.tiles){
  }
  maxBytes=Math.max(maxBytes,bytes);totalBytes+=bytes;
 }
-assert.equal(count,city.stats.masses);assert.equal(city.tiles.length,110);
-assert(packedBytes<40*1024*1024,'Entire real city must fit even the mobile geometry budget');
+assert.equal(count,city.stats.masses);assert.equal(city.tiles.length,city.stats.tiles);
+assert(packedBytes<96*1024*1024,'Entire real city must fit even the mobile geometry budget');
 assert.equal(packedBytes,city.stats.meshGeometryBytes);
 assert.equal(city.rhinoDownloads.reduce((n,d)=>n+d.masses,0),count);
 for(const file of city.rhinoDownloads){const path='dist/'+file.url.replace('./','');assert(fs.existsSync(path));assert(fs.statSync(path).size<25*1024*1024)}

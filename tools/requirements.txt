@@ -1,3 +1,4 @@
 rhino3dm==8.35.0
 shapely==2.1.2
 pyproj==3.8.0
+osmium==4.3.1

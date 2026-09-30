@@ -1,0 +1,19 @@
+{
+  "source": "OpenStreetMap / Geofabrik",
+  "url": "https://download.geofabrik.de/europe/united-kingdom/england/greater-london.html",
+  "snapshot": "2026-09-29T20:22:51Z",
+  "bbox": [
+    -0.17,
+    51.47,
+    0.01,
+    51.56
+  ],
+  "pbfSha256": "b49aae3e028c250cff2cc10e1b2305a075da5604f887a884c1de03b95d548e27",
+  "preservedExistingBuildingElements": 68883,
+  "extractedElements": 198935,
+  "invalidSourceAreasSkipped": [
+    19001769
+  ],
+  "license": "ODbL 1.0",
+  "landmarkProfiles": "OSM footprint/parts and sourced approximate profiles; see modelNote/source per landmark"
+}

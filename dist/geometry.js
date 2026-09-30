@@ -35,7 +35,11 @@ function slopedRoof(ring,base,height,dir) {
 }
 export function recordGeometry(r) {
   const parts=[];
-  if(r.form==='shard'){
+  if(r.mesh){
+    const g=new T.BufferGeometry();g.setAttribute('position',new T.Float32BufferAttribute(r.mesh,3));parts.push(g);
+  } else if(r.form==='tapered_chimney'){
+    parts.push(loft(r.r[0],[[r.z,1],[r.h,.72]]));
+  } else if(r.form==='shard'){
     parts.push(loft(r.r[0],[[0,1],[r.h*.65,.38],[r.h*.93,.08],[r.h,.002]]));
   } else if(r.form==='gherkin'){
     const xs=r.r[0].map(p=>p[0]),ys=r.r[0].map(p=>p[1]),cx=(Math.max(...xs)+Math.min(...xs))/2,cy=(Math.max(...ys)+Math.min(...ys))/2;

@@ -66,3 +66,15 @@ node tools/pack-city.mjs는 JSON 타일에서 공유 recordGeometry로 기하를
 기하 변경 후: node tools/pack-city.mjs → node tools/verify-region.mjs. JSON 타일은 그대로 편집용 원본이며 압축 웹 메시로 Rhino 원본을 덮어쓰지 마세요. GitHub에서도 dist/assets/meshes/는 일반 소스로 추적하므로 bootstrap ZIP을 갱신할 필요 없이 새 클론에 포함됩니다.
 
 템스강 누락도 복구했습니다. OSM bbox API가 multipolygon의 원거리 member를 누락해 강 폴리곤이 닫히지 않았습니다. relation/28934/full 및 relation/70347/full로 실제 강 윤곽을 완성했습니다. tools/water-surfaces.json에 투영된 원본을 보존하고 build-city.py가 재생성 시 병합합니다. 전체 데이터 ZIP에도 반영, Millennium Bridge 아래 수면 존재를 검증합니다. 물과 지면만 수정해 Rhino 건물 메시에는 변경이 없습니다.
+
+
+## 2026-09-30 — 동·남부 확장 / 현재 구현
+이 절이 위의 범위·개수·성능 수치를 대체합니다. 사용자가 승인한 Canary Wharf, Greenwich, Bermondsey, Peckham까지 확장했습니다. 경계 [-0.17,51.47,0.01,51.56], 약 12.51 × 10.02 km, 151,248개 매스, 238개 타일. 기존 중심부/북서쪽 건물 원본을 유지하고 Geofabrik Greater London 2026-09-29 추출로 동·남부를 채웠습니다. 실제 강·도크·공원·도로와 완성된 multipolygon을 사용합니다. 무작위 배치/대표 박스 없음.
+
+새 랜드마크 8곳(총 21): Battersea Power Station, Peckham Library, Laban Dance Centre, One Canada Square, Crossrail Place, Old Royal Naval College, Queen’s House, Royal Observatory / Flamsteed House. 원 캐나다 스퀘어의 235 m 높이·25 m 피라미드, 배터시 네 굴뚝, 페컴 상부 열람실·지붕 부재, 해군대학 중정·돔은 OSM 부재 기반입니다. 크로스레일 곡면 지붕과 페컴의 경사 기둥은 실제 평면 위 개략 형상이며 카드에 명시했습니다. 지형은 여전히 평면입니다.
+
+초기 색인 약 1.50 MB, 전체 주변 메시 다운로드 33.22 MB, GPU 기하 버퍼 69.48 MB(전체 RAM 아님). 128 MiB desktop / 96 MiB mobile 상한 안에 전체 문맥 기하가 들어갑니다. 두 타일씩 화면 영역을 로드하고 화면 밖은 해제. 전체 3,253,092개 주변 삼각형의 source vertex 비교 최대 오차 0.007161 m. 원점, 드래그 방향, 실제 평면과 높이는 유지했습니다.
+
+Rhino 6/7: 여덟 지역 ZIP(6.5–13.0 MB), 21개 개별 모델. 지역들은 같은 도시 원점, 개별 건물은 각 anchor 원점. 지역 파일의 비압축 용량 합은 약 266 MB이고 전체 도시 삼각형도 웹 300만 제한을 넘으므로 전체를 합친 뒤 재불러올 때 ReduceMesh 필요. 지역 하나를 도시 대상으로 불러오면 그 지역만 표시하는 기존 동작입니다. 개별 모델은 브라우저 로컬 IndexedDB 저장입니다.
+
+현재 재생성 순서는 README.md 참조. detail-landmarks.py를 tile-city.py보다 먼저 실행해야 합니다. Geofabrik 원본·기존 raw snapshot은 ignored files; 일반 UI/모델 편집은 커밋된 JSON/메시와 city-data.zip만 사용합니다. JSON 타일과 압축 메시의 버전을 함께 갱신하세요. GitHub의 bootstrap.py는 새 동·남부 번들 우선 복구 및 이전 번들과 일치하는 생성 파일 업그레이드를 지원합니다. 사용자 수정 파일은 보존하고 충돌을 알립니다.
