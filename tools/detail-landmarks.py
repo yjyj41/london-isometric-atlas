@@ -78,12 +78,16 @@ notes['queenshouse']='실제 OSM 평면·분절을 사용한 고전주의 매스
 notes['observatory']='Flamsteed House의 실제 평면과 OSM 지붕·부재를 사용했습니다. 미기재 높이는 추정이며 언덕의 지형 고도는 반영하지 않습니다.'
 from curated_details import enrich
 enrich(city,volume,raw)
+from station_details import enrich_stations
+enrich_stations(city,volume,raw)
+english=json.loads((ROOT/'english-content.json').read_text(encoding='utf8'))
 for b in city['landmarks']:
  b['massCount']=sum(r.get('lm')==b['id'] for r in city['buildings'])
  b['confidence']={c:sum(r.get('lm')==b['id'] and r['c']==c for r in city['buildings']) for c in ['height','levels','assumed']}
  if b['id'] in notes:b['modelNote']=notes[b['id']];b['modelSource']='OSM footprint and mapped parts; reference-informed approximate mass profile'
  b['modelHeight']=max(r['h'] for r in city['buildings'] if r.get('lm')==b['id'])
  b['height']=b['modelHeight']
+ b.update(english[b['id']]);b.pop('ko',None)
 city['stats']['masses']=len(city['buildings'])
 city['stats']['heights']={c:sum(r['c']==c for r in city['buildings']) for c in ['height','levels','assumed']}
 path.write_text(json.dumps(city,separators=(',',':'),ensure_ascii=False),encoding='utf8')

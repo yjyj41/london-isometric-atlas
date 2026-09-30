@@ -8,14 +8,14 @@ const city=JSON.parse(fs.readFileSync('dist/assets/city.json'));
 assert.equal(city.version,3);assert.equal(city.units,'meters');
 assert.equal(city.origin.lat,51.51);assert.equal(city.origin.lon,-.106);
 assert.deepEqual(city.geographicBounds,[-.17,51.47,.01,51.56]);
-assert.equal(city.landmarks.length,27);
+assert.equal(city.landmarks.length,33);
 for(const b of city.landmarks){
  assert(b.massCount>0);assert(b.photo?.author&&b.photo?.license&&b.photo?.sourceUrl);assert(fs.statSync('dist/'+b.photo.url.replace('./','')).size<200000);
  const records=city.buildings.filter(r=>r.lm===b.id);assert.equal(records.length,b.massCount);
  assert(fs.readFileSync(`dist/assets/rhino/${b.id}-rhino6.3dm`).subarray(0,32).toString().endsWith('60'));
  for(const r of records)for(const g of recordGeometry(r)){assert(g.attributes.position.array.every(Number.isFinite));g.dispose()}
 }
-for(const id of ['battersea','peckham','laban','canadasquare','crossrail','navalcollege','queenshouse','observatory']){
+for(const id of ['battersea','peckham','laban','canadasquare','crossrail','navalcollege','queenshouse','observatory','stpancras','kingscross','senatehouse','somerset','bloomberg']){
  const b=city.landmarks.find(b=>b.id===id);assert(b.osmRefs.length>0);assert(b.lon>=-.17&&b.lon<=.01&&b.lat>=51.47&&b.lat<=51.56);
 }
 assert.equal(city.landmarks.find(b=>b.id==='navalcollege').osmRefs.length,4);

@@ -85,3 +85,8 @@ Rhino 6/7: 여덟 지역 ZIP(6.5–13.0 MB), 21개 개별 모델. 지역들은 �
 추가 6곳: National Theatre, Royal Festival Hall, Hayward Gallery, British Library, Coal Drops Yard, London Aquatics Centre. tools/curated_details.py는 detail-landmarks.py 내부에서 실행됩니다. 후자의 입력은 build-city.py의 v2 전체 자료여야 합니다.
 모든 27개 카드에 실제 외관 사진·작가·라이선스·출처 링크. dist/assets/photos에 자체 호스팅, tools/landmarks.json의 photo 메타데이터를 보존할 것. 사진 총 약 2.4 MB, 각 200 KB 미만, 선택 시에만 불러옵니다. 자료 사진의 시점이 현재 건물 상태와 다를 수 있습니다.
 238개 실제 윤곽 타일, 전체 주변 3,251,896 triangles / 다운로드 33.21 MB / GPU 기하 69.46 MB. 초기 색인 약 2.32 MB. 세부 모델을 위해 최대 확대 400으로 확장, 드래그·고정 카메라는 유지. 27개 개별 및 8개 지역 Rhino6 파일 갱신. GitHub의 새 landmark-detail 번들을 기존 번들보다 우선 복구하며 기존 번들은 안전한 사용자 편집 판별을 위해 유지합니다.
+
+
+## 2026-09-30 — English edition / 33 landmarks (current)
+The user intends to develop a web service and requested English throughout, plus more major buildings. All visible UI, dialogs, accessible names, 33 descriptions, model notes and photo captions are English. The Site audience remains owner-private. Added St Pancras International, King's Cross Station, Senate House, Somerset House, National Gallery and Bloomberg European Headquarters, with photos, selection labels and Rhino 6/7 files.
+151,426 model parts, 238 tiles, 3,248,564 context triangles. Initial manifest about 3.96 MB, context download 33.18 MB, context GPU geometry 69.38 MB. Old 27 landmark geometries are identical to the preceding release. Keep English content in tools/english-content.json and tools/landmarks.json; detail-landmarks.py applies the English overrides after procedural notes. New approximate profiles live in tools/station_details.py. Run verify-english.mjs and verify-region.mjs after changes.

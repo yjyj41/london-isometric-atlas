@@ -1,23 +1,23 @@
 {
-  "masses": 151407,
+  "masses": 151426,
   "heights": {
-    "height": 5143,
-    "levels": 60524,
-    "assumed": 85740
+    "height": 5161,
+    "levels": 60523,
+    "assumed": 85742
   },
   "tiles": 238,
   "tileSize": 750,
   "overviewMasses": 0,
-  "detailBytes": 31988015,
+  "detailBytes": 31968332,
   "maxTileBytes": 374712,
-  "initialBytes": 2315114,
-  "initialGzipBytes": 513978,
+  "initialBytes": 3960942,
+  "initialGzipBytes": 637274,
   "extentKm": [
     12.5075,
     10.017700000000001
   ],
-  "meshBytes": 33208425,
-  "meshGeometryBytes": 69458127,
-  "meshTriangles": 3251896,
+  "meshBytes": 33175828,
+  "meshGeometryBytes": 69383865,
+  "meshTriangles": 3248564,
   "maxPositionErrorM": 0.007160979626178232
 }

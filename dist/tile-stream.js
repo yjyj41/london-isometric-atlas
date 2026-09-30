@@ -11,9 +11,9 @@ export function createTileStream(city,context,mats,changed){
  function status(){
   const loaded=[...wanted].filter(id=>entries.has(id)),errors=[...wanted].filter(id=>failed.has(id));
   const count=loaded.reduce((n,id)=>n+tiles.get(id).masses,0);
-  badge.textContent=!enabled?'주변 매스 숨김':errors.length?'일부 지역 로딩 실패 · 눌러서 재시도':loaded.length<wanted.size?`실제 윤곽·도로 · ${loaded.length}/${wanted.size} 지역 불러오는 중…`:`실제 윤곽·도로 · ${count.toLocaleString()}개 주변 매스`;
+  badge.textContent=!enabled?'Surroundings hidden':errors.length?'Some areas failed to load · Select to retry':loaded.length<wanted.size?`Buildings & streets · ${loaded.length}/${wanted.size} areas loading…`:`Buildings & streets · ${count.toLocaleString('en-GB')} surrounding parts`;
   Object.assign(badge.dataset,{mode:!enabled?'hidden':errors.length?'error':loaded.length<wanted.size?'loading':'exact',loadedTiles:entries.size,visibleTiles:loaded.length,wantedTiles:wanted.size,geometryBytes:totalBytes,downloadedBytes,activeRequests:running});
-  badge.title='모든 확대 단계에서 실제 건물 평면과 도로를 표시합니다. 화면에서 멀어진 지역은 메모리에서 해제합니다.';
+  badge.title='Actual footprints and streets at every zoom level. Areas off screen are released from memory.';
  }
  async function load(tile){
   const controller=new AbortController();pending.set(tile.id,controller);running++;status();

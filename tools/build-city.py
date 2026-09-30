@@ -64,8 +64,14 @@ for e in elements:
 print('Parsed',len(building),'building elements',flush=True)
 bs=json.loads((ROOT/'landmarks.json').read_text(encoding='utf-8'))
 refs={'stpauls':('way',369161987),'shard':('way',31110737),'gherkin':('way',4959489),'tate':('way',24642569),'lloyds':('way',23988892),'westminster':('relation',1567699),'abbey':('way',364313092),'museum':('relation',177044)}
+refs['nationalgallery']=('way',1387097848)
 zones={k:geoms[v] for k,v in refs.items() if v in geoms}
 matches_by_id={
+ 'stpancras':['St Pancras International Station','St Pancras Renaissance London Hotel'],
+ 'kingscross':["London King's Cross Railway Station","London King's Cross (main station building)"],
+ 'senatehouse':['Senate House'],
+ 'somerset':['Somerset House'],
+ 'bloomberg':['Bloomberg Headquarters'],
  'nationaltheatre':['National Theatre'],
  'festivalhall':['Royal Festival Hall'],
  'hayward':['Hayward Gallery'],

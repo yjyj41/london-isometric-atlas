@@ -36,12 +36,12 @@ export async function createAtlas(city,onSelect) {
  const batches={height:[],levels:[],assumed:[]},landmarkBatches=new Map(city.landmarks.map(b=>[b.id,[]]));
  for(let i=0;i<city.buildings.length;i++){
   const r=city.buildings[i],gs=recordGeometry(r);(r.lm?landmarkBatches.get(r.lm):batches[r.c]).push(...gs);
-  if(i%500===0){$('#loading').textContent=`실제 건물 매스 구성 중 · ${Math.round(i/city.buildings.length*100)}%`;await new Promise(resolve=>setTimeout(resolve,0))}
+  if(i%500===0){$('#loading').textContent=`Preparing building models · ${Math.round(i/city.buildings.length*100)}%`;await new Promise(resolve=>setTimeout(resolve,0))}
  }
  function mergedMesh(gs,mat,id){if(!gs.length)return new T.Group();const m=new T.Mesh(mergeGeometries(gs),mat);m.name=id;m.userData.id=id;m.castShadow=true;m.receiveShadow=true;gs.forEach(g=>g.dispose());return m}
  for(const c of Object.keys(batches))context.add(mergedMesh(batches[c],mats[c],'context'));
  for(const b of city.landmarks){const g=mergedMesh(landmarkBatches.get(b.id),landmarkMat,b.id);scene.add(g);original.set(b.id,g);
-  const el=document.createElement('button');el.className='marker';el.dataset.id=b.id;el.setAttribute('aria-label',b.name+' 선택');
+  const el=document.createElement('button');el.className='marker';el.dataset.id=b.id;el.setAttribute('aria-label','Select '+b.name);
   el.innerHTML=`<span class="pin">${String(city.landmarks.indexOf(b)+1).padStart(2,'0')}</span><span class="marker-name">${b.name}</span>`;
   el.onclick=()=>onSelect(b.id);$('#markers').append(el);markers.set(b.id,el);
  }
@@ -134,7 +134,7 @@ export async function prepareRhino(buffer,unitOverride='auto'){
  const decoded=await new Promise((resolve,reject)=>loader.parse(buffer,resolve,reject));
  const unit=decoded.userData.settings?.modelUnitSystem,value=typeof unit==='object'?unit.value:unit;
  const units={1:1e-6,2:.001,3:.01,4:1,5:1000,8:.0254,9:.3048};const factor=unitOverride==='auto'?units[value]:Number(unitOverride);
- if(!factor)throw new Error('파일 단위를 읽을 수 없습니다. 미터 또는 밀리미터를 직접 선택하세요.');
+ if(!factor)throw new Error('Unable to read file units. Select metres or millimetres manually.');
  const root=new T.Group(),axis=new T.Matrix4().makeRotationX(-Math.PI/2).multiply(new T.Matrix4().makeScale(factor,factor,factor));
  decoded.updateMatrixWorld(true);let triangles=0;
  decoded.traverse(obj=>{
@@ -143,9 +143,9 @@ export async function prepareRhino(buffer,unitOverride='auto'){
   const m=new T.Mesh(geo);const name=obj.userData.attributes?.name||obj.name||'';m.name=name;m.userData.id=/^LM:([^|]+)/.exec(name)?.[1]||'context';root.add(m);
  });
  const box=new T.Box3().setFromObject(root),size=box.getSize(new T.Vector3());
- if(root.children.length===0)throw new Error('표시 가능한 메시가 없습니다. Rhino에서 Mesh 명령으로 변환하거나 렌더 메시를 포함해 저장하세요.');
- if(triangles>3000000)throw new Error('메시가 너무 복잡합니다. Rhino의 ReduceMesh로 300만 삼각형 이하로 줄여 주세요.');
- if(![box.min.x,box.min.y,box.min.z,box.max.x,box.max.y,box.max.z].every(Number.isFinite)||Math.max(size.x,size.y,size.z)>25000)throw new Error('크기가 25 km를 넘거나 좌표가 잘못되었습니다. 파일 단위와 원점을 확인하세요.');
+ if(root.children.length===0)throw new Error('No displayable meshes found. Use Mesh in Rhino or include render meshes when saving.');
+ if(triangles>3000000)throw new Error('This model is too complex. Use ReduceMesh in Rhino to bring it below 3 million triangles.');
+ if(![box.min.x,box.min.y,box.min.z,box.max.x,box.max.y,box.max.z].every(Number.isFinite)||Math.max(size.x,size.y,size.z)>25000)throw new Error('The model exceeds 25 km or has invalid coordinates. Check its units and origin.');
  const warnings=(decoded.userData.warnings||[]).length;
  decoded.traverse(o=>{o.geometry?.dispose();if(o.material)for(const m of Array.isArray(o.material)?o.material:[o.material])m.dispose()});
  return {root,size:{east:size.x,north:size.z,height:size.y},bounds:box,triangles,objects:root.children.length,factor,warnings};

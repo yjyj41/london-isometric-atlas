@@ -5,7 +5,7 @@ sys.path.insert(0,str(ROOT/'python-libs'))
 import rhino3dm as r
 city=json.loads((ROOT/'city-full.json').read_text(encoding='utf-8'))
 out=project/'dist/assets/rhino';out.mkdir(exist_ok=True)
-names={'southwest':'남서 · Battersea / Westminster','southcentral':'남중앙 · South Bank / Borough','southeast':'남동 · Bermondsey / Peckham','greenwich':'동남 끝 · Canary Wharf / Greenwich','northwest':'북서 · Isokon / Belsize Park','northcentral':'북중앙 · Islington / Clerkenwell','northeast':'북동 · Hackney / Stepney','bow':'동북 끝 · Bow / Old Ford'}
+names={'southwest':'Southwest · Battersea / Westminster','southcentral':'South Central · South Bank / Borough','southeast':'Southeast · Bermondsey / Peckham','greenwich':'Greenwich · Canary Wharf / Greenwich','northwest':'Northwest · Isokon / Belsize Park','northcentral':'North Central · Islington / Clerkenwell','northeast':'Northeast · Hackney / Stepney','bow':'Bow · Bow / Old Ford'}
 files={k:r.File3dm() for k in list(names)+[b['id'] for b in city['landmarks']]}
 anchors={b['id']:b['anchor'] for b in city['landmarks']}
 for f in files.values():

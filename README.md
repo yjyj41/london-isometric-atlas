@@ -1,14 +1,14 @@
 # London Field Atlas
 
-Actual London footprints, streets and landmark masses in metres, with a fixed orthographic isometric camera. Coverage: 12.51 × 10.02 km, 151,407 masses, 27 landmarks from Isokon to Greenwich, including Canary Wharf, Bermondsey, Peckham and Battersea.
+Actual London footprints, streets and landmark masses in metres, with a fixed orthographic isometric camera. Coverage: 12.51 × 10.02 km, 151,426 masses, 33 landmarks from Isokon to Greenwich, including Canary Wharf, Bermondsey, Peckham and Battersea.
 
 Run `node serve.cjs`. Source is `dist/`; no frontend build or npm install. Start at central London, use the full-map control to include the entire expanded extent, or select a landmark.
 
 ## Geometry and performance
 
-All zoom levels preserve the original building shapes, courtyards, roads, positions and heights. No representative boxes or invented buildings. The 238 spatial tiles contain packed exact mesh triangles. The initial manifest is 2.32 MB; all surrounding meshes total 33.21 MB compressed and 69.46 MB in GPU geometry buffers. Only visible regions load, two at a time, and offscreen geometry is disposed. Geometry budget: 128 MiB desktop / 96 MiB mobile, excluding landmarks, ground and other browser memory.
+All zoom levels preserve the original building shapes, courtyards, roads, positions and heights. No representative boxes or invented buildings. The 238 spatial tiles contain packed exact mesh triangles. The initial manifest is 3.96 MB; all surrounding meshes total 33.18 MB compressed and 69.38 MB in GPU geometry buffers. Only visible regions load, two at a time, and offscreen geometry is disposed. Geometry budget: 128 MiB desktop / 96 MiB mobile, excluding landmarks, ground and other browser memory.
 
-After geometry changes run `node tools/pack-city.mjs`, then `node tools/verify-region.mjs`. Verification compares every packed triangle vertex with source geometry (maximum error under 1 cm), all 151,407 records and Rhino headers. Keep JSON tiles as editable source; packed assets are generated output.
+After geometry changes run `node tools/pack-city.mjs`, then `node tools/verify-region.mjs`. Verification compares every packed triangle vertex with source geometry (maximum error under 1 cm), all 151,426 records and Rhino headers. Keep JSON tiles as editable source; packed assets are generated output.
 
 ## Rhino editing
 
@@ -37,11 +37,20 @@ node tools/verify-region.mjs
 
 The extractor uses the cached dated Geofabrik PBF or downloads that snapshot if missing. Raw snapshots are ignored and are not required to run or edit the website; do not rerun legacy fetch-region.py or fetch-osm.py over the expanded data. The complete editable generated data are in dist/assets/city-data.zip. Install osmium only when rebuilding geographic source data.
 
-The full context has 3,251,896 triangles. A merged Rhino city exceeds the browser’s 100 MB / 3 million triangle import limit; use regional/individual editing or ReduceMesh before reimport. The regional model files total about 266 MB uncompressed. Initial map data are ~2.32 MB before HTTP compression; 33.21 MB is the sum of all context tile downloads, not an initial-load requirement. GPU buffer figures exclude landmark meshes, terrain, textures, driver and CPU overhead. Performance depends on device/network; geometry remains exact at every zoom.
+The full context has 3,248,564 triangles. A merged Rhino city exceeds the browser’s 100 MB / 3 million triangle import limit; use regional/individual editing or ReduceMesh before reimport. The regional model files total about 266 MB uncompressed. Initial map data are ~3.96 MB before HTTP compression; 33.18 MB is the sum of all context tile downloads, not an initial-load requirement. GPU buffer figures exclude landmark meshes, terrain, textures, driver and CPU overhead. Performance depends on device/network; geometry remains exact at every zoom.
 
 
 ## Landmark detail and photographs (2026-09-30)
 
-All 27 cards show a local, compressed exterior photograph above the description, with author, source and license links. Images are loaded only when that card is selected. Combined photo assets are about 2.4 MB; each image is under 200 KB. The individual image licenses and adaptation notes are embedded in tools/landmarks.json and city.json. Photographs are reference views and may show earlier conditions.
+All 33 cards show a local, compressed exterior photograph above the description, with author, source and license links. Images are loaded only when that card is selected. Combined photo assets are about 2.4 MB; each image is under 200 KB. The individual image licenses and adaptation notes are embedded in tools/landmarks.json and city.json. Photographs are reference views and may show earlier conditions.
 
-Six additions: National Theatre, Royal Festival Hall, Hayward Gallery, British Library, Coal Drops Yard and London Aquatics Centre. OSM parts preserve the National Theatre terraces and Festival Hall volumes. The 66 Hayward rooflights, Library roofs, Coal Drops lifted roofs, Aquatics curved shell and Isokon details use explicit approximate profiles in tools/curated_details.py, called by detail-landmarks.py. Cards distinguish these from measured models. Isokon has gallery slabs, parapets, exterior stair flights, rear balconies, the penthouse and gallery annex. All 27 individual Rhino files and eight regional models share the same browser geometry. Close zoom now supports inspecting small architectural details.
+Six additions: National Theatre, Royal Festival Hall, Hayward Gallery, British Library, Coal Drops Yard and London Aquatics Centre. OSM parts preserve the National Theatre terraces and Festival Hall volumes. The 66 Hayward rooflights, Library roofs, Coal Drops lifted roofs, Aquatics curved shell and Isokon details use explicit approximate profiles in tools/curated_details.py, called by detail-landmarks.py. Cards distinguish these from measured models. Isokon has gallery slabs, parapets, exterior stair flights, rear balconies, the penthouse and gallery annex. All 33 individual Rhino files and eight regional models share the same browser geometry. Close zoom now supports inspecting small architectural details.
+
+
+## English edition and six further landmarks (2026-09-30)
+
+The complete interface, all 33 building cards, loading/error messages, accessibility labels and Rhino instructions are English (en-GB). English subtitles identify locations rather than repeat building names. Run node tools/verify-english.mjs after content edits. tools/english-content.json preserves English descriptions during geometry regeneration.
+
+Six further landmarks: St Pancras International, King's Cross Station, Senate House, Somerset House, National Gallery and Bloomberg European Headquarters. Actual mapped footprints and parts are retained; roof profiles for the two stations and Somerset House are schematic and disclosed in the cards. National Gallery's mapped dome and Senate House's tower setbacks use original parts. All six include licensed photographs and Rhino 6 downloads. The previous 27 landmark geometries were compared with the preceding version and remain identical.
+
+Current initial manifest: about 3.96 MB (about 0.64 MB gzip before regional download metadata); context meshes: 33.18 MB compressed and 69.38 MB GPU geometry. Photographs load only on selection. This release changes content and models, not the Site audience or local-only storage of imported models.
