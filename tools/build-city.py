@@ -132,6 +132,13 @@ for b in bs:
  if b['id']=='millennium':b['modelNote']='OSM 보행 경로 중심선에 폭 4 m, 데크 레벨 10 m를 가정한 매스입니다.'
  if b['id']=='isokon':b['modelNote']='실제 OSM 건물 윤곽을 사용한 개략 매스입니다. 높이 태그가 없어 12 m를 가정했습니다. 갤러리·발코니·상부 후퇴부는 단순화했습니다.'
 print('Landmarks',[(b['id'],b['massCount'],b['modelHeight']) for b in bs],flush=True)
+# The bbox endpoint omits distant members needed to close Thames multipolygons.
+# Preserve the completed source surfaces fetched by repair-water.py.
+water_source=ROOT/'water-surfaces.json'
+if water_source.exists():
+ complete=json.loads(water_source.read_text(encoding='utf-8'))
+ assert complete['origin']['crs']==proj
+ water.extend(Polygon(p[0],p[1:]).intersection(clip) for p in complete['water'])
 water=polys(unary_union(water));parks=polys(unary_union(parks))
 result={'version':2,'units':'meters','origin':{'lat':51.51,'lon':-.106,'crs':proj,'axes':'X east, Y north, Z up'},'bounds':[round(v,1) for v in clip.bounds],'attribution':'© OpenStreetMap contributors · ODbL 1.0','date':raw.get('downloaded','2026-09-21'),'geographicBounds':[west,south,east,north],'buildings':records,'water':[coords(p.simplify(.3)) for p in water if p.area>20],'parks':[coords(p.simplify(.5)) for p in parks if p.area>50],'roads':roads,'landmarks':bs,'stats':{'masses':len(records),'heights':sources}}
 OUT.mkdir(exist_ok=True)

@@ -19,3 +19,9 @@ tools/city-full.json
 
 !dist/assets/city.json
 tools/city-full.json
+
+# Exact geographic mesh tiles, small enough to track individually.
+!dist/assets/meshes/
+
+# Corrected geographic data overrides the original bootstrap archive.
+!dist/assets/city-data.zip

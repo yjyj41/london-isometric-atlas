@@ -68,7 +68,9 @@ export async function createAtlas(city,onSelect) {
  }
  function reset(){zoom=1;target.set((xmin+xmax)/2,0,-(ymin+ymax)/2);sync()}
  function resize(){width=host.clientWidth;height=host.clientHeight;renderer.setSize(width,height);view=Math.max(3000,((xmax-xmin)+(ymax-ymin))*.707/(width/height)*1.12);sync()}
- new ResizeObserver(resize).observe(host);resize();reset();
+ new ResizeObserver(resize).observe(host);resize();
+ // Start at a readable central-London scale. The full-map control includes Isokon.
+ target.set(-250,0,120);zoom=T.MathUtils.clamp(view/2200,.55,120);sync();
  function setZoom(f){zoom=T.MathUtils.clamp(zoom*f,.55,120);sync()}
  function select(id,focus=true){active=id;const bb=objectBounds(id);boxHelper.box.copy(bb);boxHelper.visible=!bb.isEmpty();
   if(focus&&!bb.isEmpty()){

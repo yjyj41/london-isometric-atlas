@@ -1,99 +1,56 @@
 import * as T from './vendor/three.module.js';
+import {decodeCityMesh} from './city-mesh.js';
 
 export function createTileStream(city,context,mats,changed){
- const small=matchMedia('(max-width:700px)').matches;
- const maxTiles=small?10:20,maxBytes=(small?24:48)*1024*1024;
+ const maxBytes=(matchMedia('(max-width:700px)').matches?40:48)*1024*1024;
  const badge=document.querySelector('#stream-status'),entries=new Map(),pending=new Map(),failed=new Map();
- const wanted=new Set(),deferred=new Set();let revision=0,running=0,timer,enabled=true,detail=false,totalBytes=0,downloadedBytes=0;
+ const tiles=new Map(city.tiles.map(t=>[t.id,t])),wanted=new Set();
  const roadMat=new T.MeshStandardMaterial({color:0xf0f2f1,roughness:.92,side:T.DoubleSide});
- const box=new T.BoxGeometry(1,1,1),matrix=new T.Matrix4();
- const overview=new Map();
- for(const tile of city.tiles||[]){
-  const root=new T.Group();
-  for(const kind of ['height','levels','assumed']){
-   const records=tile.overview.filter(r=>r[6]===kind);if(!records.length)continue;
-   const mesh=new T.InstancedMesh(box,mats[kind],records.length);
-   records.forEach(([x,y,w,d,h,z],i)=>{matrix.makeScale(Math.max(1,w),Math.max(.1,h-z),Math.max(1,d));matrix.setPosition(x,(h+z)/2,-y);mesh.setMatrixAt(i,matrix)});
-   mesh.instanceMatrix.needsUpdate=true;mesh.computeBoundingSphere();root.add(mesh);
-  }
-  context.add(root);overview.set(tile.id,root);
- }
- let worker=null,workerBroken=false,workerBusy=false;
- const workerTasks=new Map();let taskNo=0;
- try{
-  worker=new Worker(new URL('./tile-worker.js',import.meta.url),{type:'module'});
-  worker.onmessage=({data})=>{const task=workerTasks.get(data.id);if(!task)return;workerTasks.delete(data.id);workerBusy=false;data.error?task.reject(Error(data.error)):task.resolve(data.batches)};
-  worker.onerror=()=>{workerBroken=true;worker?.terminate();worker=null;workerBusy=false;for(const task of workerTasks.values())task.reject(Error('Worker unavailable'));workerTasks.clear()};
- }catch{workerBroken=true}
- async function build(records){
-  if(worker&&!workerBroken){
-   // One geometry worker limits peak CPU/memory, while two requests may download.
-   while(workerBusy)await new Promise(r=>setTimeout(r,16));
-   if(worker&&!workerBroken){workerBusy=true;const id=++taskNo;
-    try{return await new Promise((resolve,reject)=>{workerTasks.set(id,{resolve,reject});worker.postMessage({id,records})})}
-    catch{workerBroken=true;worker?.terminate();worker=null;workerBusy=false}
-   }
-  }
-  const {buildTileData}=await import('./tile-geometry.js');return buildTileData(records,true);
- }
+ let enabled=true,running=0,totalBytes=0,downloadedBytes=0,timer;
  function dispose(entry){context.remove(entry.root);entry.root.traverse(o=>o.geometry?.dispose());totalBytes-=entry.bytes;entries.delete(entry.id)}
- function trim(){
-  for(const e of [...entries.values()].sort((a,b)=>a.used-b.used)){
-   if(totalBytes<=maxBytes&&entries.size<=maxTiles)break;
-   // The overview remains available if the GPU budget is exhausted.
-   if(wanted.has(e.id)&&entries.size===1)break;
-   overview.get(e.id).visible=true;if(wanted.has(e.id))deferred.add(e.id);dispose(e);
-  }
- }
- function updateStatus(){
-  const visible=[...entries.values()].filter(e=>e.root.visible).length;
-  const errors=[...wanted].filter(id=>failed.has(id)).length;
-  badge.textContent=!enabled?'주변 매스 숨김':errors?'일부 지역 로딩 실패 · 눌러서 재시도':detail?`상세 매스 · ${visible}/${wanted.size} 지역${running?' 불러오는 중…':deferred.size?' · 나머지는 단순화 표시':''}`:'전체 보기 · 단순화 매스 · 확대하면 상세 표시';
-  badge.dataset.mode=!enabled?'hidden':errors?'error':detail?'detail':'overview';
-  // Readable diagnostics help validate the real geometry budget without retaining raw records.
-  badge.dataset.loadedTiles=entries.size;badge.dataset.visibleTiles=visible;badge.dataset.geometryBytes=totalBytes;badge.dataset.downloadedBytes=downloadedBytes;badge.dataset.activeRequests=running;
-  badge.title=errors?'클릭하면 실패한 지역을 다시 불러옵니다.':'확대할 때 필요한 지역을 불러오고, 멀어진 지역은 메모리에서 해제합니다.';
+ function status(){
+  const loaded=[...wanted].filter(id=>entries.has(id)),errors=[...wanted].filter(id=>failed.has(id));
+  const count=loaded.reduce((n,id)=>n+tiles.get(id).masses,0);
+  badge.textContent=!enabled?'주변 매스 숨김':errors.length?'일부 지역 로딩 실패 · 눌러서 재시도':loaded.length<wanted.size?`실제 윤곽·도로 · ${loaded.length}/${wanted.size} 지역 불러오는 중…`:`실제 윤곽·도로 · ${count.toLocaleString()}개 주변 매스`;
+  Object.assign(badge.dataset,{mode:!enabled?'hidden':errors.length?'error':loaded.length<wanted.size?'loading':'exact',loadedTiles:entries.size,visibleTiles:loaded.length,wantedTiles:wanted.size,geometryBytes:totalBytes,downloadedBytes,activeRequests:running});
+  badge.title='모든 확대 단계에서 실제 건물 평면과 도로를 표시합니다. 화면에서 멀어진 지역은 메모리에서 해제합니다.';
  }
  async function load(tile){
-  const controller=new AbortController();pending.set(tile.id,controller);running++;updateStatus();
+  const controller=new AbortController();pending.set(tile.id,controller);running++;status();
   try{
-   const response=await fetch(tile.url,{signal:controller.signal});if(!response.ok)throw Error('HTTP '+response.status);
-   const records=await response.json();downloadedBytes+=tile.bytes;
+   const response=await fetch(tile.mesh.url,{signal:controller.signal});if(!response.ok)throw Error('HTTP '+response.status);
+   const compressed=await response.arrayBuffer();downloadedBytes+=compressed.byteLength;
    if(!wanted.has(tile.id)||!enabled)return;
-   const packed=await build(records);
+   const buffer=await new Response(new Blob([compressed]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer();
    if(!wanted.has(tile.id)||!enabled)return;
-   const root=new T.Group();let bytes=0;
-   for(const [kind,attrs]of Object.entries(packed)){
-    const g=new T.BufferGeometry();g.setAttribute('position',new T.BufferAttribute(attrs.position,3));g.setAttribute('normal',new T.BufferAttribute(attrs.normal,3));
-    bytes+=attrs.position.byteLength+attrs.normal.byteLength;
-    const mesh=new T.Mesh(g,kind==='roads'?roadMat:mats[kind]);mesh.castShadow=kind!=='roads';mesh.receiveShadow=true;root.add(mesh);
+   const batches=decodeCityMesh(buffer),root=new T.Group();let bytes=0;
+   for(const b of batches){
+    const g=new T.BufferGeometry();g.setAttribute('position',new T.BufferAttribute(b.position,3));g.setAttribute('normal',new T.BufferAttribute(b.normal,3,true));g.setIndex(new T.BufferAttribute(b.index,1));
+    bytes+=b.position.byteLength+b.normal.byteLength+b.index.byteLength;
+    const mesh=new T.Mesh(g,b.kind==='roads'?roadMat:mats[b.kind]);mesh.position.fromArray(b.min);mesh.scale.setScalar(b.scale);
+    mesh.castShadow=b.kind!=='roads';mesh.receiveShadow=true;root.add(mesh);
    }
-   const entry={id:tile.id,root,bytes,used:++revision};entries.set(tile.id,entry);context.add(root);totalBytes+=bytes;trim();
-  }catch(error){if(error.name!=='AbortError'){failed.set(tile.id,error.message);console.warn('Tile load failed',tile.id,error.message)}}
-  finally{pending.delete(tile.id);running--;refresh();pump();changed()}
- }
- function refresh(){
-  for(const [id,o]of overview){const e=entries.get(id);o.visible=!(enabled&&detail&&wanted.has(id)&&e);if(e)e.root.visible=enabled&&detail&&wanted.has(id)}
-  updateStatus();
+   if(totalBytes+bytes>maxBytes){root.traverse(o=>o.geometry?.dispose());throw Error('Geometry budget exceeded')}
+   entries.set(tile.id,{id:tile.id,root,bytes});context.add(root);totalBytes+=bytes;
+  }catch(error){if(error.name!=='AbortError'){failed.set(tile.id,error.message);console.warn('City region load failed',tile.id,error.message)}}
+  finally{pending.delete(tile.id);running--;status();pump();changed()}
  }
  function pump(){
-  if(!enabled||!detail)return;
-  for(const id of wanted){if(running>=2)break;if(entries.has(id)||pending.has(id)||failed.has(id)||deferred.has(id))continue;load(city.tiles.find(t=>t.id===id))}
+  if(!enabled)return;
+  for(const id of wanted){if(running>=2)break;if(entries.has(id)||pending.has(id)||failed.has(id))continue;load(tiles.get(id))}
  }
  function update(bounds,span,center){
-  const previous=[...wanted].sort().join(',');detail=span<1200;wanted.clear();
-  if(detail&&enabled){
-   const tiles=city.tiles.filter(t=>t.bounds[0]<=bounds[2]&&t.bounds[2]>=bounds[0]&&t.bounds[1]<=bounds[3]&&t.bounds[3]>=bounds[1]);
-   tiles.sort((a,b)=>Math.hypot((a.bounds[0]+a.bounds[2])/2-center[0],(a.bounds[1]+a.bounds[3])/2-center[1])-Math.hypot((b.bounds[0]+b.bounds[2])/2-center[0],(b.bounds[1]+b.bounds[3])/2-center[1]));
-   for(const t of tiles.slice(0,maxTiles)){wanted.add(t.id);const e=entries.get(t.id);if(e)e.used=++revision}
+  wanted.clear();
+  if(enabled){
+   const visible=city.tiles.filter(t=>t.bounds[0]<=bounds[2]&&t.bounds[2]>=bounds[0]&&t.bounds[1]<=bounds[3]&&t.bounds[3]>=bounds[1]);
+   visible.sort((a,b)=>Math.hypot((a.bounds[0]+a.bounds[2])/2-center[0],(a.bounds[1]+a.bounds[3])/2-center[1])-Math.hypot((b.bounds[0]+b.bounds[2])/2-center[0],(b.bounds[1]+b.bounds[3])/2-center[1]));
+   for(const t of visible)wanted.add(t.id);
   }
   for(const [id,c]of pending)if(!wanted.has(id))c.abort();
-  if(previous!==[...wanted].sort().join(','))deferred.clear();
-  // Release invisible detail immediately, rather than accumulating an unbounded city cache.
   for(const e of [...entries.values()])if(!wanted.has(e.id))dispose(e);
-  refresh();clearTimeout(timer);timer=setTimeout(pump,120);changed();
+  status();clearTimeout(timer);timer=setTimeout(pump,100);changed();
  }
- function setEnabled(value){enabled=value;if(!value){for(const c of pending.values())c.abort();for(const e of [...entries.values()])dispose(e)}refresh();if(value)pump()}
- badge.onclick=()=>{for(const id of wanted)failed.delete(id);pump();refresh()};refresh();
+ function setEnabled(value){enabled=value;if(!value){wanted.clear();for(const c of pending.values())c.abort();for(const e of [...entries.values()])dispose(e)}status()}
+ badge.onclick=()=>{for(const id of wanted)failed.delete(id);pump();status()};status();
  return {update,setEnabled};
 }

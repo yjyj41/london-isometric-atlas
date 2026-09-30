@@ -1,24 +1,23 @@
-# London Field Atlas — Rhino mass workflow
+# London Field Atlas
 
-1. Download the city ZIP and unzip, or download one building's .3dm from its card.
-2. Open in Rhino 6 or 7 (also supported by Rhino 8). Downloads are saved in Rhino 6 file format. Files use metres, X east, Y north, Z up. City origin is latitude 51.51, longitude -0.106 (WGS84 local azimuthal equidistant projection).
-3. Keep the origin, orientation and scale. Individual building files use a local origin at that building's anchor; the website applies that anchor automatically. Do not move a city model to a building-local origin or vice versa.
-4. Models are editable meshes, not parametric NURBS/BIM. Use mesh editing tools or replace with your own geometry. For new NURBS, run Mesh and save the resulting visible mesh objects. Avoid duplicate visible surfaces and meshes.
-5. Save as .3dm. In the website choose Rhino 불러오기, choose the matching target and file, check the displayed dimensions, then 지도에 적용.
-6. For whole-city files preserve object names LM:<building-id>|<object-id> to preserve building selection. Other names become context. IDs: stpauls, shard, gherkin, towerbridge, tate, millennium, barbican, lloyds, westminster, abbey, museum, tower.
-7. Files remain in this browser's IndexedDB only. Clearing browser data removes them. Keep your own .3dm backup. Original restore affects the selected target only.
+Actual London footprints, streets and landmark masses in metres, with a fixed orthographic isometric camera. Coverage: 6.84 × 7.12 km, 67,215 masses, 13 landmarks including Isokon Flats.
 
-One unit = 1 metre. Automatic metre/mm/cm/feet/inch units are supported. Override if necessary. Models are not normalized or automatically resized. Maximum upload: 100 MB and 3 million triangles, extent 25 km.
+Run `node serve.cjs`. Source is `dist/`; no frontend build or npm install. Start at central London, use the full-map control to include Belsize Park, or select a landmark.
 
-Data: © OpenStreetMap contributors, https://www.openstreetmap.org/copyright, ODbL 1.0. Extracted 2026-09-21. 16,741 masses. Footprints and coordinates are geographic data; height values include OSM-tagged heights, estimates of 3.2 m per floor and a 12 m fallback. Terrain is flat; roofs and landmark forms are approximations. Not a survey model. OSM-derived data are supplied in assets/city.json under ODbL. Geometry and templates derive from the same data.
+## Geometry and performance
 
+All zoom levels preserve the original building shapes, courtyards, roads, positions and heights. No representative boxes or invented buildings. The 110 spatial tiles contain packed exact mesh triangles. The initial manifest is 0.63 MB; all surrounding meshes total 14.97 MB compressed and 31.20 MB in GPU geometry buffers. Only visible regions load, two at a time, and offscreen geometry is disposed. Geometry budget: 48 MiB desktop / 40 MiB mobile, excluding landmarks, ground and other browser memory.
+
+After geometry changes run `node tools/pack-city.mjs`, then `node tools/verify-region.mjs`. Verification compares every packed triangle vertex with source geometry (maximum error under 1 cm), all 67,215 records and Rhino headers. Keep JSON tiles as editable source; packed assets are generated output.
+
+## Rhino editing
+
+Download one landmark's .3dm or the four regional city ZIPs. All files use Rhino 6 format, also readable by Rhino 7. Units: metres. X east, Y north, Z up. City origin: WGS84 latitude 51.51, longitude -0.106, local azimuthal equidistant projection. Regional files share that origin and can be merged in Rhino. Individual landmarks use their own local anchor.
+
+Keep origin, scale and orientation. Save visible mesh objects as .3dm and choose the matching target in Rhino 불러오기. NURBS should be meshed before import. Preserve LM:<building-id>|<object-id> object names for whole-city landmark selection. Upload limit: 100 MB / 3 million triangles. Imports stay in this browser's IndexedDB only; keep your own backup.
+
+Data: © OpenStreetMap contributors, https://www.openstreetmap.org/copyright, ODbL 1.0. Central snapshot 2026-09-21 plus northern/western extraction 2026-09-30. Footprints and placement are actual map data; heights use OSM height, levels × 3.2 m, or an explicitly assumed 12 m. Flat terrain; roofs and landmark forms are approximations, not survey/BIM models. Isokon has an actual footprint and assumed 12 m height.
 
 ## Codex Cloud
 
-Use the private yjyj41/london-isometric-atlas environment and main branch. Read AGENTS.md and HANDOFF.md, then run `node serve.cjs`. The app runs without npm install. No source ZIP or local-computer transfer is needed. Keep binary model and vendor files unchanged unless the task specifically requires updating them; large binary changes can exceed cloud diff limits.
-
-
-Current map: 67,215 masses, 6.84 x 7.12 km, 13 landmarks including Isokon. Streaming manifest + 110 detail tiles, generalized overview, worker geometry, bounded detail memory. Run node serve.cjs (offline asset restore); static-host build command python3 bootstrap.py, publish dist. Rhino 6/7 downloads are regional ZIPs; full data ZIP is available in the download dialog.
-
-
-Current map: 67,215 masses, 6.84 x 7.12 km, 13 landmarks including Isokon. Streaming manifest + 110 detail tiles, generalized overview, worker geometry, bounded detail memory. Run node serve.cjs (offline asset restore); static-host build command python3 bootstrap.py, publish dist. Rhino 6/7 downloads are regional ZIPs; full data ZIP is available in the download dialog.
+Use the private yjyj41/london-isometric-atlas environment, main branch. Read AGENTS.md and HANDOFF.md. `node serve.cjs` restores missing original model/vendor assets offline; no file transfer from this PC is needed. For another static host: build `python3 bootstrap.py`, publish `dist`. Packed meshes are tracked directly, and bootstrap preserves edited files. Keep existing Rhino and vendor bundles unchanged unless their source data changes.

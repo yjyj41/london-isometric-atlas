@@ -7,14 +7,18 @@
   },
   "tiles": 110,
   "tileSize": 750,
-  "overviewMasses": 11637,
+  "overviewMasses": 0,
   "detailBytes": 14188826,
   "maxTileBytes": 322573,
-  "initialBytes": 1088004,
-  "initialGzipBytes": 283489,
+  "initialBytes": 625531,
+  "initialGzipBytes": 165282,
   "extentKm": [
     6.8405,
     7.121899999999999
   ],
-  "rhinoDownloadBytes": 32811121
+  "rhinoDownloadBytes": 32811121,
+  "meshBytes": 14966061,
+  "meshGeometryBytes": 31204362,
+  "meshTriangles": 1461278,
+  "maxPositionErrorM": 0.007160979626178232
 }
