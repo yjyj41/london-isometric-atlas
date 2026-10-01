@@ -13,3 +13,5 @@ After geographic changes follow the regeneration sequence in README.md, includin
 The intended continuation environment is Codex Cloud backed by a dedicated private GitHub repository. Check the current remote branch before publishing from a different PC, and merge newer work rather than overwriting it. Use fresh repo-scoped credentials through Sites; never force-push another machine's work.
 
 The public-facing product language is English (en-GB). Translate all UI, errors, accessibility labels, landmark descriptions and model notes. tools/english-content.json overrides generated notes in detail-landmarks.py; keep it aligned with tools/landmarks.json. Run node tools/verify-english.mjs. New station/courtyard profiles are in tools/station_details.py. Do not change Site access or add commercial features without a request.
+
+Visited finishes are display-only in dist/landmark-finishes.js; do not bake them into source geometry or Rhino exports. Visits are intentionally browser-local by user request. Keep the storage limitation visible. Run node tools/verify-visits.mjs after changes to finishes or visit storage.

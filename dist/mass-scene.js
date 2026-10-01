@@ -2,6 +2,7 @@ import * as T from './vendor/three.module.js';
 import {mergeGeometries} from './vendor/BufferGeometryUtils.js';
 import {recordGeometry,flatGeometry} from './geometry.js';
 import {createTileStream} from './tile-stream.js';
+import {addFinishAttribute,createFinishMaterial} from './landmark-finishes.js';
 const $=s=>document.querySelector(s);
 const material=color=>new T.MeshStandardMaterial({color,roughness:.92,metalness:0,side:T.DoubleSide});
 
@@ -14,6 +15,8 @@ export async function createAtlas(city,onSelect) {
  const offset=new T.Vector3(10000,10000,10000),target=new T.Vector3();
  const context=new T.Group(),ground=new T.Group();scene.add(context,ground);
  const original=new Map(),custom=new Map(),markers=new Map();
+ const finishMaterials=new Map(),finishAnimations=new Map(),visited=new Set();
+ const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
  const mats={height:material(0xc2cbd1),levels:material(0xcbd2d6),assumed:material(0xd4d9dc)};
  const landmarkMat=material(0xf2f0e9),importMat=material(0x93c8cb);
  let width=1,height=1,view=3700,zoom=1,dirty=true,active='stpauls',fullImport=null,contextVisible=true,stream=null;
@@ -35,7 +38,7 @@ export async function createAtlas(city,onSelect) {
  if(roadGeos.length){const m=new T.Mesh(mergeGeometries(roadGeos),material(0xf0f2f1));m.receiveShadow=true;ground.add(m);roadGeos.forEach(g=>g.dispose())}
  const batches={height:[],levels:[],assumed:[]},landmarkBatches=new Map(city.landmarks.map(b=>[b.id,[]]));
  for(let i=0;i<city.buildings.length;i++){
-  const r=city.buildings[i],gs=recordGeometry(r);(r.lm?landmarkBatches.get(r.lm):batches[r.c]).push(...gs);
+  const r=city.buildings[i],gs=recordGeometry(r);if(r.lm)gs.forEach((g,j)=>addFinishAttribute(g,r,j,gs.length));(r.lm?landmarkBatches.get(r.lm):batches[r.c]).push(...gs);
   if(i%500===0){$('#loading').textContent=`Preparing building models · ${Math.round(i/city.buildings.length*100)}%`;await new Promise(resolve=>setTimeout(resolve,0))}
  }
  function mergedMesh(gs,mat,id){if(!gs.length)return new T.Group();const m=new T.Mesh(mergeGeometries(gs),mat);m.name=id;m.userData.id=id;m.castShadow=true;m.receiveShadow=true;gs.forEach(g=>g.dispose());return m}
@@ -72,13 +75,31 @@ export async function createAtlas(city,onSelect) {
  // Start at a readable central-London scale. The full-map control includes Isokon.
  target.set(-250,0,120);zoom=T.MathUtils.clamp(view/2200,.55,400);sync();
  function setZoom(f){zoom=T.MathUtils.clamp(zoom*f,.55,400);sync()}
- function select(id,focus=true){active=id;const bb=objectBounds(id);boxHelper.box.copy(bb);boxHelper.visible=!bb.isEmpty();
+ function select(id,focus=true){active=id;const bb=objectBounds(id);boxHelper.box.copy(bb);boxHelper.visible=!bb.isEmpty()&&!visited.has(id);
   if(focus&&!bb.isEmpty()){
    const size=bb.getSize(new T.Vector3()),span=Math.max(size.x,size.y,size.z,60);bb.getCenter(target);zoom=T.MathUtils.clamp(view/(span*(width<600?3.5:2.4)),.55,400);
    if(width<600){target.x+=span*.36;target.z+=span*.36}else{target.x+=span*.22;target.z-=span*.22}sync();
   }dirty=true;
  }
  function setContext(value){contextVisible=value;context.visible=value&&!fullImport;stream?.setEnabled(value&&!fullImport);if(fullImport)fullImport.context.visible=value;sync()}
+ function setVisited(id,value,animate=true){
+  const mesh=original.get(id);if(!mesh?.isMesh)return;
+  if(value)visited.add(id);else visited.delete(id);
+  if(id===active)boxHelper.visible=!value&&!boxHelper.box.isEmpty();
+  const el=markers.get(id);el.classList.toggle('visited',value);
+  const b=city.landmarks.find(b=>b.id===id);
+  el.setAttribute('aria-label','Select '+b.name+(value?' · visited':''));
+  if(!finishMaterials.has(id)&&value){
+   mesh.geometry.computeBoundingBox();const center=mesh.geometry.boundingBox.getCenter(new T.Vector3());
+   finishMaterials.set(id,createFinishMaterial(id,[center.x,-center.z]));
+  }
+  const mat=finishMaterials.get(id);if(!mat)return;
+  mesh.material=mat;
+  const end=value?1:0;
+  if(animate&&!reducedMotion.matches)finishAnimations.set(id,{start:performance.now(),from:mat.userData.reveal.value,to:end});
+  else{mat.userData.reveal.value=end;finishAnimations.delete(id);if(!value)mesh.material=landmarkMat;}
+  dirty=true;
+ }
  function setConfidence(value){mats.height.color.setHex(value?0x9db8c8:0xc2cbd1);mats.levels.color.setHex(value?0xd8caad:0xcbd2d6);mats.assumed.color.setHex(value?0xd9abab:0xd4d9dc);dirty=true}
  const pointers=new Map();let gesture=null,moved=false;
  function gestureStart(){const p=[...pointers.values()];gesture=p.length===1?{x:p[0].x,y:p[0].y,target:target.clone(),zoom}:p.length>=2?{dist:Math.hypot(p[0].x-p[1].x,p[0].y-p[1].y),zoom}:null}
@@ -117,7 +138,13 @@ export async function createAtlas(city,onSelect) {
   renderer.shadowMap.needsUpdate=true;select(active,id===active);
  }
  function measurements(id){const b=objectBounds(id);if(b.isEmpty())return null;const s=b.getSize(new T.Vector3());return {east:s.x,north:s.z,height:s.y,top:b.max.y,custom:custom.has(id)||!!fullImport}}
- function render(){requestAnimationFrame(render);if(!dirty||document.hidden)return;dirty=false;renderer.render(scene,camera);const used=[];
+ function render(){requestAnimationFrame(render);
+  for(const [id,a]of finishAnimations){
+   const t=Math.min(1,(performance.now()-a.start)/650),ease=t*t*(3-2*t);
+   finishMaterials.get(id).userData.reveal.value=a.from+(a.to-a.from)*ease;dirty=true;
+   if(t===1){finishAnimations.delete(id);if(a.to===0)original.get(id).material=landmarkMat;}
+  }
+  if(!dirty||document.hidden)return;dirty=false;renderer.render(scene,camera);const used=[];
   for(const b of [...city.landmarks].sort((a,b)=>(b.id===active?1:0)-(a.id===active?1:0))){
    const bb=objectBounds(b.id),p=bb.isEmpty()?new T.Vector3(b.anchor[0],0,-b.anchor[1]):bb.getCenter(new T.Vector3());p.y=(bb.isEmpty()?b.modelHeight:bb.max.y)+4;p.project(camera);
    const x=(p.x*.5+.5)*width,y=(-p.y*.5+.5)*height,el=markers.get(b.id);el.style.left=x+'px';el.style.top=y+'px';el.style.display=x>10&&x<width-10&&y>10&&y<height-40?'flex':'none';
@@ -125,7 +152,7 @@ export async function createAtlas(city,onSelect) {
    if(!collision)used.push({x,y});el.style.zIndex=b.id===active?'3':'1';
   }
  }render();renderer.domElement.addEventListener('webglcontextlost',e=>{e.preventDefault();$('#error').hidden=false});
- return {select,zoom:setZoom,reset,setContext,setConfidence,measurements,applyImport,restore};
+ return {select,zoom:setZoom,reset,setContext,setConfidence,setVisited,measurements,applyImport,restore};
 }
 
 let loader;

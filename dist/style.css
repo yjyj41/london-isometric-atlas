@@ -22,3 +22,27 @@
 /* Keep English map controls clear of the zoom controls. */
 .model-toolbar{right:82px}.model-toolbar button,.model-toolbar label{font-size:12px}.stream-status{font-size:11px}.intro h1{letter-spacing:-.8px}
 @media(max-width:700px){.model-toolbar{right:58px}.model-toolbar button,.model-toolbar label{font-size:10px}}
+
+/* A personal field record: ivory until visited, then exterior finishes. */
+.visit-progress-row{display:flex;align-items:center;gap:12px;padding:0 27px 14px;color:#536578;font-size:12px}
+.visit-progress-row progress{width:64px;height:4px;margin-left:auto;accent-color:#236d65;border:0;border-radius:4px;background:#e9eef0}
+.visit-progress-row progress::-webkit-progress-bar{background:#e9eef0;border-radius:4px}
+.visit-progress-row progress::-webkit-progress-value{background:#236d65;border-radius:4px}
+.visit-progress-row progress::-moz-progress-bar{background:#236d65;border-radius:4px}
+.visit-list-check{margin-left:auto;color:#236d65;font-size:16px;font-weight:700}
+.building-item.visited .arrow{display:none}
+.building-item.visited .num{color:#236d65}
+.marker.visited .pin{border:2px solid #236d65;color:#236d65;background:#f2faf5;position:relative}
+.marker.visited .pin:after{content:'✓';position:absolute;right:-6px;top:-7px;width:13px;height:13px;line-height:13px;background:#236d65;color:#fff;border-radius:50%;font-size:9px}
+.marker.visited.active .pin{background:#236d65;color:#fff}
+#visit-panel{margin:0 0 16px}
+.visit-toggle{display:flex;align-items:center;gap:10px;min-height:44px;width:100%;padding:10px 12px;border:1px solid #b7c6d5;border-radius:5px;background:#fff;text-align:left;font-size:14px;font-weight:600;color:#22394d}
+.visit-toggle:hover{background:#f1f5fa;border-color:#778ea8}
+.visit-toggle[aria-pressed=true]{background:#e9f3ed;border-color:#97b9a8;color:#19594c}
+.visit-icon{display:grid;place-items:center;width:20px;height:20px;border:1px solid currentColor;border-radius:50%;font-size:14px;flex:none}
+.visit-undo{margin-left:auto;font-size:12px;font-weight:400;text-decoration:underline;text-underline-offset:3px}
+.visit-caption{font-size:12px;line-height:1.5;color:#445e6c;margin:8px 0 3px}
+.visit-storage{font-size:11px;line-height:1.5;color:#6f7d86;margin:0}
+.visit-storage.unsaved{color:#96471e}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:700px){.visit-progress-row{padding:0 18px 8px;gap:10px;font-size:12px}.visit-progress-row progress{width:75px;margin-left:0}.sidebar{height:193px}.list-heading{padding-bottom:7px}#visit-panel{margin-bottom:12px}.visit-toggle{min-height:44px}.detail .building-subtitle{margin-bottom:10px}}
