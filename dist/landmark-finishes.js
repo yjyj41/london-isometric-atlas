@@ -81,6 +81,7 @@ export function addFinishAttribute(g,r,partIndex=0,partCount=1){
 const declarations=`
  uniform vec3 atlasWall, atlasRoof, atlasAccent, atlasOrigin;
  uniform float atlasKind, atlasReveal;
+ uniform vec2 atlasHeightRange;
  varying vec3 vAtlasPosition, vAtlasNormal;
  varying float vAtlasFinish;
  float atlasLine(float x, float width){
@@ -187,20 +188,28 @@ const surface=`
  }
  if(chimney>.5)finishColour*=1.-.09*atlasLine(uv.x/.7,.025)*side;
  finishColour=mix(finishColour,diffuseColor.rgb,skip);
- diffuseColor.rgb=mix(diffuseColor.rgb,finishColour,atlasReveal);
+ // A soft front travels from the lowest vertex to the highest, including
+ // raised buildings and bridges. Exact endpoints contain no residual glow.
+ float normalizedHeight=clamp((ap.y-atlasHeightRange.x)/max(.01,atlasHeightRange.y-atlasHeightRange.x),0.,1.);
+ float revealFront=mix(-.08,1.08,atlasReveal);
+ float revealMask=1.-smoothstep(revealFront-.07,revealFront+.07,normalizedHeight);
+ float revealRim=(1.-smoothstep(.008,.035,abs(normalizedHeight-revealFront)))
+  *step(.001,atlasReveal)*(1.-step(.999,atlasReveal))*(1.-skip);
+ diffuseColor.rgb=mix(diffuseColor.rgb,finishColour,revealMask);
 `;
 
-export function createFinishMaterial(id,origin){
+export function createFinishMaterial(id,origin,heightRange=[0,1]){
  const p=finishes[id];
  const reveal={value:0};
  const mat=new T.MeshStandardMaterial({color:0xf2f0e9,roughness:.9,metalness:0,side:T.DoubleSide});
  mat.name='Visited · '+id;
  mat.userData.reveal=reveal;
- mat.customProgramCacheKey=()=> 'atlas-exterior-v1';
+ mat.customProgramCacheKey=()=> 'atlas-exterior-v2-rise';
  mat.onBeforeCompile=shader=>{
   Object.assign(shader.uniforms,{
    atlasWall:{value:new T.Color(p.wall)},atlasRoof:{value:new T.Color(p.roof)},atlasAccent:{value:new T.Color(p.accent)},
-   atlasKind:{value:p.kind},atlasReveal:reveal,atlasOrigin:{value:new T.Vector3(origin[0],0,-origin[1])}
+   atlasKind:{value:p.kind},atlasReveal:reveal,atlasOrigin:{value:new T.Vector3(origin[0],0,-origin[1])},
+   atlasHeightRange:{value:new T.Vector2(...heightRange)}
   });
   shader.vertexShader=shader.vertexShader.replace('#include <common>',`#include <common>
    attribute float atlasFinish; uniform vec3 atlasOrigin;
@@ -210,9 +219,11 @@ export function createFinishMaterial(id,origin){
   shader.fragmentShader=shader.fragmentShader.replace('#include <common>','#include <common>\n'+declarations)
    .replace('#include <color_fragment>','#include <color_fragment>\n'+surface)
    .replace('#include <roughnessmap_fragment>',`#include <roughnessmap_fragment>
-    roughnessFactor=mix(roughnessFactor,mix(.88,.28,glassAmount),atlasReveal*(1.-skip));`)
+    roughnessFactor=mix(roughnessFactor,mix(.88,.28,glassAmount),revealMask*(1.-skip));`)
    .replace('#include <metalnessmap_fragment>',`#include <metalnessmap_fragment>
-    metalnessFactor=mix(metalnessFactor,atlasKind==11.?.32:.12*glassAmount,atlasReveal*(1.-skip));`);
+    metalnessFactor=mix(metalnessFactor,atlasKind==11.?.32:.12*glassAmount,revealMask*(1.-skip));`)
+   .replace('#include <emissivemap_fragment>',`#include <emissivemap_fragment>
+    totalEmissiveRadiance+=vec3(.14,.35,.28)*revealRim;`);
  };
  return mat;
 }

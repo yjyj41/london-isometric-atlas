@@ -2,6 +2,7 @@ import {createAtlas,prepareRhino} from './mass-scene.js';
 import {savedModels,saveModel,deleteModel} from './storage.js';
 import {createVisitStore,VISITS_KEY} from './visits.js';
 import {finishes} from './landmark-finishes.js';
+import {mapStyles,readMapStyle,saveMapStyle} from './map-styles.js';
 const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let atlas,city,visits,selected=null,pending=null,buffer=null;
 const status=s=>$('#import-status').textContent=s;
@@ -19,8 +20,8 @@ function renderVisitPanel(){
  $('#visit-panel button').onclick=()=>{
   const state=visits.toggle(selected);
   for(const building of city.landmarks)atlas?.setVisited(building.id,visits.has(building.id),building.id===selected);
-  renderVisitPanel();updateVisitIndicators();$('#visit-panel button').focus({preventScroll:true});
-  $('#visit-announcement').textContent=b.name+(state.visited?' marked as visited. Exterior finishes revealed.':' removed from visited. Ivory model restored.')+(state.saved?' Saved in this browser.':' Not saved: browser storage is unavailable.');
+  renderVisitPanel();updateVisitIndicators();if(state.visited)$('#visit-panel button').classList.add('visit-reveal');$('#visit-panel button').focus({preventScroll:true});
+  $('#visit-announcement').textContent=b.name+(state.visited?' marked as visited. Exterior finishes revealed.':' removed from visited. Unvisited appearance restored.')+(state.saved?' Saved in this browser.':' Not saved: browser storage is unavailable.');
  };
 }
 function updateVisitIndicators(){
@@ -52,7 +53,10 @@ $('#height-stats').textContent=`${city.stats.masses.toLocaleString('en-GB')} mod
 for(const file of city.rhinoDownloads||[]){const link=document.createElement('a');link.href=file.url;link.download='';link.className='region-download';link.textContent=`${file.name} · ${file.masses.toLocaleString('en-GB')} model parts · ${(file.bytes/1048576).toFixed(1)} MB ↓`;$('#region-downloads').append(link)}
 
 for(const [i,b]of city.landmarks.entries()){const el=document.createElement('button');el.className='building-item';el.dataset.id=b.id;el.innerHTML=`<span class="num">${String(i+1).padStart(2,'0')}</span><span><strong>${b.name}</strong><small>${b.subtitle}</small></span><span class="visit-list-check" aria-hidden="true" hidden>✓</span><span class="arrow">↗</span>`;el.onclick=()=>select(b.id);$('#buildings').append(el);const option=document.createElement('option');option.value=b.id;option.textContent=b.name;$('#import-target').append(option)}
-updateVisitIndicators();atlas=await createAtlas(city,id=>select(id,false));for(const id of visits.ids())atlas.setVisited(id,true,false);$('#zoom-in').onclick=()=>atlas.zoom(1.25);$('#zoom-out').onclick=()=>atlas.zoom(.8);$('#reset').onclick=()=>{atlas.reset();document.body.classList.add('detail-closed')};$('#show-context').onchange=e=>atlas.setContext(e.target.checked);$('#show-confidence').onchange=e=>{atlas.setConfidence(e.target.checked);$('#confidence-legend').hidden=!e.target.checked};
+updateVisitIndicators();atlas=await createAtlas(city,id=>select(id,false));
+const stylePicker=$('#map-style');stylePicker.value=readMapStyle(()=>window.localStorage);atlas.setStyle(stylePicker.value,false);stylePicker.disabled=false;
+stylePicker.onchange=()=>{const id=stylePicker.value;if(!Object.hasOwn(mapStyles,id))return;atlas.setStyle(id);const saved=saveMapStyle(id,()=>window.localStorage);$('#visit-announcement').textContent=`${stylePicker.selectedOptions[0].textContent} map style.`+(saved?'':' This choice could not be saved in this browser.');};
+for(const id of visits.ids())atlas.setVisited(id,true,false);$('#zoom-in').onclick=()=>atlas.zoom(1.25);$('#zoom-out').onclick=()=>atlas.zoom(.8);$('#reset').onclick=()=>{atlas.reset();document.body.classList.add('detail-closed')};$('#show-context').onchange=e=>atlas.setContext(e.target.checked);$('#show-confidence').onchange=e=>{atlas.setConfidence(e.target.checked);$('#confidence-legend').hidden=!e.target.checked};
 $('#import-open').disabled=false;try{const models=await savedModels();models.sort((a,b)=>(b.key==='city')-(a.key==='city'));for(const item of models){try{atlas.applyImport(await prepareRhino(item.buffer.slice(0),item.unit),item.key)}catch(e){status(`${item.name} could not be restored: ${e.message}`)}}}catch(e){status('Browser storage is unavailable. Imported models will last for this session only.')}
 $('#loading').hidden=true;document.body.classList.add('detail-closed');
 }catch(e){console.error(e);$('#loading').hidden=true;$('#error').hidden=false;$('#error').textContent='Unable to load the 3D map: '+e.message}

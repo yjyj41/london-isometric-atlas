@@ -1,11 +1,11 @@
 import * as T from './vendor/three.module.js';
 import {decodeCityMesh} from './city-mesh.js';
 
-export function createTileStream(city,context,mats,changed){
+export function createTileStream(city,context,mats,changed,sharedRoadMaterial){
  const maxBytes=(matchMedia('(max-width:700px)').matches?96:128)*1024*1024;
  const badge=document.querySelector('#stream-status'),entries=new Map(),pending=new Map(),failed=new Map();
  const tiles=new Map(city.tiles.map(t=>[t.id,t])),wanted=new Set();
- const roadMat=new T.MeshStandardMaterial({color:0xf0f2f1,roughness:.92,side:T.DoubleSide});
+ const roadMat=sharedRoadMaterial||new T.MeshStandardMaterial({color:0xf0f2f1,roughness:.92,side:T.DoubleSide});
  let enabled=true,running=0,totalBytes=0,downloadedBytes=0,timer;
  function dispose(entry){context.remove(entry.root);entry.root.traverse(o=>o.geometry?.dispose());totalBytes-=entry.bytes;entries.delete(entry.id)}
  function status(){

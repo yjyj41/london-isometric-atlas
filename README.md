@@ -65,3 +65,12 @@ dist/landmark-finishes.js defines 33 reference-informed palettes based on the ex
 A visited landmark transitions from ivory over 650 ms (instant with reduced-motion). Undo restores ivory. Height sources still controls surroundings only. Imported Rhino models retain their existing appearance and the visit card explains this; restoring an original reveals its saved visited finish. Neither the mass vertices/normals nor Rhino downloads change. Original landmark surface attributes add 1,040,376 bytes of GPU data; materials are created on demand, with no extra texture downloads and no additional mesh draw calls.
 
 Verification: node tools/verify-visits.mjs checks all 33 palettes, unchanged geometry, visit reload/undo, multi-tab merging, unavailable storage and corrupt data. node tools/verify-english.mjs checks English UI. Browser QA covers reveal, undo, refresh persistence, desktop material previews and a 390px mobile viewport with a 44px visit button.
+
+
+## 2026-10-02 — Visit reveal animation and map styles
+
+Visit now reveals the reference-informed finish from the lowest vertex to the highest over 1.2 seconds, with a soft illuminated boundary. Undo reverses the reveal. Animation time starts after the first material render so shader compilation does not consume it; rapid toggles reverse from the current progress. Restored visits render immediately. Both surface roughness and metalness follow the same reveal mask. Reduced-motion preferences skip the reveal, palette transition and checkmark pulse.
+
+The top-right Style selector provides Atlas, Blueprint and Night. dist/map-styles.js owns the palettes and browser-local preference (london-field-atlas.map-style.v1). Styles change background, terrain, parks, waterways, streets, surrounding masses, unvisited landmarks and selection outlines. Visited exterior colours stay unchanged. Height sources overrides only context mass colours and survives style changes; turning it off restores the selected palette. All streamed and manifest streets share one material, so newly loaded tiles use the current style. No extra textures, geometry or draw calls are added.
+
+QA: English and visit/geometry verification passed; desktop and 390px mobile style selection, persistence after reload, visit reveal intermediate/final frames, undo, source-colour compatibility and browser error logs checked. Existing source vertices, coordinate system, camera, tile budgets and Rhino exports remain unchanged.
