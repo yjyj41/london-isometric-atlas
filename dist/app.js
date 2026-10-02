@@ -56,6 +56,13 @@ for(const [i,b]of city.landmarks.entries()){const el=document.createElement('but
 updateVisitIndicators();atlas=await createAtlas(city,id=>select(id,false));
 const stylePicker=$('#map-style');stylePicker.value=readMapStyle(()=>window.localStorage);atlas.setStyle(stylePicker.value,false);stylePicker.disabled=false;
 stylePicker.onchange=()=>{const id=stylePicker.value;if(!Object.hasOwn(mapStyles,id))return;atlas.setStyle(id);const saved=saveMapStyle(id,()=>window.localStorage);$('#visit-announcement').textContent=`${stylePicker.selectedOptions[0].textContent} map style.`+(saved?'':' This choice could not be saved in this browser.');};
+const labelKey='london-field-atlas.labels.v1';
+try{const saved=JSON.parse(localStorage.getItem(labelKey));for(const key of ['names','numbers'])if(typeof saved?.[key]==='boolean')$('#show-'+key).checked=saved[key]}catch{}
+function updateLabels(save=false){const options={names:$('#show-names').checked,numbers:$('#show-numbers').checked};atlas.setLabels(options);if(save)try{localStorage.setItem(labelKey,JSON.stringify(options))}catch{}}
+for(const key of ['names','numbers'])$('#show-'+key).onchange=()=>updateLabels(true);
+updateLabels();
+$('#label-controls').addEventListener('keydown',e=>{if(e.key==='Escape'){$('#label-controls').open=false;$('#label-controls summary').focus()}});
+document.addEventListener('pointerdown',e=>{if(!$('#label-controls').contains(e.target))$('#label-controls').open=false});
 for(const id of visits.ids())atlas.setVisited(id,true,false);$('#zoom-in').onclick=()=>atlas.zoom(1.25);$('#zoom-out').onclick=()=>atlas.zoom(.8);$('#reset').onclick=()=>{atlas.reset();document.body.classList.add('detail-closed')};$('#show-context').onchange=e=>atlas.setContext(e.target.checked);$('#show-confidence').onchange=e=>{atlas.setConfidence(e.target.checked);$('#confidence-legend').hidden=!e.target.checked};
 $('#import-open').disabled=false;try{const models=await savedModels();models.sort((a,b)=>(b.key==='city')-(a.key==='city'));for(const item of models){try{atlas.applyImport(await prepareRhino(item.buffer.slice(0),item.unit),item.key)}catch(e){status(`${item.name} could not be restored: ${e.message}`)}}}catch(e){status('Browser storage is unavailable. Imported models will last for this session only.')}
 $('#loading').hidden=true;document.body.classList.add('detail-closed');

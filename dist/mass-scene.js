@@ -4,7 +4,7 @@ import {recordGeometry,flatGeometry} from './geometry.js';
 import {createTileStream} from './tile-stream.js';
 import {addFinishAttribute,createFinishMaterial} from './landmark-finishes.js';
 import {mapStyles,confidenceColours} from './map-styles.js';
-import {placeCallout,overlaps} from './label-layout.js';
+import {placeName,overlaps} from './label-layout.js';
 const $=s=>document.querySelector(s);
 const material=color=>new T.MeshStandardMaterial({color,roughness:.92,metalness:0,side:T.DoubleSide});
 
@@ -17,9 +17,8 @@ export async function createAtlas(city,onSelect) {
  const offset=new T.Vector3(10000,10000,10000),target=new T.Vector3();
  const context=new T.Group(),ground=new T.Group();scene.add(context,ground);
  const original=new Map(),custom=new Map(),markers=new Map();
- const labelSides=new Map(),boundsCache=new WeakMap(),lines=new Map();
- const ns='http://www.w3.org/2000/svg',leaders=document.createElementNS(ns,'svg');
- leaders.classList.add('marker-leaders');leaders.setAttribute('aria-hidden','true');$('#markers').append(leaders);
+ const labelSides=new Map(),boundsCache=new WeakMap();
+ let labelOptions={names:true,numbers:true};
  const finishMaterials=new Map(),finishAnimations=new Map(),visited=new Set();
  const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
  const groundMaterials={roads:material(0xf0f2f1)};let currentStyle='atlas',confidence=false,styleAnimation=null;
@@ -53,7 +52,6 @@ export async function createAtlas(city,onSelect) {
   const el=document.createElement('button');el.className='marker';el.dataset.id=b.id;el.setAttribute('aria-label','Select '+b.name);
   el.innerHTML=`<span class="pin">${String(city.landmarks.indexOf(b)+1).padStart(2,'0')}</span><span class="marker-name">${b.name}</span>`;
   el.onclick=()=>onSelect(b.id);$('#markers').append(el);markers.set(b.id,el);
-  const line=document.createElementNS(ns,'line');leaders.append(line);lines.set(b.id,line);
  }
  const boxHelper=new T.Box3Helper(new T.Box3(),0x153bec);scene.add(boxHelper);boxHelper.visible=false;
  if(city.tiles)stream=createTileStream(city,context,mats,()=>{dirty=true;renderer.shadowMap.needsUpdate=true},groundMaterials.roads);
@@ -121,6 +119,7 @@ export async function createAtlas(city,onSelect) {
   dirty=true;
  }
  function setConfidence(value){confidence=value;setStyle(currentStyle,false);}
+ function setLabels(options){labelOptions={names:!!options.names,numbers:!!options.numbers};labelsDirty=dirty=true;}
 
  const pointers=new Map();let gesture=null,moved=false;
  function gestureStart(){const p=[...pointers.values()];gesture=p.length===1?{x:p[0].x,y:p[0].y,target:target.clone(),zoom}:p.length>=2?{dist:Math.hypot(p[0].x-p[1].x,p[0].y-p[1].y),zoom}:null}
@@ -160,10 +159,11 @@ export async function createAtlas(city,onSelect) {
  }
  function measurements(id){const b=objectBounds(id);if(b.isEmpty())return null;const s=b.getSize(new T.Vector3());return {east:s.x,north:s.z,height:s.y,top:b.max.y,custom:custom.has(id)||!!fullImport}}
  // UI surfaces can change without a camera movement (card close, legend, fonts).
- const surfaces=[...document.querySelectorAll('.map-title,.model-toolbar,.stream-status,#confidence-legend,.view-badge,.controls,.detail,.scale,.compass,.map-footer,.interaction-hint')];
+ const surfaces=[...document.querySelectorAll('.map-title,.model-toolbar,.label-options,.stream-status,#confidence-legend,.view-badge,.controls,.detail,.scale,.compass,.map-footer,.interaction-hint')];
  const uiResize=new ResizeObserver(()=>{labelsDirty=dirty=true});surfaces.forEach(el=>uiResize.observe(el));
  new MutationObserver(()=>{labelsDirty=dirty=true}).observe(document.body,{attributes:true,attributeFilter:['class']});
  new MutationObserver(()=>{labelsDirty=dirty=true}).observe($('#confidence-legend'),{attributes:true,attributeFilter:['hidden']});
+ $('#label-controls').addEventListener('toggle',()=>{labelsDirty=dirty=true});
  document.fonts.ready.then(()=>{labelsDirty=dirty=true});
  const screen=p=>{p.project(camera);return {x:(p.x*.5+.5)*width,y:(-p.y*.5+.5)*height}};
  function layoutMarkers(){
@@ -180,30 +180,28 @@ export async function createAtlas(city,onSelect) {
    const bounds=points.length?{x:Math.min(...xs),y:Math.min(...ys),w:Math.max(...xs)-Math.min(...xs),h:Math.max(...ys)-Math.min(...ys)}:{x:anchor.x,y:anchor.y,w:0,h:0};
    return {b,anchor,bounds,visible:overlaps(bounds,{x:0,y:0,w:width,h:height})};
   }).sort((a,b)=>(b.b.id===active?1:0)-(a.b.id===active?1:0));
-  const silhouettes=items.filter(i=>i.visible).map(i=>i.bounds),used=[];
-  // Batch measurements before positioning; only 33 DOM callouts, no new 3D geometry.
-  const sizes=new Map();
-  for(const i of items){const el=markers.get(i.b.id);el.style.display=i.visible?'flex':'none';el.classList.remove('number-only')}
+  const used=[],sizes=new Map();
+  for(const i of items){
+   const el=markers.get(i.b.id);el.style.display=i.visible?'flex':'none';
+   el.classList.toggle('numbers-hidden',!labelOptions.numbers);el.classList.remove('number-only','name-left');
+  }
   for(const i of items)if(i.visible){const el=markers.get(i.b.id);sizes.set(i.b.id,{w:el.offsetWidth,h:el.offsetHeight})}
-  for(const {b,anchor,bounds,visible} of items){
-   const el=markers.get(b.id),line=lines.get(b.id);line.style.display='none';if(!visible)continue;
-   const selected=b.id===active;
-   // Use actual screen scale, independent of viewport aspect and fit-to-city zoom.
-   const showName=selected||height*zoom/view>=.11;
-   const obstacles=[...ui,...silhouettes,...used];
-   let placed=showName?placeCallout({bounds,anchor,size:sizes.get(b.id),viewport,obstacles,previous:labelSides.get(b.id)}):null;
-   if(!placed){
+  for(const {b,anchor,visible} of items){
+   const el=markers.get(b.id);if(!visible)continue;
+   if(!labelOptions.names&&!labelOptions.numbers){el.style.display='none';continue}
+   const selected=b.id===active,pinWidth=width<=700?22:24;
+   const showName=labelOptions.names&&(selected||!labelOptions.numbers||height*zoom/view>=.11);
+   const others=items.filter(i=>i.visible&&i.b.id!==b.id).map(i=>i.bounds);
+   const obstacles=[...ui,...others,...used];
+   let placed=showName?placeName({anchor,size:sizes.get(b.id),pinWidth:labelOptions.numbers?pinWidth:0,viewport,obstacles,previous:labelSides.get(b.id)}):null;
+   if(!placed&&labelOptions.numbers){
     el.classList.add('number-only');
-    const size={w:width<=700?32:36,h:width<=700?32:36};
-    placed=placeCallout({bounds,anchor,size,viewport,obstacles,previous:labelSides.get(b.id)});
+    placed=placeName({anchor,size:{w:pinWidth+12,h:pinWidth+12},viewport,obstacles:[...ui,...used]});
    }
    if(!placed){el.style.display='none';continue}
-   labelSides.set(b.id,placed.side);used.push(placed);
+   if(!el.classList.contains('number-only'))labelSides.set(b.id,placed.side);
+   used.push(placed);el.classList.toggle('name-left',placed.side==='left');
    el.style.left=placed.x+'px';el.style.top=placed.y+'px';el.style.zIndex=selected?'3':'2';
-   // End at the roof; the thin line never intercepts pointer events.
-   const end={x:Math.max(placed.x,Math.min(placed.x+placed.w,anchor.x)),y:Math.max(placed.y,Math.min(placed.y+placed.h,anchor.y))};
-   line.setAttribute('x1',anchor.x);line.setAttribute('y1',anchor.y);line.setAttribute('x2',end.x);line.setAttribute('y2',end.y);
-   line.classList.toggle('active',selected);line.style.display='';
   }
  }
  function render(){requestAnimationFrame(render);
@@ -225,7 +223,7 @@ export async function createAtlas(city,onSelect) {
   for(const a of finishAnimations.values())if(a.start===null)a.start=performance.now();
   layoutMarkers();
  }render();renderer.domElement.addEventListener('webglcontextlost',e=>{e.preventDefault();$('#error').hidden=false});
- return {select,zoom:setZoom,reset,setContext,setConfidence,setVisited,setStyle,measurements,applyImport,restore};
+ return {select,zoom:setZoom,reset,setContext,setConfidence,setLabels,setVisited,setStyle,measurements,applyImport,restore};
 }
 
 let loader;
