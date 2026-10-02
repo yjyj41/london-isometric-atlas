@@ -1,28 +1,30 @@
 # London Field Atlas
 
-Actual London footprints, streets and landmark masses in metres, with a fixed orthographic isometric camera. Coverage: 12.51 × 10.02 km, 151,426 masses, 33 landmarks from Isokon to Greenwich, including Canary Wharf, Bermondsey, Peckham and Battersea.
+Actual London footprints, streets and landmark masses in metres, with a fixed orthographic isometric camera. 289 field stops across Greater London: 224,012 masses in 499 tiles. Continuous central coverage plus local outer patches; 33 detailed studies, 242 mapped massing selections and 14 location-only stops. See dist/catalog-notes.md for the catalogue review.
 
 Run `node serve.cjs`. Source is `dist/`; no frontend build or npm install. Start at central London, use the full-map control to include the entire expanded extent, or select a landmark.
 
 ## Geometry and performance
 
-All zoom levels preserve the original building shapes, courtyards, roads, positions and heights. No representative boxes or invented buildings. The 238 spatial tiles contain packed exact mesh triangles. The initial manifest is 3.96 MB; all surrounding meshes total 33.18 MB compressed and 69.38 MB in GPU geometry buffers. Only visible regions load, two at a time, and offscreen geometry is disposed. Geometry budget: 128 MiB desktop / 96 MiB mobile, excluding landmarks, ground and other browser memory.
+All zoom levels preserve the original building shapes, courtyards, roads, positions and heights. No representative boxes or invented buildings. The 499 spatial tiles contain packed exact mesh triangles. The initial manifest is 5.24 MB; all surrounding meshes total 48.06 MB compressed and 100.91 MB in GPU geometry buffers. Only visible regions load, two at a time, and offscreen geometry is disposed. Geometry budget: 128 MiB desktop / 96 MiB mobile, excluding landmarks, ground and other browser memory.
 
-After geometry changes run `node tools/pack-city.mjs`, then `node tools/verify-region.mjs`. Verification compares every packed triangle vertex with source geometry (maximum error under 1 cm), all 151,426 records and Rhino headers. Keep JSON tiles as editable source; packed assets are generated output.
+After geometry changes run `node tools/pack-city.mjs`, then `node tools/verify-region.mjs`. Verification compares every packed triangle vertex with source geometry (maximum error under 1 cm), all 224,012 records and Rhino headers. Keep JSON tiles as editable source; packed assets are generated output.
 
 ## Rhino editing
 
-Download one landmark's .3dm or the eight regional city ZIPs. All files use Rhino 6 format, also readable by Rhino 7. Units: metres. X east, Y north, Z up. City origin: WGS84 latitude 51.51, longitude -0.106, local azimuthal equidistant projection. Regional files share that origin and can be merged in Rhino. Individual landmarks use their own local anchor.
+Download one landmark's .3dm or the 37 regional city ZIPs. All files use Rhino 6 format, also readable by Rhino 7. Units: metres. X east, Y north, Z up. City origin: WGS84 latitude 51.51, longitude -0.106, local azimuthal equidistant projection. Regional files share that origin and can be merged in Rhino. Individual landmarks use their own local anchor.
 
-Keep origin, scale and orientation. Save visible mesh objects as .3dm and choose the matching target in Rhino 불러오기. NURBS should be meshed before import. Preserve LM:<building-id>|<object-id> object names for whole-city landmark selection. Upload limit: 100 MB / 3 million triangles. Imports stay in this browser's IndexedDB only; keep your own backup.
+Keep origin, scale and orientation. Save visible mesh objects as .3dm and choose the matching target in Import Rhino. NURBS should be meshed before import. Preserve LM:<building-id>|<object-id> object names for whole-city landmark selection. Upload limit: 100 MB / 3 million triangles. Imports stay in this browser's IndexedDB only; keep your own backup.
 
 Data: © OpenStreetMap contributors, https://www.openstreetmap.org/copyright, ODbL 1.0. Central snapshot 2026-09-21 and northern/western extraction retained, plus Geofabrik Greater London snapshot 2026-09-29 for the east/south extension. Source details: tools/data-provenance.json. Footprints and placement are actual map data; heights use OSM height, levels × 3.2 m, or an explicitly assumed 12 m. Flat terrain; roofs and landmark forms are approximations, not survey/BIM models. Isokon retains its mapped placement and orientation, with 94 architectural parts and an approximate 14.25 m top height; detailed dimensions are reference-informed, not measured.
 
-## Expanded landmarks and regeneration
+## Historical 33-building regeneration (do not run over the current catalogue)
 
 Eight new cards, labels and Rhino masses: Battersea Power Station, Peckham Library, Laban Dance Centre, One Canada Square, Crossrail Place, Old Royal Naval College, Queen’s House and Royal Observatory / Flamsteed House. Mapped building parts supply Battersea’s four chimneys, Canada Square’s 25 m pyramid crown, Peckham’s raised reading room and roof pods, and the Naval College’s courts and domes. Crossrail’s curved canopy and Peckham’s seven leaning supports are reference-informed approximations, documented on the cards. No fictitious context buildings are added.
 
-Ordinary edits need only the committed manifest, JSON tiles and mesh files. For a full geographic rebuild, retain tools/london-osm.json (the existing source snapshot), install tools/requirements.txt, then run:
+Ordinary edits need only the committed manifest, JSON tiles and mesh files. For current geometry edits, restore city.json from dist/assets/city-data.zip to tools/city-full.json, edit that source, copy the version-2 data to dist/assets/city.json, and run tile-city.py → pack-city.mjs → export-meshes.mjs → export-region-rhino.py. Run verify-catalog.mjs, verify-region.mjs, verify-english.mjs and verify-visits.mjs afterwards. Keep the original detailed models and catalogue metadata intact.
+
+The following older pipeline is retained for historical reference only; it omits the expanded catalogue:
 
 ```text
 python tools/extend-from-pbf.py
@@ -37,7 +39,7 @@ node tools/verify-region.mjs
 
 The extractor uses the cached dated Geofabrik PBF or downloads that snapshot if missing. Raw snapshots are ignored and are not required to run or edit the website; do not rerun legacy fetch-region.py or fetch-osm.py over the expanded data. The complete editable generated data are in dist/assets/city-data.zip. Install osmium only when rebuilding geographic source data.
 
-The full context has 3,248,564 triangles. A merged Rhino city exceeds the browser’s 100 MB / 3 million triangle import limit; use regional/individual editing or ReduceMesh before reimport. The regional model files total about 266 MB uncompressed. Initial map data are ~3.96 MB before HTTP compression; 33.18 MB is the sum of all context tile downloads, not an initial-load requirement. GPU buffer figures exclude landmark meshes, terrain, textures, driver and CPU overhead. Performance depends on device/network; geometry remains exact at every zoom.
+The full context has 3,248,564 triangles. A merged Rhino city exceeds the browser’s 100 MB / 3 million triangle import limit; use regional/individual editing or ReduceMesh before reimport. The regional model files total about 266 MB uncompressed. Initial map data are ~5.24 MB before HTTP compression; 48.06 MB is the sum of all context tile downloads, not an initial-load requirement. GPU buffer figures exclude landmark meshes, terrain, textures, driver and CPU overhead. Performance depends on device/network; geometry remains exact at every zoom.
 
 
 ## Landmark detail and photographs (2026-09-30)
@@ -53,7 +55,7 @@ The complete interface, all 33 building cards, loading/error messages, accessibi
 
 Six further landmarks: St Pancras International, King's Cross Station, Senate House, Somerset House, National Gallery and Bloomberg European Headquarters. Actual mapped footprints and parts are retained; roof profiles for the two stations and Somerset House are schematic and disclosed in the cards. National Gallery's mapped dome and Senate House's tower setbacks use original parts. All six include licensed photographs and Rhino 6 downloads. The previous 27 landmark geometries were compared with the preceding version and remain identical.
 
-Current initial manifest: about 3.96 MB (about 0.64 MB gzip before regional download metadata); context meshes: 33.18 MB compressed and 69.38 MB GPU geometry. Photographs load only on selection. This release changes content and models, not the Site audience or local-only storage of imported models.
+Current initial manifest: about 5.24 MB (about 0.64 MB gzip before regional download metadata); context meshes: 48.06 MB compressed and 100.91 MB GPU geometry. Photographs load only on selection. This release changes content and models, not the Site audience or local-only storage of imported models.
 
 
 ## Visited buildings and exterior finishes (2026-10-01)
@@ -74,3 +76,9 @@ Visit now reveals the reference-informed finish from the lowest vertex to the hi
 The top-right Style selector provides Atlas, Blueprint and Night. dist/map-styles.js owns the palettes and browser-local preference (london-field-atlas.map-style.v1). Styles change background, terrain, parks, waterways, streets, surrounding masses, unvisited landmarks and selection outlines. Visited exterior colours stay unchanged. Height sources overrides only context mass colours and survives style changes; turning it off restores the selected palette. All streamed and manifest streets share one material, so newly loaded tiles use the current style. No extra textures, geometry or draw calls are added.
 
 QA: English and visit/geometry verification passed; desktop and 390px mobile style selection, persistence after reload, visit reveal intermediate/final frames, undo, source-colour compatibility and browser error logs checked. Existing source vertices, coordinate system, camera, tile budgets and Rhino exports remain unchanged.
+
+## 2 October 2026 catalogue
+
+The source list of 300 entries was reconciled against existing landmarks. Added 256, merged 6 into parent entries (search aliases retained), excluded 5. Photos: 239 new, 272 total; all local, credited and loaded on card selection. Search covers names, aliases and addresses. New massing is OSM-derived, not detailed reconstruction, and does not yet have facade finish studies. All stops support local visit records. Geographic source selections and photo metadata are under tools/catalog-*.json. The current data ZIP is the canonical complete editable source.
+
+The 151,426 original geometry records and all original 33 detailed groups are fingerprinted in tools/catalog-baseline.json. The catalogue verifier confirms they remain intact. Wembley has a schematic tilted arch (mapped plan, recorded height) and thin roof panels instead of incorrectly extruding those elements as solid walls. Emery Walker’s House is the address-verified no. 7 footprint.

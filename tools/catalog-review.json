@@ -1,0 +1,2113 @@
+[
+  {
+    "number": 1,
+    "original": "Barbican Centre & Estate",
+    "name": "Barbican Centre & Estate",
+    "id": "barbican",
+    "status": "existing"
+  },
+  {
+    "number": 2,
+    "original": "Golden Lane Estate",
+    "name": "Golden Lane Estate",
+    "id": "catalog-002",
+    "status": "add"
+  },
+  {
+    "number": 3,
+    "original": "St Paul’s Cathedral",
+    "name": "St Paul’s Cathedral",
+    "id": "stpauls",
+    "status": "existing"
+  },
+  {
+    "number": 4,
+    "original": "One New Change",
+    "name": "One New Change",
+    "id": "catalog-004",
+    "status": "add"
+  },
+  {
+    "number": 5,
+    "original": "Bloomberg European Headquarters",
+    "name": "Bloomberg European Headquarters",
+    "id": "bloomberg",
+    "status": "existing"
+  },
+  {
+    "number": 6,
+    "original": "Guildhall",
+    "name": "Guildhall",
+    "id": "catalog-006",
+    "status": "add"
+  },
+  {
+    "number": 7,
+    "original": "Guildhall Art Gallery",
+    "name": "Guildhall Art Gallery",
+    "id": "catalog-007",
+    "status": "add"
+  },
+  {
+    "number": 8,
+    "original": "St Stephen Walbrook",
+    "name": "St Stephen Walbrook",
+    "id": "catalog-008",
+    "status": "add"
+  },
+  {
+    "number": 9,
+    "original": "St Mary-le-Bow",
+    "name": "St Mary-le-Bow",
+    "id": "catalog-009",
+    "status": "add"
+  },
+  {
+    "number": 10,
+    "original": "Christ Church Greyfriars 유구",
+    "name": "Christ Church Greyfriars Ruins",
+    "id": "catalog-010",
+    "status": "add"
+  },
+  {
+    "number": 11,
+    "original": "Postman’s Park — Watts Memorial",
+    "name": "Watts Memorial, Postman’s Park",
+    "id": "catalog-011",
+    "status": "add"
+  },
+  {
+    "number": 12,
+    "original": "St Bartholomew the Great",
+    "name": "St Bartholomew the Great",
+    "id": "catalog-012",
+    "status": "add"
+  },
+  {
+    "number": 13,
+    "original": "Smithfield Market",
+    "name": "Smithfield Market",
+    "id": "catalog-013",
+    "status": "add"
+  },
+  {
+    "number": 14,
+    "original": "Charterhouse",
+    "name": "Charterhouse",
+    "id": "catalog-014",
+    "status": "add"
+  },
+  {
+    "number": 15,
+    "original": "Florin Court",
+    "name": "Florin Court",
+    "id": "catalog-015",
+    "status": "add"
+  },
+  {
+    "number": 16,
+    "original": "Barts Hospital — North Wing",
+    "name": "Barts Hospital North Wing",
+    "id": "catalog-016",
+    "status": "add"
+  },
+  {
+    "number": 17,
+    "original": "Old Bailey",
+    "name": "Old Bailey",
+    "id": "catalog-017",
+    "status": "add"
+  },
+  {
+    "number": 18,
+    "original": "81 Newgate Street — 구 BT Centre",
+    "name": "Panorama St Paul’s",
+    "id": "catalog-018",
+    "status": "add"
+  },
+  {
+    "number": 19,
+    "original": "1 Finsbury Avenue",
+    "name": "1 Finsbury Avenue",
+    "id": "catalog-019",
+    "status": "add"
+  },
+  {
+    "number": 20,
+    "original": "Britannic House — Finsbury Circus",
+    "name": "Britannic House",
+    "id": "catalog-020",
+    "status": "add"
+  },
+  {
+    "number": 21,
+    "original": "Lloyd’s Building",
+    "name": "Lloyd’s Building",
+    "id": "lloyds",
+    "status": "existing"
+  },
+  {
+    "number": 22,
+    "original": "30 St Mary Axe — The Gherkin",
+    "name": "30 St Mary Axe",
+    "id": "gherkin",
+    "status": "existing"
+  },
+  {
+    "number": 23,
+    "original": "The Leadenhall Building",
+    "name": "The Leadenhall Building",
+    "id": "catalog-023",
+    "status": "add"
+  },
+  {
+    "number": 24,
+    "original": "22 Bishopsgate",
+    "name": "22 Bishopsgate",
+    "id": "catalog-024",
+    "status": "add"
+  },
+  {
+    "number": 25,
+    "original": "8 Bishopsgate",
+    "name": "8 Bishopsgate",
+    "id": "catalog-025",
+    "status": "add"
+  },
+  {
+    "number": 26,
+    "original": "20 Fenchurch Street",
+    "name": "20 Fenchurch Street",
+    "id": "catalog-026",
+    "status": "add"
+  },
+  {
+    "number": 27,
+    "original": "Willis Building — 51 Lime Street",
+    "name": "Willis Building",
+    "id": "catalog-027",
+    "status": "add"
+  },
+  {
+    "number": 28,
+    "original": "Tower 42",
+    "name": "Tower 42",
+    "id": "catalog-028",
+    "status": "add"
+  },
+  {
+    "number": 29,
+    "original": "The Scalpel — 52 Lime Street",
+    "name": "The Scalpel",
+    "id": "catalog-029",
+    "status": "add"
+  },
+  {
+    "number": 30,
+    "original": "Leadenhall Market",
+    "name": "Leadenhall Market",
+    "id": "catalog-030",
+    "status": "add"
+  },
+  {
+    "number": 31,
+    "original": "Royal Exchange",
+    "name": "Royal Exchange",
+    "id": "catalog-031",
+    "status": "add"
+  },
+  {
+    "number": 32,
+    "original": "Bank of England",
+    "name": "Bank of England",
+    "id": "catalog-032",
+    "status": "add"
+  },
+  {
+    "number": 33,
+    "original": "Mansion House",
+    "name": "Mansion House",
+    "id": "catalog-033",
+    "status": "add"
+  },
+  {
+    "number": 34,
+    "original": "No. 1 Poultry",
+    "name": "No. 1 Poultry",
+    "id": "catalog-034",
+    "status": "add"
+  },
+  {
+    "number": 35,
+    "original": "St Mary Woolnoth",
+    "name": "St Mary Woolnoth",
+    "id": "catalog-035",
+    "status": "add"
+  },
+  {
+    "number": 36,
+    "original": "St Helen’s Bishopsgate",
+    "name": "St Helen’s Bishopsgate",
+    "id": "catalog-036",
+    "status": "add"
+  },
+  {
+    "number": 37,
+    "original": "St Dunstan in the East",
+    "name": "St Dunstan in the East",
+    "id": "catalog-037",
+    "status": "add"
+  },
+  {
+    "number": 38,
+    "original": "The Monument",
+    "name": "The Monument",
+    "id": "catalog-038",
+    "status": "add"
+  },
+  {
+    "number": 39,
+    "original": "Tower of London",
+    "name": "Tower of London",
+    "id": "tower",
+    "status": "existing"
+  },
+  {
+    "number": 40,
+    "original": "Tower Bridge",
+    "name": "Tower Bridge",
+    "id": "towerbridge",
+    "status": "existing"
+  },
+  {
+    "number": 41,
+    "original": "Palace of Westminster",
+    "name": "Palace of Westminster",
+    "id": "westminster",
+    "status": "existing"
+  },
+  {
+    "number": 42,
+    "original": "Westminster Abbey",
+    "name": "Westminster Abbey",
+    "id": "abbey",
+    "status": "existing"
+  },
+  {
+    "number": 43,
+    "original": "St Margaret’s Church — Westminster",
+    "name": "St Margaret’s Church, Westminster",
+    "id": "catalog-043",
+    "status": "add"
+  },
+  {
+    "number": 44,
+    "original": "Westminster Hall",
+    "name": "Westminster Hall",
+    "id": "catalog-044",
+    "status": "merged",
+    "mergeInto": 41
+  },
+  {
+    "number": 45,
+    "original": "Westminster Cathedral",
+    "name": "Westminster Cathedral",
+    "id": "catalog-045",
+    "status": "add"
+  },
+  {
+    "number": 46,
+    "original": "Central Hall Westminster",
+    "name": "Central Hall Westminster",
+    "id": "catalog-046",
+    "status": "add"
+  },
+  {
+    "number": 47,
+    "original": "Supreme Court — Middlesex Guildhall",
+    "name": "Supreme Court",
+    "id": "catalog-047",
+    "status": "add"
+  },
+  {
+    "number": 48,
+    "original": "Banqueting House",
+    "name": "Banqueting House",
+    "id": "catalog-048",
+    "status": "add"
+  },
+  {
+    "number": 49,
+    "original": "Horse Guards",
+    "name": "Horse Guards",
+    "id": "catalog-049",
+    "status": "add"
+  },
+  {
+    "number": 50,
+    "original": "Foreign, Commonwealth & Development Office",
+    "name": "Foreign, Commonwealth & Development Office",
+    "id": "catalog-050",
+    "status": "add"
+  },
+  {
+    "number": 51,
+    "original": "Old War Office — The OWO",
+    "name": "Old War Office",
+    "id": "catalog-051",
+    "status": "add"
+  },
+  {
+    "number": 52,
+    "original": "Portcullis House",
+    "name": "Portcullis House",
+    "id": "catalog-052",
+    "status": "add"
+  },
+  {
+    "number": 53,
+    "original": "Westminster Underground Station",
+    "name": "Westminster Underground Station",
+    "id": "catalog-053",
+    "status": "add"
+  },
+  {
+    "number": 54,
+    "original": "New Scotland Yard",
+    "name": "New Scotland Yard",
+    "id": "catalog-054",
+    "status": "add"
+  },
+  {
+    "number": 55,
+    "original": "55 Broadway",
+    "name": "55 Broadway",
+    "id": "catalog-055",
+    "status": "add"
+  },
+  {
+    "number": 56,
+    "original": "St John’s Smith Square",
+    "name": "St John’s Smith Square",
+    "id": "catalog-056",
+    "status": "add"
+  },
+  {
+    "number": 57,
+    "original": "Smith Square 주변 Georgian 테라스 주택군",
+    "name": "Smith Square Georgian Terraces",
+    "id": "catalog-057",
+    "status": "excluded",
+    "reason": "A general group of Georgian terraces without specified addresses; St John's Smith Square remains included."
+  },
+  {
+    "number": 58,
+    "original": "Tate Britain",
+    "name": "Tate Britain",
+    "id": "catalog-058",
+    "status": "add"
+  },
+  {
+    "number": 59,
+    "original": "Millbank Tower",
+    "name": "Millbank Tower",
+    "id": "catalog-059",
+    "status": "add"
+  },
+  {
+    "number": 60,
+    "original": "Channel 4 Headquarters",
+    "name": "Channel 4 Headquarters",
+    "id": "catalog-060",
+    "status": "add"
+  },
+  {
+    "number": 61,
+    "original": "Buckingham Palace",
+    "name": "Buckingham Palace",
+    "id": "catalog-061",
+    "status": "add"
+  },
+  {
+    "number": 62,
+    "original": "St James’s Palace",
+    "name": "St James’s Palace",
+    "id": "catalog-062",
+    "status": "add"
+  },
+  {
+    "number": 63,
+    "original": "Spencer House",
+    "name": "Spencer House",
+    "id": "catalog-063",
+    "status": "add"
+  },
+  {
+    "number": 64,
+    "original": "The Reform Club",
+    "name": "The Reform Club",
+    "id": "catalog-064",
+    "status": "add"
+  },
+  {
+    "number": 65,
+    "original": "The Athenaeum Club",
+    "name": "The Athenaeum Club",
+    "id": "catalog-065",
+    "status": "add"
+  },
+  {
+    "number": 66,
+    "original": "Burlington House",
+    "name": "Burlington House",
+    "id": "catalog-066",
+    "status": "add"
+  },
+  {
+    "number": 67,
+    "original": "Royal Academy — 6 Burlington Gardens",
+    "name": "Royal Academy, 6 Burlington Gardens",
+    "id": "catalog-067",
+    "status": "add"
+  },
+  {
+    "number": 68,
+    "original": "Burlington Arcade",
+    "name": "Burlington Arcade",
+    "id": "catalog-068",
+    "status": "add"
+  },
+  {
+    "number": 69,
+    "original": "The Economist Buildings",
+    "name": "The Economist Buildings",
+    "id": "catalog-069",
+    "status": "add"
+  },
+  {
+    "number": 70,
+    "original": "St James’s Church — Piccadilly",
+    "name": "St James’s Church, Piccadilly",
+    "id": "catalog-070",
+    "status": "add"
+  },
+  {
+    "number": 71,
+    "original": "National Gallery",
+    "name": "National Gallery",
+    "id": "nationalgallery",
+    "status": "existing"
+  },
+  {
+    "number": 72,
+    "original": "National Gallery — Sainsbury Wing",
+    "name": "National Gallery",
+    "id": "catalog-072",
+    "status": "merged",
+    "mergeInto": 71
+  },
+  {
+    "number": 73,
+    "original": "National Portrait Gallery",
+    "name": "National Portrait Gallery",
+    "id": "catalog-073",
+    "status": "add"
+  },
+  {
+    "number": 74,
+    "original": "St Martin-in-the-Fields",
+    "name": "St Martin-in-the-Fields",
+    "id": "catalog-074",
+    "status": "add"
+  },
+  {
+    "number": 75,
+    "original": "Liberty London",
+    "name": "Liberty London",
+    "id": "catalog-075",
+    "status": "add"
+  },
+  {
+    "number": 76,
+    "original": "Broadcasting House",
+    "name": "Broadcasting House",
+    "id": "catalog-076",
+    "status": "add"
+  },
+  {
+    "number": 77,
+    "original": "All Souls Church — Langham Place",
+    "name": "All Souls Church, Langham Place",
+    "id": "catalog-077",
+    "status": "add"
+  },
+  {
+    "number": 78,
+    "original": "RIBA Headquarters — 66 Portland Place",
+    "name": "RIBA Headquarters",
+    "id": "catalog-078",
+    "status": "add"
+  },
+  {
+    "number": 79,
+    "original": "The Wallace Collection — Hertford House",
+    "name": "Wallace Collection, Hertford House",
+    "id": "catalog-079",
+    "status": "add"
+  },
+  {
+    "number": 80,
+    "original": "Wigmore Hall",
+    "name": "Wigmore Hall",
+    "id": "catalog-080",
+    "status": "add"
+  },
+  {
+    "number": 81,
+    "original": "British Museum",
+    "name": "British Museum",
+    "id": "museum",
+    "status": "existing"
+  },
+  {
+    "number": 82,
+    "original": "British Museum Great Court",
+    "name": "British Museum Great Court",
+    "id": "catalog-082",
+    "status": "merged",
+    "mergeInto": 81
+  },
+  {
+    "number": 83,
+    "original": "Senate House",
+    "name": "Senate House",
+    "id": "senatehouse",
+    "status": "existing"
+  },
+  {
+    "number": 84,
+    "original": "UCL Wilkins Building",
+    "name": "UCL Wilkins Building",
+    "id": "catalog-084",
+    "status": "add"
+  },
+  {
+    "number": 85,
+    "original": "SOAS Brunei Gallery",
+    "name": "Brunei Gallery, SOAS",
+    "id": "catalog-085",
+    "status": "add"
+  },
+  {
+    "number": 86,
+    "original": "The Brunswick Centre",
+    "name": "The Brunswick Centre",
+    "id": "catalog-086",
+    "status": "add"
+  },
+  {
+    "number": 87,
+    "original": "St George’s Bloomsbury",
+    "name": "St George’s Bloomsbury",
+    "id": "catalog-087",
+    "status": "add"
+  },
+  {
+    "number": 88,
+    "original": "Sir John Soane’s Museum",
+    "name": "Sir John Soane’s Museum",
+    "id": "catalog-088",
+    "status": "add"
+  },
+  {
+    "number": 89,
+    "original": "Lincoln’s Inn New Hall & Library",
+    "name": "Lincoln’s Inn New Hall & Library",
+    "id": "catalog-089",
+    "status": "add"
+  },
+  {
+    "number": 90,
+    "original": "Royal Courts of Justice",
+    "name": "Royal Courts of Justice",
+    "id": "catalog-090",
+    "status": "add"
+  },
+  {
+    "number": 91,
+    "original": "Temple Church",
+    "name": "Temple Church",
+    "id": "catalog-091",
+    "status": "add"
+  },
+  {
+    "number": 92,
+    "original": "Middle Temple Hall",
+    "name": "Middle Temple Hall",
+    "id": "catalog-092",
+    "status": "add"
+  },
+  {
+    "number": 93,
+    "original": "Somerset House",
+    "name": "Somerset House",
+    "id": "somerset",
+    "status": "existing"
+  },
+  {
+    "number": 94,
+    "original": "King’s College London — Strand Building",
+    "name": "King’s College London Strand Building",
+    "id": "catalog-094",
+    "status": "add"
+  },
+  {
+    "number": 95,
+    "original": "The Maughan Library",
+    "name": "The Maughan Library",
+    "id": "catalog-095",
+    "status": "add"
+  },
+  {
+    "number": 96,
+    "original": "LSE Saw Swee Hock Student Centre",
+    "name": "LSE Saw Swee Hock Student Centre",
+    "id": "catalog-096",
+    "status": "add"
+  },
+  {
+    "number": 97,
+    "original": "LSE Marshall Building",
+    "name": "LSE Marshall Building",
+    "id": "catalog-097",
+    "status": "add"
+  },
+  {
+    "number": 98,
+    "original": "LSE Centre Building",
+    "name": "LSE Centre Building",
+    "id": "catalog-098",
+    "status": "add"
+  },
+  {
+    "number": 99,
+    "original": "Space House",
+    "name": "Space House",
+    "id": "catalog-099",
+    "status": "add"
+  },
+  {
+    "number": 100,
+    "original": "Finsbury Health Centre",
+    "name": "Finsbury Health Centre",
+    "id": "catalog-100",
+    "status": "add"
+  },
+  {
+    "number": 101,
+    "original": "British Library",
+    "name": "British Library",
+    "id": "britishlibrary",
+    "status": "existing"
+  },
+  {
+    "number": 102,
+    "original": "St Pancras International",
+    "name": "St Pancras International",
+    "id": "stpancras",
+    "status": "existing"
+  },
+  {
+    "number": 103,
+    "original": "King’s Cross Station",
+    "name": "King’s Cross Station",
+    "id": "kingscross",
+    "status": "existing"
+  },
+  {
+    "number": 104,
+    "original": "Coal Drops Yard",
+    "name": "Coal Drops Yard",
+    "id": "coaldrops",
+    "status": "existing"
+  },
+  {
+    "number": 105,
+    "original": "Granary Building — Central Saint Martins",
+    "name": "Granary Building, Central Saint Martins",
+    "id": "catalog-105",
+    "status": "add"
+  },
+  {
+    "number": 106,
+    "original": "Gasholders London",
+    "name": "Gasholders London",
+    "id": "catalog-106",
+    "status": "add"
+  },
+  {
+    "number": 107,
+    "original": "Aga Khan Centre",
+    "name": "Aga Khan Centre",
+    "id": "catalog-107",
+    "status": "add"
+  },
+  {
+    "number": 108,
+    "original": "King’s Place",
+    "name": "King’s Place",
+    "id": "catalog-108",
+    "status": "add"
+  },
+  {
+    "number": 109,
+    "original": "Francis Crick Institute",
+    "name": "Francis Crick Institute",
+    "id": "catalog-109",
+    "status": "add"
+  },
+  {
+    "number": 110,
+    "original": "St Pancras Old Church",
+    "name": "St Pancras Old Church",
+    "id": "catalog-110",
+    "status": "add"
+  },
+  {
+    "number": 111,
+    "original": "St Pancras New Church",
+    "name": "St Pancras New Church",
+    "id": "catalog-111",
+    "status": "add"
+  },
+  {
+    "number": 112,
+    "original": "Islington Town Hall",
+    "name": "Islington Town Hall",
+    "id": "catalog-112",
+    "status": "add"
+  },
+  {
+    "number": 113,
+    "original": "Union Chapel",
+    "name": "Union Chapel",
+    "id": "catalog-113",
+    "status": "add"
+  },
+  {
+    "number": 114,
+    "original": "Almeida Theatre",
+    "name": "Almeida Theatre",
+    "id": "catalog-114",
+    "status": "add"
+  },
+  {
+    "number": 115,
+    "original": "Sadler’s Wells Theatre",
+    "name": "Sadler’s Wells Theatre",
+    "id": "catalog-115",
+    "status": "add"
+  },
+  {
+    "number": 116,
+    "original": "Finsbury Estate",
+    "name": "Finsbury Estate",
+    "id": "catalog-116",
+    "status": "add"
+  },
+  {
+    "number": 117,
+    "original": "Bevin Court",
+    "name": "Bevin Court",
+    "id": "catalog-117",
+    "status": "add"
+  },
+  {
+    "number": 118,
+    "original": "Priory Green Estate",
+    "name": "Priory Green Estate",
+    "id": "catalog-118",
+    "status": "add"
+  },
+  {
+    "number": 119,
+    "original": "Diespeker Wharf",
+    "name": "Diespeker Wharf",
+    "id": "catalog-119",
+    "status": "add"
+  },
+  {
+    "number": 120,
+    "original": "Canonbury Tower",
+    "name": "Canonbury Tower",
+    "id": "catalog-120",
+    "status": "add"
+  },
+  {
+    "number": 121,
+    "original": "Alexandra & Ainsworth Estate",
+    "name": "Alexandra & Ainsworth Estate",
+    "id": "catalog-121",
+    "status": "add"
+  },
+  {
+    "number": 122,
+    "original": "Dunboyne Road Estate — Fleet Road",
+    "name": "Dunboyne Road Estate",
+    "id": "catalog-122",
+    "status": "add"
+  },
+  {
+    "number": 123,
+    "original": "Branch Hill Estate",
+    "name": "Branch Hill Estate",
+    "id": "catalog-123",
+    "status": "add"
+  },
+  {
+    "number": 124,
+    "original": "Maiden Lane Estate",
+    "name": "Maiden Lane Estate",
+    "id": "catalog-124",
+    "status": "add"
+  },
+  {
+    "number": 125,
+    "original": "Highgate New Town — Whittington Estate",
+    "name": "Highgate New Town",
+    "id": "catalog-125",
+    "status": "add"
+  },
+  {
+    "number": 126,
+    "original": "22–32 Winscombe Street",
+    "name": "22–32 Winscombe Street",
+    "id": "catalog-126",
+    "status": "add"
+  },
+  {
+    "number": 127,
+    "original": "Isokon Building — Lawn Road Flats",
+    "name": "Isokon Building",
+    "id": "isokon",
+    "status": "existing"
+  },
+  {
+    "number": 128,
+    "original": "2 Willow Road",
+    "name": "2 Willow Road",
+    "id": "catalog-128",
+    "status": "add"
+  },
+  {
+    "number": 129,
+    "original": "Highpoint I",
+    "name": "Highpoint I",
+    "id": "catalog-129",
+    "status": "add"
+  },
+  {
+    "number": 130,
+    "original": "Highpoint II",
+    "name": "Highpoint II",
+    "id": "catalog-130",
+    "status": "add"
+  },
+  {
+    "number": 131,
+    "original": "66 Frognal",
+    "name": "66 Frognal",
+    "id": "catalog-131",
+    "status": "add"
+  },
+  {
+    "number": 132,
+    "original": "Hopkins House",
+    "name": "Hopkins House",
+    "id": "catalog-132",
+    "status": "add"
+  },
+  {
+    "number": 133,
+    "original": "The Roundhouse",
+    "name": "The Roundhouse",
+    "id": "catalog-133",
+    "status": "add"
+  },
+  {
+    "number": 134,
+    "original": "Camden Town Hall",
+    "name": "Camden Town Hall",
+    "id": "catalog-134",
+    "status": "add"
+  },
+  {
+    "number": 135,
+    "original": "The Interchange Building — Camden",
+    "name": "Interchange Building, Camden",
+    "id": "catalog-135",
+    "status": "add"
+  },
+  {
+    "number": 136,
+    "original": "Jewish Museum London — 구 Camden 건물",
+    "name": "Former Jewish Museum, Albert Street",
+    "id": "catalog-136",
+    "status": "add"
+  },
+  {
+    "number": 137,
+    "original": "Keats House",
+    "name": "Keats House",
+    "id": "catalog-137",
+    "status": "add"
+  },
+  {
+    "number": 138,
+    "original": "Fenton House",
+    "name": "Fenton House",
+    "id": "catalog-138",
+    "status": "add"
+  },
+  {
+    "number": 139,
+    "original": "Kenwood House",
+    "name": "Kenwood House",
+    "id": "catalog-139",
+    "status": "add"
+  },
+  {
+    "number": 140,
+    "original": "St Michael’s Church — Highgate",
+    "name": "St Michael’s Church, Highgate",
+    "id": "catalog-140",
+    "status": "add"
+  },
+  {
+    "number": 141,
+    "original": "Royal College of Physicians",
+    "name": "Royal College of Physicians",
+    "id": "catalog-141",
+    "status": "add"
+  },
+  {
+    "number": 142,
+    "original": "London Central Mosque",
+    "name": "London Central Mosque",
+    "id": "catalog-142",
+    "status": "add"
+  },
+  {
+    "number": 143,
+    "original": "ZSL London Zoo — Penguin Pool",
+    "name": "Penguin Pool, London Zoo",
+    "id": "catalog-143",
+    "status": "add"
+  },
+  {
+    "number": 144,
+    "original": "ZSL London Zoo — Snowdon Aviary",
+    "name": "Snowdon Aviary, London Zoo",
+    "id": "catalog-144",
+    "status": "add"
+  },
+  {
+    "number": 145,
+    "original": "ZSL London Zoo — Lubetkin Gorilla House",
+    "name": "Gorilla House, London Zoo",
+    "id": "catalog-145",
+    "status": "add"
+  },
+  {
+    "number": 146,
+    "original": "Alexandra Palace",
+    "name": "Alexandra Palace",
+    "id": "catalog-146",
+    "status": "add"
+  },
+  {
+    "number": 147,
+    "original": "Bruce Castle",
+    "name": "Bruce Castle",
+    "id": "catalog-147",
+    "status": "add"
+  },
+  {
+    "number": 148,
+    "original": "Tottenham Town Hall",
+    "name": "Tottenham Town Hall",
+    "id": "catalog-148",
+    "status": "add"
+  },
+  {
+    "number": 149,
+    "original": "Tottenham Hotspur Stadium",
+    "name": "Tottenham Hotspur Stadium",
+    "id": "catalog-149",
+    "status": "add"
+  },
+  {
+    "number": 150,
+    "original": "Broadwater Farm Estate",
+    "name": "Broadwater Farm Estate",
+    "id": "catalog-150",
+    "status": "add"
+  },
+  {
+    "number": 151,
+    "original": "St Jude-on-the-Hill",
+    "name": "St Jude-on-the-Hill",
+    "id": "catalog-151",
+    "status": "add"
+  },
+  {
+    "number": 152,
+    "original": "Hampstead Garden Suburb Free Church",
+    "name": "Hampstead Garden Suburb Free Church",
+    "id": "catalog-152",
+    "status": "add"
+  },
+  {
+    "number": 153,
+    "original": "East Finchley Underground Station",
+    "name": "East Finchley Underground Station",
+    "id": "catalog-153",
+    "status": "add"
+  },
+  {
+    "number": 154,
+    "original": "Arnos Grove Underground Station",
+    "name": "Arnos Grove Underground Station",
+    "id": "catalog-154",
+    "status": "add"
+  },
+  {
+    "number": 155,
+    "original": "Southgate Underground Station",
+    "name": "Southgate Underground Station",
+    "id": "catalog-155",
+    "status": "add"
+  },
+  {
+    "number": 156,
+    "original": "Oakwood Underground Station",
+    "name": "Oakwood Underground Station",
+    "id": "catalog-156",
+    "status": "add"
+  },
+  {
+    "number": 157,
+    "original": "Cockfosters Underground Station",
+    "name": "Cockfosters Underground Station",
+    "id": "catalog-157",
+    "status": "add"
+  },
+  {
+    "number": 158,
+    "original": "Wembley Stadium",
+    "name": "Wembley Stadium",
+    "id": "catalog-158",
+    "status": "add"
+  },
+  {
+    "number": 159,
+    "original": "Brent Civic Centre",
+    "name": "Brent Civic Centre",
+    "id": "catalog-159",
+    "status": "add"
+  },
+  {
+    "number": 160,
+    "original": "BAPS Shri Swaminarayan Mandir — Neasden",
+    "name": "BAPS Shri Swaminarayan Mandir",
+    "id": "catalog-160",
+    "status": "add"
+  },
+  {
+    "number": 161,
+    "original": "Christ Church Spitalfields",
+    "name": "Christ Church Spitalfields",
+    "id": "catalog-161",
+    "status": "add"
+  },
+  {
+    "number": 162,
+    "original": "Old Spitalfields Market",
+    "name": "Old Spitalfields Market",
+    "id": "catalog-162",
+    "status": "add"
+  },
+  {
+    "number": 163,
+    "original": "Dennis Severs’ House",
+    "name": "Dennis Severs’ House",
+    "id": "catalog-163",
+    "status": "add"
+  },
+  {
+    "number": 164,
+    "original": "19 Princelet Street",
+    "name": "19 Princelet Street",
+    "id": "catalog-164",
+    "status": "add"
+  },
+  {
+    "number": 165,
+    "original": "Sandys Row Synagogue",
+    "name": "Sandys Row Synagogue",
+    "id": "catalog-165",
+    "status": "add"
+  },
+  {
+    "number": 166,
+    "original": "Whitechapel Gallery",
+    "name": "Whitechapel Gallery",
+    "id": "catalog-166",
+    "status": "add"
+  },
+  {
+    "number": 167,
+    "original": "Whitechapel Bell Foundry 건물",
+    "name": "Whitechapel Bell Foundry",
+    "id": "catalog-167",
+    "status": "add"
+  },
+  {
+    "number": 168,
+    "original": "Royal London Hospital — 역사적 Whitechapel Road 건물",
+    "name": "Former Royal London Hospital (Town Hall)",
+    "id": "catalog-168",
+    "status": "add"
+  },
+  {
+    "number": 169,
+    "original": "Idea Store Whitechapel",
+    "name": "Idea Store Whitechapel",
+    "id": "catalog-169",
+    "status": "add"
+  },
+  {
+    "number": 170,
+    "original": "Young V&A",
+    "name": "Young V&A",
+    "id": "catalog-170",
+    "status": "add"
+  },
+  {
+    "number": 171,
+    "original": "Bethnal Green Town Hall",
+    "name": "Bethnal Green Town Hall",
+    "id": "catalog-171",
+    "status": "add"
+  },
+  {
+    "number": 172,
+    "original": "Keeling House",
+    "name": "Keeling House",
+    "id": "catalog-172",
+    "status": "add"
+  },
+  {
+    "number": 173,
+    "original": "Sivill House",
+    "name": "Sivill House",
+    "id": "catalog-173",
+    "status": "add"
+  },
+  {
+    "number": 174,
+    "original": "York Hall",
+    "name": "York Hall",
+    "id": "catalog-174",
+    "status": "add"
+  },
+  {
+    "number": 175,
+    "original": "Haggerston Baths",
+    "name": "Haggerston Baths",
+    "id": "catalog-175",
+    "status": "add"
+  },
+  {
+    "number": 176,
+    "original": "Haggerston School",
+    "name": "Haggerston School",
+    "id": "catalog-176",
+    "status": "add"
+  },
+  {
+    "number": 177,
+    "original": "Hackney Town Hall",
+    "name": "Hackney Town Hall",
+    "id": "catalog-177",
+    "status": "add"
+  },
+  {
+    "number": 178,
+    "original": "Hackney Empire",
+    "name": "Hackney Empire",
+    "id": "catalog-178",
+    "status": "add"
+  },
+  {
+    "number": 179,
+    "original": "Sutton House",
+    "name": "Sutton House",
+    "id": "catalog-179",
+    "status": "add"
+  },
+  {
+    "number": 180,
+    "original": "Walthamstow Town Hall",
+    "name": "Walthamstow Town Hall",
+    "id": "catalog-180",
+    "status": "add"
+  },
+  {
+    "number": 181,
+    "original": "William Morris Gallery — Water House",
+    "name": "William Morris Gallery",
+    "id": "catalog-181",
+    "status": "add"
+  },
+  {
+    "number": 182,
+    "original": "Walthamstow Granada — Soho Theatre Walthamstow",
+    "name": "Soho Theatre Walthamstow (former Granada)",
+    "id": "catalog-182",
+    "status": "add"
+  },
+  {
+    "number": 183,
+    "original": "Walthamstow Wetlands Engine House",
+    "name": "Walthamstow Wetlands Engine House",
+    "id": "catalog-183",
+    "status": "add"
+  },
+  {
+    "number": 184,
+    "original": "Vestry House Museum",
+    "name": "Vestry House Museum",
+    "id": "catalog-184",
+    "status": "add"
+  },
+  {
+    "number": 185,
+    "original": "London Aquatics Centre",
+    "name": "London Aquatics Centre",
+    "id": "aquatics",
+    "status": "existing"
+  },
+  {
+    "number": 186,
+    "original": "Lee Valley VeloPark Velodrome",
+    "name": "Lee Valley Velodrome",
+    "id": "catalog-186",
+    "status": "add"
+  },
+  {
+    "number": 187,
+    "original": "London Stadium",
+    "name": "London Stadium",
+    "id": "catalog-187",
+    "status": "add"
+  },
+  {
+    "number": 188,
+    "original": "Copper Box Arena",
+    "name": "Copper Box Arena",
+    "id": "catalog-188",
+    "status": "add"
+  },
+  {
+    "number": 189,
+    "original": "Here East",
+    "name": "Here East",
+    "id": "catalog-189",
+    "status": "add"
+  },
+  {
+    "number": 190,
+    "original": "UCL East — Marshgate",
+    "name": "UCL East Marshgate",
+    "id": "catalog-190",
+    "status": "add"
+  },
+  {
+    "number": 191,
+    "original": "UCL East — One Pool Street",
+    "name": "UCL East One Pool Street",
+    "id": "catalog-191",
+    "status": "add"
+  },
+  {
+    "number": 192,
+    "original": "Three Mills — House Mill",
+    "name": "House Mill, Three Mills",
+    "id": "catalog-192",
+    "status": "add"
+  },
+  {
+    "number": 193,
+    "original": "Abbey Mills Pumping Station",
+    "name": "Abbey Mills Pumping Station",
+    "id": "catalog-193",
+    "status": "add"
+  },
+  {
+    "number": 194,
+    "original": "Balfron Tower",
+    "name": "Balfron Tower",
+    "id": "catalog-194",
+    "status": "add"
+  },
+  {
+    "number": 195,
+    "original": "Robin Hood Gardens 옛 부지·재개발 현장",
+    "name": "Robin Hood Gardens (former site)",
+    "id": "catalog-195",
+    "status": "excluded",
+    "reason": "Demolished estate (2017–2025); not represented as an extant building."
+  },
+  {
+    "number": 196,
+    "original": "St Matthias Old Church — Poplar",
+    "name": "St Matthias Old Church",
+    "id": "catalog-196",
+    "status": "add"
+  },
+  {
+    "number": 197,
+    "original": "One Canada Square",
+    "name": "One Canada Square",
+    "id": "canadasquare",
+    "status": "existing"
+  },
+  {
+    "number": 198,
+    "original": "Canary Wharf Underground Station",
+    "name": "Canary Wharf Underground Station",
+    "id": "catalog-198",
+    "status": "add"
+  },
+  {
+    "number": 199,
+    "original": "Crossrail Place",
+    "name": "Crossrail Place",
+    "id": "crossrail",
+    "status": "existing"
+  },
+  {
+    "number": 200,
+    "original": "The Crystal — London City Hall",
+    "name": "The Crystal (City Hall)",
+    "id": "catalog-200",
+    "status": "add"
+  },
+  {
+    "number": 201,
+    "original": "National Theatre",
+    "name": "National Theatre",
+    "id": "nationaltheatre",
+    "status": "existing"
+  },
+  {
+    "number": 202,
+    "original": "Royal Festival Hall",
+    "name": "Royal Festival Hall",
+    "id": "festivalhall",
+    "status": "existing"
+  },
+  {
+    "number": 203,
+    "original": "Queen Elizabeth Hall & Purcell Room",
+    "name": "Queen Elizabeth Hall & Purcell Room",
+    "id": "catalog-203",
+    "status": "add"
+  },
+  {
+    "number": 204,
+    "original": "Hayward Gallery",
+    "name": "Hayward Gallery",
+    "id": "hayward",
+    "status": "existing"
+  },
+  {
+    "number": 205,
+    "original": "BFI Southbank",
+    "name": "BFI Southbank",
+    "id": "catalog-205",
+    "status": "add"
+  },
+  {
+    "number": 206,
+    "original": "County Hall",
+    "name": "County Hall, London",
+    "id": "catalog-206",
+    "status": "add"
+  },
+  {
+    "number": 207,
+    "original": "Southbank Centre — Undercroft",
+    "name": "Southbank Centre",
+    "id": "catalog-207",
+    "status": "merged",
+    "mergeInto": 203
+  },
+  {
+    "number": 208,
+    "original": "Waterloo Station",
+    "name": "Waterloo Station",
+    "id": "catalog-208",
+    "status": "add"
+  },
+  {
+    "number": 209,
+    "original": "구 Waterloo International Terminal",
+    "name": "Former Waterloo International Terminal",
+    "id": "catalog-209",
+    "status": "add"
+  },
+  {
+    "number": 210,
+    "original": "The Old Vic",
+    "name": "The Old Vic",
+    "id": "catalog-210",
+    "status": "add"
+  },
+  {
+    "number": 211,
+    "original": "The Young Vic",
+    "name": "The Young Vic",
+    "id": "catalog-211",
+    "status": "add"
+  },
+  {
+    "number": 212,
+    "original": "Tate Modern",
+    "name": "Tate Modern",
+    "id": "tate",
+    "status": "existing"
+  },
+  {
+    "number": 213,
+    "original": "Tate Modern — Blavatnik Building",
+    "name": "Tate Modern",
+    "id": "catalog-213",
+    "status": "merged",
+    "mergeInto": 212
+  },
+  {
+    "number": 214,
+    "original": "Shakespeare’s Globe",
+    "name": "Shakespeare’s Globe",
+    "id": "catalog-214",
+    "status": "add"
+  },
+  {
+    "number": 215,
+    "original": "Millennium Bridge",
+    "name": "Millennium Bridge",
+    "id": "millennium",
+    "status": "existing"
+  },
+  {
+    "number": 216,
+    "original": "Southwark Cathedral",
+    "name": "Southwark Cathedral",
+    "id": "catalog-216",
+    "status": "add"
+  },
+  {
+    "number": 217,
+    "original": "Borough Market",
+    "name": "Borough Market",
+    "id": "catalog-217",
+    "status": "add"
+  },
+  {
+    "number": 218,
+    "original": "The Shard",
+    "name": "The Shard",
+    "id": "shard",
+    "status": "existing"
+  },
+  {
+    "number": 219,
+    "original": "London Bridge Station",
+    "name": "London Bridge Station",
+    "id": "catalog-219",
+    "status": "add"
+  },
+  {
+    "number": 220,
+    "original": "구 City Hall — The Queen’s Walk",
+    "name": "Former City Hall, The Queen’s Walk",
+    "id": "catalog-220",
+    "status": "add"
+  },
+  {
+    "number": 221,
+    "original": "Shad Thames 창고군",
+    "name": "Shad Thames Warehouses",
+    "id": "catalog-221",
+    "status": "excluded",
+    "reason": "Broad warehouse district; Butler's Wharf is retained as a specific destination."
+  },
+  {
+    "number": 222,
+    "original": "Butler’s Wharf",
+    "name": "Butler’s Wharf",
+    "id": "catalog-222",
+    "status": "add"
+  },
+  {
+    "number": 223,
+    "original": "White Cube Bermondsey",
+    "name": "White Cube Bermondsey",
+    "id": "catalog-223",
+    "status": "add"
+  },
+  {
+    "number": 224,
+    "original": "Bermondsey Spa Gardens 주변 재생단지",
+    "name": "Bermondsey Spa Regeneration Area",
+    "id": "catalog-224",
+    "status": "excluded",
+    "reason": "An unspecified group of regeneration schemes, without individual building names or boundaries."
+  },
+  {
+    "number": 225,
+    "original": "Canada Water Library",
+    "name": "Canada Water Library",
+    "id": "catalog-225",
+    "status": "add"
+  },
+  {
+    "number": 226,
+    "original": "The Brunel Museum — Engine House",
+    "name": "The Brunel Museum",
+    "id": "catalog-226",
+    "status": "add"
+  },
+  {
+    "number": 227,
+    "original": "St Mary’s Church — Rotherhithe",
+    "name": "St Mary’s Church, Rotherhithe",
+    "id": "catalog-227",
+    "status": "add"
+  },
+  {
+    "number": 228,
+    "original": "The Master Shipwright’s House — Deptford",
+    "name": "The Master Shipwright’s House",
+    "id": "catalog-228",
+    "status": "add"
+  },
+  {
+    "number": 229,
+    "original": "Deptford Town Hall",
+    "name": "Deptford Town Hall",
+    "id": "catalog-229",
+    "status": "add"
+  },
+  {
+    "number": 230,
+    "original": "Laban Building",
+    "name": "Laban Building",
+    "id": "laban",
+    "status": "existing"
+  },
+  {
+    "number": 231,
+    "original": "Goldsmiths Centre for Contemporary Art",
+    "name": "Goldsmiths Centre for Contemporary Art",
+    "id": "catalog-231",
+    "status": "add"
+  },
+  {
+    "number": 232,
+    "original": "St Paul’s Church — Deptford",
+    "name": "St Paul’s Church, Deptford",
+    "id": "catalog-232",
+    "status": "add"
+  },
+  {
+    "number": 233,
+    "original": "Queen’s House — Greenwich",
+    "name": "Queen’s House",
+    "id": "queenshouse",
+    "status": "existing"
+  },
+  {
+    "number": 234,
+    "original": "Old Royal Naval College",
+    "name": "Old Royal Naval College",
+    "id": "navalcollege",
+    "status": "existing"
+  },
+  {
+    "number": 235,
+    "original": "Royal Observatory — Flamsteed House",
+    "name": "Royal Observatory",
+    "id": "observatory",
+    "status": "existing"
+  },
+  {
+    "number": 236,
+    "original": "University of Greenwich — Stockwell Street Building",
+    "name": "Stockwell Street, University of Greenwich",
+    "id": "catalog-236",
+    "status": "add"
+  },
+  {
+    "number": 237,
+    "original": "The O2 — Millennium Dome",
+    "name": "The O2",
+    "id": "catalog-237",
+    "status": "add"
+  },
+  {
+    "number": 238,
+    "original": "Ravensbourne University London",
+    "name": "Ravensbourne University London",
+    "id": "catalog-238",
+    "status": "add"
+  },
+  {
+    "number": 239,
+    "original": "Eltham Palace",
+    "name": "Eltham Palace",
+    "id": "catalog-239",
+    "status": "add"
+  },
+  {
+    "number": 240,
+    "original": "Red House — Bexleyheath",
+    "name": "Red House, Bexleyheath",
+    "id": "catalog-240",
+    "status": "add"
+  },
+  {
+    "number": 241,
+    "original": "Lambeth Palace",
+    "name": "Lambeth Palace",
+    "id": "catalog-241",
+    "status": "add"
+  },
+  {
+    "number": 242,
+    "original": "Lambeth Palace Library",
+    "name": "Lambeth Palace Library",
+    "id": "catalog-242",
+    "status": "add"
+  },
+  {
+    "number": 243,
+    "original": "Newport Street Gallery",
+    "name": "Newport Street Gallery",
+    "id": "catalog-243",
+    "status": "add"
+  },
+  {
+    "number": 244,
+    "original": "Beaconsfield Gallery",
+    "name": "Beaconsfield Gallery",
+    "id": "catalog-244",
+    "status": "add"
+  },
+  {
+    "number": 245,
+    "original": "Imperial War Museum — 구 Bethlem Hospital",
+    "name": "Imperial War Museum London",
+    "id": "catalog-245",
+    "status": "add"
+  },
+  {
+    "number": 246,
+    "original": "Michael Faraday Memorial",
+    "name": "Michael Faraday Memorial",
+    "id": "catalog-246",
+    "status": "add"
+  },
+  {
+    "number": 247,
+    "original": "Metro Central Heights — 구 Alexander Fleming House",
+    "name": "Metro Central Heights",
+    "id": "catalog-247",
+    "status": "add"
+  },
+  {
+    "number": 248,
+    "original": "South London Gallery",
+    "name": "South London Gallery",
+    "id": "catalog-248",
+    "status": "add"
+  },
+  {
+    "number": 249,
+    "original": "Peckham Library",
+    "name": "Peckham Library",
+    "id": "peckham",
+    "status": "existing"
+  },
+  {
+    "number": 250,
+    "original": "Peckham Levels",
+    "name": "Peckham Levels",
+    "id": "catalog-250",
+    "status": "add"
+  },
+  {
+    "number": 251,
+    "original": "Mountview Academy — Peckham",
+    "name": "Mountview Academy",
+    "id": "catalog-251",
+    "status": "add"
+  },
+  {
+    "number": 252,
+    "original": "One Tree Hill Community Centre",
+    "name": "One Tree Hill Community Centre",
+    "id": "catalog-252",
+    "status": "excluded",
+    "reason": "No identifiable London building could be verified under this exact name. A precise address or reference is needed."
+  },
+  {
+    "number": 253,
+    "original": "Walter’s Way",
+    "name": "Walter’s Way",
+    "id": "catalog-253",
+    "status": "add"
+  },
+  {
+    "number": 254,
+    "original": "Segal Close",
+    "name": "Segal Close",
+    "id": "catalog-254",
+    "status": "add"
+  },
+  {
+    "number": 255,
+    "original": "Horniman Museum",
+    "name": "Horniman Museum",
+    "id": "catalog-255",
+    "status": "add"
+  },
+  {
+    "number": 256,
+    "original": "Dulwich Picture Gallery",
+    "name": "Dulwich Picture Gallery",
+    "id": "catalog-256",
+    "status": "add"
+  },
+  {
+    "number": 257,
+    "original": "Dulwich College — Barry Buildings",
+    "name": "Dulwich College Barry Buildings",
+    "id": "catalog-257",
+    "status": "add"
+  },
+  {
+    "number": 258,
+    "original": "Central Hill Estate",
+    "name": "Central Hill Estate",
+    "id": "catalog-258",
+    "status": "add"
+  },
+  {
+    "number": 259,
+    "original": "Crystal Palace National Sports Centre",
+    "name": "Crystal Palace National Sports Centre",
+    "id": "catalog-259",
+    "status": "add"
+  },
+  {
+    "number": 260,
+    "original": "Fairfield Halls — Croydon",
+    "name": "Fairfield Halls",
+    "id": "catalog-260",
+    "status": "add"
+  },
+  {
+    "number": 261,
+    "original": "Natural History Museum",
+    "name": "Natural History Museum",
+    "id": "catalog-261",
+    "status": "add"
+  },
+  {
+    "number": 262,
+    "original": "Victoria and Albert Museum",
+    "name": "Victoria and Albert Museum",
+    "id": "catalog-262",
+    "status": "add"
+  },
+  {
+    "number": 263,
+    "original": "V&A Exhibition Road Quarter",
+    "name": "V&A Exhibition Road Quarter",
+    "id": "catalog-263",
+    "status": "merged",
+    "mergeInto": 262
+  },
+  {
+    "number": 264,
+    "original": "Royal Albert Hall",
+    "name": "Royal Albert Hall",
+    "id": "catalog-264",
+    "status": "add"
+  },
+  {
+    "number": 265,
+    "original": "Royal College of Art — Kensington 캠퍼스",
+    "name": "Royal College of Art, Kensington",
+    "id": "catalog-265",
+    "status": "add"
+  },
+  {
+    "number": 266,
+    "original": "Design Museum — 구 Commonwealth Institute",
+    "name": "Design Museum",
+    "id": "catalog-266",
+    "status": "add"
+  },
+  {
+    "number": 267,
+    "original": "Leighton House",
+    "name": "Leighton House",
+    "id": "catalog-267",
+    "status": "add"
+  },
+  {
+    "number": 268,
+    "original": "The Cosmic House",
+    "name": "The Cosmic House",
+    "id": "catalog-268",
+    "status": "add"
+  },
+  {
+    "number": 269,
+    "original": "Kensington Palace",
+    "name": "Kensington Palace",
+    "id": "catalog-269",
+    "status": "add"
+  },
+  {
+    "number": 270,
+    "original": "Serpentine South Gallery",
+    "name": "Serpentine South Gallery",
+    "id": "catalog-270",
+    "status": "add"
+  },
+  {
+    "number": 271,
+    "original": "Serpentine North Gallery & Magazine",
+    "name": "Serpentine North Gallery & Magazine",
+    "id": "catalog-271",
+    "status": "add"
+  },
+  {
+    "number": 272,
+    "original": "Trellick Tower",
+    "name": "Trellick Tower",
+    "id": "catalog-272",
+    "status": "add"
+  },
+  {
+    "number": 273,
+    "original": "Kensal House",
+    "name": "Kensal House",
+    "id": "catalog-273",
+    "status": "add"
+  },
+  {
+    "number": 274,
+    "original": "Royal Hospital Chelsea",
+    "name": "Royal Hospital Chelsea",
+    "id": "catalog-274",
+    "status": "add"
+  },
+  {
+    "number": 275,
+    "original": "Saatchi Gallery — Duke of York’s Headquarters",
+    "name": "Saatchi Gallery",
+    "id": "catalog-275",
+    "status": "add"
+  },
+  {
+    "number": 276,
+    "original": "Michelin House",
+    "name": "Michelin House",
+    "id": "catalog-276",
+    "status": "add"
+  },
+  {
+    "number": 277,
+    "original": "Peter Jones — Sloane Square",
+    "name": "Peter Jones",
+    "id": "catalog-277",
+    "status": "add"
+  },
+  {
+    "number": 278,
+    "original": "Paddington Station",
+    "name": "Paddington Station",
+    "id": "catalog-278",
+    "status": "add"
+  },
+  {
+    "number": 279,
+    "original": "Paddington Elizabeth line Station",
+    "name": "Paddington Elizabeth line Station",
+    "id": "catalog-279",
+    "status": "add"
+  },
+  {
+    "number": 280,
+    "original": "Hallfield Estate",
+    "name": "Hallfield Estate",
+    "id": "catalog-280",
+    "status": "add"
+  },
+  {
+    "number": 281,
+    "original": "The Ark — Hammersmith",
+    "name": "The Ark",
+    "id": "catalog-281",
+    "status": "add"
+  },
+  {
+    "number": 282,
+    "original": "Riverside Studios",
+    "name": "Riverside Studios",
+    "id": "catalog-282",
+    "status": "add"
+  },
+  {
+    "number": 283,
+    "original": "8 Hammersmith Terrace — Emery Walker’s House",
+    "name": "Emery Walker’s House, 7 Hammersmith Terrace",
+    "id": "catalog-283",
+    "status": "add"
+  },
+  {
+    "number": 284,
+    "original": "Chiswick House",
+    "name": "Chiswick House",
+    "id": "catalog-284",
+    "status": "add"
+  },
+  {
+    "number": 285,
+    "original": "St Michael and All Angels — Bedford Park",
+    "name": "St Michael and All Angels, Bedford Park",
+    "id": "catalog-285",
+    "status": "add"
+  },
+  {
+    "number": 286,
+    "original": "The Hoover Building — Perivale",
+    "name": "The Hoover Building",
+    "id": "catalog-286",
+    "status": "add"
+  },
+  {
+    "number": 287,
+    "original": "Pitzhanger Manor",
+    "name": "Pitzhanger Manor",
+    "id": "catalog-287",
+    "status": "add"
+  },
+  {
+    "number": 288,
+    "original": "Osterley House",
+    "name": "Osterley House",
+    "id": "catalog-288",
+    "status": "add"
+  },
+  {
+    "number": 289,
+    "original": "Syon House",
+    "name": "Syon House",
+    "id": "catalog-289",
+    "status": "add"
+  },
+  {
+    "number": 290,
+    "original": "Kew Gardens — Palm House",
+    "name": "Palm House, Kew Gardens",
+    "id": "catalog-290",
+    "status": "add"
+  },
+  {
+    "number": 291,
+    "original": "Kew Gardens — Temperate House",
+    "name": "Temperate House, Kew Gardens",
+    "id": "catalog-291",
+    "status": "add"
+  },
+  {
+    "number": 292,
+    "original": "Kew Gardens — Princess of Wales Conservatory",
+    "name": "Princess of Wales Conservatory, Kew Gardens",
+    "id": "catalog-292",
+    "status": "add"
+  },
+  {
+    "number": 293,
+    "original": "Ham House",
+    "name": "Ham House",
+    "id": "catalog-293",
+    "status": "add"
+  },
+  {
+    "number": 294,
+    "original": "Strawberry Hill House",
+    "name": "Strawberry Hill House",
+    "id": "catalog-294",
+    "status": "add"
+  },
+  {
+    "number": 295,
+    "original": "Hampton Court Palace",
+    "name": "Hampton Court Palace",
+    "id": "catalog-295",
+    "status": "add"
+  },
+  {
+    "number": 296,
+    "original": "Kingston University Town House",
+    "name": "Kingston University Town House",
+    "id": "catalog-296",
+    "status": "add"
+  },
+  {
+    "number": 297,
+    "original": "Alton Estate — Roehampton",
+    "name": "Alton Estate",
+    "id": "catalog-297",
+    "status": "add"
+  },
+  {
+    "number": 298,
+    "original": "Battersea Power Station",
+    "name": "Battersea Power Station",
+    "id": "battersea",
+    "status": "existing"
+  },
+  {
+    "number": 299,
+    "original": "Royal College of Art — Battersea 캠퍼스",
+    "name": "Royal College of Art, Battersea",
+    "id": "catalog-299",
+    "status": "add"
+  },
+  {
+    "number": 300,
+    "original": "US Embassy — Nine Elms",
+    "name": "US Embassy, Nine Elms",
+    "id": "catalog-300",
+    "status": "add"
+  }
+]

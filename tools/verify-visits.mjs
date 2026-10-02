@@ -6,10 +6,14 @@ import {addFinishAttribute,finishes} from '../dist/landmark-finishes.js';
 
 const city=JSON.parse(fs.readFileSync('dist/assets/city.json'));
 const ids=city.landmarks.map(b=>b.id);
-assert.deepEqual(Object.keys(finishes).sort(),[...ids].sort());
+assert.equal(Object.keys(finishes).length,33);
+assert(Object.keys(finishes).every(id=>ids.includes(id)));
 let value=null;const memory={getItem:()=>value,setItem:(key,v)=>{assert.equal(key,VISITS_KEY);value=v;}};
 const a=createVisitStore(ids,()=>memory),b=createVisitStore(ids,()=>memory);
 assert.equal(a.count(),0);
+assert.deepEqual(a.toggle('catalog-002'),{visited:true,saved:true});
+assert.equal(createVisitStore(ids,()=>memory).has('catalog-002'),true);
+a.toggle('catalog-002');
 assert.deepEqual(a.toggle('gherkin'),{visited:true,saved:true});
 assert.equal(createVisitStore(ids,()=>memory).has('gherkin'),true);
 // A stale second tab must merge the first tab's visit rather than overwrite it.

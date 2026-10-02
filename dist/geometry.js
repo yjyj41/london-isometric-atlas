@@ -37,6 +37,17 @@ export function recordGeometry(r) {
   const parts=[];
   if(r.mesh){
     const g=new T.BufferGeometry();g.setAttribute('position',new T.Float32BufferAttribute(r.mesh,3));parts.push(g);
+  } else if(r.form==='arch_tube'){
+    // A mapped metal arch is an open structural span, not a 134 m solid wall.
+    // Use its real plan extent and recorded top height; tube thickness is schematic.
+    const ring=r.r[0],left=ring.reduce((a,b)=>a[0]<b[0]?a:b),right=ring.reduce((a,b)=>a[0]>b[0]?a:b);
+    const cx=(left[0]+right[0])/2,half=(right[0]-left[0])/2,baseNorth=(left[1]+right[1])/2,radius=3.5;
+    const lean=Math.max(...ring.map(p=>p[1]))-baseNorth-radius;
+    class Arch extends T.Curve {getPoint(t,target=new T.Vector3()){
+      const a=t*Math.PI,s=Math.sin(a);
+      return target.set(cx-half*Math.cos(a),baseNorth+lean*s,r.z+radius+(r.h-r.z-2*radius)*s);
+    }}
+    parts.push(new T.TubeGeometry(new Arch(),64,radius,8,false));
   } else if(r.form==='tapered_chimney'){
     parts.push(loft(r.r[0],[[r.z,1],[r.h,.72]]));
   } else if(r.form==='shard'){

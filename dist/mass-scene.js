@@ -2,7 +2,7 @@ import * as T from './vendor/three.module.js';
 import {mergeGeometries} from './vendor/BufferGeometryUtils.js';
 import {recordGeometry,flatGeometry} from './geometry.js';
 import {createTileStream} from './tile-stream.js';
-import {addFinishAttribute,createFinishMaterial} from './landmark-finishes.js';
+import {addFinishAttribute,createFinishMaterial,finishes} from './landmark-finishes.js';
 import {mapStyles,confidenceColours} from './map-styles.js';
 import {placeName,overlaps} from './label-layout.js';
 const $=s=>document.querySelector(s);
@@ -13,8 +13,9 @@ export async function createAtlas(city,onSelect) {
  const renderer=new T.WebGLRenderer({antialias:true});renderer.setPixelRatio(Math.min(devicePixelRatio,2));
  renderer.shadowMap.enabled=true;renderer.shadowMap.type=T.PCFSoftShadowMap;renderer.shadowMap.autoUpdate=false;
  renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.1;host.append(renderer.domElement);
- const camera=new T.OrthographicCamera(-3000,3000,2000,-2000,1,40000);
- const offset=new T.Vector3(10000,10000,10000),target=new T.Vector3();
+ const camera=new T.OrthographicCamera(-3000,3000,2000,-2000,1,150000);
+ const offset=new T.Vector3(40000,40000,40000),target=new T.Vector3();
+ const maxZoom=()=>Math.max(400,view/45);
  const context=new T.Group(),ground=new T.Group();scene.add(context,ground);
  const original=new Map(),custom=new Map(),markers=new Map();
  const labelSides=new Map(),boundsCache=new WeakMap();
@@ -29,8 +30,9 @@ export async function createAtlas(city,onSelect) {
  const sun=new T.DirectionalLight(0xffffff,2.3);sun.castShadow=true;sun.shadow.mapSize.set(2048,2048);
  sun.shadow.bias=-.0003;sun.shadow.normalBias=.4;sun.shadow.camera.near=10;sun.shadow.camera.far=15000;scene.add(sun,sun.target);
  const [xmin,ymin,xmax,ymax]=city.bounds;
- const plane=new T.Mesh(new T.PlaneGeometry(xmax-xmin+100,ymax-ymin+100),material(0xe2e6e6));
- groundMaterials.ground=plane.material;plane.rotation.x=-Math.PI/2;plane.position.set((xmin+xmax)/2,-.3,-(ymin+ymax)/2);plane.receiveShadow=true;ground.add(plane);
+ const groundGeos=(city.coverage||[[[[xmin,ymin],[xmax,ymin],[xmax,ymax],[xmin,ymax]]]]).map(r=>flatGeometry(r,-.3));
+ const plane=new T.Mesh(mergeGeometries(groundGeos),material(0xe2e6e6));groundGeos.forEach(g=>g.dispose());
+ groundMaterials.ground=plane.material;plane.receiveShadow=true;ground.add(plane);
  for(const [name,records,color,y] of [['parks',city.parks,0xc9d6c4,-.1],['water',city.water,0x94b9c5,0]]){
   const gs=records.map(r=>flatGeometry(r,y));if(gs.length){const g=mergeGeometries(gs);gs.forEach(g=>g.dispose());const m=new T.Mesh(g,material(color));groundMaterials[name]=m.material;m.receiveShadow=true;ground.add(m)}
  }
@@ -71,7 +73,7 @@ export async function createAtlas(city,onSelect) {
   }
   const s=Math.max(700,view/zoom);sun.target.position.copy(target);sun.position.copy(target).add(new T.Vector3(-2500,4500,2000));
   Object.assign(sun.shadow.camera,{left:-s,right:s,top:s,bottom:-s});sun.shadow.camera.updateProjectionMatrix();renderer.shadowMap.needsUpdate=true;
-  $('#zoom-value').textContent=Math.round(zoom*100)+'%';$('#zoom-in').disabled=zoom>=400;$('#zoom-out').disabled=zoom<=.55;
+  $('#zoom-value').textContent=Math.round(zoom*2200/view*100)+'%';$('#zoom-in').disabled=zoom>=maxZoom();$('#zoom-out').disabled=zoom<=.55;
   const approx=view/zoom*90/height,nice=[1,2,5,10,20,50,100,200,500,1000,2000].filter(n=>n<=approx).at(-1)||1;
   $('#scale-line').style.width=(nice*height*zoom/view)+'px';$('#scale-label').textContent=nice>=1000?(nice/1000)+' km':nice+' m';dirty=true;
  }
@@ -79,23 +81,24 @@ export async function createAtlas(city,onSelect) {
  function resize(){width=host.clientWidth;height=host.clientHeight;renderer.setSize(width,height);view=Math.max(3000,((xmax-xmin)+(ymax-ymin))*.707/(width/height)*1.12);sync()}
  new ResizeObserver(resize).observe(host);resize();
  // Start at a readable central-London scale. The full-map control includes Isokon.
- target.set(-250,0,120);zoom=T.MathUtils.clamp(view/2200,.55,400);sync();
- function setZoom(f){zoom=T.MathUtils.clamp(zoom*f,.55,400);sync()}
+ target.set(-250,0,120);zoom=T.MathUtils.clamp(view/2200,.55,maxZoom());sync();
+ function setZoom(f){zoom=T.MathUtils.clamp(zoom*f,.55,maxZoom());sync()}
  function select(id,focus=true){labelsDirty=true;active=id;const bb=objectBounds(id);boxHelper.box.copy(bb);boxHelper.visible=!bb.isEmpty()&&!visited.has(id);
   if(focus&&!bb.isEmpty()){
-   const size=bb.getSize(new T.Vector3()),span=Math.max(size.x,size.y,size.z,60);bb.getCenter(target);zoom=T.MathUtils.clamp(view/(span*(width<600?3.5:2.4)),.55,400);
+   const size=bb.getSize(new T.Vector3()),span=Math.max(size.x,size.y,size.z,60);bb.getCenter(target);zoom=T.MathUtils.clamp(view/(span*(width<600?3.5:2.4)),.55,maxZoom());
    if(width<600){target.x+=span*.36;target.z+=span*.36}else{target.x+=span*.22;target.z-=span*.22}sync();
-  }dirty=true;
+  }else if(focus){const b=city.landmarks.find(b=>b.id===id);target.set(b.anchor[0],0,-b.anchor[1]);zoom=T.MathUtils.clamp(view/500,.55,maxZoom());sync()}dirty=true;
  }
  function setContext(value){contextVisible=value;context.visible=value&&!fullImport;stream?.setEnabled(value&&!fullImport);if(fullImport)fullImport.context.visible=value;sync()}
  function setVisited(id,value,animate=true){
   if(visited.has(id)===value&&!animate)return;
-  const mesh=original.get(id);if(!mesh?.isMesh)return;
+  const mesh=original.get(id);
   if(value)visited.add(id);else visited.delete(id);
   if(id===active)boxHelper.visible=!value&&!boxHelper.box.isEmpty();
   const el=markers.get(id);el.classList.toggle('visited',value);
   const b=city.landmarks.find(b=>b.id===id);
   el.setAttribute('aria-label','Select '+b.name+(value?' · visited':''));
+  if(!mesh?.isMesh||!finishes[id]){dirty=true;return}
   if(!finishMaterials.has(id)&&value){
    mesh.geometry.computeBoundingBox();const center=mesh.geometry.boundingBox.getCenter(new T.Vector3());
    finishMaterials.set(id,createFinishMaterial(id,[center.x,-center.z],[mesh.geometry.boundingBox.min.y,mesh.geometry.boundingBox.max.y]));
@@ -127,7 +130,7 @@ export async function createAtlas(city,onSelect) {
  host.addEventListener('pointerdown',e=>{pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});host.setPointerCapture(e.pointerId);moved=false;gestureStart()});
  host.addEventListener('pointermove',e=>{
   if(!pointers.has(e.pointerId)||!gesture)return;pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});const p=[...pointers.values()];
-  if(p.length>1){moved=true;zoom=T.MathUtils.clamp(gesture.zoom*Math.hypot(p[0].x-p[1].x,p[0].y-p[1].y)/Math.max(1,gesture.dist),.55,400);sync();return}
+  if(p.length>1){moved=true;zoom=T.MathUtils.clamp(gesture.zoom*Math.hypot(p[0].x-p[1].x,p[0].y-p[1].y)/Math.max(1,gesture.dist),.55,maxZoom());sync();return}
   const dx=e.clientX-gesture.x,dy=e.clientY-gesture.y;if(Math.abs(dx)+Math.abs(dy)>5)moved=true;
   target.copy(gesture.target).add(new T.Vector3(-dx/Math.SQRT2-dy*Math.sqrt(1.5),0,dx/Math.SQRT2-dy*Math.sqrt(1.5)).multiplyScalar(view/height/zoom));sync();
  });

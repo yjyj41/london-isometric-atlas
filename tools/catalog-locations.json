@@ -1,0 +1,4591 @@
+[
+  {
+    "number": 2,
+    "original": "Golden Lane Estate",
+    "name": "Golden Lane Estate",
+    "id": "catalog-002",
+    "status": "add",
+    "refs": [
+      "way/201851998"
+    ],
+    "point": [
+      -0.09626143181818181,
+      51.52240350454545
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/201851998",
+    "modelRefs": [
+      "way/201851998"
+    ]
+  },
+  {
+    "number": 4,
+    "original": "One New Change",
+    "name": "One New Change",
+    "id": "catalog-004",
+    "status": "add",
+    "refs": [
+      "way/33083748",
+      "way/116403005"
+    ],
+    "point": [
+      -0.09554606119402985,
+      51.513899956716415
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/33083748",
+    "modelRefs": [
+      "way/33083748",
+      "way/116403005"
+    ]
+  },
+  {
+    "number": 6,
+    "original": "Guildhall",
+    "name": "Guildhall",
+    "id": "catalog-006",
+    "status": "add",
+    "refs": [
+      "way/539317283",
+      "way/539320743"
+    ],
+    "point": [
+      -0.0919611,
+      51.51584575454546
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/539317283",
+    "modelRefs": [
+      "way/539317283",
+      "way/539320743"
+    ]
+  },
+  {
+    "number": 7,
+    "original": "Guildhall Art Gallery",
+    "name": "Guildhall Art Gallery",
+    "id": "catalog-007",
+    "status": "add",
+    "refs": [
+      "way/156172966"
+    ],
+    "point": [
+      -0.09139260434782608,
+      51.5155217
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/156172966",
+    "modelRefs": [
+      "way/156172966"
+    ]
+  },
+  {
+    "number": 8,
+    "original": "St Stephen Walbrook",
+    "name": "St Stephen Walbrook",
+    "id": "catalog-008",
+    "status": "add",
+    "refs": [
+      "way/104053780"
+    ],
+    "point": [
+      -0.08987613076923077,
+      51.51267472307693
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/104053780",
+    "modelRefs": [
+      "way/104053780"
+    ]
+  },
+  {
+    "number": 9,
+    "original": "St Mary-le-Bow",
+    "name": "St Mary-le-Bow",
+    "id": "catalog-009",
+    "status": "add",
+    "refs": [
+      "way/90244113"
+    ],
+    "point": [
+      -0.09356057272727272,
+      51.51382397272727
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/90244113",
+    "modelRefs": [
+      "way/90244113"
+    ]
+  },
+  {
+    "number": 10,
+    "original": "Christ Church Greyfriars 유구",
+    "name": "Christ Church Greyfriars Ruins",
+    "id": "catalog-010",
+    "status": "add",
+    "refs": [
+      "way/240129732"
+    ],
+    "point": [
+      -0.099034775,
+      51.51586853333333
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/240129732",
+    "modelRefs": []
+  },
+  {
+    "number": 11,
+    "original": "Postman’s Park — Watts Memorial",
+    "name": "Watts Memorial, Postman’s Park",
+    "id": "catalog-011",
+    "status": "add",
+    "refs": [
+      "way/1191945525"
+    ],
+    "point": [
+      -0.09786122,
+      51.516903479999996
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/1191945525",
+    "modelRefs": []
+  },
+  {
+    "number": 12,
+    "original": "St Bartholomew the Great",
+    "name": "St Bartholomew the Great",
+    "id": "catalog-012",
+    "status": "add",
+    "refs": [
+      "way/31755876"
+    ],
+    "point": [
+      -0.09954741162790698,
+      51.51891869534884
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/31755876",
+    "modelRefs": [
+      "way/31755876"
+    ]
+  },
+  {
+    "number": 13,
+    "original": "Smithfield Market",
+    "name": "Smithfield Market",
+    "id": "catalog-013",
+    "status": "add",
+    "refs": [
+      "way/145477213"
+    ],
+    "point": [
+      -0.10148355483870967,
+      51.51926563548387
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/145477213",
+    "modelRefs": [
+      "way/145477213"
+    ]
+  },
+  {
+    "number": 14,
+    "original": "Charterhouse",
+    "name": "Charterhouse",
+    "id": "catalog-014",
+    "status": "add",
+    "refs": [
+      "node/5247197725"
+    ],
+    "point": [
+      -0.0997845,
+      51.5214637
+    ],
+    "locationSource": "https://www.openstreetmap.org/node/5247197725",
+    "modelRefs": [
+      "relation/1397940"
+    ]
+  },
+  {
+    "number": 15,
+    "original": "Florin Court",
+    "name": "Florin Court",
+    "id": "catalog-015",
+    "status": "add",
+    "refs": [
+      "way/97176323"
+    ],
+    "point": [
+      -0.09859987727272727,
+      51.52094091363636
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/97176323",
+    "modelRefs": [
+      "way/97176323"
+    ]
+  },
+  {
+    "number": 16,
+    "original": "Barts Hospital — North Wing",
+    "name": "Barts Hospital North Wing",
+    "id": "catalog-016",
+    "status": "add",
+    "refs": [
+      "node/4354554594"
+    ],
+    "point": [
+      -0.1004735,
+      51.517723
+    ],
+    "locationSource": "https://www.openstreetmap.org/node/4354554594",
+    "modelRefs": [
+      "way/131596460"
+    ]
+  },
+  {
+    "number": 17,
+    "original": "Old Bailey",
+    "name": "Old Bailey",
+    "id": "catalog-017",
+    "status": "add",
+    "refs": [
+      "relation/19248252"
+    ],
+    "point": [
+      -0.10173958823529411,
+      51.51551185882353
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/19248252",
+    "modelRefs": [
+      "relation/19248252"
+    ]
+  },
+  {
+    "number": 18,
+    "original": "81 Newgate Street — 구 BT Centre",
+    "name": "Panorama St Paul’s",
+    "id": "catalog-018",
+    "status": "add",
+    "refs": [
+      "way/26183052"
+    ],
+    "point": [
+      -0.09787849607843137,
+      51.51565136078432
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/26183052",
+    "modelRefs": [
+      "way/26183052"
+    ]
+  },
+  {
+    "number": 19,
+    "original": "1 Finsbury Avenue",
+    "name": "1 Finsbury Avenue",
+    "id": "catalog-019",
+    "status": "add",
+    "refs": [
+      "way/242164467"
+    ],
+    "point": [
+      -0.0850429,
+      51.51940603529412
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/242164467",
+    "modelRefs": [
+      "way/242164467"
+    ]
+  },
+  {
+    "number": 20,
+    "original": "Britannic House — Finsbury Circus",
+    "name": "Britannic House",
+    "id": "catalog-020",
+    "status": "add",
+    "refs": [
+      "way/31235522"
+    ],
+    "point": [
+      -0.08769119473684212,
+      51.51840836842105
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/31235522",
+    "modelRefs": [
+      "way/31235522"
+    ]
+  },
+  {
+    "number": 23,
+    "original": "The Leadenhall Building",
+    "name": "The Leadenhall Building",
+    "id": "catalog-023",
+    "status": "add",
+    "refs": [
+      "way/309413981"
+    ],
+    "point": [
+      -0.08231063684210527,
+      51.513972152631574
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/309413981",
+    "modelRefs": [
+      "way/309413981"
+    ]
+  },
+  {
+    "number": 24,
+    "original": "22 Bishopsgate",
+    "name": "22 Bishopsgate",
+    "id": "catalog-024",
+    "status": "add",
+    "refs": [
+      "way/717332347"
+    ],
+    "point": [
+      -0.08299804615384615,
+      51.51444276153846
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/717332347",
+    "modelRefs": [
+      "way/717332347"
+    ]
+  },
+  {
+    "number": 25,
+    "original": "8 Bishopsgate",
+    "name": "8 Bishopsgate",
+    "id": "catalog-025",
+    "status": "add",
+    "refs": [
+      "way/652735770",
+      "way/1136851840"
+    ],
+    "point": [
+      -0.08345716470588235,
+      51.513795341176476
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/652735770",
+    "modelRefs": [
+      "way/652735770",
+      "way/1136851840"
+    ]
+  },
+  {
+    "number": 26,
+    "original": "20 Fenchurch Street",
+    "name": "20 Fenchurch Street",
+    "id": "catalog-026",
+    "status": "add",
+    "refs": [
+      "way/201247295"
+    ],
+    "point": [
+      -0.08352635490196078,
+      51.51129242352941
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/201247295",
+    "modelRefs": [
+      "way/201247295"
+    ]
+  },
+  {
+    "number": 27,
+    "original": "Willis Building — 51 Lime Street",
+    "name": "Willis Building",
+    "id": "catalog-027",
+    "status": "add",
+    "refs": [
+      "way/150335048"
+    ],
+    "point": [
+      -0.08155985,
+      51.512831325
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/150335048",
+    "modelRefs": [
+      "way/150335048"
+    ]
+  },
+  {
+    "number": 28,
+    "original": "Tower 42",
+    "name": "Tower 42",
+    "id": "catalog-028",
+    "status": "add",
+    "refs": [
+      "way/166431059"
+    ],
+    "point": [
+      -0.08383443333333333,
+      51.51520797333333
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/166431059",
+    "modelRefs": [
+      "way/166431059"
+    ]
+  },
+  {
+    "number": 29,
+    "original": "The Scalpel — 52 Lime Street",
+    "name": "The Scalpel",
+    "id": "catalog-029",
+    "status": "add",
+    "refs": [
+      "way/498820075"
+    ],
+    "point": [
+      -0.08094173846153846,
+      51.51317801538461
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/498820075",
+    "modelRefs": [
+      "way/498820075"
+    ]
+  },
+  {
+    "number": 30,
+    "original": "Leadenhall Market",
+    "name": "Leadenhall Market",
+    "id": "catalog-030",
+    "status": "add",
+    "refs": [
+      "way/143113935"
+    ],
+    "point": [
+      -0.08365794714285714,
+      51.512779792857145
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/143113935",
+    "modelRefs": [
+      "way/143113935"
+    ]
+  },
+  {
+    "number": 31,
+    "original": "Royal Exchange",
+    "name": "Royal Exchange",
+    "id": "catalog-031",
+    "status": "add",
+    "refs": [
+      "way/367646970"
+    ],
+    "point": [
+      -0.08707370117647059,
+      51.51361081058824
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/367646970",
+    "modelRefs": [
+      "way/367646970"
+    ]
+  },
+  {
+    "number": 32,
+    "original": "Bank of England",
+    "name": "Bank of England",
+    "id": "catalog-032",
+    "status": "add",
+    "refs": [
+      "relation/553472"
+    ],
+    "point": [
+      -0.0889590475,
+      51.51434688916667
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/553472",
+    "modelRefs": [
+      "relation/553472"
+    ]
+  },
+  {
+    "number": 33,
+    "original": "Mansion House",
+    "name": "Mansion House",
+    "id": "catalog-033",
+    "status": "add",
+    "refs": [
+      "way/33695114"
+    ],
+    "point": [
+      -0.08944767142857143,
+      51.51304989285715
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/33695114",
+    "modelRefs": [
+      "way/33695114"
+    ]
+  },
+  {
+    "number": 34,
+    "original": "No. 1 Poultry",
+    "name": "No. 1 Poultry",
+    "id": "catalog-034",
+    "status": "add",
+    "refs": [
+      "way/143412191"
+    ],
+    "point": [
+      -0.09076035789473684,
+      51.51337655526316
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/143412191",
+    "modelRefs": [
+      "way/143412191"
+    ]
+  },
+  {
+    "number": 35,
+    "original": "St Mary Woolnoth",
+    "name": "St Mary Woolnoth",
+    "id": "catalog-035",
+    "status": "add",
+    "refs": [
+      "way/384032820"
+    ],
+    "point": [
+      -0.08802663076923077,
+      51.51276369230769
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/384032820",
+    "modelRefs": [
+      "way/384032820"
+    ]
+  },
+  {
+    "number": 36,
+    "original": "St Helen’s Bishopsgate",
+    "name": "St Helen’s Bishopsgate",
+    "id": "catalog-036",
+    "status": "add",
+    "refs": [
+      "relation/3850933"
+    ],
+    "point": [
+      -0.08174708,
+      51.51471909000001
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/3850933",
+    "modelRefs": [
+      "relation/3850933"
+    ]
+  },
+  {
+    "number": 37,
+    "original": "St Dunstan in the East",
+    "name": "St Dunstan in the East",
+    "id": "catalog-037",
+    "status": "add",
+    "refs": [
+      "way/237522043"
+    ],
+    "point": [
+      -0.08256109130434783,
+      51.50969354782609
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/237522043",
+    "modelRefs": []
+  },
+  {
+    "number": 38,
+    "original": "The Monument",
+    "name": "The Monument",
+    "id": "catalog-038",
+    "status": "add",
+    "refs": [
+      "relation/3374550"
+    ],
+    "point": [
+      -0.08596468,
+      51.510137740000005
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/3374550",
+    "modelRefs": [
+      "relation/3374550"
+    ]
+  },
+  {
+    "number": 43,
+    "original": "St Margaret’s Church — Westminster",
+    "name": "St Margaret’s Church, Westminster",
+    "id": "catalog-043",
+    "status": "add",
+    "refs": [
+      "way/54486345"
+    ],
+    "point": [
+      -0.12683058095238095,
+      51.49993795714286
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/54486345",
+    "modelRefs": [
+      "way/54486345"
+    ]
+  },
+  {
+    "number": 45,
+    "original": "Westminster Cathedral",
+    "name": "Westminster Cathedral",
+    "id": "catalog-045",
+    "status": "add",
+    "refs": [
+      "way/10810446"
+    ],
+    "point": [
+      -0.13919328166666667,
+      51.49567381833333
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/10810446",
+    "modelRefs": [
+      "way/10810446"
+    ]
+  },
+  {
+    "number": 46,
+    "original": "Central Hall Westminster",
+    "name": "Central Hall Westminster",
+    "id": "catalog-046",
+    "status": "add",
+    "refs": [
+      "way/185101970"
+    ],
+    "point": [
+      -0.12999011666666668,
+      51.50002539166667
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/185101970",
+    "modelRefs": [
+      "way/185101970"
+    ]
+  },
+  {
+    "number": 47,
+    "original": "Supreme Court — Middlesex Guildhall",
+    "name": "Supreme Court",
+    "id": "catalog-047",
+    "status": "add",
+    "refs": [
+      "way/39811548"
+    ],
+    "point": [
+      -0.12808695454545455,
+      51.500373031818185
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/39811548",
+    "modelRefs": [
+      "way/39811548"
+    ]
+  },
+  {
+    "number": 48,
+    "original": "Banqueting House",
+    "name": "Banqueting House",
+    "id": "catalog-048",
+    "status": "add",
+    "refs": [
+      "way/140470549"
+    ],
+    "point": [
+      -0.12595336666666668,
+      51.50458053333333
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/140470549",
+    "modelRefs": [
+      "way/140470549"
+    ]
+  },
+  {
+    "number": 49,
+    "original": "Horse Guards",
+    "name": "Horse Guards",
+    "id": "catalog-049",
+    "status": "add",
+    "refs": [
+      "way/133153176"
+    ],
+    "point": [
+      -0.12705174320987656,
+      51.50476948888888
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/133153176",
+    "modelRefs": [
+      "way/133153176"
+    ]
+  },
+  {
+    "number": 50,
+    "original": "Foreign, Commonwealth & Development Office",
+    "name": "Foreign, Commonwealth & Development Office",
+    "id": "catalog-050",
+    "status": "add",
+    "refs": [
+      "relation/78291"
+    ],
+    "point": [
+      -0.12775095044247786,
+      51.50273768141593
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/78291",
+    "modelRefs": [
+      "relation/78291"
+    ]
+  },
+  {
+    "number": 51,
+    "original": "Old War Office — The OWO",
+    "name": "Old War Office",
+    "id": "catalog-051",
+    "status": "add",
+    "refs": [
+      "relation/78616"
+    ],
+    "point": [
+      -0.1254726533269148,
+      51.50551112810611
+    ],
+    "locationSource": "https://en.wikipedia.org/?curid=274472",
+    "modelRefs": [
+      "relation/78616"
+    ]
+  },
+  {
+    "number": 52,
+    "original": "Portcullis House",
+    "name": "Portcullis House",
+    "id": "catalog-052",
+    "status": "add",
+    "refs": [
+      "way/256497249"
+    ],
+    "point": [
+      -0.124769,
+      51.50131337941177
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/256497249",
+    "modelRefs": [
+      "way/256497249"
+    ]
+  },
+  {
+    "number": 53,
+    "original": "Westminster Underground Station",
+    "name": "Westminster Underground Station",
+    "id": "catalog-053",
+    "status": "add",
+    "refs": [],
+    "point": [
+      -0.125,
+      51.501
+    ],
+    "locationSource": "https://en.wikipedia.org/?curid=354633",
+    "modelRefs": []
+  },
+  {
+    "number": 54,
+    "original": "New Scotland Yard",
+    "name": "New Scotland Yard",
+    "id": "catalog-054",
+    "status": "add",
+    "refs": [
+      "way/31117060"
+    ],
+    "point": [
+      -0.12420861707317073,
+      51.50275913658537
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/31117060",
+    "modelRefs": [
+      "way/31117060"
+    ]
+  },
+  {
+    "number": 55,
+    "original": "55 Broadway",
+    "name": "55 Broadway",
+    "id": "catalog-055",
+    "status": "add",
+    "refs": [
+      "way/221891219"
+    ],
+    "point": [
+      -0.13372879655172415,
+      51.49940966551724
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/221891219",
+    "modelRefs": [
+      "way/221891219"
+    ]
+  },
+  {
+    "number": 56,
+    "original": "St John’s Smith Square",
+    "name": "St John’s Smith Square",
+    "id": "catalog-056",
+    "status": "add",
+    "refs": [
+      "way/118720812"
+    ],
+    "point": [
+      -0.12704392424242425,
+      51.495985545454545
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/118720812",
+    "modelRefs": [
+      "way/118720812"
+    ]
+  },
+  {
+    "number": 58,
+    "original": "Tate Britain",
+    "name": "Tate Britain",
+    "id": "catalog-058",
+    "status": "add",
+    "refs": [
+      "way/24553580"
+    ],
+    "point": [
+      -0.1272533840909091,
+      51.49098171136364
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/24553580",
+    "modelRefs": [
+      "way/24553580"
+    ]
+  },
+  {
+    "number": 59,
+    "original": "Millbank Tower",
+    "name": "Millbank Tower",
+    "id": "catalog-059",
+    "status": "add",
+    "refs": [
+      "way/24553530"
+    ],
+    "point": [
+      -0.12589921818181818,
+      51.49224840909091
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/24553530",
+    "modelRefs": [
+      "way/24553530"
+    ]
+  },
+  {
+    "number": 60,
+    "original": "Channel 4 Headquarters",
+    "name": "Channel 4 Headquarters",
+    "id": "catalog-060",
+    "status": "add",
+    "refs": [],
+    "point": [
+      -0.13294444,
+      51.49594444
+    ],
+    "locationSource": "https://en.wikipedia.org/?curid=55138678",
+    "modelRefs": [
+      "way/26488151"
+    ]
+  },
+  {
+    "number": 61,
+    "original": "Buckingham Palace",
+    "name": "Buckingham Palace",
+    "id": "catalog-061",
+    "status": "add",
+    "refs": [
+      "relation/5208404"
+    ],
+    "point": [
+      -0.1424614205882353,
+      51.500916332352936
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/5208404",
+    "modelRefs": [
+      "relation/5208404"
+    ]
+  },
+  {
+    "number": 62,
+    "original": "St James’s Palace",
+    "name": "St James’s Palace",
+    "id": "catalog-062",
+    "status": "add",
+    "refs": [
+      "relation/545040"
+    ],
+    "point": [
+      -0.1380131342105263,
+      51.504471281578944
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/545040",
+    "modelRefs": [
+      "relation/545040"
+    ]
+  },
+  {
+    "number": 63,
+    "original": "Spencer House",
+    "name": "Spencer House",
+    "id": "catalog-063",
+    "status": "add",
+    "refs": [
+      "relation/16057566"
+    ],
+    "point": [
+      -0.14024304347826086,
+      51.50518587391305
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/16057566",
+    "modelRefs": [
+      "relation/16057566"
+    ]
+  },
+  {
+    "number": 64,
+    "original": "The Reform Club",
+    "name": "The Reform Club",
+    "id": "catalog-064",
+    "status": "add",
+    "refs": [
+      "way/157534204"
+    ],
+    "point": [
+      -0.13352708,
+      51.50655306
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/157534204",
+    "modelRefs": [
+      "way/157534204"
+    ]
+  },
+  {
+    "number": 65,
+    "original": "The Athenaeum Club",
+    "name": "The Athenaeum Club",
+    "id": "catalog-065",
+    "status": "add",
+    "refs": [
+      "way/38446815"
+    ],
+    "point": [
+      -0.1328151777777778,
+      51.506786577777774
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/38446815",
+    "modelRefs": [
+      "way/38446815"
+    ]
+  },
+  {
+    "number": 66,
+    "original": "Burlington House",
+    "name": "Burlington House",
+    "id": "catalog-066",
+    "status": "add",
+    "refs": [
+      "relation/3848545",
+      "way/31510288"
+    ],
+    "point": [
+      -0.13924041012658228,
+      51.50896077594936
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/3848545",
+    "modelRefs": [
+      "relation/3848545",
+      "way/31510288"
+    ]
+  },
+  {
+    "number": 67,
+    "original": "Royal Academy — 6 Burlington Gardens",
+    "name": "Royal Academy, 6 Burlington Gardens",
+    "id": "catalog-067",
+    "status": "add",
+    "refs": [
+      "way/96237005"
+    ],
+    "point": [
+      -0.1399069588235294,
+      51.50977067647059
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/96237005",
+    "modelRefs": [
+      "way/96237005"
+    ]
+  },
+  {
+    "number": 68,
+    "original": "Burlington Arcade",
+    "name": "Burlington Arcade",
+    "id": "catalog-068",
+    "status": "add",
+    "refs": [
+      "way/183994026",
+      "way/652441797"
+    ],
+    "point": [
+      -0.14024691,
+      51.508955560000004
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/183994026",
+    "modelRefs": [
+      "way/183994026"
+    ]
+  },
+  {
+    "number": 69,
+    "original": "The Economist Buildings",
+    "name": "The Economist Buildings",
+    "id": "catalog-069",
+    "status": "add",
+    "refs": [
+      "way/416434301",
+      "way/416434299"
+    ],
+    "point": [
+      -0.13878311999999998,
+      51.50687104
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/416434301",
+    "modelRefs": [
+      "way/416434301",
+      "way/416434299"
+    ]
+  },
+  {
+    "number": 70,
+    "original": "St James’s Church — Piccadilly",
+    "name": "St James’s Church, Piccadilly",
+    "id": "catalog-070",
+    "status": "add",
+    "refs": [
+      "way/96237011"
+    ],
+    "point": [
+      -0.13668307692307693,
+      51.50865540769231
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/96237011",
+    "modelRefs": [
+      "way/96237011"
+    ]
+  },
+  {
+    "number": 73,
+    "original": "National Portrait Gallery",
+    "name": "National Portrait Gallery",
+    "id": "catalog-073",
+    "status": "add",
+    "refs": [
+      "way/59161723"
+    ],
+    "point": [
+      -0.1281184818181818,
+      51.5093283909091
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/59161723",
+    "modelRefs": [
+      "way/59161723"
+    ]
+  },
+  {
+    "number": 74,
+    "original": "St Martin-in-the-Fields",
+    "name": "St Martin-in-the-Fields",
+    "id": "catalog-074",
+    "status": "add",
+    "refs": [
+      "way/30734422"
+    ],
+    "point": [
+      -0.12682705555555557,
+      51.50883837777778
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/30734422",
+    "modelRefs": [
+      "way/30734422"
+    ]
+  },
+  {
+    "number": 75,
+    "original": "Liberty London",
+    "name": "Liberty London",
+    "id": "catalog-075",
+    "status": "add",
+    "refs": [
+      "way/48180840"
+    ],
+    "point": [
+      -0.139990145,
+      51.5138234
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/48180840",
+    "modelRefs": [
+      "way/48180840"
+    ]
+  },
+  {
+    "number": 76,
+    "original": "Broadcasting House",
+    "name": "Broadcasting House",
+    "id": "catalog-076",
+    "status": "add",
+    "refs": [
+      "way/10811256"
+    ],
+    "point": [
+      -0.14333722954545455,
+      51.518631568181824
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/10811256",
+    "modelRefs": [
+      "way/10811256"
+    ]
+  },
+  {
+    "number": 77,
+    "original": "All Souls Church — Langham Place",
+    "name": "All Souls Church, Langham Place",
+    "id": "catalog-077",
+    "status": "add",
+    "refs": [
+      "way/27922125"
+    ],
+    "point": [
+      -0.1431059285714286,
+      51.51808987857142
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/27922125",
+    "modelRefs": [
+      "way/27922125"
+    ]
+  },
+  {
+    "number": 78,
+    "original": "RIBA Headquarters — 66 Portland Place",
+    "name": "RIBA Headquarters",
+    "id": "catalog-078",
+    "status": "add",
+    "refs": [
+      "way/110753809"
+    ],
+    "point": [
+      -0.14481615454545455,
+      51.521322090909095
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/110753809",
+    "modelRefs": [
+      "way/110753809"
+    ]
+  },
+  {
+    "number": 79,
+    "original": "The Wallace Collection — Hertford House",
+    "name": "Wallace Collection, Hertford House",
+    "id": "catalog-079",
+    "status": "add",
+    "refs": [
+      "way/83488820"
+    ],
+    "point": [
+      -0.15299583846153847,
+      51.51736345384616
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/83488820",
+    "modelRefs": [
+      "way/83488820"
+    ]
+  },
+  {
+    "number": 80,
+    "original": "Wigmore Hall",
+    "name": "Wigmore Hall",
+    "id": "catalog-080",
+    "status": "add",
+    "refs": [
+      "way/149173487"
+    ],
+    "point": [
+      -0.1483141,
+      51.51681912222222
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/149173487",
+    "modelRefs": [
+      "way/149173487"
+    ]
+  },
+  {
+    "number": 84,
+    "original": "UCL Wilkins Building",
+    "name": "UCL Wilkins Building",
+    "id": "catalog-084",
+    "status": "add",
+    "refs": [
+      "way/680050665"
+    ],
+    "point": [
+      -0.13349345108695654,
+      51.52472485652174
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/680050665",
+    "modelRefs": [
+      "way/680050665"
+    ]
+  },
+  {
+    "number": 85,
+    "original": "SOAS Brunei Gallery",
+    "name": "Brunei Gallery, SOAS",
+    "id": "catalog-085",
+    "status": "add",
+    "refs": [
+      "way/161195701"
+    ],
+    "point": [
+      -0.12854267916666667,
+      51.521768379166666
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/161195701",
+    "modelRefs": [
+      "way/161195701"
+    ]
+  },
+  {
+    "number": 86,
+    "original": "The Brunswick Centre",
+    "name": "The Brunswick Centre",
+    "id": "catalog-086",
+    "status": "add",
+    "refs": [
+      "way/107014744"
+    ],
+    "point": [
+      -0.123771675,
+      51.5240946
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/107014744",
+    "modelRefs": [
+      "way/107014744"
+    ]
+  },
+  {
+    "number": 87,
+    "original": "St George’s Bloomsbury",
+    "name": "St George’s Bloomsbury",
+    "id": "catalog-087",
+    "status": "add",
+    "refs": [
+      "way/51755264"
+    ],
+    "point": [
+      -0.12471508666666667,
+      51.51771762
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/51755264",
+    "modelRefs": [
+      "way/51755264"
+    ]
+  },
+  {
+    "number": 88,
+    "original": "Sir John Soane’s Museum",
+    "name": "Sir John Soane’s Museum",
+    "id": "catalog-088",
+    "status": "add",
+    "refs": [
+      "way/61453261"
+    ],
+    "point": [
+      -0.11746725384615385,
+      51.517096623076924
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/61453261",
+    "modelRefs": [
+      "way/61453261"
+    ]
+  },
+  {
+    "number": 89,
+    "original": "Lincoln’s Inn New Hall & Library",
+    "name": "Lincoln’s Inn New Hall & Library",
+    "id": "catalog-089",
+    "status": "add",
+    "refs": [
+      "way/4075108"
+    ],
+    "point": [
+      -0.1145044380952381,
+      51.51718762380953
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/4075108",
+    "modelRefs": [
+      "way/4075108"
+    ]
+  },
+  {
+    "number": 90,
+    "original": "Royal Courts of Justice",
+    "name": "Royal Courts of Justice",
+    "id": "catalog-090",
+    "status": "add",
+    "refs": [
+      "relation/2335557"
+    ],
+    "point": [
+      -0.11311368826405867,
+      51.51411292860636
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/2335557",
+    "modelRefs": [
+      "relation/2335557"
+    ]
+  },
+  {
+    "number": 91,
+    "original": "Temple Church",
+    "name": "Temple Church",
+    "id": "catalog-091",
+    "status": "add",
+    "refs": [
+      "way/128454313"
+    ],
+    "point": [
+      -0.11033078085106382,
+      51.51325639574468
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/128454313",
+    "modelRefs": [
+      "way/128454313"
+    ]
+  },
+  {
+    "number": 92,
+    "original": "Middle Temple Hall",
+    "name": "Middle Temple Hall",
+    "id": "catalog-092",
+    "status": "add",
+    "refs": [
+      "way/372838180"
+    ],
+    "point": [
+      -0.1115026141025641,
+      51.512346566666665
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/372838180",
+    "modelRefs": [
+      "way/372838180"
+    ]
+  },
+  {
+    "number": 94,
+    "original": "King’s College London — Strand Building",
+    "name": "King’s College London Strand Building",
+    "id": "catalog-094",
+    "status": "add",
+    "refs": [
+      "way/115809009"
+    ],
+    "point": [
+      -0.11605075777777779,
+      51.511522308888885
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/115809009",
+    "modelRefs": [
+      "way/115809009"
+    ]
+  },
+  {
+    "number": 95,
+    "original": "The Maughan Library",
+    "name": "The Maughan Library",
+    "id": "catalog-095",
+    "status": "add",
+    "refs": [
+      "way/174793675"
+    ],
+    "point": [
+      -0.11079480612244898,
+      51.51509277959184
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/174793675",
+    "modelRefs": [
+      "way/174793675"
+    ]
+  },
+  {
+    "number": 96,
+    "original": "LSE Saw Swee Hock Student Centre",
+    "name": "LSE Saw Swee Hock Student Centre",
+    "id": "catalog-096",
+    "status": "add",
+    "refs": [
+      "way/308816623"
+    ],
+    "point": [
+      -0.11762121874999999,
+      51.51469945625
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/308816623",
+    "modelRefs": [
+      "way/308816623"
+    ]
+  },
+  {
+    "number": 97,
+    "original": "LSE Marshall Building",
+    "name": "LSE Marshall Building",
+    "id": "catalog-097",
+    "status": "add",
+    "refs": [
+      "way/61452977"
+    ],
+    "point": [
+      -0.11691335333333333,
+      51.51500793333333
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/61452977",
+    "modelRefs": [
+      "way/61452977"
+    ]
+  },
+  {
+    "number": 98,
+    "original": "LSE Centre Building",
+    "name": "LSE Centre Building",
+    "id": "catalog-098",
+    "status": "add",
+    "refs": [
+      "way/766878413"
+    ],
+    "point": [
+      -0.11615598333333334,
+      51.514015694444446
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/766878413",
+    "modelRefs": [
+      "way/766878413"
+    ]
+  },
+  {
+    "number": 99,
+    "original": "Space House",
+    "name": "Space House",
+    "id": "catalog-099",
+    "status": "add",
+    "refs": [
+      "way/30942443"
+    ],
+    "point": [
+      -0.11943484857142858,
+      51.51480275142857
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/30942443",
+    "modelRefs": [
+      "way/30942443"
+    ]
+  },
+  {
+    "number": 100,
+    "original": "Finsbury Health Centre",
+    "name": "Finsbury Health Centre",
+    "id": "catalog-100",
+    "status": "add",
+    "refs": [
+      "way/45560456"
+    ],
+    "point": [
+      -0.10876396206896552,
+      51.524894244827586
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/45560456",
+    "modelRefs": [
+      "way/45560456"
+    ]
+  },
+  {
+    "number": 105,
+    "original": "Granary Building — Central Saint Martins",
+    "name": "Granary Building, Central Saint Martins",
+    "id": "catalog-105",
+    "status": "add",
+    "refs": [
+      "way/222021576"
+    ],
+    "point": [
+      -0.12512412857142857,
+      51.535735071428576
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/222021576",
+    "modelRefs": [
+      "way/222021576"
+    ]
+  },
+  {
+    "number": 106,
+    "original": "Gasholders London",
+    "name": "Gasholders London",
+    "id": "catalog-106",
+    "status": "add",
+    "refs": [
+      "relation/7972217"
+    ],
+    "point": [
+      -0.12724375285714284,
+      51.53667565
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/7972217",
+    "modelRefs": [
+      "relation/7972217"
+    ]
+  },
+  {
+    "number": 107,
+    "original": "Aga Khan Centre",
+    "name": "Aga Khan Centre",
+    "id": "catalog-107",
+    "status": "add",
+    "refs": [
+      "way/532767917"
+    ],
+    "point": [
+      -0.12472384,
+      51.53758216
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/532767917",
+    "modelRefs": [
+      "way/532767917"
+    ]
+  },
+  {
+    "number": 108,
+    "original": "King’s Place",
+    "name": "King’s Place",
+    "id": "catalog-108",
+    "status": "add",
+    "refs": [
+      "way/27511817"
+    ],
+    "point": [
+      -0.12162724893617022,
+      51.53503954893617
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/27511817",
+    "modelRefs": [
+      "way/27511817"
+    ]
+  },
+  {
+    "number": 109,
+    "original": "Francis Crick Institute",
+    "name": "Francis Crick Institute",
+    "id": "catalog-109",
+    "status": "add",
+    "refs": [
+      "way/132318687"
+    ],
+    "point": [
+      -0.12892833333333334,
+      51.53142794761904
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/132318687",
+    "modelRefs": [
+      "way/132318687"
+    ]
+  },
+  {
+    "number": 110,
+    "original": "St Pancras Old Church",
+    "name": "St Pancras Old Church",
+    "id": "catalog-110",
+    "status": "add",
+    "refs": [
+      "way/26638075"
+    ],
+    "point": [
+      -0.1301529,
+      51.53493304285714
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/26638075",
+    "modelRefs": [
+      "way/26638075"
+    ]
+  },
+  {
+    "number": 111,
+    "original": "St Pancras New Church",
+    "name": "St Pancras New Church",
+    "id": "catalog-111",
+    "status": "add",
+    "refs": [
+      "way/51517078"
+    ],
+    "point": [
+      -0.12975250256410256,
+      51.52727878717949
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/51517078",
+    "modelRefs": [
+      "way/51517078"
+    ]
+  },
+  {
+    "number": 112,
+    "original": "Islington Town Hall",
+    "name": "Islington Town Hall",
+    "id": "catalog-112",
+    "status": "add",
+    "refs": [
+      "way/27822406"
+    ],
+    "point": [
+      -0.1022262875,
+      51.54167635
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/27822406",
+    "modelRefs": [
+      "way/27822406"
+    ]
+  },
+  {
+    "number": 113,
+    "original": "Union Chapel",
+    "name": "Union Chapel",
+    "id": "catalog-113",
+    "status": "add",
+    "refs": [
+      "way/27815160"
+    ],
+    "point": [
+      -0.10242875,
+      51.54477608333334
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/27815160",
+    "modelRefs": [
+      "way/27815160"
+    ]
+  },
+  {
+    "number": 114,
+    "original": "Almeida Theatre",
+    "name": "Almeida Theatre",
+    "id": "catalog-114",
+    "status": "add",
+    "refs": [
+      "node/299597608"
+    ],
+    "point": [
+      -0.1030764,
+      51.5394403
+    ],
+    "locationSource": "https://www.openstreetmap.org/node/299597608",
+    "modelRefs": [
+      "way/31342846"
+    ]
+  },
+  {
+    "number": 115,
+    "original": "Sadler’s Wells Theatre",
+    "name": "Sadler’s Wells Theatre",
+    "id": "catalog-115",
+    "status": "add",
+    "refs": [
+      "way/98992534"
+    ],
+    "point": [
+      -0.10609241600000001,
+      51.529613176000005
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/98992534",
+    "modelRefs": [
+      "way/98992534"
+    ]
+  },
+  {
+    "number": 116,
+    "original": "Finsbury Estate",
+    "name": "Finsbury Estate",
+    "id": "catalog-116",
+    "status": "add",
+    "refs": [
+      "way/164254072"
+    ],
+    "point": [
+      -0.10562555918367346,
+      51.52639424489796
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/164254072",
+    "modelRefs": [
+      "way/164254072"
+    ]
+  },
+  {
+    "number": 117,
+    "original": "Bevin Court",
+    "name": "Bevin Court",
+    "id": "catalog-117",
+    "status": "add",
+    "refs": [
+      "way/30574798"
+    ],
+    "point": [
+      -0.11312581333333332,
+      51.53042361333333
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/30574798",
+    "modelRefs": [
+      "way/30574798"
+    ]
+  },
+  {
+    "number": 118,
+    "original": "Priory Green Estate",
+    "name": "Priory Green Estate",
+    "id": "catalog-118",
+    "status": "add",
+    "refs": [
+      "way/119695844"
+    ],
+    "point": [
+      -0.11621241666666667,
+      51.53308609583333
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/119695844",
+    "modelRefs": [
+      "way/119695844"
+    ]
+  },
+  {
+    "number": 119,
+    "original": "Diespeker Wharf",
+    "name": "Diespeker Wharf",
+    "id": "catalog-119",
+    "status": "add",
+    "refs": [
+      "way/499315778"
+    ],
+    "point": [
+      -0.09914222222222221,
+      51.53238508888889
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/499315778",
+    "modelRefs": [
+      "way/499315778"
+    ]
+  },
+  {
+    "number": 120,
+    "original": "Canonbury Tower",
+    "name": "Canonbury Tower",
+    "id": "catalog-120",
+    "status": "add",
+    "refs": [],
+    "point": [
+      -0.098611,
+      51.54429
+    ],
+    "locationSource": "https://en.wikipedia.org/?curid=64970948",
+    "modelRefs": [
+      "way/230254103"
+    ]
+  },
+  {
+    "number": 121,
+    "original": "Alexandra & Ainsworth Estate",
+    "name": "Alexandra & Ainsworth Estate",
+    "id": "catalog-121",
+    "status": "add",
+    "refs": [
+      "way/53727605"
+    ],
+    "point": [
+      -0.18251228857142857,
+      51.53968740285714
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/53727605",
+    "modelRefs": [
+      "way/53727605"
+    ]
+  },
+  {
+    "number": 122,
+    "original": "Dunboyne Road Estate — Fleet Road",
+    "name": "Dunboyne Road Estate",
+    "id": "catalog-122",
+    "status": "add",
+    "refs": [
+      "way/49121516"
+    ],
+    "point": [
+      -0.15854134615384616,
+      51.55241669230769
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/49121516",
+    "modelRefs": [
+      "way/49121516"
+    ]
+  },
+  {
+    "number": 123,
+    "original": "Branch Hill Estate",
+    "name": "Branch Hill Estate",
+    "id": "catalog-123",
+    "status": "add",
+    "refs": [
+      "way/49132522"
+    ],
+    "point": [
+      -0.1841093,
+      51.55915085
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/49132522",
+    "modelRefs": [
+      "way/49132522"
+    ]
+  },
+  {
+    "number": 124,
+    "original": "Maiden Lane Estate",
+    "name": "Maiden Lane Estate",
+    "id": "catalog-124",
+    "status": "add",
+    "refs": [],
+    "point": [
+      -0.128,
+      51.542
+    ],
+    "locationSource": "https://en.wikipedia.org/?curid=39557938",
+    "modelRefs": []
+  },
+  {
+    "number": 125,
+    "original": "Highgate New Town — Whittington Estate",
+    "name": "Highgate New Town",
+    "id": "catalog-125",
+    "status": "add",
+    "refs": [
+      "way/217343585"
+    ],
+    "point": [
+      -0.14239868214285714,
+      51.56510368214286
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/217343585",
+    "modelRefs": [
+      "way/217343585"
+    ]
+  },
+  {
+    "number": 126,
+    "original": "22–32 Winscombe Street",
+    "name": "22–32 Winscombe Street",
+    "id": "catalog-126",
+    "status": "add",
+    "refs": [],
+    "point": [
+      -0.14298622854279575,
+      51.56262956012398
+    ],
+    "locationSource": "https://historicengland.org.uk/listing/the-list/list-entry/1410085",
+    "modelRefs": [
+      "way/823583853"
+    ]
+  },
+  {
+    "number": 128,
+    "original": "2 Willow Road",
+    "name": "2 Willow Road",
+    "id": "catalog-128",
+    "status": "add",
+    "refs": [
+      "node/4440741736"
+    ],
+    "point": [
+      -0.1691445,
+      51.557196
+    ],
+    "locationSource": "https://www.openstreetmap.org/node/4440741736",
+    "modelRefs": [
+      "way/105648064"
+    ]
+  },
+  {
+    "number": 129,
+    "original": "Highpoint I",
+    "name": "Highpoint I",
+    "id": "catalog-129",
+    "status": "add",
+    "refs": [
+      "way/514629992"
+    ],
+    "point": [
+      -0.15071836756756757,
+      51.5747837972973
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/514629992",
+    "modelRefs": [
+      "way/514629992"
+    ]
+  },
+  {
+    "number": 130,
+    "original": "Highpoint II",
+    "name": "Highpoint II",
+    "id": "catalog-130",
+    "status": "add",
+    "refs": [],
+    "point": [
+      -0.1504400837970997,
+      51.574491389799725
+    ],
+    "locationSource": "https://historicengland.org.uk/listing/the-list/list-entry/1079183",
+    "modelRefs": [
+      "way/514629992"
+    ]
+  },
+  {
+    "number": 131,
+    "original": "66 Frognal",
+    "name": "66 Frognal",
+    "id": "catalog-131",
+    "status": "add",
+    "refs": [],
+    "point": [
+      -0.182461,
+      51.554735
+    ],
+    "locationSource": "https://historicengland.org.uk/listing/the-list/list-entry/1113062",
+    "modelRefs": [
+      "way/110514129"
+    ]
+  },
+  {
+    "number": 132,
+    "original": "Hopkins House",
+    "name": "Hopkins House",
+    "id": "catalog-132",
+    "status": "add",
+    "refs": [
+      "way/131196074"
+    ],
+    "point": [
+      -0.17065571999999998,
+      51.55521314
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/131196074",
+    "modelRefs": [
+      "way/131196074"
+    ]
+  },
+  {
+    "number": 133,
+    "original": "The Roundhouse",
+    "name": "The Roundhouse",
+    "id": "catalog-133",
+    "status": "add",
+    "refs": [
+      "way/1110282368"
+    ],
+    "point": [
+      -0.15198785692307692,
+      51.543235046153846
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/1110282368",
+    "modelRefs": [
+      "way/1110282368"
+    ]
+  },
+  {
+    "number": 134,
+    "original": "Camden Town Hall",
+    "name": "Camden Town Hall",
+    "id": "catalog-134",
+    "status": "add",
+    "refs": [
+      "way/107005592"
+    ],
+    "point": [
+      -0.12524975,
+      51.52908200833334
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/107005592",
+    "modelRefs": [
+      "way/107005592"
+    ]
+  },
+  {
+    "number": 135,
+    "original": "The Interchange Building — Camden",
+    "name": "Interchange Building, Camden",
+    "id": "catalog-135",
+    "status": "add",
+    "refs": [],
+    "point": [
+      -0.14707886576529125,
+      51.54109440613376
+    ],
+    "locationSource": "https://www.heritagegateway.org.uk/Gateway/Results_Single.aspx?resourceID=19191&uid=7318a10d-2283-4339-924c-8ae2fe234410",
+    "modelRefs": [
+      "way/104239155"
+    ]
+  },
+  {
+    "number": 136,
+    "original": "Jewish Museum London — 구 Camden 건물",
+    "name": "Former Jewish Museum, Albert Street",
+    "id": "catalog-136",
+    "status": "add",
+    "refs": [
+      "way/232592410"
+    ],
+    "point": [
+      -0.14459981428571428,
+      51.53730578571429
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/232592410",
+    "modelRefs": [
+      "way/232592410"
+    ]
+  },
+  {
+    "number": 137,
+    "original": "Keats House",
+    "name": "Keats House",
+    "id": "catalog-137",
+    "status": "add",
+    "refs": [
+      "way/65272940"
+    ],
+    "point": [
+      -0.167909475,
+      51.555518625
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/65272940",
+    "modelRefs": [
+      "way/65272940"
+    ]
+  },
+  {
+    "number": 138,
+    "original": "Fenton House",
+    "name": "Fenton House",
+    "id": "catalog-138",
+    "status": "add",
+    "refs": [
+      "way/110388485"
+    ],
+    "point": [
+      -0.17967398571428572,
+      51.55888707142857
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/110388485",
+    "modelRefs": [
+      "way/110388485"
+    ]
+  },
+  {
+    "number": 139,
+    "original": "Kenwood House",
+    "name": "Kenwood House",
+    "id": "catalog-139",
+    "status": "add",
+    "refs": [
+      "way/24653374"
+    ],
+    "point": [
+      -0.16751327857142856,
+      51.57144021904762
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/24653374",
+    "modelRefs": [
+      "way/24653374"
+    ]
+  },
+  {
+    "number": 140,
+    "original": "St Michael’s Church — Highgate",
+    "name": "St Michael’s Church, Highgate",
+    "id": "catalog-140",
+    "status": "add",
+    "refs": [
+      "way/116406472"
+    ],
+    "point": [
+      -0.15038713333333334,
+      51.56894105833334
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/116406472",
+    "modelRefs": [
+      "way/116406472"
+    ]
+  },
+  {
+    "number": 141,
+    "original": "Royal College of Physicians",
+    "name": "Royal College of Physicians",
+    "id": "catalog-141",
+    "status": "add",
+    "refs": [
+      "way/26709894",
+      "way/673511301"
+    ],
+    "point": [
+      -0.1449017742857143,
+      51.52582994857143
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/26709894",
+    "modelRefs": [
+      "way/26709894",
+      "way/673511301"
+    ]
+  },
+  {
+    "number": 142,
+    "original": "London Central Mosque",
+    "name": "London Central Mosque",
+    "id": "catalog-142",
+    "status": "add",
+    "refs": [
+      "way/5983916"
+    ],
+    "point": [
+      -0.16525658000000001,
+      51.528998935000004
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/5983916",
+    "modelRefs": [
+      "way/5983916"
+    ]
+  },
+  {
+    "number": 143,
+    "original": "ZSL London Zoo — Penguin Pool",
+    "name": "Penguin Pool, London Zoo",
+    "id": "catalog-143",
+    "status": "add",
+    "refs": [
+      "relation/2707204"
+    ],
+    "point": [
+      -0.15344398392857145,
+      51.534019469642864
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/2707204",
+    "modelRefs": []
+  },
+  {
+    "number": 144,
+    "original": "ZSL London Zoo — Snowdon Aviary",
+    "name": "Snowdon Aviary, London Zoo",
+    "id": "catalog-144",
+    "status": "add",
+    "refs": [
+      "way/102143105"
+    ],
+    "point": [
+      -0.1574431222222222,
+      51.53649677777777
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/102143105",
+    "modelRefs": []
+  },
+  {
+    "number": 145,
+    "original": "ZSL London Zoo — Lubetkin Gorilla House",
+    "name": "Gorilla House, London Zoo",
+    "id": "catalog-145",
+    "status": "add",
+    "refs": [
+      "way/42937569"
+    ],
+    "point": [
+      -0.15451155384615384,
+      51.53650921538462
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/42937569",
+    "modelRefs": [
+      "way/42937569"
+    ]
+  },
+  {
+    "number": 146,
+    "original": "Alexandra Palace",
+    "name": "Alexandra Palace",
+    "id": "catalog-146",
+    "status": "add",
+    "refs": [
+      "way/4768526"
+    ],
+    "point": [
+      -0.13085698867924528,
+      51.59421934716981
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/4768526",
+    "modelRefs": [
+      "way/4768526"
+    ]
+  },
+  {
+    "number": 147,
+    "original": "Bruce Castle",
+    "name": "Bruce Castle",
+    "id": "catalog-147",
+    "status": "add",
+    "refs": [
+      "way/42003475"
+    ],
+    "point": [
+      -0.07544806341463414,
+      51.59914439756097
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/42003475",
+    "modelRefs": [
+      "way/42003475"
+    ]
+  },
+  {
+    "number": 148,
+    "original": "Tottenham Town Hall",
+    "name": "Tottenham Town Hall",
+    "id": "catalog-148",
+    "status": "add",
+    "refs": [
+      "way/229395041"
+    ],
+    "point": [
+      -0.07247110833333333,
+      51.587256599999996
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/229395041",
+    "modelRefs": [
+      "way/229395041"
+    ]
+  },
+  {
+    "number": 149,
+    "original": "Tottenham Hotspur Stadium",
+    "name": "Tottenham Hotspur Stadium",
+    "id": "catalog-149",
+    "status": "add",
+    "refs": [
+      "way/538300255"
+    ],
+    "point": [
+      -0.06635963066666667,
+      51.604186956
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/538300255",
+    "modelRefs": [
+      "way/538300255"
+    ]
+  },
+  {
+    "number": 150,
+    "original": "Broadwater Farm Estate",
+    "name": "Broadwater Farm Estate",
+    "id": "catalog-150",
+    "status": "add",
+    "refs": [
+      "way/48286183"
+    ],
+    "point": [
+      -0.08157583684210526,
+      51.594104610526315
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/48286183",
+    "modelRefs": [
+      "way/48286183"
+    ]
+  },
+  {
+    "number": 151,
+    "original": "St Jude-on-the-Hill",
+    "name": "St Jude-on-the-Hill",
+    "id": "catalog-151",
+    "status": "add",
+    "refs": [
+      "way/48920486"
+    ],
+    "point": [
+      -0.1898267,
+      51.580177477777774
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/48920486",
+    "modelRefs": [
+      "way/48920486"
+    ]
+  },
+  {
+    "number": 152,
+    "original": "Hampstead Garden Suburb Free Church",
+    "name": "Hampstead Garden Suburb Free Church",
+    "id": "catalog-152",
+    "status": "add",
+    "refs": [
+      "way/48920484"
+    ],
+    "point": [
+      -0.19091278,
+      51.58114524
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/48920484",
+    "modelRefs": [
+      "way/48920484"
+    ]
+  },
+  {
+    "number": 153,
+    "original": "East Finchley Underground Station",
+    "name": "East Finchley Underground Station",
+    "id": "catalog-153",
+    "status": "add",
+    "refs": [
+      "way/187242337"
+    ],
+    "point": [
+      -0.1646785875,
+      51.58710081666667
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/187242337",
+    "modelRefs": [
+      "way/187242337"
+    ]
+  },
+  {
+    "number": 154,
+    "original": "Arnos Grove Underground Station",
+    "name": "Arnos Grove Underground Station",
+    "id": "catalog-154",
+    "status": "add",
+    "refs": [
+      "way/166387795"
+    ],
+    "point": [
+      -0.13327366739130433,
+      51.61638243478261
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/166387795",
+    "modelRefs": [
+      "way/166387795"
+    ]
+  },
+  {
+    "number": 155,
+    "original": "Southgate Underground Station",
+    "name": "Southgate Underground Station",
+    "id": "catalog-155",
+    "status": "add",
+    "refs": [
+      "way/9403738"
+    ],
+    "point": [
+      -0.12781560625,
+      51.632300925
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/9403738",
+    "modelRefs": [
+      "way/9403738"
+    ]
+  },
+  {
+    "number": 156,
+    "original": "Oakwood Underground Station",
+    "name": "Oakwood Underground Station",
+    "id": "catalog-156",
+    "status": "add",
+    "refs": [
+      "relation/16773990"
+    ],
+    "point": [
+      -0.13166911,
+      51.647514656666665
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/16773990",
+    "modelRefs": [
+      "relation/16773990"
+    ]
+  },
+  {
+    "number": 157,
+    "original": "Cockfosters Underground Station",
+    "name": "Cockfosters Underground Station",
+    "id": "catalog-157",
+    "status": "add",
+    "refs": [
+      "way/179455260",
+      "way/688182954"
+    ],
+    "point": [
+      -0.15018884545454544,
+      51.65154112727273
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/179455260",
+    "modelRefs": [
+      "way/179455260",
+      "way/688182954"
+    ]
+  },
+  {
+    "number": 158,
+    "original": "Wembley Stadium",
+    "name": "Wembley Stadium",
+    "id": "catalog-158",
+    "status": "add",
+    "refs": [
+      "relation/12942436"
+    ],
+    "point": [
+      -0.2796860375,
+      51.5560768296875
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/12942436",
+    "modelRefs": [
+      "relation/12942436"
+    ]
+  },
+  {
+    "number": 159,
+    "original": "Brent Civic Centre",
+    "name": "Brent Civic Centre",
+    "id": "catalog-159",
+    "status": "add",
+    "refs": [
+      "way/225931239"
+    ],
+    "point": [
+      -0.2815746214285714,
+      51.558992028571424
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/225931239",
+    "modelRefs": [
+      "way/225931239"
+    ]
+  },
+  {
+    "number": 160,
+    "original": "BAPS Shri Swaminarayan Mandir — Neasden",
+    "name": "BAPS Shri Swaminarayan Mandir",
+    "id": "catalog-160",
+    "status": "add",
+    "refs": [
+      "relation/4128586"
+    ],
+    "point": [
+      -0.26116390166666664,
+      51.547522533333336
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/4128586",
+    "modelRefs": [
+      "relation/4128586"
+    ]
+  },
+  {
+    "number": 161,
+    "original": "Christ Church Spitalfields",
+    "name": "Christ Church Spitalfields",
+    "id": "catalog-161",
+    "status": "add",
+    "refs": [
+      "way/420026096"
+    ],
+    "point": [
+      -0.073715575,
+      51.51909797142857
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/420026096",
+    "modelRefs": [
+      "way/420026096"
+    ]
+  },
+  {
+    "number": 162,
+    "original": "Old Spitalfields Market",
+    "name": "Old Spitalfields Market",
+    "id": "catalog-162",
+    "status": "add",
+    "refs": [
+      "way/16306646"
+    ],
+    "point": [
+      -0.07532269122807018,
+      51.51963026491228
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/16306646",
+    "modelRefs": [
+      "way/16306646"
+    ]
+  },
+  {
+    "number": 163,
+    "original": "Dennis Severs’ House",
+    "name": "Dennis Severs’ House",
+    "id": "catalog-163",
+    "status": "add",
+    "refs": [
+      "node/2244751330"
+    ],
+    "point": [
+      -0.0777904,
+      51.520943
+    ],
+    "locationSource": "https://www.openstreetmap.org/node/2244751330",
+    "modelRefs": [
+      "way/107798227"
+    ]
+  },
+  {
+    "number": 164,
+    "original": "19 Princelet Street",
+    "name": "19 Princelet Street",
+    "id": "catalog-164",
+    "status": "add",
+    "refs": [
+      "node/2102604123"
+    ],
+    "point": [
+      -0.0724859,
+      51.5198458
+    ],
+    "locationSource": "https://www.openstreetmap.org/node/2102604123",
+    "modelRefs": [
+      "way/303692271"
+    ]
+  },
+  {
+    "number": 165,
+    "original": "Sandys Row Synagogue",
+    "name": "Sandys Row Synagogue",
+    "id": "catalog-165",
+    "status": "add",
+    "refs": [
+      "node/4406285891"
+    ],
+    "point": [
+      -0.0777199,
+      51.5185191
+    ],
+    "locationSource": "https://www.openstreetmap.org/node/4406285891",
+    "modelRefs": [
+      "way/837365180"
+    ]
+  },
+  {
+    "number": 166,
+    "original": "Whitechapel Gallery",
+    "name": "Whitechapel Gallery",
+    "id": "catalog-166",
+    "status": "add",
+    "refs": [
+      "way/264131965"
+    ],
+    "point": [
+      -0.07025987916666666,
+      51.51615345833333
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/264131965",
+    "modelRefs": [
+      "way/264131965"
+    ]
+  },
+  {
+    "number": 167,
+    "original": "Whitechapel Bell Foundry 건물",
+    "name": "Whitechapel Bell Foundry",
+    "id": "catalog-167",
+    "status": "add",
+    "refs": [
+      "way/376433458"
+    ],
+    "point": [
+      -0.06704059999999999,
+      51.51686457272728
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/376433458",
+    "modelRefs": [
+      "way/376433458"
+    ]
+  },
+  {
+    "number": 168,
+    "original": "Royal London Hospital — 역사적 Whitechapel Road 건물",
+    "name": "Former Royal London Hospital (Town Hall)",
+    "id": "catalog-168",
+    "status": "add",
+    "refs": [
+      "way/790885940"
+    ],
+    "point": [
+      -0.060229191304347826,
+      51.51858699565218
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/790885940",
+    "modelRefs": [
+      "way/790885940"
+    ]
+  },
+  {
+    "number": 169,
+    "original": "Idea Store Whitechapel",
+    "name": "Idea Store Whitechapel",
+    "id": "catalog-169",
+    "status": "add",
+    "refs": [
+      "way/8081646"
+    ],
+    "point": [
+      -0.057953425,
+      51.519919262500004
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/8081646",
+    "modelRefs": [
+      "way/8081646"
+    ]
+  },
+  {
+    "number": 170,
+    "original": "Young V&A",
+    "name": "Young V&A",
+    "id": "catalog-170",
+    "status": "add",
+    "refs": [
+      "way/10790633"
+    ],
+    "point": [
+      -0.05509337272727273,
+      51.52904350000001
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/10790633",
+    "modelRefs": [
+      "way/10790633"
+    ]
+  },
+  {
+    "number": 171,
+    "original": "Bethnal Green Town Hall",
+    "name": "Bethnal Green Town Hall",
+    "id": "catalog-171",
+    "status": "add",
+    "refs": [
+      "way/302294388"
+    ],
+    "point": [
+      -0.05537098,
+      51.53042021333333
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/302294388",
+    "modelRefs": [
+      "way/302294388"
+    ]
+  },
+  {
+    "number": 172,
+    "original": "Keeling House",
+    "name": "Keeling House",
+    "id": "catalog-172",
+    "status": "add",
+    "refs": [
+      "way/51567584"
+    ],
+    "point": [
+      -0.061064291666666666,
+      51.530871608333335
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/51567584",
+    "modelRefs": [
+      "way/51567584"
+    ]
+  },
+  {
+    "number": 173,
+    "original": "Sivill House",
+    "name": "Sivill House",
+    "id": "catalog-173",
+    "status": "add",
+    "refs": [
+      "way/324249929"
+    ],
+    "point": [
+      -0.07220344333333334,
+      51.52865387333333
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/324249929",
+    "modelRefs": [
+      "way/324249929"
+    ]
+  },
+  {
+    "number": 174,
+    "original": "York Hall",
+    "name": "York Hall",
+    "id": "catalog-174",
+    "status": "add",
+    "refs": [
+      "way/302294383"
+    ],
+    "point": [
+      -0.0553323,
+      51.52979806470588
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/302294383",
+    "modelRefs": [
+      "way/302294383"
+    ]
+  },
+  {
+    "number": 175,
+    "original": "Haggerston Baths",
+    "name": "Haggerston Baths",
+    "id": "catalog-175",
+    "status": "add",
+    "refs": [
+      "way/251066862"
+    ],
+    "point": [
+      -0.07125762,
+      51.53528616
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/251066862",
+    "modelRefs": [
+      "way/251066862"
+    ]
+  },
+  {
+    "number": 176,
+    "original": "Haggerston School",
+    "name": "Haggerston School",
+    "id": "catalog-176",
+    "status": "add",
+    "refs": [
+      "way/84842545"
+    ],
+    "point": [
+      -0.07135476875,
+      51.5325233125
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/84842545",
+    "modelRefs": [
+      "way/84842545"
+    ]
+  },
+  {
+    "number": 177,
+    "original": "Hackney Town Hall",
+    "name": "Hackney Town Hall",
+    "id": "catalog-177",
+    "status": "add",
+    "refs": [
+      "relation/3641032"
+    ],
+    "point": [
+      -0.056262631818181814,
+      51.5450224909091
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/3641032",
+    "modelRefs": [
+      "relation/3641032"
+    ]
+  },
+  {
+    "number": 178,
+    "original": "Hackney Empire",
+    "name": "Hackney Empire",
+    "id": "catalog-178",
+    "status": "add",
+    "refs": [
+      "way/45748937"
+    ],
+    "point": [
+      -0.055720347058823526,
+      51.54568382352941
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/45748937",
+    "modelRefs": [
+      "way/45748937"
+    ]
+  },
+  {
+    "number": 179,
+    "original": "Sutton House",
+    "name": "Sutton House",
+    "id": "catalog-179",
+    "status": "add",
+    "refs": [
+      "way/854498662"
+    ],
+    "point": [
+      -0.050499196296296296,
+      51.54847181111111
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/854498662",
+    "modelRefs": [
+      "way/854498662"
+    ]
+  },
+  {
+    "number": 180,
+    "original": "Walthamstow Town Hall",
+    "name": "Walthamstow Town Hall",
+    "id": "catalog-180",
+    "status": "add",
+    "refs": [
+      "way/12164834"
+    ],
+    "point": [
+      -0.01356775185185185,
+      51.59121523333333
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/12164834",
+    "modelRefs": [
+      "way/12164834"
+    ]
+  },
+  {
+    "number": 181,
+    "original": "William Morris Gallery — Water House",
+    "name": "William Morris Gallery",
+    "id": "catalog-181",
+    "status": "add",
+    "refs": [
+      "way/181770911"
+    ],
+    "point": [
+      -0.020309785294117647,
+      51.59124372058824
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/181770911",
+    "modelRefs": [
+      "way/181770911"
+    ]
+  },
+  {
+    "number": 182,
+    "original": "Walthamstow Granada — Soho Theatre Walthamstow",
+    "name": "Soho Theatre Walthamstow (former Granada)",
+    "id": "catalog-182",
+    "status": "add",
+    "refs": [
+      "way/130410583"
+    ],
+    "point": [
+      -0.020323129411764704,
+      51.58601267058823
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/130410583",
+    "modelRefs": [
+      "way/130410583"
+    ]
+  },
+  {
+    "number": 183,
+    "original": "Walthamstow Wetlands Engine House",
+    "name": "Walthamstow Wetlands Engine House",
+    "id": "catalog-183",
+    "status": "add",
+    "refs": [
+      "way/28289924"
+    ],
+    "point": [
+      -0.0541287,
+      51.58546973125
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/28289924",
+    "modelRefs": [
+      "way/28289924"
+    ]
+  },
+  {
+    "number": 184,
+    "original": "Vestry House Museum",
+    "name": "Vestry House Museum",
+    "id": "catalog-184",
+    "status": "add",
+    "refs": [
+      "way/23941901"
+    ],
+    "point": [
+      -0.012835045454545453,
+      51.58402496363636
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/23941901",
+    "modelRefs": [
+      "way/23941901"
+    ]
+  },
+  {
+    "number": 186,
+    "original": "Lee Valley VeloPark Velodrome",
+    "name": "Lee Valley Velodrome",
+    "id": "catalog-186",
+    "status": "add",
+    "refs": [
+      "way/645435271"
+    ],
+    "point": [
+      -0.015065653623188404,
+      51.550382666666664
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/645435271",
+    "modelRefs": [
+      "way/645435271"
+    ]
+  },
+  {
+    "number": 187,
+    "original": "London Stadium",
+    "name": "London Stadium",
+    "id": "catalog-187",
+    "status": "add",
+    "refs": [
+      "way/486297861"
+    ],
+    "point": [
+      -0.016642733333333333,
+      51.538712385000004
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/486297861",
+    "modelRefs": [
+      "way/486297861"
+    ]
+  },
+  {
+    "number": 188,
+    "original": "Copper Box Arena",
+    "name": "Copper Box Arena",
+    "id": "catalog-188",
+    "status": "add",
+    "refs": [
+      "way/125200166"
+    ],
+    "point": [
+      -0.01995573846153846,
+      51.54442048461538
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/125200166",
+    "modelRefs": [
+      "way/125200166"
+    ]
+  },
+  {
+    "number": 189,
+    "original": "Here East",
+    "name": "Here East",
+    "id": "catalog-189",
+    "status": "add",
+    "refs": [
+      "way/595680009"
+    ],
+    "point": [
+      -0.023273916279069766,
+      51.54763499534884
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/595680009",
+    "modelRefs": [
+      "way/595680009"
+    ]
+  },
+  {
+    "number": 190,
+    "original": "UCL East — Marshgate",
+    "name": "UCL East Marshgate",
+    "id": "catalog-190",
+    "status": "add",
+    "refs": [
+      "way/964277509"
+    ],
+    "point": [
+      -0.011932017647058825,
+      51.537713370588236
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/964277509",
+    "modelRefs": [
+      "way/964277509"
+    ]
+  },
+  {
+    "number": 191,
+    "original": "UCL East — One Pool Street",
+    "name": "UCL East One Pool Street",
+    "id": "catalog-191",
+    "status": "add",
+    "refs": [
+      "way/964277508"
+    ],
+    "point": [
+      -0.00972321724137931,
+      51.5383882275862
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/964277508",
+    "modelRefs": [
+      "way/964277508"
+    ]
+  },
+  {
+    "number": 192,
+    "original": "Three Mills — House Mill",
+    "name": "House Mill, Three Mills",
+    "id": "catalog-192",
+    "status": "add",
+    "refs": [
+      "way/156819613"
+    ],
+    "point": [
+      -0.007840954545454545,
+      51.52741259090909
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/156819613",
+    "modelRefs": [
+      "way/156819613"
+    ]
+  },
+  {
+    "number": 193,
+    "original": "Abbey Mills Pumping Station",
+    "name": "Abbey Mills Pumping Station",
+    "id": "catalog-193",
+    "status": "add",
+    "refs": [
+      "way/182764906"
+    ],
+    "point": [
+      -0.0015115894672060298,
+      51.53083239750652
+    ],
+    "locationSource": "https://en.wikipedia.org/?curid=994414",
+    "modelRefs": [
+      "way/182764906"
+    ]
+  },
+  {
+    "number": 194,
+    "original": "Balfron Tower",
+    "name": "Balfron Tower",
+    "id": "catalog-194",
+    "status": "add",
+    "refs": [
+      "way/135465165"
+    ],
+    "point": [
+      -0.008833066666666667,
+      51.513644
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/135465165",
+    "modelRefs": [
+      "way/135465165"
+    ]
+  },
+  {
+    "number": 196,
+    "original": "St Matthias Old Church — Poplar",
+    "name": "St Matthias Old Church",
+    "id": "catalog-196",
+    "status": "add",
+    "refs": [
+      "way/51947908"
+    ],
+    "point": [
+      -0.016024044444444444,
+      51.50957204444445
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/51947908",
+    "modelRefs": [
+      "way/51947908"
+    ]
+  },
+  {
+    "number": 198,
+    "original": "Canary Wharf Underground Station",
+    "name": "Canary Wharf Underground Station",
+    "id": "catalog-198",
+    "status": "add",
+    "refs": [],
+    "point": [
+      -0.018,
+      51.503
+    ],
+    "locationSource": "https://en.wikipedia.org/?curid=301581",
+    "modelRefs": []
+  },
+  {
+    "number": 200,
+    "original": "The Crystal — London City Hall",
+    "name": "The Crystal (City Hall)",
+    "id": "catalog-200",
+    "status": "add",
+    "refs": [
+      "way/159852280"
+    ],
+    "point": [
+      0.01631945833333333,
+      51.50730063333333
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/159852280",
+    "modelRefs": [
+      "way/159852280"
+    ]
+  },
+  {
+    "number": 203,
+    "original": "Queen Elizabeth Hall & Purcell Room",
+    "name": "Queen Elizabeth Hall & Purcell Room",
+    "id": "catalog-203",
+    "status": "add",
+    "refs": [],
+    "point": [
+      -0.116361,
+      51.506667
+    ],
+    "locationSource": "https://en.wikipedia.org/?curid=1345203",
+    "modelRefs": [
+      "way/25913652"
+    ]
+  },
+  {
+    "number": 205,
+    "original": "BFI Southbank",
+    "name": "BFI Southbank",
+    "id": "catalog-205",
+    "status": "add",
+    "refs": [
+      "way/150702283"
+    ],
+    "point": [
+      -0.11525477333333334,
+      51.50674559
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/150702283",
+    "modelRefs": [
+      "way/150702283"
+    ]
+  },
+  {
+    "number": 206,
+    "original": "County Hall",
+    "name": "County Hall, London",
+    "id": "catalog-206",
+    "status": "add",
+    "refs": [
+      "relation/1789966"
+    ],
+    "point": [
+      -0.11887243490566038,
+      51.502152099999996
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/1789966",
+    "modelRefs": [
+      "relation/1789966"
+    ]
+  },
+  {
+    "number": 208,
+    "original": "Waterloo Station",
+    "name": "Waterloo Station",
+    "id": "catalog-208",
+    "status": "add",
+    "refs": [
+      "way/4245075"
+    ],
+    "point": [
+      -0.1137504826923077,
+      51.50222103525641
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/4245075",
+    "modelRefs": [
+      "way/4245075"
+    ]
+  },
+  {
+    "number": 209,
+    "original": "구 Waterloo International Terminal",
+    "name": "Former Waterloo International Terminal",
+    "id": "catalog-209",
+    "status": "add",
+    "refs": [],
+    "point": [
+      -0.114809,
+      51.502973
+    ],
+    "locationSource": "https://en.wikipedia.org/?curid=14228785",
+    "modelRefs": [
+      "way/4245075"
+    ]
+  },
+  {
+    "number": 210,
+    "original": "The Old Vic",
+    "name": "The Old Vic",
+    "id": "catalog-210",
+    "status": "add",
+    "refs": [
+      "way/23486376"
+    ],
+    "point": [
+      -0.10947052222222223,
+      51.50212548333334
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/23486376",
+    "modelRefs": [
+      "way/23486376"
+    ]
+  },
+  {
+    "number": 211,
+    "original": "The Young Vic",
+    "name": "The Young Vic",
+    "id": "catalog-211",
+    "status": "add",
+    "refs": [
+      "way/109866484"
+    ],
+    "point": [
+      -0.10732048000000001,
+      51.50328279
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/109866484",
+    "modelRefs": [
+      "way/109866484"
+    ]
+  },
+  {
+    "number": 214,
+    "original": "Shakespeare’s Globe",
+    "name": "Shakespeare’s Globe",
+    "id": "catalog-214",
+    "status": "add",
+    "refs": [
+      "relation/1239793"
+    ],
+    "point": [
+      -0.09709269285714285,
+      51.508122439285714
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/1239793",
+    "modelRefs": [
+      "relation/1239793"
+    ]
+  },
+  {
+    "number": 216,
+    "original": "Southwark Cathedral",
+    "name": "Southwark Cathedral",
+    "id": "catalog-216",
+    "status": "add",
+    "refs": [
+      "way/26183417",
+      "way/658695413"
+    ],
+    "point": [
+      -0.08968008303571429,
+      51.50614426875
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/26183417",
+    "modelRefs": [
+      "way/26183417",
+      "way/658695413"
+    ]
+  },
+  {
+    "number": 217,
+    "original": "Borough Market",
+    "name": "Borough Market",
+    "id": "catalog-217",
+    "status": "add",
+    "refs": [
+      "way/24282400"
+    ],
+    "point": [
+      -0.09052588717948717,
+      51.50564756410256
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/24282400",
+    "modelRefs": [
+      "way/24282400"
+    ]
+  },
+  {
+    "number": 219,
+    "original": "London Bridge Station",
+    "name": "London Bridge Station",
+    "id": "catalog-219",
+    "status": "add",
+    "refs": [
+      "way/140152277"
+    ],
+    "point": [
+      -0.08479748440366973,
+      51.50429864587156
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/140152277",
+    "modelRefs": [
+      "way/140152277"
+    ]
+  },
+  {
+    "number": 220,
+    "original": "구 City Hall — The Queen’s Walk",
+    "name": "Former City Hall, The Queen’s Walk",
+    "id": "catalog-220",
+    "status": "add",
+    "refs": [
+      "way/8877349"
+    ],
+    "point": [
+      -0.0786552327586207,
+      51.50478995
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/8877349",
+    "modelRefs": [
+      "way/8877349"
+    ]
+  },
+  {
+    "number": 222,
+    "original": "Butler’s Wharf",
+    "name": "Butler’s Wharf",
+    "id": "catalog-222",
+    "status": "add",
+    "refs": [
+      "way/93612990"
+    ],
+    "point": [
+      -0.07363916176470588,
+      51.50360414705882
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/93612990",
+    "modelRefs": [
+      "way/93612990"
+    ]
+  },
+  {
+    "number": 223,
+    "original": "White Cube Bermondsey",
+    "name": "White Cube Bermondsey",
+    "id": "catalog-223",
+    "status": "add",
+    "refs": [
+      "way/102403106"
+    ],
+    "point": [
+      -0.0822386652173913,
+      51.499409639130434
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/102403106",
+    "modelRefs": [
+      "way/102403106"
+    ]
+  },
+  {
+    "number": 225,
+    "original": "Canada Water Library",
+    "name": "Canada Water Library",
+    "id": "catalog-225",
+    "status": "add",
+    "refs": [
+      "way/157137089"
+    ],
+    "point": [
+      -0.049140699999999995,
+      51.49766525454545
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/157137089",
+    "modelRefs": [
+      "way/157137089"
+    ]
+  },
+  {
+    "number": 226,
+    "original": "The Brunel Museum — Engine House",
+    "name": "The Brunel Museum",
+    "id": "catalog-226",
+    "status": "add",
+    "refs": [
+      "way/998729298"
+    ],
+    "point": [
+      -0.05284828888888889,
+      51.50165637777778
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/998729298",
+    "modelRefs": [
+      "way/998729298"
+    ]
+  },
+  {
+    "number": 227,
+    "original": "St Mary’s Church — Rotherhithe",
+    "name": "St Mary’s Church, Rotherhithe",
+    "id": "catalog-227",
+    "status": "add",
+    "refs": [],
+    "point": [
+      -0.05394,
+      51.50141
+    ],
+    "locationSource": "https://en.wikipedia.org/?curid=838947",
+    "modelRefs": [
+      "way/260845427"
+    ]
+  },
+  {
+    "number": 228,
+    "original": "The Master Shipwright’s House — Deptford",
+    "name": "The Master Shipwright’s House",
+    "id": "catalog-228",
+    "status": "add",
+    "refs": [
+      "way/467803674"
+    ],
+    "point": [
+      -0.025261873333333334,
+      51.48534688666667
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/467803674",
+    "modelRefs": [
+      "way/467803674"
+    ]
+  },
+  {
+    "number": 229,
+    "original": "Deptford Town Hall",
+    "name": "Deptford Town Hall",
+    "id": "catalog-229",
+    "status": "add",
+    "refs": [
+      "way/72881037"
+    ],
+    "point": [
+      -0.037803086363636364,
+      51.47533386818182
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/72881037",
+    "modelRefs": [
+      "way/72881037"
+    ]
+  },
+  {
+    "number": 231,
+    "original": "Goldsmiths Centre for Contemporary Art",
+    "name": "Goldsmiths Centre for Contemporary Art",
+    "id": "catalog-231",
+    "status": "add",
+    "refs": [
+      "way/1211610974"
+    ],
+    "point": [
+      -0.037848879999999994,
+      51.47497926999999
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/1211610974",
+    "modelRefs": [
+      "way/1211610974"
+    ]
+  },
+  {
+    "number": 232,
+    "original": "St Paul’s Church — Deptford",
+    "name": "St Paul’s Church, Deptford",
+    "id": "catalog-232",
+    "status": "add",
+    "refs": [
+      "way/52717005"
+    ],
+    "point": [
+      -0.024412725,
+      51.47962416944444
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/52717005",
+    "modelRefs": [
+      "way/52717005"
+    ]
+  },
+  {
+    "number": 236,
+    "original": "University of Greenwich — Stockwell Street Building",
+    "name": "Stockwell Street, University of Greenwich",
+    "id": "catalog-236",
+    "status": "add",
+    "refs": [
+      "node/4000847061"
+    ],
+    "point": [
+      -0.0084176,
+      51.4802572
+    ],
+    "locationSource": "https://www.openstreetmap.org/node/4000847061",
+    "modelRefs": [
+      "relation/14660562"
+    ]
+  },
+  {
+    "number": 237,
+    "original": "The O2 — Millennium Dome",
+    "name": "The O2",
+    "id": "catalog-237",
+    "status": "add",
+    "refs": [
+      "relation/1895281"
+    ],
+    "point": [
+      0.00305629842519685,
+      51.502807440157476
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/1895281",
+    "modelRefs": [
+      "relation/1895281"
+    ]
+  },
+  {
+    "number": 238,
+    "original": "Ravensbourne University London",
+    "name": "Ravensbourne University London",
+    "id": "catalog-238",
+    "status": "add",
+    "refs": [
+      "way/151942966"
+    ],
+    "point": [
+      0.005643558333333333,
+      51.501688924999996
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/151942966",
+    "modelRefs": [
+      "way/151942966"
+    ]
+  },
+  {
+    "number": 239,
+    "original": "Eltham Palace",
+    "name": "Eltham Palace",
+    "id": "catalog-239",
+    "status": "add",
+    "refs": [
+      "way/17110975",
+      "way/37642459"
+    ],
+    "point": [
+      0.04831935416666667,
+      51.447082754166665
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/17110975",
+    "modelRefs": [
+      "way/17110975",
+      "way/37642459"
+    ]
+  },
+  {
+    "number": 240,
+    "original": "Red House — Bexleyheath",
+    "name": "Red House, Bexleyheath",
+    "id": "catalog-240",
+    "status": "add",
+    "refs": [
+      "way/209281563",
+      "way/275299725"
+    ],
+    "point": [
+      0.13033949375,
+      51.4554494625
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/209281563",
+    "modelRefs": [
+      "way/209281563",
+      "way/275299725"
+    ]
+  },
+  {
+    "number": 241,
+    "original": "Lambeth Palace",
+    "name": "Lambeth Palace",
+    "id": "catalog-241",
+    "status": "add",
+    "refs": [
+      "relation/1403938"
+    ],
+    "point": [
+      -0.11983051505376344,
+      51.49560471182795
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/1403938",
+    "modelRefs": [
+      "relation/1403938"
+    ]
+  },
+  {
+    "number": 242,
+    "original": "Lambeth Palace Library",
+    "name": "Lambeth Palace Library",
+    "id": "catalog-242",
+    "status": "add",
+    "refs": [
+      "way/998276956"
+    ],
+    "point": [
+      -0.11819046315789473,
+      51.4976451368421
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/998276956",
+    "modelRefs": [
+      "way/998276956"
+    ]
+  },
+  {
+    "number": 243,
+    "original": "Newport Street Gallery",
+    "name": "Newport Street Gallery",
+    "id": "catalog-243",
+    "status": "add",
+    "refs": [
+      "way/375901213"
+    ],
+    "point": [
+      -0.11702715384615384,
+      51.49324953846154
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/375901213",
+    "modelRefs": [
+      "way/375901213"
+    ]
+  },
+  {
+    "number": 244,
+    "original": "Beaconsfield Gallery",
+    "name": "Beaconsfield Gallery",
+    "id": "catalog-244",
+    "status": "add",
+    "refs": [
+      "way/192338447"
+    ],
+    "point": [
+      -0.11865126,
+      51.4920965
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/192338447",
+    "modelRefs": [
+      "way/192338447"
+    ]
+  },
+  {
+    "number": 245,
+    "original": "Imperial War Museum — 구 Bethlem Hospital",
+    "name": "Imperial War Museum London",
+    "id": "catalog-245",
+    "status": "add",
+    "refs": [
+      "way/8614496"
+    ],
+    "point": [
+      -0.10862823461538462,
+      51.495842196153845
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/8614496",
+    "modelRefs": [
+      "way/8614496"
+    ]
+  },
+  {
+    "number": 246,
+    "original": "Michael Faraday Memorial",
+    "name": "Michael Faraday Memorial",
+    "id": "catalog-246",
+    "status": "add",
+    "refs": [
+      "relation/13656740"
+    ],
+    "point": [
+      -0.10066267142857144,
+      51.4950908
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/13656740",
+    "modelRefs": [
+      "relation/13656740"
+    ]
+  },
+  {
+    "number": 247,
+    "original": "Metro Central Heights — 구 Alexander Fleming House",
+    "name": "Metro Central Heights",
+    "id": "catalog-247",
+    "status": "add",
+    "refs": [
+      "way/451796438",
+      "way/451796439"
+    ],
+    "point": [
+      -0.09890181428571429,
+      51.49590452857143
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/451796438",
+    "modelRefs": [
+      "way/451796438",
+      "way/451796439"
+    ]
+  },
+  {
+    "number": 248,
+    "original": "South London Gallery",
+    "name": "South London Gallery",
+    "id": "catalog-248",
+    "status": "add",
+    "refs": [
+      "way/67163594"
+    ],
+    "point": [
+      -0.07987646666666666,
+      51.47434998333333
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/67163594",
+    "modelRefs": [
+      "way/67163594"
+    ]
+  },
+  {
+    "number": 250,
+    "original": "Peckham Levels",
+    "name": "Peckham Levels",
+    "id": "catalog-250",
+    "status": "add",
+    "refs": [
+      "way/78230941"
+    ],
+    "point": [
+      -0.06691005,
+      51.47085011666667
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/78230941",
+    "modelRefs": [
+      "way/78230941"
+    ]
+  },
+  {
+    "number": 251,
+    "original": "Mountview Academy — Peckham",
+    "name": "Mountview Academy",
+    "id": "catalog-251",
+    "status": "add",
+    "refs": [
+      "way/667186508"
+    ],
+    "point": [
+      -0.0696913,
+      51.47484085
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/667186508",
+    "modelRefs": [
+      "way/667186508"
+    ]
+  },
+  {
+    "number": 253,
+    "original": "Walter’s Way",
+    "name": "Walter’s Way",
+    "id": "catalog-253",
+    "status": "add",
+    "refs": [
+      "way/1315704212"
+    ],
+    "point": [
+      -0.05031025,
+      51.44968895
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/1315704212",
+    "modelRefs": []
+  },
+  {
+    "number": 254,
+    "original": "Segal Close",
+    "name": "Segal Close",
+    "id": "catalog-254",
+    "status": "add",
+    "refs": [],
+    "point": [
+      -0.0401,
+      51.445
+    ],
+    "locationSource": "https://checkmypostcode.uk/se231pp",
+    "modelRefs": []
+  },
+  {
+    "number": 255,
+    "original": "Horniman Museum",
+    "name": "Horniman Museum",
+    "id": "catalog-255",
+    "status": "add",
+    "refs": [
+      "way/210442848"
+    ],
+    "point": [
+      -0.06103894642857143,
+      51.440943014285715
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/210442848",
+    "modelRefs": [
+      "way/210442848"
+    ]
+  },
+  {
+    "number": 256,
+    "original": "Dulwich Picture Gallery",
+    "name": "Dulwich Picture Gallery",
+    "id": "catalog-256",
+    "status": "add",
+    "refs": [
+      "way/4961350"
+    ],
+    "point": [
+      -0.0863564411764706,
+      51.445967308823526
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/4961350",
+    "modelRefs": [
+      "way/4961350"
+    ]
+  },
+  {
+    "number": 257,
+    "original": "Dulwich College — Barry Buildings",
+    "name": "Dulwich College Barry Buildings",
+    "id": "catalog-257",
+    "status": "add",
+    "refs": [
+      "way/27826000"
+    ],
+    "point": [
+      -0.0854564104477612,
+      51.438851988059696
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/27826000",
+    "modelRefs": [
+      "way/27826000"
+    ]
+  },
+  {
+    "number": 258,
+    "original": "Central Hill Estate",
+    "name": "Central Hill Estate",
+    "id": "catalog-258",
+    "status": "add",
+    "refs": [
+      "way/946549699"
+    ],
+    "point": [
+      -0.08721539795918368,
+      51.420580838775514
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/946549699",
+    "modelRefs": [
+      "way/946549699"
+    ]
+  },
+  {
+    "number": 259,
+    "original": "Crystal Palace National Sports Centre",
+    "name": "Crystal Palace National Sports Centre",
+    "id": "catalog-259",
+    "status": "add",
+    "refs": [
+      "way/1364508412"
+    ],
+    "point": [
+      -0.0695088375,
+      51.42008055
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/1364508412",
+    "modelRefs": [
+      "way/1364508412"
+    ]
+  },
+  {
+    "number": 260,
+    "original": "Fairfield Halls — Croydon",
+    "name": "Fairfield Halls",
+    "id": "catalog-260",
+    "status": "add",
+    "refs": [
+      "way/26595743"
+    ],
+    "point": [
+      -0.09546984285714286,
+      51.372379195238096
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/26595743",
+    "modelRefs": [
+      "way/26595743"
+    ]
+  },
+  {
+    "number": 261,
+    "original": "Natural History Museum",
+    "name": "Natural History Museum",
+    "id": "catalog-261",
+    "status": "add",
+    "refs": [
+      "way/24436446"
+    ],
+    "point": [
+      -0.17580554615384614,
+      51.496527461538456
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/24436446",
+    "modelRefs": [
+      "way/24436446"
+    ]
+  },
+  {
+    "number": 262,
+    "original": "Victoria and Albert Museum",
+    "name": "Victoria and Albert Museum",
+    "id": "catalog-262",
+    "status": "add",
+    "refs": [
+      "relation/29795"
+    ],
+    "point": [
+      -0.17250841785714285,
+      51.49700974880952
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/29795",
+    "modelRefs": [
+      "relation/29795"
+    ]
+  },
+  {
+    "number": 264,
+    "original": "Royal Albert Hall",
+    "name": "Royal Albert Hall",
+    "id": "catalog-264",
+    "status": "add",
+    "refs": [
+      "way/372860405"
+    ],
+    "point": [
+      -0.1774045612903226,
+      51.501020875806454
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/372860405",
+    "modelRefs": [
+      "way/372860405"
+    ]
+  },
+  {
+    "number": 265,
+    "original": "Royal College of Art — Kensington 캠퍼스",
+    "name": "Royal College of Art, Kensington",
+    "id": "catalog-265",
+    "status": "add",
+    "refs": [
+      "way/419267864"
+    ],
+    "point": [
+      -0.1792480490566038,
+      51.50088823773584
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/419267864",
+    "modelRefs": [
+      "way/419267864"
+    ]
+  },
+  {
+    "number": 266,
+    "original": "Design Museum — 구 Commonwealth Institute",
+    "name": "Design Museum",
+    "id": "catalog-266",
+    "status": "add",
+    "refs": [
+      "way/640554759"
+    ],
+    "point": [
+      -0.2000837,
+      51.4998637375
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/640554759",
+    "modelRefs": [
+      "way/640554759"
+    ]
+  },
+  {
+    "number": 267,
+    "original": "Leighton House",
+    "name": "Leighton House",
+    "id": "catalog-267",
+    "status": "add",
+    "refs": [
+      "way/115594423"
+    ],
+    "point": [
+      -0.2031617093023256,
+      51.49859337906977
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/115594423",
+    "modelRefs": [
+      "way/115594423"
+    ]
+  },
+  {
+    "number": 268,
+    "original": "The Cosmic House",
+    "name": "The Cosmic House",
+    "id": "catalog-268",
+    "status": "add",
+    "refs": [
+      "way/785816280"
+    ],
+    "point": [
+      -0.20742701428571428,
+      51.508631780952385
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/785816280",
+    "modelRefs": [
+      "way/785816280"
+    ]
+  },
+  {
+    "number": 269,
+    "original": "Kensington Palace",
+    "name": "Kensington Palace",
+    "id": "catalog-269",
+    "status": "add",
+    "refs": [
+      "relation/904705"
+    ],
+    "point": [
+      -0.18813311785714285,
+      51.505172442857145
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/904705",
+    "modelRefs": [
+      "relation/904705"
+    ]
+  },
+  {
+    "number": 270,
+    "original": "Serpentine South Gallery",
+    "name": "Serpentine South Gallery",
+    "id": "catalog-270",
+    "status": "add",
+    "refs": [
+      "way/27186032"
+    ],
+    "point": [
+      -0.17504625000000001,
+      51.50461406785714
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/27186032",
+    "modelRefs": [
+      "way/27186032"
+    ]
+  },
+  {
+    "number": 271,
+    "original": "Serpentine North Gallery & Magazine",
+    "name": "Serpentine North Gallery & Magazine",
+    "id": "catalog-271",
+    "status": "add",
+    "refs": [
+      "way/161783824"
+    ],
+    "point": [
+      -0.17136952857142856,
+      51.50707118571428
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/161783824",
+    "modelRefs": [
+      "way/161783824"
+    ]
+  },
+  {
+    "number": 272,
+    "original": "Trellick Tower",
+    "name": "Trellick Tower",
+    "id": "catalog-272",
+    "status": "add",
+    "refs": [
+      "way/57721739",
+      "way/85866116"
+    ],
+    "point": [
+      -0.20547725833333333,
+      51.52365445
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/57721739",
+    "modelRefs": [
+      "way/57721739",
+      "way/85866116"
+    ]
+  },
+  {
+    "number": 273,
+    "original": "Kensal House",
+    "name": "Kensal House",
+    "id": "catalog-273",
+    "status": "add",
+    "refs": [
+      "relation/16812469"
+    ],
+    "point": [
+      -0.2150525653846154,
+      51.525344546153846
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/16812469",
+    "modelRefs": [
+      "relation/16812469"
+    ]
+  },
+  {
+    "number": 274,
+    "original": "Royal Hospital Chelsea",
+    "name": "Royal Hospital Chelsea",
+    "id": "catalog-274",
+    "status": "add",
+    "refs": [
+      "way/901555513"
+    ],
+    "point": [
+      -0.15737549473684212,
+      51.487625984210524
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/901555513",
+    "modelRefs": [
+      "way/901555513"
+    ]
+  },
+  {
+    "number": 275,
+    "original": "Saatchi Gallery — Duke of York’s Headquarters",
+    "name": "Saatchi Gallery",
+    "id": "catalog-275",
+    "status": "add",
+    "refs": [
+      "way/5317958"
+    ],
+    "point": [
+      -0.15875035517241382,
+      51.49069532068966
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/5317958",
+    "modelRefs": [
+      "way/5317958"
+    ]
+  },
+  {
+    "number": 276,
+    "original": "Michelin House",
+    "name": "Michelin House",
+    "id": "catalog-276",
+    "status": "add",
+    "refs": [
+      "relation/11833610"
+    ],
+    "point": [
+      -0.16865032857142856,
+      51.49318162857143
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/11833610",
+    "modelRefs": [
+      "relation/11833610"
+    ]
+  },
+  {
+    "number": 277,
+    "original": "Peter Jones — Sloane Square",
+    "name": "Peter Jones",
+    "id": "catalog-277",
+    "status": "add",
+    "refs": [
+      "relation/12218267",
+      "way/28682626"
+    ],
+    "point": [
+      -0.158938953125,
+      51.49229421875
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/12218267",
+    "modelRefs": [
+      "relation/12218267",
+      "way/28682626"
+    ]
+  },
+  {
+    "number": 278,
+    "original": "Paddington Station",
+    "name": "Paddington Station",
+    "id": "catalog-278",
+    "status": "add",
+    "refs": [
+      "way/947381552"
+    ],
+    "point": [
+      -0.17765415205479454,
+      51.51755020273973
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/947381552",
+    "modelRefs": [
+      "way/947381552"
+    ]
+  },
+  {
+    "number": 279,
+    "original": "Paddington Elizabeth line Station",
+    "name": "Paddington Elizabeth line Station",
+    "id": "catalog-279",
+    "status": "add",
+    "refs": [
+      "way/971387735"
+    ],
+    "point": [
+      -0.17797646666666667,
+      51.516488583333334
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/971387735",
+    "modelRefs": [
+      "way/971387735"
+    ]
+  },
+  {
+    "number": 280,
+    "original": "Hallfield Estate",
+    "name": "Hallfield Estate",
+    "id": "catalog-280",
+    "status": "add",
+    "refs": [
+      "way/23610254"
+    ],
+    "point": [
+      -0.18497712647058825,
+      51.51548290882353
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/23610254",
+    "modelRefs": [
+      "way/23610254"
+    ]
+  },
+  {
+    "number": 281,
+    "original": "The Ark — Hammersmith",
+    "name": "The Ark",
+    "id": "catalog-281",
+    "status": "add",
+    "refs": [
+      "way/24444440"
+    ],
+    "point": [
+      -0.22070112608695652,
+      51.490795402173916
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/24444440",
+    "modelRefs": [
+      "way/24444440"
+    ]
+  },
+  {
+    "number": 282,
+    "original": "Riverside Studios",
+    "name": "Riverside Studios",
+    "id": "catalog-282",
+    "status": "add",
+    "refs": [
+      "way/97398691"
+    ],
+    "point": [
+      -0.227748752,
+      51.488738384
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/97398691",
+    "modelRefs": [
+      "way/97398691"
+    ]
+  },
+  {
+    "number": 283,
+    "original": "8 Hammersmith Terrace — Emery Walker’s House",
+    "name": "Emery Walker’s House, 7 Hammersmith Terrace",
+    "id": "catalog-283",
+    "status": "add",
+    "refs": [
+      "way/176710319"
+    ],
+    "point": [
+      -0.242412941957342,
+      51.48982522804443
+    ],
+    "locationSource": "https://www.emerywalker.org.uk/hammersmith-terrace",
+    "modelRefs": [
+      "way/176710319"
+    ]
+  },
+  {
+    "number": 284,
+    "original": "Chiswick House",
+    "name": "Chiswick House",
+    "id": "catalog-284",
+    "status": "add",
+    "refs": [
+      "relation/8048634"
+    ],
+    "point": [
+      -0.2585068071428572,
+      51.48375516428571
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/8048634",
+    "modelRefs": [
+      "relation/8048634"
+    ]
+  },
+  {
+    "number": 285,
+    "original": "St Michael and All Angels — Bedford Park",
+    "name": "St Michael and All Angels, Bedford Park",
+    "id": "catalog-285",
+    "status": "add",
+    "refs": [
+      "way/45775334",
+      "way/209445864"
+    ],
+    "point": [
+      -0.2547867888888889,
+      51.4960287
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/45775334",
+    "modelRefs": [
+      "way/45775334",
+      "way/209445864"
+    ]
+  },
+  {
+    "number": 286,
+    "original": "The Hoover Building — Perivale",
+    "name": "The Hoover Building",
+    "id": "catalog-286",
+    "status": "add",
+    "refs": [
+      "way/312265219",
+      "way/224384558"
+    ],
+    "point": [
+      -0.3189164785714286,
+      51.533793485714284
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/312265219",
+    "modelRefs": [
+      "way/312265219",
+      "way/224384558"
+    ]
+  },
+  {
+    "number": 287,
+    "original": "Pitzhanger Manor",
+    "name": "Pitzhanger Manor",
+    "id": "catalog-287",
+    "status": "add",
+    "refs": [
+      "way/43916258"
+    ],
+    "point": [
+      -0.30706555,
+      51.51086769
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/43916258",
+    "modelRefs": [
+      "way/43916258"
+    ]
+  },
+  {
+    "number": 288,
+    "original": "Osterley House",
+    "name": "Osterley House",
+    "id": "catalog-288",
+    "status": "add",
+    "refs": [
+      "relation/3609579"
+    ],
+    "point": [
+      -0.351975728125,
+      51.4894072875
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/3609579",
+    "modelRefs": [
+      "relation/3609579"
+    ]
+  },
+  {
+    "number": 289,
+    "original": "Syon House",
+    "name": "Syon House",
+    "id": "catalog-289",
+    "status": "add",
+    "refs": [
+      "relation/334994"
+    ],
+    "point": [
+      -0.31254449310344823,
+      51.47675480689655
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/334994",
+    "modelRefs": [
+      "relation/334994"
+    ]
+  },
+  {
+    "number": 290,
+    "original": "Kew Gardens — Palm House",
+    "name": "Palm House, Kew Gardens",
+    "id": "catalog-290",
+    "status": "add",
+    "refs": [
+      "way/4803632"
+    ],
+    "point": [
+      -0.292741948,
+      51.47903714
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/4803632",
+    "modelRefs": [
+      "way/4803632"
+    ]
+  },
+  {
+    "number": 291,
+    "original": "Kew Gardens — Temperate House",
+    "name": "Temperate House, Kew Gardens",
+    "id": "catalog-291",
+    "status": "add",
+    "refs": [
+      "way/4804904"
+    ],
+    "point": [
+      -0.2954558542662116,
+      51.47464178361775
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/4804904",
+    "modelRefs": [
+      "way/4804904"
+    ]
+  },
+  {
+    "number": 292,
+    "original": "Kew Gardens — Princess of Wales Conservatory",
+    "name": "Princess of Wales Conservatory, Kew Gardens",
+    "id": "catalog-292",
+    "status": "add",
+    "refs": [
+      "way/4805797"
+    ],
+    "point": [
+      -0.29060390862068963,
+      51.48159023448276
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/4805797",
+    "modelRefs": [
+      "way/4805797"
+    ]
+  },
+  {
+    "number": 293,
+    "original": "Ham House",
+    "name": "Ham House",
+    "id": "catalog-293",
+    "status": "add",
+    "refs": [
+      "way/28410119"
+    ],
+    "point": [
+      -0.3141114925925926,
+      51.44429360740741
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/28410119",
+    "modelRefs": [
+      "way/28410119"
+    ]
+  },
+  {
+    "number": 294,
+    "original": "Strawberry Hill House",
+    "name": "Strawberry Hill House",
+    "id": "catalog-294",
+    "status": "add",
+    "refs": [
+      "way/207444024"
+    ],
+    "point": [
+      -0.3348380220338983,
+      51.43819886101695
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/207444024",
+    "modelRefs": [
+      "way/207444024"
+    ]
+  },
+  {
+    "number": 295,
+    "original": "Hampton Court Palace",
+    "name": "Hampton Court Palace",
+    "id": "catalog-295",
+    "status": "add",
+    "refs": [
+      "relation/21104"
+    ],
+    "point": [
+      -0.3380653434782609,
+      51.40352702850241
+    ],
+    "locationSource": "https://www.openstreetmap.org/relation/21104",
+    "modelRefs": [
+      "relation/21104"
+    ]
+  },
+  {
+    "number": 296,
+    "original": "Kingston University Town House",
+    "name": "Kingston University Town House",
+    "id": "catalog-296",
+    "status": "add",
+    "refs": [
+      "way/968602609"
+    ],
+    "point": [
+      -0.3036673111111111,
+      51.40408518888889
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/968602609",
+    "modelRefs": [
+      "way/968602609"
+    ]
+  },
+  {
+    "number": 297,
+    "original": "Alton Estate — Roehampton",
+    "name": "Alton Estate",
+    "id": "catalog-297",
+    "status": "add",
+    "refs": [],
+    "point": [
+      -0.245,
+      51.45
+    ],
+    "locationSource": "https://en.wikipedia.org/?curid=23828127",
+    "modelRefs": []
+  },
+  {
+    "number": 299,
+    "original": "Royal College of Art — Battersea 캠퍼스",
+    "name": "Royal College of Art, Battersea",
+    "id": "catalog-299",
+    "status": "add",
+    "refs": [
+      "way/392265700"
+    ],
+    "point": [
+      -0.16982350909090907,
+      51.47906273636363
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/392265700",
+    "modelRefs": [
+      "way/392265700"
+    ]
+  },
+  {
+    "number": 300,
+    "original": "US Embassy — Nine Elms",
+    "name": "US Embassy, Nine Elms",
+    "id": "catalog-300",
+    "status": "add",
+    "refs": [
+      "way/360989833"
+    ],
+    "point": [
+      -0.13221855652173914,
+      51.482455369565216
+    ],
+    "locationSource": "https://www.openstreetmap.org/way/360989833",
+    "modelRefs": [
+      "way/360989833"
+    ]
+  }
+]

@@ -6,14 +6,14 @@ export function createTileStream(city,context,mats,changed,sharedRoadMaterial){
  const badge=document.querySelector('#stream-status'),entries=new Map(),pending=new Map(),failed=new Map();
  const tiles=new Map(city.tiles.map(t=>[t.id,t])),wanted=new Set();
  const roadMat=sharedRoadMaterial||new T.MeshStandardMaterial({color:0xf0f2f1,roughness:.92,side:T.DoubleSide});
- let enabled=true,running=0,totalBytes=0,downloadedBytes=0,timer;
+ let enabled=true,running=0,totalBytes=0,downloadedBytes=0,timer,limited=false;
  function dispose(entry){context.remove(entry.root);entry.root.traverse(o=>o.geometry?.dispose());totalBytes-=entry.bytes;entries.delete(entry.id)}
  function status(){
   const loaded=[...wanted].filter(id=>entries.has(id)),errors=[...wanted].filter(id=>failed.has(id));
   const count=loaded.reduce((n,id)=>n+tiles.get(id).masses,0);
-  badge.textContent=!enabled?'Surroundings hidden':errors.length?'Some areas failed to load · Select to retry':loaded.length<wanted.size?`Buildings & streets · ${loaded.length}/${wanted.size} areas loading…`:`Buildings & streets · ${count.toLocaleString('en-GB')} surrounding parts`;
+  badge.textContent=!enabled?'Surroundings hidden':errors.length?'Some areas failed to load · Select to retry':loaded.length<wanted.size?`Buildings & streets · ${loaded.length}/${wanted.size} areas loading…`:!wanted.size?'No mapped surroundings here · Choose a field stop':`Buildings & streets · ${count.toLocaleString('en-GB')} parts${limited?' · Zoom in for more':''}`;
   Object.assign(badge.dataset,{mode:!enabled?'hidden':errors.length?'error':loaded.length<wanted.size?'loading':'exact',loadedTiles:entries.size,visibleTiles:loaded.length,wantedTiles:wanted.size,geometryBytes:totalBytes,downloadedBytes,activeRequests:running});
-  badge.title='Actual footprints and streets at every zoom level. Areas off screen are released from memory.';
+  badge.title='Actual footprints and streets. Central London has continuous coverage; outlying stops have local context patches. Nearby areas load first within the memory budget.';
  }
  async function load(tile){
   const controller=new AbortController();pending.set(tile.id,controller);running++;status();
@@ -40,11 +40,12 @@ export function createTileStream(city,context,mats,changed,sharedRoadMaterial){
   for(const id of wanted){if(running>=2)break;if(entries.has(id)||pending.has(id)||failed.has(id))continue;load(tiles.get(id))}
  }
  function update(bounds,span,center){
-  wanted.clear();
+  wanted.clear();limited=false;
   if(enabled){
    const visible=city.tiles.filter(t=>t.bounds[0]<=bounds[2]&&t.bounds[2]>=bounds[0]&&t.bounds[1]<=bounds[3]&&t.bounds[3]>=bounds[1]);
    visible.sort((a,b)=>Math.hypot((a.bounds[0]+a.bounds[2])/2-center[0],(a.bounds[1]+a.bounds[3])/2-center[1])-Math.hypot((b.bounds[0]+b.bounds[2])/2-center[0],(b.bounds[1]+b.bounds[3])/2-center[1]));
-   for(const t of visible)wanted.add(t.id);
+   let planned=0;
+   for(const t of visible){const bytes=t.mesh.geometryBytes;if(planned+bytes>maxBytes*.98){limited=true;continue}wanted.add(t.id);planned+=bytes}
   }
   for(const [id,c]of pending)if(!wanted.has(id))c.abort();
   for(const e of [...entries.values()])if(!wanted.has(e.id))dispose(e);

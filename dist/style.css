@@ -85,3 +85,9 @@
 .label-options input{width:16px;height:16px}
 @media(max-width:700px){.marker .pin{width:22px;height:22px;font-size:10px}.marker .marker-name{font-size:12px;max-width:160px}.label-controls{font-size:10px}.label-controls summary{padding:6px}.label-options{left:auto;right:0}}
 .model-toolbar:has(.label-controls[open]){z-index:8}
+
+.building-search{padding:0 20px 12px}.building-search input{width:100%;font:14px inherit;padding:10px 12px;background:#f6f8fb;border:1px solid #d4dde5;border-radius:5px;color:#22394d}.building-search input:focus-visible{outline:2px solid #153bec}.building-search span{font-size:11px;color:#647586;display:block;margin-top:4px}#search-empty{font-size:13px;padding:0 20px;color:#647586}
+@media(max-width:700px){.building-search{padding:0 18px 7px}.building-search input{padding:7px 10px}.sidebar{height:238px}.building-search span:empty{display:none}}
+
+.photo-pending{font-size:12px;color:#6b7582;padding:12px 0;border-bottom:1px solid #e2e6e9}
+.building-item[hidden]{display:none!important}
