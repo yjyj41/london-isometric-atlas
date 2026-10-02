@@ -4,6 +4,7 @@ import {recordGeometry,flatGeometry} from './geometry.js';
 import {createTileStream} from './tile-stream.js';
 import {addFinishAttribute,createFinishMaterial} from './landmark-finishes.js';
 import {mapStyles,confidenceColours} from './map-styles.js';
+import {placeCallout,overlaps} from './label-layout.js';
 const $=s=>document.querySelector(s);
 const material=color=>new T.MeshStandardMaterial({color,roughness:.92,metalness:0,side:T.DoubleSide});
 
@@ -16,12 +17,15 @@ export async function createAtlas(city,onSelect) {
  const offset=new T.Vector3(10000,10000,10000),target=new T.Vector3();
  const context=new T.Group(),ground=new T.Group();scene.add(context,ground);
  const original=new Map(),custom=new Map(),markers=new Map();
+ const labelSides=new Map(),boundsCache=new WeakMap(),lines=new Map();
+ const ns='http://www.w3.org/2000/svg',leaders=document.createElementNS(ns,'svg');
+ leaders.classList.add('marker-leaders');leaders.setAttribute('aria-hidden','true');$('#markers').append(leaders);
  const finishMaterials=new Map(),finishAnimations=new Map(),visited=new Set();
  const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
  const groundMaterials={roads:material(0xf0f2f1)};let currentStyle='atlas',confidence=false,styleAnimation=null;
  const mats={height:material(0xc2cbd1),levels:material(0xcbd2d6),assumed:material(0xd4d9dc)};
  const landmarkMat=material(0xf2f0e9),importMat=material(0x93c8cb);
- let width=1,height=1,view=3700,zoom=1,dirty=true,active='stpauls',fullImport=null,contextVisible=true,stream=null;
+ let width=1,height=1,view=3700,zoom=1,labelsDirty=true,dirty=true,active='stpauls',fullImport=null,contextVisible=true,stream=null;
  scene.add(new T.HemisphereLight(0xffffff,0x939ca6,2.4));
  const sun=new T.DirectionalLight(0xffffff,2.3);sun.castShadow=true;sun.shadow.mapSize.set(2048,2048);
  sun.shadow.bias=-.0003;sun.shadow.normalBias=.4;sun.shadow.camera.near=10;sun.shadow.camera.far=15000;scene.add(sun,sun.target);
@@ -49,12 +53,14 @@ export async function createAtlas(city,onSelect) {
   const el=document.createElement('button');el.className='marker';el.dataset.id=b.id;el.setAttribute('aria-label','Select '+b.name);
   el.innerHTML=`<span class="pin">${String(city.landmarks.indexOf(b)+1).padStart(2,'0')}</span><span class="marker-name">${b.name}</span>`;
   el.onclick=()=>onSelect(b.id);$('#markers').append(el);markers.set(b.id,el);
+  const line=document.createElementNS(ns,'line');leaders.append(line);lines.set(b.id,line);
  }
  const boxHelper=new T.Box3Helper(new T.Box3(),0x153bec);scene.add(boxHelper);boxHelper.visible=false;
  if(city.tiles)stream=createTileStream(city,context,mats,()=>{dirty=true;renderer.shadowMap.needsUpdate=true},groundMaterials.roads);
  const getObject=id=>custom.get(id)||fullImport?.landmarks.get(id)||original.get(id);
  function objectBounds(id){const obj=getObject(id);return obj?new T.Box3().setFromObject(obj):new T.Box3()}
  function sync(){
+  labelsDirty=true;
   const aspect=width/height;camera.left=-view*aspect/2;camera.right=view*aspect/2;camera.top=view/2;camera.bottom=-view/2;camera.zoom=zoom;
   camera.position.copy(target).add(offset);camera.lookAt(target);camera.updateProjectionMatrix();camera.updateMatrixWorld();
   if(stream){
@@ -77,7 +83,7 @@ export async function createAtlas(city,onSelect) {
  // Start at a readable central-London scale. The full-map control includes Isokon.
  target.set(-250,0,120);zoom=T.MathUtils.clamp(view/2200,.55,400);sync();
  function setZoom(f){zoom=T.MathUtils.clamp(zoom*f,.55,400);sync()}
- function select(id,focus=true){active=id;const bb=objectBounds(id);boxHelper.box.copy(bb);boxHelper.visible=!bb.isEmpty()&&!visited.has(id);
+ function select(id,focus=true){labelsDirty=true;active=id;const bb=objectBounds(id);boxHelper.box.copy(bb);boxHelper.visible=!bb.isEmpty()&&!visited.has(id);
   if(focus&&!bb.isEmpty()){
    const size=bb.getSize(new T.Vector3()),span=Math.max(size.x,size.y,size.z,60);bb.getCenter(target);zoom=T.MathUtils.clamp(view/(span*(width<600?3.5:2.4)),.55,400);
    if(width<600){target.x+=span*.36;target.z+=span*.36}else{target.x+=span*.22;target.z-=span*.22}sync();
@@ -153,6 +159,53 @@ export async function createAtlas(city,onSelect) {
   renderer.shadowMap.needsUpdate=true;select(active,id===active);
  }
  function measurements(id){const b=objectBounds(id);if(b.isEmpty())return null;const s=b.getSize(new T.Vector3());return {east:s.x,north:s.z,height:s.y,top:b.max.y,custom:custom.has(id)||!!fullImport}}
+ // UI surfaces can change without a camera movement (card close, legend, fonts).
+ const surfaces=[...document.querySelectorAll('.map-title,.model-toolbar,.stream-status,#confidence-legend,.view-badge,.controls,.detail,.scale,.compass,.map-footer,.interaction-hint')];
+ const uiResize=new ResizeObserver(()=>{labelsDirty=dirty=true});surfaces.forEach(el=>uiResize.observe(el));
+ new MutationObserver(()=>{labelsDirty=dirty=true}).observe(document.body,{attributes:true,attributeFilter:['class']});
+ new MutationObserver(()=>{labelsDirty=dirty=true}).observe($('#confidence-legend'),{attributes:true,attributeFilter:['hidden']});
+ document.fonts.ready.then(()=>{labelsDirty=dirty=true});
+ const screen=p=>{p.project(camera);return {x:(p.x*.5+.5)*width,y:(-p.y*.5+.5)*height}};
+ function layoutMarkers(){
+  if(!labelsDirty)return;labelsDirty=false;
+  const hostRect=host.getBoundingClientRect(),viewport={w:width,h:height};
+  const ui=surfaces.filter(el=>el.getClientRects().length&&!el.hidden).map(el=>{const r=el.getBoundingClientRect();return {x:r.left-hostRect.left,y:r.top-hostRect.top,w:r.width,h:r.height}});
+  const items=city.landmarks.map(b=>{
+   const obj=getObject(b.id);let bb=obj&&boundsCache.get(obj);
+   if(!bb){bb=objectBounds(b.id);if(obj)boundsCache.set(obj,bb)}
+   const points=[];
+   if(!bb.isEmpty())for(const x of [bb.min.x,bb.max.x])for(const y of [bb.min.y,bb.max.y])for(const z of [bb.min.z,bb.max.z])points.push(screen(new T.Vector3(x,y,z)));
+   const c=bb.isEmpty()?new T.Vector3(b.anchor[0],b.modelHeight,-b.anchor[1]):bb.getCenter(new T.Vector3());c.y=bb.isEmpty()?b.modelHeight:bb.max.y;
+   const anchor=screen(c),xs=points.map(p=>p.x),ys=points.map(p=>p.y);
+   const bounds=points.length?{x:Math.min(...xs),y:Math.min(...ys),w:Math.max(...xs)-Math.min(...xs),h:Math.max(...ys)-Math.min(...ys)}:{x:anchor.x,y:anchor.y,w:0,h:0};
+   return {b,anchor,bounds,visible:overlaps(bounds,{x:0,y:0,w:width,h:height})};
+  }).sort((a,b)=>(b.b.id===active?1:0)-(a.b.id===active?1:0));
+  const silhouettes=items.filter(i=>i.visible).map(i=>i.bounds),used=[];
+  // Batch measurements before positioning; only 33 DOM callouts, no new 3D geometry.
+  const sizes=new Map();
+  for(const i of items){const el=markers.get(i.b.id);el.style.display=i.visible?'flex':'none';el.classList.remove('number-only')}
+  for(const i of items)if(i.visible){const el=markers.get(i.b.id);sizes.set(i.b.id,{w:el.offsetWidth,h:el.offsetHeight})}
+  for(const {b,anchor,bounds,visible} of items){
+   const el=markers.get(b.id),line=lines.get(b.id);line.style.display='none';if(!visible)continue;
+   const selected=b.id===active;
+   // Use actual screen scale, independent of viewport aspect and fit-to-city zoom.
+   const showName=selected||height*zoom/view>=.11;
+   const obstacles=[...ui,...silhouettes,...used];
+   let placed=showName?placeCallout({bounds,anchor,size:sizes.get(b.id),viewport,obstacles,previous:labelSides.get(b.id)}):null;
+   if(!placed){
+    el.classList.add('number-only');
+    const size={w:width<=700?32:36,h:width<=700?32:36};
+    placed=placeCallout({bounds,anchor,size,viewport,obstacles,previous:labelSides.get(b.id)});
+   }
+   if(!placed){el.style.display='none';continue}
+   labelSides.set(b.id,placed.side);used.push(placed);
+   el.style.left=placed.x+'px';el.style.top=placed.y+'px';el.style.zIndex=selected?'3':'2';
+   // End at the roof; the thin line never intercepts pointer events.
+   const end={x:Math.max(placed.x,Math.min(placed.x+placed.w,anchor.x)),y:Math.max(placed.y,Math.min(placed.y+placed.h,anchor.y))};
+   line.setAttribute('x1',anchor.x);line.setAttribute('y1',anchor.y);line.setAttribute('x2',end.x);line.setAttribute('y2',end.y);
+   line.classList.toggle('active',selected);line.style.display='';
+  }
+ }
  function render(){requestAnimationFrame(render);
   for(const [id,a]of finishAnimations){
    const t=reducedMotion.matches?1:a.start===null?0:Math.min(1,(performance.now()-a.start)/a.duration),ease=t*t*(3-2*t);
@@ -170,13 +223,7 @@ export async function createAtlas(city,onSelect) {
   // Start the clock after the first render: shader compilation must not
   // consume the reveal duration on the first visit, or on a slower device.
   for(const a of finishAnimations.values())if(a.start===null)a.start=performance.now();
-  const used=[];
-  for(const b of [...city.landmarks].sort((a,b)=>(b.id===active?1:0)-(a.id===active?1:0))){
-   const bb=objectBounds(b.id),p=bb.isEmpty()?new T.Vector3(b.anchor[0],0,-b.anchor[1]):bb.getCenter(new T.Vector3());p.y=(bb.isEmpty()?b.modelHeight:bb.max.y)+4;p.project(camera);
-   const x=(p.x*.5+.5)*width,y=(-p.y*.5+.5)*height,el=markers.get(b.id);el.style.left=x+'px';el.style.top=y+'px';el.style.display=x>10&&x<width-10&&y>10&&y<height-40?'flex':'none';
-   const collision=used.some(p=>Math.abs(p.x-x)<135&&Math.abs(p.y-y)<29);el.querySelector('.marker-name').style.display=(collision||width<600||zoom<1.4)&&b.id!==active?'none':'';
-   if(!collision)used.push({x,y});el.style.zIndex=b.id===active?'3':'1';
-  }
+  layoutMarkers();
  }render();renderer.domElement.addEventListener('webglcontextlost',e=>{e.preventDefault();$('#error').hidden=false});
  return {select,zoom:setZoom,reset,setContext,setConfidence,setVisited,setStyle,measurements,applyImport,restore};
 }
