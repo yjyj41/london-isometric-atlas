@@ -50,7 +50,7 @@ for key,f in files.items():
   assert archive.stat().st_size<25*1024*1024,'Region too large for static hosting'
   downloads.append({'id':key,'name':names[key],'url':'./assets/rhino/'+archive.name,'masses':len(f.Objects),'bytes':archive.stat().st_size,'modelBytes':path.stat().st_size})
   path.unlink()
- else:shutil.copy2(path,out/(key+'.3dm'))
+ elif not key.startswith('catalog-'):shutil.copy2(path,out/(key+'.3dm'))
  print(key,len(f.Objects),flush=True)
 manifest_path=project/'dist/assets/city.json';manifest=json.loads(manifest_path.read_text(encoding='utf-8'))
 manifest['rhinoDownloads']=downloads
