@@ -6,7 +6,7 @@ The supplied 300-entry list adds 256 field stops to the existing 33, giving 289 
 
 275 destinations have a model: the 33 existing detailed studies and 242 additions with mapped OSM massing. 14 destinations currently use location markers. 272 destinations have a credited photograph. These are not 289 detailed reconstructions.
 
-Central London retains its continuous 3D surroundings. Distant destinations use local context patches, without loading all of Greater London. Photos load when their card is opened. Buildings without a verified facade study still support browser-local visit records; they do not claim to reveal realistic exterior finishes.
+Central London retains its continuous 3D surroundings. Distant destinations use local context patches, without loading all of Greater London. Photos load when their card is opened. All 275 modelled stops support visited exterior colours. The 242 new massing palettes are approximate: 192 use the credited card photographs, 34 use limited views (including monochrome, interior, night or distant photographs), and 16 are provisional pending photographic verification. Roof colours, joint layouts and multi-building selections remain inferred. These are display-only material studies, not photo textures or detailed facade reconstructions. The 14 location-only stops retain visit records without a reveal.
 
 ## Merged entries
 

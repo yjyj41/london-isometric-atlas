@@ -118,3 +118,11 @@ Labels in the toolbar independently toggles Names and Numbers. Both off leaves a
 
 ## 2026-10-02 — 300-entry catalogue
 289 stops after reconciliation (33 existing + 256 added; 6 merged, 5 excluded). 275 have models (33 detailed, 242 mapped massing); 14 location-only. 272 photos. Search aliases preserve merged entries. Local visit IDs remain unchanged. 224,012 parts, 499 tiles, central coverage plus local outer patches. 37 Rhino regions, available individual models all Rhino 6. Read dist/catalog-notes.md and current AGENTS.md. Restore complete geometry from dist/assets/city-data.zip; do not run the historical 33-landmark build pipeline over this edition.
+
+
+## 2026-10-03 — Visited finishes for the expanded catalogue
+All 275 modelled stops now reveal a material palette using the existing 1.2-second bottom-up animation, reverse on Undo and restore instantly from existing browser visits. The original 33 studies are preserved. dist/catalog-finishes.js adds explicit profiles for 242 massing selections: 192 card-photo palettes, 34 provisional palettes from limited views, 16 provisional palettes without a card photograph. tools/catalog-finish-review.json records the exact photo reference and evidence category. Every new card labels its approximation; roof colours, joint patterns and mixed complexes are inferred. The 14 location-only stops retain visits without a fake model or material reveal.
+
+Added shared shader effects for panel/spandrel glazing, timber, half-timber, stone bands and ceramics. Golden Lane's mapped tower and Wembley's arch use secondary palettes restricted to their source record/form; the secondary palette uses the existing surface attribute, adding no vertices or texture downloads. All materials share one shader program and are created only when visited. No Rhino regeneration was needed. Imported models keep their own appearance.
+
+Validation: verify-visits (275 profiles, preserved positions/normals, 289 visit IDs and storage/undo), verify-catalog, verify-english and verify-region pass. Browser checks cover new glass, brick, Golden Lane secondary palette, provisional/no-model captions, original Isokon, reload persistence and undo. Local test visits are undone afterwards.

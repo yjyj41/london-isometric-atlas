@@ -1,0 +1,1938 @@
+[
+  {
+    "id": "catalog-002",
+    "name": "Golden Lane Estate",
+    "palette": "golden",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Gold_Block_-_geograph.org.uk_-_681894.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-004",
+    "name": "One New Change",
+    "palette": "greyGlass",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:One_New_Change,_London_EC4,_March_2015_(09).JPG",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-006",
+    "name": "Guildhall",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Guildhall,_Londres,_Inglaterra,_2014-08-11,_DD_139.JPG",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-007",
+    "name": "Guildhall Art Gallery",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Guildhall_Art_Gallery_(14186022081).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-008",
+    "name": "St Stephen Walbrook",
+    "palette": "brickBrown",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:St_Stephen_Walbrook_20130324_033.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-009",
+    "name": "St Mary-le-Bow",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:St_Mary_le_Bow.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-012",
+    "name": "St Bartholomew the Great",
+    "palette": "stoneDark",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:St_Bartholomew-the-Great,_2025-02-28_(cropped).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-013",
+    "name": "Smithfield Market",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Smithfield_Meat_Market_tower1.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-014",
+    "name": "Charterhouse",
+    "palette": "brickBuff",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:London_Charterhouse_-_Entrance_from_Charterhouse_Square.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-015",
+    "name": "Florin Court",
+    "palette": "brickBuff",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Florin_Court_(2).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-016",
+    "name": "Barts Hospital North Wing",
+    "palette": "stoneLight",
+    "study": "provisional",
+    "reference": null,
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-017",
+    "name": "Old Bailey",
+    "palette": "stoneGrey",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Oldbaileylondon-900.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-019",
+    "name": "1 Finsbury Avenue",
+    "palette": "bronzeGlass",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Broadgate_London_July_1991_(27823477416).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-020",
+    "name": "Britannic House",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Finsbury_Circus,_EC2_(4)_-_geograph.org.uk_-_5033261.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-023",
+    "name": "The Leadenhall Building",
+    "palette": "greyGlass",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Cheesegrater_and_Gherkin.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-024",
+    "name": "22 Bishopsgate",
+    "palette": "blueGlass",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:22.Reza_05.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-025",
+    "name": "8 Bishopsgate",
+    "palette": "greyGlass",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:8_Bishopsgate,_11_November_2024.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-026",
+    "name": "20 Fenchurch Street",
+    "palette": "darkGlass",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Walkie-Talkie_-_Sept_2015_(cropped).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-027",
+    "name": "Willis Building",
+    "palette": "blueGlass",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Willis_Building_(London).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-028",
+    "name": "Tower 42",
+    "palette": "bronzeGlass",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Tower_42_from_Horizon_22.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-029",
+    "name": "The Scalpel",
+    "palette": "blueGlass",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:The_Scalpel,_August_2018.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-030",
+    "name": "Leadenhall Market",
+    "palette": "redMetal",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Leadenhall_Market_In_London_-_Feb_2006_rotated.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-031",
+    "name": "Royal Exchange",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Bolsa,_Londres,_Inglaterra,_2014-08-11,_DD_144.JPG",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-032",
+    "name": "Bank of England",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Bank-of-England.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-033",
+    "name": "Mansion House",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Mansion_House,_City_of_London_(40478193673).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-034",
+    "name": "No. 1 Poultry",
+    "palette": "pinkBands",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:No_1_Poultry_(15481592400).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-035",
+    "name": "St Mary Woolnoth",
+    "palette": "stoneGrey",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:St_Mary,_Woolnoth_(36640083551).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-036",
+    "name": "St Helen’s Bishopsgate",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:St._Helen%27s_Bishopsgate.png",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-038",
+    "name": "The Monument",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:The_Monument_to_the_Great_Fire_of_London.JPG",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-043",
+    "name": "St Margaret’s Church, Westminster",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:St-Margaret%27s-_Westminster.P1130954-PS_(cropped).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-045",
+    "name": "Westminster Cathedral",
+    "palette": "brickBands",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Catedral_de_Westminster,_Londres,_Inglaterra,_2022-11-23,_DD_22-24_HDR.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-046",
+    "name": "Central Hall Westminster",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Methodist_Central_Hall.JPG",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-047",
+    "name": "Supreme Court",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Middlesex_Guildhall.png",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-048",
+    "name": "Banqueting House",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Banqueting_House_London.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-049",
+    "name": "Horse Guards",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Horse_Guards_(West_Face_-_01).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-050",
+    "name": "Foreign, Commonwealth & Development Office",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:FCO_Main_Building_(25142910971).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-051",
+    "name": "Old War Office",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:London_-_Whitehall_-_Old_War_Office_Building_1899-1906_by_William_%26_Clyde_Young_-_Edwardian_Baroque_architecture_(Neorenaissance).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-052",
+    "name": "Portcullis House",
+    "palette": "bronzeGlass",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Westminster_Station_Building.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-054",
+    "name": "New Scotland Yard",
+    "palette": "whiteRender",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:New_Scotland_Yard_sign.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-055",
+    "name": "55 Broadway",
+    "palette": "stoneGrey",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:55_Broadway_-_geograph.org.uk_-_1142385.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-056",
+    "name": "St John’s Smith Square",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:St_John%27s_Smith_Square_south_facade.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-058",
+    "name": "Tate Britain",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Tate_Britain_(5822081512)_(2).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-059",
+    "name": "Millbank Tower",
+    "palette": "darkGlass",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:London_-_Albert_Embankment_-_South_Bank_-_Jubilee_Walkway_-_View_SSW_on_Millbank_Tower_1963.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-060",
+    "name": "Channel 4 Headquarters",
+    "palette": "greyGlass",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Cropped_image_of_124_Horseferry_Road,_London.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-061",
+    "name": "Buckingham Palace",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Buckingham_Palace_London_Morning_2020_01_(cropped).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-062",
+    "name": "St James’s Palace",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:St_Jamess_Palace.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-063",
+    "name": "Spencer House",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Spencer_House.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-064",
+    "name": "The Reform Club",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Facade_of_The_Reform_Club,_Pall_Mall_-_geograph.org.uk_-_6571401.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-065",
+    "name": "The Athenaeum Club",
+    "palette": "stoneWarm",
+    "study": "provisional",
+    "reference": null,
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-066",
+    "name": "Burlington House",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Burlington_House_(5125727595).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-067",
+    "name": "Royal Academy, 6 Burlington Gardens",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Royal_Academie_of_Arts_London.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-068",
+    "name": "Burlington Arcade",
+    "palette": "stoneLight",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:London_-_Burlington_Arcade_(exterior,_north_entrance)_-_1987-09-15_adj.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-069",
+    "name": "The Economist Buildings",
+    "palette": "stoneGrey",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Economist_building_London1.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-070",
+    "name": "St James’s Church, Piccadilly",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Church_of_St_Jamess_Piccadilly_2_(5123798865).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-073",
+    "name": "National Portrait Gallery",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:National_Portrait_Gallery,_London_(August_2023)_01.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-074",
+    "name": "St Martin-in-the-Fields",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Church_of_Saint_Martin-in-the-Fields_(Southwest_View_-_01).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-075",
+    "name": "Liberty London",
+    "palette": "halfTimber",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Liberty_department_store_London.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-076",
+    "name": "Broadcasting House",
+    "palette": "stoneLight",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:New_Broadcasting_House_(14561681425).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-077",
+    "name": "All Souls Church, Langham Place",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Church_of_All_Souls-2.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-078",
+    "name": "RIBA Headquarters",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Cmglee_Royal_Institute_of_British_Architects.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-079",
+    "name": "Wallace Collection, Hertford House",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Front_entrance_to_the_Wallace_Collection,_Manchester_Square_-_geograph.org.uk_-_1600012.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-080",
+    "name": "Wigmore Hall",
+    "palette": "stoneWarm",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Wigmore_Hall.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-084",
+    "name": "UCL Wilkins Building",
+    "palette": "stoneWarm",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:London_UCL_Wilkins_Building_portico_240_20220427_1049.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-085",
+    "name": "Brunei Gallery, SOAS",
+    "palette": "brickBrown",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Brunei_Gallery.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-086",
+    "name": "The Brunswick Centre",
+    "palette": "paleConcrete",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Brunswick_Centre_(4136275375).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-087",
+    "name": "St George’s Bloomsbury",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:St._George%27s_Church,_Bloomsbury.png",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-088",
+    "name": "Sir John Soane’s Museum",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Sir_John_Soane_Museum_(13952611347).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-089",
+    "name": "Lincoln’s Inn New Hall & Library",
+    "palette": "brickBrown",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Lincoln%27s_Inn_New_Hall_Library,_Grade_II_Listed_Building_(2).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-090",
+    "name": "Royal Courts of Justice",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Royal_Courts_of_Justice_2019.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-091",
+    "name": "Temple Church",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Temple_Church,_Temple,_London_EC4_(2).jpeg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-092",
+    "name": "Middle Temple Hall",
+    "palette": "brickBrown",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Middle_Temple_Hall_Exterior,_London,_UK_-_Diliff.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-094",
+    "name": "King’s College London Strand Building",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Kingsbuilding.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-095",
+    "name": "The Maughan Library",
+    "palette": "stoneGrey",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:ENG_London_Chancery_Lane_01.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-096",
+    "name": "LSE Saw Swee Hock Student Centre",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Saw_Swee_Hock_Student_Centre,_LSE_02.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-097",
+    "name": "LSE Marshall Building",
+    "palette": "paleConcrete",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:The_Marshall_Building_Campus,_London_School_of_Economics.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-098",
+    "name": "LSE Centre Building",
+    "palette": "silverGlass",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Centre_Building,_LSE_from_LSE_Square.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-099",
+    "name": "Space House",
+    "palette": "paleConcrete",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:1_Kemble_Street,_London_02.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-100",
+    "name": "Finsbury Health Centre",
+    "palette": "whiteRender",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Finsbury_Health_Centre_(February_2019).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-105",
+    "name": "Granary Building, Central Saint Martins",
+    "palette": "brickBrown",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Granary_Building_at_night_2024-03-09.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-106",
+    "name": "Gasholders London",
+    "palette": "greyGlass",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:King%27s_Cross_Central_development_Coal_Drops_Yard_and_Gasholders,_London_England_01.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-107",
+    "name": "Aga Khan Centre",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Aga_Khan_University_Institute_for_the_Study_of_Muslim_Civilisations,_in_King%27s_Cross_Central_development,_London,_England_03.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-108",
+    "name": "King’s Place",
+    "palette": "blueGlass",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Kings_Place_022.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-109",
+    "name": "Francis Crick Institute",
+    "palette": "terracotta",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Francis_Crick_Institute,_September_2016_(29634828786).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-110",
+    "name": "St Pancras Old Church",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:St_Pancras_Old_Church_-_geograph.org.uk_-_757784.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-111",
+    "name": "St Pancras New Church",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:New_St_Pancras_Parish_Church.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-112",
+    "name": "Islington Town Hall",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:IslingtonTownHall.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-113",
+    "name": "Union Chapel",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Islington_union_chapel_1.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-114",
+    "name": "Almeida Theatre",
+    "palette": "whiteRender",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Islington_Almeida_Theatre_2011.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-115",
+    "name": "Sadler’s Wells Theatre",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Sadler%27s_Wells_Theatre_(September_2015).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-116",
+    "name": "Finsbury Estate",
+    "palette": "concrete",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Michael_Cliffe_House,_Finsbury_Estate_-_geograph.org.uk_-_3924125.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-117",
+    "name": "Bevin Court",
+    "palette": "paleConcrete",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Bevin_exterior.JPG",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-118",
+    "name": "Priory Green Estate",
+    "palette": "concrete",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Priory_Heights_(3317977543).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-119",
+    "name": "Diespeker Wharf",
+    "palette": "brickBrown",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Diespeker_Wharf,_Graham_Road,_Islington_-_geograph.org.uk_-_3016557.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-120",
+    "name": "Canonbury Tower",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Canonbury_Tower_20200803_071402.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-121",
+    "name": "Alexandra & Ainsworth Estate",
+    "palette": "concrete",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Alexandra_Road_Estate.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-122",
+    "name": "Dunboyne Road Estate",
+    "palette": "paleConcrete",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Dunboyne_Road_Estate_(820617936).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-123",
+    "name": "Branch Hill Estate",
+    "palette": "paleConcrete",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Spedan_Close_Branch_Hill_Estate_I_(15435403102).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-125",
+    "name": "Highgate New Town",
+    "palette": "concrete",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Stoneleigh_terrace.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-126",
+    "name": "22–32 Winscombe Street",
+    "palette": "brickGrey",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Housing_terrace,_Winscombe_Street-geograph-5572950-by-Julian-Osley.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-128",
+    "name": "2 Willow Road",
+    "palette": "brickBrown",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:1_2_3_Willow_Road_Hampstead_London_20050924.JPG",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-129",
+    "name": "Highpoint I",
+    "palette": "whiteRender",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Highpoint_detail.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-131",
+    "name": "66 Frognal",
+    "palette": "brickBuff",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:66_Frognal_0423.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-132",
+    "name": "Hopkins House",
+    "palette": "darkGlass",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Hampstead_,_Hopkins_House_-_geograph.org.uk_-_7769329.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-133",
+    "name": "The Roundhouse",
+    "palette": "brickBuff",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:The_Roundhouse,_Chalk_Farm_Road,_London_NW1_-_geograph.org.uk_-_399270.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-134",
+    "name": "Camden Town Hall",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Camden_Town_Hall.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-135",
+    "name": "Interchange Building, Camden",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:The_Interchange_Building,_Camden.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-136",
+    "name": "Former Jewish Museum, Albert Street",
+    "palette": "brickBrown",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Jewish_Museum_London.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-137",
+    "name": "Keats House",
+    "palette": "whiteRender",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Keats_House.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-138",
+    "name": "Fenton House",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Fenton_House_-_Adamson.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-139",
+    "name": "Kenwood House",
+    "palette": "whiteRender",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Kenwood_House_2.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-140",
+    "name": "St Michael’s Church, Highgate",
+    "palette": "stoneDark",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:St_Michael%27s_(49445882517).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-141",
+    "name": "Royal College of Physicians",
+    "palette": "whiteCeramic",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Lasdun_Royal_College_of_Physicians_front_Dec_2005.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-142",
+    "name": "London Central Mosque",
+    "palette": "sandGold",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:London_Central_Mosque_2.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-145",
+    "name": "Gorilla House, London Zoo",
+    "palette": "whiteRender",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Old_Gorilla_House_London_Zoo.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-146",
+    "name": "Alexandra Palace",
+    "palette": "brickBuff",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:APalace_1.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-147",
+    "name": "Bruce Castle",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Bruce_Castle_front_2024-02-24_(2).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-148",
+    "name": "Tottenham Town Hall",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Tottenham_town_hall_1.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-149",
+    "name": "Tottenham Hotspur Stadium",
+    "palette": "silverGlass",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:London_Tottenham_Hotspur_Stadium.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-150",
+    "name": "Broadwater Farm Estate",
+    "palette": "concrete",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Broadwater_Farm_Estate_from_Gloucester_Road.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-151",
+    "name": "St Jude-on-the-Hill",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:St_Jude%27s,_Hampstead_Garden_Suburb.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-152",
+    "name": "Hampstead Garden Suburb Free Church",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Free_Church,_Hampstead_Garden_Suburb.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-153",
+    "name": "East Finchley Underground Station",
+    "palette": "brickBrown",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:East_Finchley_Station_(2)_01.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-154",
+    "name": "Arnos Grove Underground Station",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:ARNOS_GROVE-03_240710_CPS_(4837089899).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-155",
+    "name": "Southgate Underground Station",
+    "palette": "concrete",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Southgate_Station_(1).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-156",
+    "name": "Oakwood Underground Station",
+    "palette": "brickBrown",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Oakwood_Station_(1).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-157",
+    "name": "Cockfosters Underground Station",
+    "palette": "brickBuff",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Cockfosters_tube_at_night_Feb_2020_02.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-158",
+    "name": "Wembley Stadium",
+    "palette": "stadium",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:London_Wembley.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-159",
+    "name": "Brent Civic Centre",
+    "palette": "greyGlass",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Brent_Civic_Centre_and_Wembley_Library_(13830389734).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-160",
+    "name": "BAPS Shri Swaminarayan Mandir",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:London_Temple.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-161",
+    "name": "Christ Church Spitalfields",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Christ_Church_exterior,_Spitalfields,_London,_UK_-_Diliff.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-162",
+    "name": "Old Spitalfields Market",
+    "palette": "darkMetal",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Old_Spitalfields_Market_Panorama,_London,_UK_-_Diliff.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-163",
+    "name": "Dennis Severs’ House",
+    "palette": "brickBrown",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:18_Folgate_Street_-_geograph.org.uk_-_819517.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-164",
+    "name": "19 Princelet Street",
+    "palette": "brickBrown",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:19_Princelet_Street,_Spitalfields,_London.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-165",
+    "name": "Sandys Row Synagogue",
+    "palette": "brickBuff",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Sandys_Row_Synagogue_-_01.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-166",
+    "name": "Whitechapel Gallery",
+    "palette": "terracotta",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Whitechapel_Gallery_2020_(3)_-_Copy.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-167",
+    "name": "Whitechapel Bell Foundry",
+    "palette": "brickBuff",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Whitechapel_Bell_Foundry.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-168",
+    "name": "Former Royal London Hospital (Town Hall)",
+    "palette": "brickBrown",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:View_of_the_Royal_London_Hospital_and_King_George_II_Fountain_from_Whitechapel_Road_-_geograph.org.uk_-_3961206.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-169",
+    "name": "Idea Store Whitechapel",
+    "palette": "greenGlass",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Idea_store_2.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-170",
+    "name": "Young V&A",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Young_V%26A_2026-06-06.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-171",
+    "name": "Bethnal Green Town Hall",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Former_Town_Hall,_Cambridge_Heath_Road.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-172",
+    "name": "Keeling House",
+    "palette": "paleConcrete",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Keeling_House.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-173",
+    "name": "Sivill House",
+    "palette": "brickGrey",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Sivill-House.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-174",
+    "name": "York Hall",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:York_Hall,_Old_Ford_Road,_E2_-_geograph.org.uk_-_394883.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-175",
+    "name": "Haggerston Baths",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Haggerston2.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-176",
+    "name": "Haggerston School",
+    "palette": "concrete",
+    "study": "provisional",
+    "reference": null,
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-177",
+    "name": "Hackney Town Hall",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Hackneytownhall2.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-178",
+    "name": "Hackney Empire",
+    "palette": "terracotta",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Frank_Matcham_Hackney_Empiire_291_Mare_Street_291_London_E8_1EJ_3.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-179",
+    "name": "Sutton House",
+    "palette": "brickBrown",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Sutton_House_in_Hackney_Exterior.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-180",
+    "name": "Walthamstow Town Hall",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Waltham_Forest_Town_Hall.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-181",
+    "name": "William Morris Gallery",
+    "palette": "brickBuff",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:20231231_London_Walthamstow_09b.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-182",
+    "name": "Soho Theatre Walthamstow (former Granada)",
+    "palette": "whiteRender",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Soho_Theatre_Walthamstow_2025-09-20.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-183",
+    "name": "Walthamstow Wetlands Engine House",
+    "palette": "brickBuff",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Engine_House,_Walthamstow_Wetlands_(2)_-_2022-10-08.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-184",
+    "name": "Vestry House Museum",
+    "palette": "brickBrown",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Courtyard_of_the_Vestry_House_Museum_-_geograph.org.uk_-_900047.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-186",
+    "name": "Lee Valley Velodrome",
+    "palette": "timber",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:London,_The_Olympic_Velodrome,_15-11-2014_(16008863981).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-187",
+    "name": "London Stadium",
+    "palette": "stadium",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:London_Olympic_Stadium_West_Ham.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-188",
+    "name": "Copper Box Arena",
+    "palette": "copper",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Copper_Box_Arena_(geograph_3642114).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-189",
+    "name": "Here East",
+    "palette": "greyGlass",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Hackney_Wick_-_V%26A_East_Storehouse_(geograph_7850144).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-190",
+    "name": "UCL East Marshgate",
+    "palette": "paleConcrete",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Marshgate_UCL_East.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-191",
+    "name": "UCL East One Pool Street",
+    "palette": "terracotta",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:View_of_UCL_East_from_the_Queen_Elizabeth_Olympic_Park.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-192",
+    "name": "House Mill, Three Mills",
+    "palette": "brickBrown",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:House_Mill_Three_Mills_Bromley-By-Bow.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-193",
+    "name": "Abbey Mills Pumping Station",
+    "palette": "brickBuff",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Abbey_Mills_Pumping_Station_main_building_(1)_-_2022-04-03.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-194",
+    "name": "Balfron Tower",
+    "palette": "concrete",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Balfron_tower.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-196",
+    "name": "St Matthias Old Church",
+    "palette": "brickBrown",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:St_Matthias,_Poplar_-_geograph.org.uk_-_866405.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-200",
+    "name": "The Crystal (City Hall)",
+    "palette": "greenGlass",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Siemens_Crystal_Building,_London.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-203",
+    "name": "Queen Elizabeth Hall & Purcell Room",
+    "palette": "concrete",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:23_4_2018_IMG_3462_QEH_entrance.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-205",
+    "name": "BFI Southbank",
+    "palette": "concrete",
+    "study": "provisional",
+    "reference": null,
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-206",
+    "name": "County Hall, London",
+    "palette": "stoneWarm",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:London_-_Westminster_Bridge_Road_-_Jubilee_Walkway_-_View_North_along_County_Hall_Building_1911-22_by_Ralph_Knott_towards_London_Eye_1999.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-208",
+    "name": "Waterloo Station",
+    "palette": "stoneWarm",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Waterloo-Station-2013.JPG",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-210",
+    "name": "The Old Vic",
+    "palette": "whiteRender",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Old_Vic0185.JPG",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-211",
+    "name": "The Young Vic",
+    "palette": "metal",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Young_Vic_theatre_London_sept_07.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-214",
+    "name": "Shakespeare’s Globe",
+    "palette": "halfTimber",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Restaurante_The_Swan,_Londres,_Inglaterra,_2014-08-11,_DD_113.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-216",
+    "name": "Southwark Cathedral",
+    "palette": "stoneGrey",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Northwest_View_of_Southwark_Cathedral_(01).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-217",
+    "name": "Borough Market",
+    "palette": "greenMetal",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:London_2018_March_IMG_0663.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-219",
+    "name": "London Bridge Station",
+    "palette": "bronzeMetal",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:London_bridge_exterior.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-220",
+    "name": "Former City Hall, The Queen’s Walk",
+    "palette": "greyGlass",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:London_City_Hall.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-222",
+    "name": "Butler’s Wharf",
+    "palette": "brickBuff",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Butlers_Wharf_from_Tower_Bridge.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-223",
+    "name": "White Cube Bermondsey",
+    "palette": "darkMetal",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:White_Cube_Bermondsey_(6969207087).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-225",
+    "name": "Canada Water Library",
+    "palette": "bronzeMetal",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Canada_Water_Library_March_2012.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-226",
+    "name": "The Brunel Museum",
+    "palette": "brickBrown",
+    "study": "provisional",
+    "reference": null,
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-227",
+    "name": "St Mary’s Church, Rotherhithe",
+    "palette": "brickBrown",
+    "study": "provisional",
+    "reference": null,
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-228",
+    "name": "The Master Shipwright’s House",
+    "palette": "brickBrown",
+    "study": "provisional",
+    "reference": null,
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-229",
+    "name": "Deptford Town Hall",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Deptford_Town_Hall_from_the_Northwest_(01).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-231",
+    "name": "Goldsmiths Centre for Contemporary Art",
+    "palette": "greenMetal",
+    "study": "provisional",
+    "reference": null,
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-232",
+    "name": "St Paul’s Church, Deptford",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:West_Face_of_the_Church_of_Saint_Paul,_Deptford_(01).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-236",
+    "name": "Stockwell Street, University of Greenwich",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:University_buildings,_Stockwell_Street_(2)_-_geograph.org.uk_-_4276946.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-237",
+    "name": "The O2",
+    "palette": "membrane",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Millennium_Dome_1.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-238",
+    "name": "Ravensbourne University London",
+    "palette": "ceramicGold",
+    "study": "provisional",
+    "reference": null,
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-239",
+    "name": "Eltham Palace",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Eltham_Palace-8242930494.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-240",
+    "name": "Red House, Bexleyheath",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Philip_Webb%27s_Red_House_in_Upton.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-241",
+    "name": "Lambeth Palace",
+    "palette": "stoneDark",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Lambeth_Palace,_London_home_of_the_Archbishop_of_Canterbury,_exterior_7.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-242",
+    "name": "Lambeth Palace Library",
+    "palette": "brickRed",
+    "study": "provisional",
+    "reference": null,
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-243",
+    "name": "Newport Street Gallery",
+    "palette": "brickBrown",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Newport_Street_Gallery,_London.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-244",
+    "name": "Beaconsfield Gallery",
+    "palette": "brickBuff",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Beaconsfield_Gallery_1.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-245",
+    "name": "Imperial War Museum London",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Imperial_War_Museum,_London_-_north_view.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-246",
+    "name": "Michael Faraday Memorial",
+    "palette": "metal",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Faraday_Memorial_SE1_(49052991483).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-247",
+    "name": "Metro Central Heights",
+    "palette": "paleConcrete",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:MetroCentralHeights1.JPG",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-248",
+    "name": "South London Gallery",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Passmore_Edwards_South_London_Art_Gallery,_Peckham_Road_-_geograph.org.uk_-_1441923.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-250",
+    "name": "Peckham Levels",
+    "palette": "concrete",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Peckham_Levels_-_geograph.org.uk_-_8189227.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-251",
+    "name": "Mountview Academy",
+    "palette": "brickGrey",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Mountview_Entrance.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-255",
+    "name": "Horniman Museum",
+    "palette": "stoneWarm",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:An_aerial_view_of_the_Horniman_Museum_and_Gardens.png",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-256",
+    "name": "Dulwich Picture Gallery",
+    "palette": "brickBuff",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Dulwich_Picture_Gallery,_main_entrance.JPG",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-257",
+    "name": "Dulwich College Barry Buildings",
+    "palette": "brickRed",
+    "study": "provisional",
+    "reference": null,
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-258",
+    "name": "Central Hill Estate",
+    "palette": "concrete",
+    "study": "provisional",
+    "reference": null,
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-259",
+    "name": "Crystal Palace National Sports Centre",
+    "palette": "concrete",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Crystal_Palace_National_Sports_Centre.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-260",
+    "name": "Fairfield Halls",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Fairfield_Halls_-_London.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-261",
+    "name": "Natural History Museum",
+    "palette": "terracotta",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Natural_History_Museum_London_South_Facade_2020_01.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-262",
+    "name": "Victoria and Albert Museum",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Exterior_of_the_Victoria_and_Albert_Museum_-_2026.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-264",
+    "name": "Royal Albert Hall",
+    "palette": "brickRed",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Royal_Albert_Hall,_London_-_Nov_2012.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-265",
+    "name": "Royal College of Art, Kensington",
+    "palette": "brickBrown",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Royal_College_of_Art_from_Jay_Mews.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-266",
+    "name": "Design Museum",
+    "palette": "metal",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Design_Museum,_Kensington_exterior_2017-09-16.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-267",
+    "name": "Leighton House",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Casa_de_Leighton,_Londres,_Inglaterra,_2022-11-26,_DD_40.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-268",
+    "name": "The Cosmic House",
+    "palette": "whiteRender",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:The_Thematic_House,_October_2021_10.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-269",
+    "name": "Kensington Palace",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Kensington_Palace,_the_South_Front_-_geograph.org.uk_-_287402.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-270",
+    "name": "Serpentine South Gallery",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:20110606_London_96.JPG",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-271",
+    "name": "Serpentine North Gallery & Magazine",
+    "palette": "brickBuff",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:London_-_Serpentine_Sackler_Gallery.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-272",
+    "name": "Trellick Tower",
+    "palette": "concrete",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Trellick_Tower_front_view_(colour_brightness_adjust).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-273",
+    "name": "Kensal House",
+    "palette": "whiteRender",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Kensal_House,_Ladbroke_Grove.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-274",
+    "name": "Royal Hospital Chelsea",
+    "palette": "brickRed",
+    "study": "provisional",
+    "reference": null,
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-275",
+    "name": "Saatchi Gallery",
+    "palette": "brickBuff",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:SaatchiGallery.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-276",
+    "name": "Michelin House",
+    "palette": "whiteCeramic",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Michelin_House,_London_-_2022-09-04_(1).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-277",
+    "name": "Peter Jones",
+    "palette": "silverGlass",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Peter_Jones,_Sloane_Square_-_geograph.org.uk_-_2581038.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-278",
+    "name": "Paddington Station",
+    "palette": "stoneWarm",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Paddington_exterior_2024-03-07.png",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-279",
+    "name": "Paddington Elizabeth line Station",
+    "palette": "glasshouse",
+    "study": "limited-photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Elizabeth_Line_entrance_at_Paddington_Station_-_geograph.org.uk_-_7016854.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-280",
+    "name": "Hallfield Estate",
+    "palette": "paleConcrete",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Hallfield_Estate_-_geograph.org.uk_-_7026843.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-281",
+    "name": "The Ark",
+    "palette": "copper",
+    "study": "provisional",
+    "reference": null,
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-282",
+    "name": "Riverside Studios",
+    "palette": "bronzeGlass",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Riverside_Studios_front_external_2018.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-283",
+    "name": "Emery Walker’s House, 7 Hammersmith Terrace",
+    "palette": "brickBrown",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Correct_photo_7_Hammersmith_Terrace.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-284",
+    "name": "Chiswick House",
+    "palette": "stoneLight",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Chiswick_House_from_SE_(cropped).jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-285",
+    "name": "St Michael and All Angels, Bedford Park",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:St_Michael_and_All_Angels.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-286",
+    "name": "The Hoover Building",
+    "palette": "whiteRender",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Hoover_Building_in_Perivale.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-287",
+    "name": "Pitzhanger Manor",
+    "palette": "brickBuff",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Pitz_eastface.JPG",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-288",
+    "name": "Osterley House",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Osterley_Park_House,_London-25June2009-rc.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-289",
+    "name": "Syon House",
+    "palette": "stoneWarm",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Syon_House_2018-06.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-290",
+    "name": "Palm House, Kew Gardens",
+    "palette": "glasshouse",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Kew_Gardens_Palm_House,_London_-_July_2009.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-291",
+    "name": "Temperate House, Kew Gardens",
+    "palette": "glasshouse",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Kew_Gardens_Temperate_House_-_Sept_2008.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-292",
+    "name": "Princess of Wales Conservatory, Kew Gardens",
+    "palette": "glasshouse",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Princess_of_Wales_Conservatory,_Kew_Gardens_-_July_2009.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-293",
+    "name": "Ham House",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Ham_House,_London.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-294",
+    "name": "Strawberry Hill House",
+    "palette": "whiteRender",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Strawberry_Hill_House_from_garden_in_2012_after_restoration.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-295",
+    "name": "Hampton Court Palace",
+    "palette": "brickRed",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:Hampton_Court_Palace,_West_Front_Richmond_upon_Thames_1193127_20230823_0050.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-296",
+    "name": "Kingston University Town House",
+    "palette": "paleConcrete",
+    "study": "provisional",
+    "reference": null,
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-299",
+    "name": "Royal College of Art, Battersea",
+    "palette": "brickBrown",
+    "study": "provisional",
+    "reference": null,
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  },
+  {
+    "id": "catalog-300",
+    "name": "US Embassy, Nine Elms",
+    "palette": "silverGlass",
+    "study": "photo",
+    "reference": "https://commons.wikimedia.org/wiki/File:U.S._Embassy,_London_-_2022-04-30.jpg",
+    "note": "Representative display palette, not measured facade mapping. Roof colour and joint layout are inferred; multi-building selections may contain different finishes."
+  }
+]

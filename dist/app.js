@@ -15,13 +15,14 @@ function renderVisitPanel(){
  if(!selected||!visits)return;
  const b=city.landmarks.find(b=>b.id===selected),done=visits.has(selected),p=finishes[selected];
  const custom=atlas?.measurements(selected)?.custom;
+ const studyNote=p?.study==='photo'?'Approximate palette from the reference photo; roof colours and surface patterns are inferred.':p?.study==='limited-photo'?'Provisional palette from a limited reference view; some exterior colours are inferred.':p?.study==='provisional'?'Provisional material palette; exterior colours still need photographic verification.':'';
  const storageNote=visits.persistent?'Saved in this browser only.':'Browser storage unavailable. Changes last for this session only.';
- $('#visit-panel').innerHTML=`<button class="visit-toggle" type="button" aria-pressed="${done}" aria-describedby="visit-caption"><span class="visit-icon" aria-hidden="true">${done?'✓':'+'}</span><span>${done?'Visited':'Mark as visited'}</span><span class="visit-undo">${done?'Undo':''}</span></button><p id="visit-caption" class="visit-caption">${p?(done?esc(p.label):'Reveal this building’s exterior finishes.'):(done?'Added to your field record.':'Record your visit to this building.')} ${p?'':'An exterior material study is not available for this building yet.'}</p><p class="visit-storage ${visits.persistent?'':'unsaved'}">${storageNote}${custom?' Your Rhino model keeps its current appearance; restore the original to see these finishes.':''}</p>`;
+ $('#visit-panel').innerHTML=`<button class="visit-toggle" type="button" aria-pressed="${done}" aria-describedby="visit-caption"><span class="visit-icon" aria-hidden="true">${done?'✓':'+'}</span><span>${done?'Visited':'Mark as visited'}</span><span class="visit-undo">${done?'Undo':''}</span></button><p id="visit-caption" class="visit-caption">${p?(done?esc(p.label):'Reveal this building’s exterior finishes.'):(done?'Added to your field record.':'Record your visit to this building.')} ${p?esc(studyNote):'This stop has no dedicated 3D model yet; your visit is still recorded.'}</p><p class="visit-storage ${visits.persistent?'':'unsaved'}">${storageNote}${custom?' Your Rhino model keeps its current appearance; restore the original to see these finishes.':''}</p>`;
  $('#visit-panel button').onclick=()=>{
   const state=visits.toggle(selected);
   for(const building of city.landmarks)atlas?.setVisited(building.id,visits.has(building.id),building.id===selected);
   renderVisitPanel();updateVisitIndicators();if(state.visited)$('#visit-panel button').classList.add('visit-reveal');$('#visit-panel button').focus({preventScroll:true});
-  $('#visit-announcement').textContent=b.name+(state.visited?' marked as visited.'+(p?' Exterior finishes revealed.':''):' removed from visited.')+(state.saved?' Saved in this browser.':' Not saved: browser storage is unavailable.');
+  $('#visit-announcement').textContent=b.name+(state.visited?' marked as visited.'+(p&&!custom?' Exterior finishes revealed.':''):' removed from visited.')+(state.saved?' Saved in this browser.':' Not saved: browser storage is unavailable.');
  };
 }
 function updateVisitIndicators(){

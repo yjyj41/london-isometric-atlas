@@ -1,12 +1,15 @@
 import * as T from './vendor/three.module.js';
+import {catalogFinishes} from './catalog-finishes.js';
 
 // Reference-informed surface studies, not surveyed facade drawings or photo textures.
-// Colours refer to the exterior photographs already credited on each building card.
+// Original studies use credited card photos. Catalogue studies explicitly mark provisional palettes.
 // kind: 0 plain, 1 stone, 2 brick, 3 concrete, 4 glass, 5 Gherkin,
 // 6 patinated panels, 7 translucent coloured panels, 8 timber lattice,
-// 9 Isokon render, 10 bronze fins, 11 metal.
+// 9 Isokon render, 10 bronze fins, 11 metal, 12 spandrels, 13 timber,
+// 14 half-timber, 15 horizontal bands, 16 plain render/membrane, 17 ceramic panels.
 const profile=(wall,roof,accent,kind,label)=>({wall,roof,accent,kind,label});
 export const finishes={
+ ...catalogFinishes,
  stpauls:profile('#d0c8b5','#697579','#b3aaa0',1,'Portland stone · lead-grey dome'),
  shard:profile('#7199ae','#88acbc','#cedbe0',4,'Blue-grey glazing · pale metal mullions'),
  gherkin:profile('#648a96','#648a96','#203d4a',5,'Blue-green glass · dark spiral bands'),
@@ -45,6 +48,7 @@ export const finishes={
 // Extra surface attributes only: never alter source vertices, bounds or Rhino meshes.
 export function addFinishAttribute(g,r,partIndex=0,partCount=1){
  const p=g.attributes.position,n=g.attributes.normal,values=new Float32Array(p.count);
+ const study=finishes[r.lm], secondary=study?.secondaryParts?.some(part=>part===r.id||part==='form:'+r.form);
  for(let i=0;i<p.count;i+=3){
   const y=(p.getY(i)+p.getY(i+1)+p.getY(i+2))/3;
   const ny=(n.getY(i)+n.getY(i+1)+n.getY(i+2))/3;
@@ -72,6 +76,8 @@ export function addFinishAttribute(g,r,partIndex=0,partCount=1){
   if(r.lm==='kingscross'&&r.mesh&&ny>.1)finish=3;
   if(r.lm==='crossrail'&&r.mesh)finish=ny>.1?1:0;
   if(r.lm==='stpauls'&&r.roof?.shape==='dome'&&partIndex===partCount-1)finish=1;
+  // A second palette is restricted to a named, reviewed source part.
+  if(secondary)finish=ny>.55?8:7;
   values.fill(finish,i,i+3);
  }
  g.setAttribute('atlasFinish',new T.BufferAttribute(values,1));
@@ -80,6 +86,8 @@ export function addFinishAttribute(g,r,partIndex=0,partCount=1){
 
 const declarations=`
  uniform vec3 atlasWall, atlasRoof, atlasAccent, atlasOrigin;
+ uniform vec3 atlasSecondaryWall, atlasSecondaryRoof, atlasSecondaryAccent;
+ uniform float atlasSecondaryKind;
  uniform float atlasKind, atlasReveal;
  uniform vec2 atlasHeightRange;
  varying vec3 vAtlasPosition, vAtlasNormal;
@@ -96,90 +104,120 @@ const surface=`
  float side=1.-smoothstep(.35,.65,abs(an.y));
  float u=abs(an.x)>abs(an.z)?ap.z:ap.x;
  vec2 uv=vec2(u,ap.y);
- vec3 finishColour=atlasWall;
- float roof=step(.5,vAtlasFinish)*(1.-step(1.5,vAtlasFinish));
- float accent=step(1.5,vAtlasFinish)*(1.-step(2.5,vAtlasFinish));
- float glazing=step(2.5,vAtlasFinish)*(1.-step(3.5,vAtlasFinish));
- float skip=step(3.5,vAtlasFinish)*(1.-step(4.5,vAtlasFinish));
- float chimney=step(4.5,vAtlasFinish)*(1.-step(5.5,vAtlasFinish));
- finishColour=mix(finishColour,atlasRoof,roof);
- finishColour=mix(finishColour,atlasAccent,accent);
+ float secondary=step(6.5,vAtlasFinish);
+ float finishSlot=mix(vAtlasFinish,vAtlasFinish-7.,secondary);
+ vec3 wallColour=mix(atlasWall,atlasSecondaryWall,secondary);
+ vec3 roofColour=mix(atlasRoof,atlasSecondaryRoof,secondary);
+ vec3 accentColour=mix(atlasAccent,atlasSecondaryAccent,secondary);
+ float finishKind=mix(atlasKind,atlasSecondaryKind,secondary);
+ vec3 finishColour=wallColour;
+ float roof=step(.5,finishSlot)*(1.-step(1.5,finishSlot));
+ float accent=step(1.5,finishSlot)*(1.-step(2.5,finishSlot));
+ float glazing=step(2.5,finishSlot)*(1.-step(3.5,finishSlot));
+ float skip=step(3.5,finishSlot)*(1.-step(4.5,finishSlot));
+ float chimney=step(4.5,finishSlot)*(1.-step(5.5,finishSlot));
+ finishColour=mix(finishColour,roofColour,roof);
+ finishColour=mix(finishColour,accentColour,accent);
  finishColour=mix(finishColour,vec3(.25,.40,.44),glazing);
- finishColour=mix(finishColour,atlasAccent,chimney);
- float wall=1.-step(.5,vAtlasFinish);
+ finishColour=mix(finishColour,accentColour,chimney);
+ float wall=1.-step(.5,finishSlot);
  float glassAmount=glazing;
- if(atlasKind==1. && wall>.5){
+ if(finishKind==1. && wall>.5){
   float joints=max(atlasLine(uv.y/.7,.014),atlasLine(uv.x/1.4+mod(floor(uv.y/.7),2.)*.5,.008));
   finishColour*=1.-.13*joints*side;
  }
- if(atlasKind==2. && wall>.5){
+ if(finishKind==2. && wall>.5){
   vec2 brick=vec2(uv.x/.24+mod(floor(uv.y/.09),2.)*.5,uv.y/.09);
   float mortar=max(atlasLine(brick.x,.025),atlasLine(brick.y,.045));
   float nearDetail=1.-smoothstep(.3,1.,max(fwidth(brick.x),fwidth(brick.y)));
   finishColour*=1.+(atlasHash(floor(brick))-.5)*.17*nearDetail;
   finishColour=mix(finishColour,finishColour*1.35,mortar*.45*side);
  }
- if(atlasKind==3. && wall>.5){
+ if(finishKind==3. && wall>.5){
   float boards=atlasLine(uv.y/.25,.015);
   finishColour*=1.-.12*boards*side;
  }
- if(atlasKind==4. && wall>.5){
+ if(finishKind==4. && wall>.5){
   float grid=max(atlasLine(uv.x/1.5,.025),atlasLine(uv.y/3.6,.025));
   finishColour*=.83+.17*sin(uv.x*.13+ap.y*.035);
-  finishColour=mix(finishColour,atlasAccent,grid*.72*side);
+  finishColour=mix(finishColour,accentColour,grid*.72*side);
   glassAmount=side;
  }
- if(atlasKind==5.){
+ if(finishKind==5.){
   float angle=atan(ap.z,ap.x)/6.2831853;
   float spiral=angle*6.+ap.y/58.;
   float band=smoothstep(.45,.51,fract(spiral))*(1.-smoothstep(.76,.82,fract(spiral)));
-  finishColour=mix(atlasWall,atlasAccent,band*.9);
+  finishColour=mix(wallColour,accentColour,band*.9);
   float lattice=max(atlasLine(angle*24.+ap.y/7.7,.027),atlasLine(angle*24.-ap.y/7.7,.027));
   finishColour=mix(finishColour,vec3(.62,.72,.74),lattice*.83);
   finishColour*=.87+.13*cos(angle*6.2831853);
   glassAmount=1.;
  }
- if(atlasKind==6. && wall>.5){
+ if(finishKind==6. && wall>.5){
   finishColour*=1.-.15*max(atlasLine(uv.x/1.3,.02),atlasLine(uv.y/2.5,.02))*side;
   if(an.z<-.55){
    vec2 panel=floor(uv/vec2(1.3,2.5));
    float k=atlasHash(panel);
-   finishColour=mix(atlasWall,atlasAccent,step(.68,k));
+   finishColour=mix(wallColour,accentColour,step(.68,k));
    finishColour=mix(finishColour,vec3(.35,.14,.26),step(.88,k));
    glassAmount=.7;
   }
  }
- if(atlasKind==7. && wall>.5){
+ if(finishKind==7. && wall>.5){
   float colourBand=.5+.5*sin(ap.x*.032+ap.z*.023);
-  finishColour=mix(atlasWall,atlasAccent,smoothstep(.35,.85,colourBand)*.75);
+  finishColour=mix(wallColour,accentColour,smoothstep(.35,.85,colourBand)*.75);
   finishColour=mix(finishColour,vec3(.63,.68,.27),(1.-smoothstep(.05,.4,colourBand))*.5);
   finishColour*=1.-.13*atlasLine(uv.x/.4,.02)*side;
   glassAmount=.3;
  }
- if(atlasKind==8. && roof>.5){
+ if(finishKind==8. && roof>.5){
   float lattice=max(atlasLine((ap.x+ap.z)/6.,.022),atlasLine((ap.x-ap.z)/6.,.022));
-  finishColour=mix(atlasRoof,atlasAccent,lattice);
+  finishColour=mix(roofColour,accentColour,lattice);
  }
- if(atlasKind==9.){
+ if(finishKind==9.){
   // Recessed main wing already sits behind the gallery piers and parapets.
   if(vAtlasFinish>5.5){
    vec2 q=vec2(-ap.x*.375-ap.z*.927,ap.y);
    float longFacade=1.-smoothstep(.35,.65,abs(-an.x*.375-an.z*.927));
    float pane=smoothstep(.88,.94,mod(q.y,2.8))*(1.-smoothstep(2.27,2.35,mod(q.y,2.8)))*longFacade;
-   finishColour=mix(atlasWall,atlasAccent,pane*.8*side);
-   finishColour=mix(finishColour,atlasWall,atlasLine(q.x/1.05,.024)*side);
+   finishColour=mix(wallColour,accentColour,pane*.8*side);
+   finishColour=mix(finishColour,wallColour,atlasLine(q.x/1.05,.024)*side);
    glassAmount=pane*.5;
   }
  }
- if(atlasKind==10. && wall>.5){
+ if(finishKind==10. && wall>.5){
   float fins=atlasLine(uv.x/2.6,.17), floors=atlasLine(uv.y/4.2,.09);
-  finishColour=mix(vec3(.075,.105,.105),atlasAccent,fins);
-  finishColour=mix(finishColour,atlasWall,floors);
+  finishColour=mix(vec3(.075,.105,.105),accentColour,fins);
+  finishColour=mix(finishColour,wallColour,floors);
   glassAmount=(1.-fins)*(1.-floors);
  }
- if(atlasKind==11. && wall>.5){
+ if(finishKind==11. && wall>.5){
   float ribs=atlasLine(uv.x/1.4,.07);
   finishColour*=1.-.18*ribs*side;
+ }
+ if(finishKind==12. && wall>.5){
+  // Representative spandrels and glazing, not surveyed window positions.
+  float pane=step(.38,fract(uv.y/2.8));
+  float frame=max(atlasLine(uv.x/1.4,.025),atlasLine(uv.y/2.8,.025));
+  finishColour=mix(wallColour,vec3(.18,.24,.25),pane*.82);
+  finishColour=mix(finishColour,accentColour,frame*side);
+  glassAmount=pane*side;
+ }
+ if(finishKind==13. && wall>.5){
+  float grain=atlasLine(uv.x/.14,.025);
+  finishColour*=1.-.15*grain*side;
+ }
+ if(finishKind==14. && wall>.5){
+  float beams=max(atlasLine(uv.x/1.5,.065),atlasLine(uv.y/2.8,.045));
+  finishColour=mix(wallColour,accentColour,beams*side);
+ }
+ if(finishKind==15. && wall>.5){
+  float bands=1.-smoothstep(.21,.24,fract(uv.y/1.6));
+  finishColour=mix(wallColour,accentColour,bands*side);
+ }
+ if(finishKind==17. && wall>.5){
+  float joints=max(atlasLine(uv.x/.6,.009),atlasLine(uv.y/.3,.012));
+  finishColour*=1.-.1*joints*side;
  }
  if(glazing>.5){
   vec2 guv=abs(an.y)>.55?ap.xz:uv;
@@ -200,14 +238,16 @@ const surface=`
 
 export function createFinishMaterial(id,origin,heightRange=[0,1]){
  const p=finishes[id];
+ const secondary=p.secondary||[p.wall,p.roof,p.accent,p.kind];
  const reveal={value:0};
  const mat=new T.MeshStandardMaterial({color:0xf2f0e9,roughness:.9,metalness:0,side:T.DoubleSide});
  mat.name='Visited · '+id;
  mat.userData.reveal=reveal;
- mat.customProgramCacheKey=()=> 'atlas-exterior-v2-rise';
+ mat.customProgramCacheKey=()=> 'atlas-exterior-v3-catalogue';
  mat.onBeforeCompile=shader=>{
   Object.assign(shader.uniforms,{
    atlasWall:{value:new T.Color(p.wall)},atlasRoof:{value:new T.Color(p.roof)},atlasAccent:{value:new T.Color(p.accent)},
+   atlasSecondaryWall:{value:new T.Color(secondary[0])},atlasSecondaryRoof:{value:new T.Color(secondary[1])},atlasSecondaryAccent:{value:new T.Color(secondary[2])},atlasSecondaryKind:{value:secondary[3]},
    atlasKind:{value:p.kind},atlasReveal:reveal,atlasOrigin:{value:new T.Vector3(origin[0],0,-origin[1])},
    atlasHeightRange:{value:new T.Vector2(...heightRange)}
   });
@@ -221,7 +261,7 @@ export function createFinishMaterial(id,origin,heightRange=[0,1]){
    .replace('#include <roughnessmap_fragment>',`#include <roughnessmap_fragment>
     roughnessFactor=mix(roughnessFactor,mix(.88,.28,glassAmount),revealMask*(1.-skip));`)
    .replace('#include <metalnessmap_fragment>',`#include <metalnessmap_fragment>
-    metalnessFactor=mix(metalnessFactor,atlasKind==11.?.32:.12*glassAmount,revealMask*(1.-skip));`)
+    metalnessFactor=mix(metalnessFactor,finishKind==11.?.32:.12*glassAmount,revealMask*(1.-skip));`)
    .replace('#include <emissivemap_fragment>',`#include <emissivemap_fragment>
     totalEmissiveRadiance+=vec3(.14,.35,.28)*revealRim;`);
  };
