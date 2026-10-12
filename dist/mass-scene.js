@@ -130,10 +130,11 @@ export async function createAtlas(city,onSelect) {
  function setConfidence(value){confidence=value;setStyle(currentStyle,false);}
  function setLabels(options){labelOptions={names:!!options.names,numbers:!!options.numbers};labelsDirty=dirty=true;}
  function setPeople(value){people.setEnabled(value);dirty=true;}
+ function setLandscape(value){people.setLandscape(value);dirty=true;}
  function focusPeople(id){
   if(custom.has(id)||fullImport)return;
   const point=people.focus(id);if(!point)return;
-  target.copy(point);zoom=T.MathUtils.clamp(view/120,.55,maxZoom());
+  target.copy(point);zoom=T.MathUtils.clamp(view/Math.max(120,point.span*1.25),.55,maxZoom());
   if(width>=600)target.x+=20;else target.x+=8;
   sync();
  }
@@ -241,7 +242,7 @@ export async function createAtlas(city,onSelect) {
   for(const a of finishAnimations.values())if(a.start===null)a.start=performance.now();
   layoutMarkers();
  }render();renderer.domElement.addEventListener('webglcontextlost',e=>{e.preventDefault();$('#error').hidden=false});
- return {select,zoom:setZoom,reset,setContext,setConfidence,setLabels,setVisited,setStyle,setPeople,focusPeople,measurements,applyImport,restore};
+ return {select,zoom:setZoom,reset,setContext,setConfidence,setLabels,setVisited,setStyle,setPeople,setLandscape,focusPeople,measurements,applyImport,restore};
 }
 
 let loader;

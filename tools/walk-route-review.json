@@ -1,123 +1,122 @@
 [
   {
     "landmark": "isokon",
-    "sourceTags": {
-      "highway": "pedestrian",
-      "name": "Woodland Walk",
-      "surface": "paving_stones"
-    },
-    "sourceId": "4498105",
-    "sourceUrl": "https://www.openstreetmap.org/way/4498105",
-    "points": [
-      [
-        -3947.15,
-        4688.326
-      ],
-      [
-        -3944.0,
-        4678.703
-      ],
-      [
-        -3930.314,
-        4645.11
-      ]
-    ],
-    "elevation": 0.08,
-    "people": 4,
-    "name": "Woodland Walk",
-    "length": 46.4,
-    "minimumClearance": 3.932
+    "name": "Access gallery",
+    "support": "detail/isokon/gallery-slab-1-0",
+    "elevation": 3.015,
+    "length": 32.95,
+    "people": 5,
+    "kind": "model-surface",
+    "clearance": null
+  },
+  {
+    "landmark": "isokon",
+    "name": "Access gallery",
+    "support": "detail/isokon/gallery-slab-2-0",
+    "elevation": 5.815,
+    "length": 32.95,
+    "people": 5,
+    "kind": "model-surface",
+    "clearance": null
+  },
+  {
+    "landmark": "isokon",
+    "name": "Access gallery",
+    "support": "detail/isokon/gallery-slab-3-0",
+    "elevation": 8.615,
+    "length": 35.24,
+    "people": 5,
+    "kind": "model-surface",
+    "clearance": null
+  },
+  {
+    "landmark": "isokon",
+    "name": "Roof terrace study",
+    "support": "detail/isokon/roof-terrace-slab-0",
+    "elevation": 11.475,
+    "length": 61.48,
+    "people": 9,
+    "kind": "model-surface",
+    "clearance": null
+  },
+  {
+    "landmark": "isokon",
+    "name": "Forecourt and facade walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 72.09,
+    "people": 12,
+    "kind": "near-facade",
+    "clearance": 0.678
+  },
+  {
+    "landmark": "isokon",
+    "name": "Forecourt and facade walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 64.07,
+    "people": 12,
+    "kind": "near-facade",
+    "clearance": 0.863
   },
   {
     "landmark": "barbican",
-    "sourceTags": {
-      "highway": "footway",
-      "level": "0",
-      "lit": "yes",
-      "smoothness": "good",
-      "surface": "paving_stones"
-    },
-    "sourceId": "318356986",
-    "sourceUrl": "https://www.openstreetmap.org/way/318356986",
-    "points": [
-      [
-        826.551,
-        1072.742
-      ],
-      [
-        849.109,
-        1064.31
-      ],
-      [
-        856.516,
-        1061.842
-      ],
-      [
-        860.806,
-        1058.649
-      ],
-      [
-        864.111,
-        1050.851
-      ],
-      [
-        892.806,
-        1039.957
-      ]
-    ],
-    "elevation": 0.08,
-    "people": 5,
-    "name": "Mapped ground-level footpath",
-    "length": 76.4,
-    "minimumClearance": 1.679
+    "name": "Roof terrace study",
+    "support": "relation/19324713",
+    "elevation": 16.025,
+    "length": 348.3,
+    "people": 22,
+    "kind": "model-surface",
+    "clearance": null
+  },
+  {
+    "landmark": "barbican",
+    "name": "Forecourt and facade walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 45.99,
+    "people": 9,
+    "kind": "near-facade",
+    "clearance": 0.96
   },
   {
     "landmark": "tate",
-    "sourceTags": {
-      "highway": "footway",
-      "lit": "yes",
-      "surface": "asphalt"
-    },
-    "sourceId": "522418030",
-    "sourceUrl": "https://www.openstreetmap.org/way/522418030",
-    "points": [
-      [
-        458.78,
-        -329.376
-      ],
-      [
-        462.174,
-        -332.93
-      ],
-      [
-        471.048,
-        -341.162
-      ],
-      [
-        481.102,
-        -345.622
-      ],
-      [
-        499.723,
-        -347.479
-      ],
-      [
-        526.912,
-        -347.476
-      ],
-      [
-        535.973,
-        -349.667
-      ],
-      [
-        539.973,
-        -352.924
-      ]
-    ],
-    "elevation": 0.08,
-    "people": 6,
-    "name": "Mapped ground-level footpath",
-    "length": 88.4,
-    "minimumClearance": 8.768
+    "name": "Roof terrace study",
+    "support": "way/542122683",
+    "elevation": 64.525,
+    "length": 106.36,
+    "people": 22,
+    "kind": "model-surface",
+    "clearance": null
+  },
+  {
+    "landmark": "tate",
+    "name": "Forecourt and facade walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 109.2,
+    "people": 12,
+    "kind": "near-facade",
+    "clearance": 2.942
+  },
+  {
+    "landmark": "tate",
+    "name": "Forecourt and facade walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 54.22,
+    "people": 11,
+    "kind": "near-facade",
+    "clearance": 0.976
+  },
+  {
+    "landmark": "tate",
+    "name": "Forecourt and facade walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 48.8,
+    "people": 10,
+    "kind": "near-facade",
+    "clearance": 0.92
   }
 ]

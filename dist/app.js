@@ -6,7 +6,7 @@ import {mapStyles,readMapStyle,saveMapStyle} from './map-styles.js';
 import {walkRoutes} from './walk-routes.js';
 const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let atlas,city,visits,selected=null,pending=null,buffer=null;
-let showPeople=true;
+let showPeople=true,showLandscape=true;
 const status=s=>$('#import-status').textContent=s;
 function photoMarkup(b){
  const p=b.photo;if(!p)return '<p class="photo-pending">Reference photograph not yet available.</p>';
@@ -21,7 +21,8 @@ function renderVisitPanel(){
  const storageNote=visits.persistent?'Saved in this browser only.':'Browser storage unavailable. Changes last for this session only.';
  $('#visit-panel').innerHTML=`<button class="visit-toggle" type="button" aria-pressed="${done}" aria-describedby="visit-caption"><span class="visit-icon" aria-hidden="true">${done?'✓':'+'}</span><span>${done?'Visited':'Mark as visited'}</span><span class="visit-undo">${done?'Undo':''}</span></button><p id="visit-caption" class="visit-caption">${p?(done?esc(p.label):'Reveal this building’s exterior finishes.'):(done?'Added to your field record.':'Record your visit to this building.')} ${p?esc(studyNote):'This stop has no dedicated 3D model yet; your visit is still recorded.'}</p><p class="visit-storage ${visits.persistent?'':'unsaved'}">${storageNote}${custom?' Your Rhino model keeps its current appearance; restore the original to see these finishes.':''}</p>`;
  if(done&&walkRoutes[selected]&&!custom){
-  $('#visit-panel').insertAdjacentHTML('beforeend',`<div class="people-controls"><label><input id="show-people" type="checkbox" ${showPeople?'checked':''}> People nearby</label><button id="people-focus" type="button">Look closer ↗</button></div><p class="people-note">A few decorative walkers on nearby paths. Visible when zoomed in; still with reduced motion.</p>`);
+  $('#visit-panel').insertAdjacentHTML('beforeend',`<div class="people-controls"><label><input id="show-people" type="checkbox" ${showPeople?'checked':''}> People</label><button id="people-focus" type="button">Look closer ↗</button></div><div class="people-controls landscape-controls"><label><input id="show-landscape" type="checkbox" ${showLandscape?'checked':''}> Trees & planting</label></div><p class="people-note">${walkRoutes[selected].reduce((n,r)=>n+r.people,0)} people around the building, on galleries and rooftops. Illustrative activity and planting.</p>`);
+  $('#show-landscape').onchange=e=>{showLandscape=e.target.checked;atlas?.setLandscape(showLandscape);};
   $('#show-people').onchange=e=>{showPeople=e.target.checked;atlas?.setPeople(showPeople);};
   $('#people-focus').onclick=()=>{if(!showPeople){showPeople=true;atlas?.setPeople(true);$('#show-people').checked=true;}atlas?.focusPeople(selected);if(matchMedia('(max-width:700px)').matches)document.body.classList.add('detail-closed');};
  }

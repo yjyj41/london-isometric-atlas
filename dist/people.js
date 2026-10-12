@@ -1,11 +1,13 @@
 import * as T from './vendor/three.module.js';
 import {walkRoutes} from './walk-routes.js';
 import {prepareWalk,walkPose} from './walk-motion.js';
+import {createLandscape} from './landscape.js';
 export {walkRoutes};
 
-// Four instanced draws, at most 18 people. Decorative figures are never pickable.
+// Four instanced draws; capacity derives from the reviewed scenes. Never pickable.
 export function createPeople(scene){
- const capacity=18,group=new T.Group();group.name='Visited-place walkers';scene.add(group);
+ const capacity=Object.values(walkRoutes).flat().reduce((n,r)=>n+r.people,0),group=new T.Group();group.name='Visited-place walkers';scene.add(group);
+ const landscape=createLandscape(scene);
  const material=color=>new T.MeshStandardMaterial({color,roughness:.95});
  const meshes={head:new T.InstancedMesh(new T.SphereGeometry(.15,7,5),material('#c99c7c'),capacity),
   body:new T.InstancedMesh(new T.BoxGeometry(.42,.60,.25),material('#ffffff'),capacity),
@@ -20,27 +22,30 @@ export function createPeople(scene){
  const visited=new Set(),arrivals=new Map(),frustum=new T.Frustum(),matrix=new T.Matrix4(),root=new T.Object3D(),part=new T.Object3D();
  let enabled=true,invalid=true,lastFrame=-Infinity,lastCount=0,clock=0,lastTime=null;
  function setVisited(id,value,animate){
+  landscape.setVisited(id,value);
   if(value===visited.has(id))return;
-  if(value){visited.add(id);arrivals.set(id,animate?clock+1.1:-Infinity);}else{visited.delete(id);arrivals.delete(id);}
+  if(value){visited.add(id);arrivals.set(id,animate?performance.now()/1000+1.1:-Infinity);}else{visited.delete(id);arrivals.delete(id);}
   invalid=true;
  }
  function update(now,{camera,pixelsPerMetre,hidden,reducedMotion,blocked}){
+  const plantingChanged=landscape.update({camera,pixelsPerMetre,hidden,blocked});
   const dt=lastTime===null?0:Math.min(.1,(now-lastTime)/1000);lastTime=now;
   const moving=!hidden&&!reducedMotion&&enabled;
   // Stop the simulation when hidden or reduced motion is requested.
   if(moving)clock+=dt;
   frustum.setFromProjectionMatrix(matrix.multiplyMatrices(camera.projectionMatrix,camera.matrixWorldInverse));
-  const visible=enabled&&!hidden&&pixelsPerMetre>=2.2?routes.filter(r=>visited.has(r.id)&&!blocked(r.id)&&frustum.intersectsBox(r.box)):[];
+  const visible=enabled&&!hidden&&pixelsPerMetre>=1?routes.filter(r=>visited.has(r.id)&&!blocked(r.id)&&frustum.intersectsBox(r.box)):[];
   const signature=visible.map(r=>r.id+':'+r.sourceId).join('|');
   if(signature!==group.userData.signature){group.userData.signature=signature;invalid=true;}
-  if(!invalid&&(!visible.length||reducedMotion||now-lastFrame<1000/30))return false;
+  if(!invalid&&(!visible.length||reducedMotion||now-lastFrame<1000/30))return plantingChanged;
   lastFrame=now;invalid=false;let count=0;
   const put=(mesh,index,x,y,z,rotation=0)=>{part.position.set(x,y,z);part.rotation.set(rotation,0,0);part.scale.set(1,1,1);part.updateMatrix();matrix.multiplyMatrices(root.matrix,part.matrix);mesh.setMatrixAt(index,matrix);};
   for(const route of visible){
-   const elapsed=clock-arrivals.get(route.id),appear=reducedMotion?1:Math.min(1,Math.max(0,elapsed/.55));
+   const elapsed=now/1000-arrivals.get(route.id),appear=reducedMotion?1:Math.min(1,Math.max(0,elapsed/.55));
    if(appear<1)invalid=true;if(!appear)continue;
    for(let i=0;i<route.people&&count<capacity;i++){
-    const pose=walkPose(route.path,clock,1.0+i*.06,i*(route.path.length/route.people/1.06+1.5));
+    const speed=route.path.loop ? .95 : 1.02;
+    const pose=walkPose(route.path,clock,speed,i*(route.path.length/route.people/speed));
     const gait=reducedMotion?0:pose.gait,scale=(.96+(i%3)*.025)*appear;
     root.position.set(pose.x,route.elevation,-pose.north);root.rotation.set(0,pose.heading,0);root.scale.setScalar(scale);root.updateMatrix();
     const colour=new T.Color(palette[i%palette.length]);meshes.body.setColorAt(count,colour);
@@ -56,8 +61,8 @@ export function createPeople(scene){
   }
   meshes.head.count=meshes.body.count=count;meshes.arms.count=meshes.legs.count=count*2;
   for(const mesh of Object.values(meshes)){mesh.instanceMatrix.needsUpdate=true;if(mesh.instanceColor)mesh.instanceColor.needsUpdate=true;}
-  group.visible=count>0;const changed=count>0||lastCount!==count;lastCount=count;return changed;
+  group.visible=count>0;const changed=count>0||lastCount!==count;lastCount=count;return changed||plantingChanged;
  }
- return {setVisited,update,setEnabled(value){enabled=value;invalid=true;},invalidate(){invalid=true;},
-  focus(id){const route=routes.find(r=>r.id===id);return route?route.box.getCenter(new T.Vector3()):null;}};
+ return {setVisited,update,setEnabled(value){enabled=value;invalid=true;},setLandscape:landscape.setEnabled,invalidate(){invalid=true;landscape.invalidate();},
+  focus(id){const items=routes.filter(r=>r.id===id);if(!items.length)return null;const bounds=new T.Box3();items.forEach(r=>bounds.union(r.box));const p=bounds.getCenter(new T.Vector3()),size=bounds.getSize(new T.Vector3());p.span=Math.max(size.x,size.z,100);return p;}};
 }
