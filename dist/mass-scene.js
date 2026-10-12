@@ -5,6 +5,7 @@ import {createTileStream} from './tile-stream.js';
 import {addFinishAttribute,createFinishMaterial,finishes} from './landmark-finishes.js';
 import {mapStyles,confidenceColours} from './map-styles.js';
 import {placeName,overlaps} from './label-layout.js';
+import {createPeople} from './people.js';
 const $=s=>document.querySelector(s);
 const material=color=>new T.MeshStandardMaterial({color,roughness:.92,metalness:0,side:T.DoubleSide});
 
@@ -23,9 +24,12 @@ export async function createAtlas(city,onSelect) {
  const finishMaterials=new Map(),finishAnimations=new Map(),visited=new Set();
  const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
  const groundMaterials={roads:material(0xf0f2f1)};let currentStyle='atlas',confidence=false,styleAnimation=null;
- const mats={height:material(0xc2cbd1),levels:material(0xcbd2d6),assumed:material(0xd4d9dc)};
- const landmarkMat=material(0xf2f0e9),importMat=material(0x93c8cb);
+ const mats=Object.fromEntries(['height','levels','assumed'].map(key=>[key,material(mapStyles.atlas[key])]));
+ const landmarkMat=material(mapStyles.atlas.landmark),importMat=material(0x93c8cb);
  let width=1,height=1,view=3700,zoom=1,labelsDirty=true,dirty=true,active='stpauls',fullImport=null,contextVisible=true,stream=null;
+ const people=createPeople(scene);
+ reducedMotion.addEventListener('change',()=>{people.invalidate();dirty=true;});
+ document.addEventListener('visibilitychange',()=>{people.invalidate();dirty=true;});
  scene.add(new T.HemisphereLight(0xffffff,0x939ca6,2.4));
  const sun=new T.DirectionalLight(0xffffff,2.3);sun.castShadow=true;sun.shadow.mapSize.set(2048,2048);
  sun.shadow.bias=-.0003;sun.shadow.normalBias=.4;sun.shadow.camera.near=10;sun.shadow.camera.far=15000;scene.add(sun,sun.target);
@@ -60,6 +64,7 @@ export async function createAtlas(city,onSelect) {
  const getObject=id=>custom.get(id)||fullImport?.landmarks.get(id)||original.get(id);
  function objectBounds(id){const obj=getObject(id);return obj?new T.Box3().setFromObject(obj):new T.Box3()}
  function sync(){
+  people.invalidate();
   labelsDirty=true;
   const aspect=width/height;camera.left=-view*aspect/2;camera.right=view*aspect/2;camera.top=view/2;camera.bottom=-view/2;camera.zoom=zoom;
   camera.position.copy(target).add(offset);camera.lookAt(target);camera.updateProjectionMatrix();camera.updateMatrixWorld();
@@ -91,6 +96,7 @@ export async function createAtlas(city,onSelect) {
  }
  function setContext(value){contextVisible=value;context.visible=value&&!fullImport;stream?.setEnabled(value&&!fullImport);if(fullImport)fullImport.context.visible=value;sync()}
  function setVisited(id,value,animate=true){
+  people.setVisited(id,value,animate);
   if(visited.has(id)===value&&!animate)return;
   const mesh=original.get(id);
   if(value)visited.add(id);else visited.delete(id);
@@ -123,6 +129,14 @@ export async function createAtlas(city,onSelect) {
  }
  function setConfidence(value){confidence=value;setStyle(currentStyle,false);}
  function setLabels(options){labelOptions={names:!!options.names,numbers:!!options.numbers};labelsDirty=dirty=true;}
+ function setPeople(value){people.setEnabled(value);dirty=true;}
+ function focusPeople(id){
+  if(custom.has(id)||fullImport)return;
+  const point=people.focus(id);if(!point)return;
+  target.copy(point);zoom=T.MathUtils.clamp(view/120,.55,maxZoom());
+  if(width>=600)target.x+=20;else target.x+=8;
+  sync();
+ }
 
  const pointers=new Map();let gesture=null,moved=false;
  function gestureStart(){const p=[...pointers.values()];gesture=p.length===1?{x:p[0].x,y:p[0].y,target:target.clone(),zoom}:p.length>=2?{dist:Math.hypot(p[0].x-p[1].x,p[0].y-p[1].y),zoom}:null}
@@ -208,6 +222,7 @@ export async function createAtlas(city,onSelect) {
   }
  }
  function render(){requestAnimationFrame(render);
+  if(people.update(performance.now(),{camera,pixelsPerMetre:height*zoom/view,hidden:document.hidden,reducedMotion:reducedMotion.matches,blocked:id=>!!fullImport||custom.has(id)}))dirty=true;
   for(const [id,a]of finishAnimations){
    const t=reducedMotion.matches?1:a.start===null?0:Math.min(1,(performance.now()-a.start)/a.duration),ease=t*t*(3-2*t);
    finishMaterials.get(id).userData.reveal.value=a.from+(a.to-a.from)*ease;dirty=true;
@@ -226,7 +241,7 @@ export async function createAtlas(city,onSelect) {
   for(const a of finishAnimations.values())if(a.start===null)a.start=performance.now();
   layoutMarkers();
  }render();renderer.domElement.addEventListener('webglcontextlost',e=>{e.preventDefault();$('#error').hidden=false});
- return {select,zoom:setZoom,reset,setContext,setConfidence,setLabels,setVisited,setStyle,measurements,applyImport,restore};
+ return {select,zoom:setZoom,reset,setContext,setConfidence,setLabels,setVisited,setStyle,setPeople,focusPeople,measurements,applyImport,restore};
 }
 
 let loader;
