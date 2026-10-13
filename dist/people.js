@@ -2,11 +2,12 @@ import * as T from './vendor/three.module.js';
 import {walkRoutes} from './walk-routes.js';
 import {prepareWalk,walkPose} from './walk-motion.js';
 import {createLandscape} from './landscape.js';
+import {PEOPLE_BUDGET,viewKey,prioritise} from './scene-budget.js';
 export {walkRoutes};
 
-// Four instanced draws; capacity derives from the reviewed scenes. Never pickable.
+// Four instanced draws, fixed capacity independent of catalogue size. Never pickable.
 export function createPeople(scene){
- const capacity=Object.values(walkRoutes).flat().reduce((n,r)=>n+r.people,0),group=new T.Group();group.name='Visited-place walkers';scene.add(group);
+ const capacity=PEOPLE_BUDGET,group=new T.Group();group.name='Visited-place walkers';scene.add(group);
  const landscape=createLandscape(scene);
  const material=color=>new T.MeshStandardMaterial({color,roughness:.95});
  const meshes={head:new T.InstancedMesh(new T.SphereGeometry(.15,7,5),material('#c99c7c'),capacity),
@@ -17,25 +18,31 @@ export function createPeople(scene){
  const palette=['#a34e3e','#315c6c','#cfaa64','#5c6750','#5f526f','#a67750'];
  const routes=Object.entries(walkRoutes).flatMap(([id,items])=>items.map(r=>{
   const box=new T.Box3();for(const [x,n]of r.points)box.expandByPoint(new T.Vector3(x,r.elevation,-n));box.expandByScalar(2);
-  return {...r,id,path:prepareWalk(r.points),box};
+  return {...r,id,path:prepareWalk(r.points),box,centre:box.getCenter(new T.Vector3())};
  }));
  const visited=new Set(),arrivals=new Map(),frustum=new T.Frustum(),matrix=new T.Matrix4(),root=new T.Object3D(),part=new T.Object3D();
  let enabled=true,invalid=true,lastFrame=-Infinity,lastCount=0,clock=0,lastTime=null;
+ let view='',visible=[];
  function setVisited(id,value,animate){
   landscape.setVisited(id,value);
   if(value===visited.has(id))return;
   if(value){visited.add(id);arrivals.set(id,animate?performance.now()/1000+1.1:-Infinity);}else{visited.delete(id);arrivals.delete(id);}
   invalid=true;
  }
- function update(now,{camera,pixelsPerMetre,hidden,reducedMotion,blocked}){
-  const plantingChanged=landscape.update({camera,pixelsPerMetre,hidden,blocked});
+ function update(now,{camera,pixelsPerMetre,hidden,reducedMotion,blocked,selected}){
+  const plantingChanged=landscape.update({camera,pixelsPerMetre,hidden,blocked,selected});
   const dt=lastTime===null?0:Math.min(.1,(now-lastTime)/1000);lastTime=now;
   const moving=!hidden&&!reducedMotion&&enabled;
   // Stop the simulation when hidden or reduced motion is requested.
   if(moving)clock+=dt;
-  frustum.setFromProjectionMatrix(matrix.multiplyMatrices(camera.projectionMatrix,camera.matrixWorldInverse));
-  const visible=enabled&&!hidden&&pixelsPerMetre>=1?routes.filter(r=>visited.has(r.id)&&!blocked(r.id)&&frustum.intersectsBox(r.box)):[];
-  const signature=visible.map(r=>r.id+':'+r.sourceId).join('|');
+  const key=viewKey(camera,pixelsPerMetre,hidden,selected)+'|'+[...visited].filter(blocked).join(',');
+  if(invalid||key!==view){
+   view=key;frustum.setFromProjectionMatrix(matrix.multiplyMatrices(camera.projectionMatrix,camera.matrixWorldInverse));
+   const candidates=enabled&&!hidden&&pixelsPerMetre>=1?routes.filter(r=>visited.has(r.id)&&!blocked(r.id)&&frustum.intersectsBox(r.box)):[];
+   visible=[];let remaining=capacity;
+   for(const r of prioritise(candidates,camera,selected)){if(!remaining)break;const people=Math.min(remaining,r.people);visible.push({...r,people});remaining-=people;}
+  }
+  const signature=visible.map(r=>r.id+':'+r.sourceId+':'+r.people).join('|');
   if(signature!==group.userData.signature){group.userData.signature=signature;invalid=true;}
   if(!invalid&&(!visible.length||reducedMotion||now-lastFrame<1000/30))return plantingChanged;
   lastFrame=now;invalid=false;let count=0;

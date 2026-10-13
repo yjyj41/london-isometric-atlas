@@ -118,5 +118,8375 @@
     "people": 10,
     "kind": "near-facade",
     "clearance": 0.92
+  },
+  {
+    "landmark": "catalog-002",
+    "name": "Flat model roof study",
+    "support": "way/192818348",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-002",
+    "name": "Flat model roof study",
+    "support": "way/192818341",
+    "elevation": 19.225,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-002",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-002",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-002",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 119.7,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "stpauls",
+    "name": "Flat model roof study",
+    "support": "way/398708092",
+    "elevation": 56.025,
+    "length": 122.93,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "stpauls",
+    "name": "Flat model roof study",
+    "support": "way/664669346",
+    "elevation": 22.025,
+    "length": 83.08,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "stpauls",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "stpauls",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-004",
+    "name": "Flat model roof study",
+    "support": "way/320412953",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-004",
+    "name": "Flat model roof study",
+    "support": "way/320412952",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-004",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-004",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 21.12,
+    "people": 5,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-004",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 13.33,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "bloomberg",
+    "name": "Flat model roof study",
+    "support": "way/427908007",
+    "elevation": 35.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "bloomberg",
+    "name": "Flat model roof study",
+    "support": "way/427908006",
+    "elevation": 35.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "bloomberg",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 125.66,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "bloomberg",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 117.46,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "bloomberg",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 72.32,
+    "people": 18,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-006",
+    "name": "Flat model roof study",
+    "support": "way/539320740",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-006",
+    "name": "Flat model roof study",
+    "support": "way/539320022",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-006",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 84.6,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-006",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 67.85,
+    "people": 16,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-006",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 38.28,
+    "people": 9,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-007",
+    "name": "Flat model roof study",
+    "support": "way/156172966",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-007",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 28.55,
+    "people": 7,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-008",
+    "name": "Flat model roof study",
+    "support": "way/104053780",
+    "elevation": 12.025,
+    "length": 128.61,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-008",
+    "name": "Flat model roof study",
+    "support": "relation/7561265",
+    "elevation": 9.625,
+    "length": 36.91,
+    "people": 9,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-008",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 29.43,
+    "people": 7,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-008",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 11.22,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-008",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 10.94,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-009",
+    "name": "Flat model roof study",
+    "support": "way/90244113",
+    "elevation": 12.025,
+    "length": 115.72,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-009",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 17.51,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-009",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 8.23,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-012",
+    "name": "Flat model roof study",
+    "support": "way/31755876",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-012",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 70.77,
+    "people": 17,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-012",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 64.18,
+    "people": 16,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-012",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 13.56,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-013",
+    "name": "Flat model roof study",
+    "support": "way/1447453049",
+    "elevation": 9.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-013",
+    "name": "Flat model roof study",
+    "support": "way/1447453048",
+    "elevation": 9.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-013",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 10.74,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-014",
+    "name": "Flat model roof study",
+    "support": "relation/1397940",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-014",
+    "name": "Flat model roof study",
+    "support": "way/567991068",
+    "elevation": 3.225,
+    "length": 72.04,
+    "people": 18,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-014",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-014",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 90.48,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-014",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 76.66,
+    "people": 19,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-015",
+    "name": "Flat model roof study",
+    "support": "way/97176323",
+    "elevation": 32.025,
+    "length": 107.16,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-015",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 20.0,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-015",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 18.86,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-015",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 17.91,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-016",
+    "name": "Flat model roof study",
+    "support": "way/131596460",
+    "elevation": 12.025,
+    "length": 67.03,
+    "people": 16,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-016",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 11.93,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-017",
+    "name": "Flat model roof study",
+    "support": "way/1394861953",
+    "elevation": 23.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-017",
+    "name": "Flat model roof study",
+    "support": "way/1394861960",
+    "elevation": 19.025,
+    "length": 113.61,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-017",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 105.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-017",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 54.08,
+    "people": 13,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-017",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 51.49,
+    "people": 12,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-019",
+    "name": "Flat model roof study",
+    "support": "way/242164467",
+    "elevation": 25.625,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-019",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 115.72,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-020",
+    "name": "Flat model roof study",
+    "support": "way/31235522",
+    "elevation": 22.425,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-020",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 89.55,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-020",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 44.55,
+    "people": 11,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-020",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 17.85,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "lloyds",
+    "name": "Flat model roof study",
+    "support": "way/445330148",
+    "elevation": 58.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "lloyds",
+    "name": "Flat model roof study",
+    "support": "way/445330146",
+    "elevation": 40.025,
+    "length": 132.46,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "lloyds",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 90.69,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "lloyds",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 59.56,
+    "people": 14,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "lloyds",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 48.3,
+    "people": 12,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "gherkin",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-023",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 89.8,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-024",
+    "name": "Flat model roof study",
+    "support": "way/717373627",
+    "elevation": 12.025,
+    "length": 70.73,
+    "people": 17,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-024",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 86.69,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-024",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 40.27,
+    "people": 10,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-024",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 14.22,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-025",
+    "name": "Flat model roof study",
+    "support": "way/1136851841",
+    "elevation": 41.025,
+    "length": 80.29,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-025",
+    "name": "Flat model roof study",
+    "support": "way/1136851848",
+    "elevation": 36.025,
+    "length": 107.55,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-025",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 47.49,
+    "people": 11,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-025",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 38.32,
+    "people": 9,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-025",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 32.12,
+    "people": 8,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-026",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 8.02,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-027",
+    "name": "Flat model roof study",
+    "support": "way/309499452",
+    "elevation": 68.025,
+    "length": 125.6,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-027",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 56.35,
+    "people": 14,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-027",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 45.27,
+    "people": 11,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-027",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 13.99,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-028",
+    "name": "Flat model roof study",
+    "support": "way/166431049",
+    "elevation": 12.025,
+    "length": 131.08,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-028",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 16.71,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-028",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 6.47,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-029",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 102.85,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-029",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 38.64,
+    "people": 9,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-029",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 15.56,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-030",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 22.65,
+    "people": 5,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-030",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 12.01,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-030",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 8.86,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-031",
+    "name": "Flat model roof study",
+    "support": "way/367646970",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-031",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 66.53,
+    "people": 16,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-031",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 64.89,
+    "people": 16,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-031",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 11.88,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-032",
+    "name": "Flat model roof study",
+    "support": "relation/2917677",
+    "elevation": 22.425,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-032",
+    "name": "Flat model roof study",
+    "support": "way/1382511372",
+    "elevation": 6.425,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-032",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 120.36,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-032",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 87.49,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-032",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 35.71,
+    "people": 8,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-033",
+    "name": "Flat model roof study",
+    "support": "way/33695114",
+    "elevation": 12.825,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-033",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 110.13,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-033",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 70.75,
+    "people": 17,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-034",
+    "name": "Flat model roof study",
+    "support": "way/143412191",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-034",
+    "name": "Flat model roof study",
+    "support": "way/485034272",
+    "elevation": 12.025,
+    "length": 113.56,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-034",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 108.77,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-034",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 26.95,
+    "people": 6,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-034",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 14.62,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-035",
+    "name": "Flat model roof study",
+    "support": "way/384032820",
+    "elevation": 12.025,
+    "length": 132.37,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-035",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 12.47,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-036",
+    "name": "Flat model roof study",
+    "support": "relation/3850933",
+    "elevation": 12.025,
+    "length": 119.66,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-036",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 73.47,
+    "people": 18,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-036",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 37.6,
+    "people": 9,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-038",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 20.86,
+    "people": 5,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "tower",
+    "name": "Flat model roof study",
+    "support": "way/936720738",
+    "elevation": 5.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "tower",
+    "name": "Flat model roof study",
+    "support": "way/925643342",
+    "elevation": 10.025,
+    "length": 71.95,
+    "people": 17,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "tower",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "tower",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "tower",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "towerbridge",
+    "name": "Flat model roof study",
+    "support": "way/934056842",
+    "elevation": 9.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "towerbridge",
+    "name": "Flat model roof study",
+    "support": "way/934056843",
+    "elevation": 9.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "towerbridge",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 115.97,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "towerbridge",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 103.08,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "towerbridge",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 78.88,
+    "people": 19,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "westminster",
+    "name": "Flat model roof study",
+    "support": "way/1144193780",
+    "elevation": 24.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "westminster",
+    "name": "Flat model roof study",
+    "support": "way/1144193778",
+    "elevation": 24.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "westminster",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 106.16,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "westminster",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 103.22,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "westminster",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 98.17,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "abbey",
+    "name": "Flat model roof study",
+    "support": "way/1149648649",
+    "elevation": 23.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "abbey",
+    "name": "Flat model roof study",
+    "support": "way/1149648625",
+    "elevation": 23.025,
+    "length": 127.7,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "abbey",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "abbey",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 60.43,
+    "people": 15,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "abbey",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 45.77,
+    "people": 11,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-043",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 87.56,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-043",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 83.85,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-045",
+    "name": "Flat model roof study",
+    "support": "way/10810446",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-045",
+    "name": "Flat model roof study",
+    "support": "way/450215208",
+    "elevation": 16.025,
+    "length": 50.16,
+    "people": 12,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-045",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 75.6,
+    "people": 18,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-045",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 48.33,
+    "people": 12,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-045",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 42.45,
+    "people": 10,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-046",
+    "name": "Flat model roof study",
+    "support": "way/185101970",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-046",
+    "name": "Flat model roof study",
+    "support": "way/118705186",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-046",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 86.49,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-046",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 26.73,
+    "people": 6,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-046",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 18.45,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-047",
+    "name": "Flat model roof study",
+    "support": "way/674563179",
+    "elevation": 9.625,
+    "length": 106.09,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-047",
+    "name": "Flat model roof study",
+    "support": "way/674563180",
+    "elevation": 12.825,
+    "length": 97.73,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-047",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 48.05,
+    "people": 12,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-047",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 17.85,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-048",
+    "name": "Flat model roof study",
+    "support": "way/140470549",
+    "elevation": 9.625,
+    "length": 115.42,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-048",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 52.51,
+    "people": 13,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-048",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 11.37,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-049",
+    "name": "Flat model roof study",
+    "support": "way/1548197265",
+    "elevation": 13.025,
+    "length": 97.01,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-049",
+    "name": "Flat model roof study",
+    "support": "way/1548197255",
+    "elevation": 11.025,
+    "length": 66.39,
+    "people": 16,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-049",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 122.1,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-049",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 74.14,
+    "people": 18,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-049",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 67.48,
+    "people": 16,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-050",
+    "name": "Flat model roof study",
+    "support": "way/1489424249",
+    "elevation": 16.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-050",
+    "name": "Flat model roof study",
+    "support": "way/1489424250",
+    "elevation": 16.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-050",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-050",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-050",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-051",
+    "name": "Flat model roof study",
+    "support": "relation/78616",
+    "elevation": 16.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-051",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-051",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 116.16,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-051",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 102.01,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-052",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 115.18,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-052",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 99.27,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-052",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 33.4,
+    "people": 8,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-054",
+    "name": "Flat model roof study",
+    "support": "way/1490173197",
+    "elevation": 28.825,
+    "length": 93.32,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-054",
+    "name": "Flat model roof study",
+    "support": "way/874711981",
+    "elevation": 3.225,
+    "length": 78.8,
+    "people": 19,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-054",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-055",
+    "name": "Flat model roof study",
+    "support": "way/675602797",
+    "elevation": 6.425,
+    "length": 66.01,
+    "people": 16,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-055",
+    "name": "Flat model roof study",
+    "support": "way/675602795",
+    "elevation": 6.425,
+    "length": 64.48,
+    "people": 16,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-055",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 110.67,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-056",
+    "name": "Flat model roof study",
+    "support": "way/118720812",
+    "elevation": 12.025,
+    "length": 130.49,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-056",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-058",
+    "name": "Flat model roof study",
+    "support": "way/24553580",
+    "elevation": 12.825,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-058",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-059",
+    "name": "Flat model roof study",
+    "support": "way/111633682",
+    "elevation": 9.625,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-059",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 124.6,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-059",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 72.24,
+    "people": 18,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-060",
+    "name": "Flat model roof study",
+    "support": "way/26488151",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-060",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-060",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 63.35,
+    "people": 15,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-061",
+    "name": "Flat model roof study",
+    "support": "way/1226754901",
+    "elevation": 18.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-061",
+    "name": "Flat model roof study",
+    "support": "way/1226754902",
+    "elevation": 24.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-061",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-061",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-061",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-062",
+    "name": "Flat model roof study",
+    "support": "relation/545040",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-062",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-062",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 108.98,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-062",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 88.72,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-063",
+    "name": "Flat model roof study",
+    "support": "way/257179453",
+    "elevation": 12.025,
+    "length": 119.08,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-063",
+    "name": "Flat model roof study",
+    "support": "way/1187592160",
+    "elevation": 12.025,
+    "length": 87.13,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-063",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 91.66,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-063",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 26.63,
+    "people": 6,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-063",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 13.16,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-064",
+    "name": "Flat model roof study",
+    "support": "way/157534204",
+    "elevation": 12.025,
+    "length": 133.52,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-064",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 43.8,
+    "people": 10,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-065",
+    "name": "Flat model roof study",
+    "support": "way/38446815",
+    "elevation": 6.425,
+    "length": 119.89,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-065",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 72.47,
+    "people": 18,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-066",
+    "name": "Flat model roof study",
+    "support": "relation/3848545",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-066",
+    "name": "Flat model roof study",
+    "support": "relation/3848545",
+    "elevation": 12.025,
+    "length": 121.75,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-066",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-066",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 47.93,
+    "people": 11,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-066",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 21.5,
+    "people": 5,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-067",
+    "name": "Flat model roof study",
+    "support": "way/96237005",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-067",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-067",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 29.61,
+    "people": 7,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-068",
+    "name": "Flat model roof study",
+    "support": "way/183994026",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-068",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 57.41,
+    "people": 14,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-068",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 20.67,
+    "people": 5,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-068",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 10.91,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-069",
+    "name": "Flat model roof study",
+    "support": "way/416434301",
+    "elevation": 12.025,
+    "length": 71.3,
+    "people": 17,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-069",
+    "name": "Flat model roof study",
+    "support": "way/416434302",
+    "elevation": 12.025,
+    "length": 55.03,
+    "people": 13,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-069",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 47.55,
+    "people": 11,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-069",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 32.76,
+    "people": 8,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-069",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 30.75,
+    "people": 7,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-070",
+    "name": "Flat model roof study",
+    "support": "way/96237011",
+    "elevation": 12.025,
+    "length": 106.99,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-070",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 68.38,
+    "people": 17,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-070",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 23.17,
+    "people": 5,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-070",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 22.41,
+    "people": 5,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "nationalgallery",
+    "name": "Flat model roof study",
+    "support": "way/1145174506",
+    "elevation": 18.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "nationalgallery",
+    "name": "Flat model roof study",
+    "support": "way/1145174483",
+    "elevation": 2.525,
+    "length": 45.9,
+    "people": 11,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "nationalgallery",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "nationalgallery",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 76.43,
+    "people": 19,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "nationalgallery",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 45.56,
+    "people": 11,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-073",
+    "name": "Flat model roof study",
+    "support": "way/59161723",
+    "elevation": 18.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-073",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 66.27,
+    "people": 16,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-073",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 44.36,
+    "people": 11,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-073",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 37.25,
+    "people": 9,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-074",
+    "name": "Flat model roof study",
+    "support": "way/30734422",
+    "elevation": 12.025,
+    "length": 138.2,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-074",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 98.8,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-074",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 10.84,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-075",
+    "name": "Flat model roof study",
+    "support": "way/48180840",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-075",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 12.29,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-076",
+    "name": "Flat model roof study",
+    "support": "way/10811256",
+    "elevation": 28.825,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-076",
+    "name": "Flat model roof study",
+    "support": "way/192252595",
+    "elevation": 12.025,
+    "length": 136.94,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-076",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 54.79,
+    "people": 13,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-076",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 20.08,
+    "people": 5,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-076",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 15.6,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-077",
+    "name": "Flat model roof study",
+    "support": "way/27922125",
+    "elevation": 12.025,
+    "length": 125.46,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-077",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 41.6,
+    "people": 10,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-077",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 14.03,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-078",
+    "name": "Flat model roof study",
+    "support": "way/110753809",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-078",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 84.34,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-078",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 17.91,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-078",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 9.4,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-079",
+    "name": "Flat model roof study",
+    "support": "way/83488820",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-079",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 53.24,
+    "people": 13,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-079",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 34.67,
+    "people": 8,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-080",
+    "name": "Flat model roof study",
+    "support": "way/149173487",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-080",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 10.08,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "museum",
+    "name": "Flat model roof study",
+    "support": "way/1389773614",
+    "elevation": 20.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "museum",
+    "name": "Flat model roof study",
+    "support": "way/1389773615",
+    "elevation": 20.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "museum",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "museum",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "museum",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "senatehouse",
+    "name": "Flat model roof study",
+    "support": "way/877703000",
+    "elevation": 12.825,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "senatehouse",
+    "name": "Flat model roof study",
+    "support": "way/877702990",
+    "elevation": 12.825,
+    "length": 124.82,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "senatehouse",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "senatehouse",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "senatehouse",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 16.23,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-084",
+    "name": "Flat model roof study",
+    "support": "relation/11627754",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-084",
+    "name": "Flat model roof study",
+    "support": "way/90022990",
+    "elevation": 12.025,
+    "length": 90.93,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-084",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 112.47,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-084",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 62.59,
+    "people": 15,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-084",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 20.15,
+    "people": 5,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-085",
+    "name": "Flat model roof study",
+    "support": "way/161195701",
+    "elevation": 12.825,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-085",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 41.92,
+    "people": 10,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-085",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 19.4,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-085",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 16.31,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-086",
+    "name": "Flat model roof study",
+    "support": "way/4254051",
+    "elevation": 25.625,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-086",
+    "name": "Flat model roof study",
+    "support": "way/4254054",
+    "elevation": 25.625,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-086",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-086",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-086",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 28.3,
+    "people": 7,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-087",
+    "name": "Flat model roof study",
+    "support": "way/51755264",
+    "elevation": 12.025,
+    "length": 120.69,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-087",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 27.16,
+    "people": 6,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-087",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 18.11,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-087",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 14.79,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-088",
+    "name": "Flat model roof study",
+    "support": "way/61453261",
+    "elevation": 12.025,
+    "length": 91.38,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-088",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 24.78,
+    "people": 6,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-089",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 29.98,
+    "people": 7,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-090",
+    "name": "Flat model roof study",
+    "support": "way/1381530864",
+    "elevation": 6.425,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-090",
+    "name": "Flat model roof study",
+    "support": "way/1380992059",
+    "elevation": 14.025,
+    "length": 49.92,
+    "people": 12,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-090",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-090",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-090",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-091",
+    "name": "Flat model roof study",
+    "support": "way/1374689562",
+    "elevation": 11.025,
+    "length": 57.4,
+    "people": 14,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-091",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 65.44,
+    "people": 16,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-091",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 30.27,
+    "people": 7,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-092",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 59.36,
+    "people": 14,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-092",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 23.12,
+    "people": 5,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-092",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 22.78,
+    "people": 5,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "somerset",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "somerset",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 89.53,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "somerset",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 31.21,
+    "people": 7,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-094",
+    "name": "Flat model roof study",
+    "support": "way/115809009",
+    "elevation": 25.625,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-094",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 90.01,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-094",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 80.73,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-094",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 35.93,
+    "people": 8,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-095",
+    "name": "Flat model roof study",
+    "support": "way/174793675",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-095",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-095",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 117.75,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-095",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 54.69,
+    "people": 13,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-096",
+    "name": "Flat model roof study",
+    "support": "way/308816623",
+    "elevation": 19.225,
+    "length": 139.93,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-096",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 16.48,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-097",
+    "name": "Flat model roof study",
+    "support": "way/1376078543",
+    "elevation": 25.625,
+    "length": 131.08,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-097",
+    "name": "Flat model roof study",
+    "support": "way/1376078546",
+    "elevation": 32.025,
+    "length": 95.1,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-097",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 62.12,
+    "people": 15,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-097",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 32.45,
+    "people": 8,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-097",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 11.4,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-098",
+    "name": "Flat model roof study",
+    "support": "way/766878412",
+    "elevation": 22.425,
+    "length": 129.73,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-098",
+    "name": "Flat model roof study",
+    "support": "way/766878411",
+    "elevation": 41.625,
+    "length": 111.96,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-098",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 52.77,
+    "people": 13,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-098",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 38.67,
+    "people": 9,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-098",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 16.92,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-099",
+    "name": "Flat model roof study",
+    "support": "way/1432516646",
+    "elevation": 64.025,
+    "length": 121.99,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-099",
+    "name": "Flat model roof study",
+    "support": "way/468882865",
+    "elevation": 25.625,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-099",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 124.46,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-099",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 51.01,
+    "people": 12,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-099",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 19.51,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-100",
+    "name": "Flat model roof study",
+    "support": "way/45560456",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-100",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 129.71,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-100",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 44.93,
+    "people": 11,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "britishlibrary",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "britishlibrary",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "britishlibrary",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 127.01,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "stpancras",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "stpancras",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "stpancras",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 77.03,
+    "people": 19,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "kingscross",
+    "name": "Flat model roof study",
+    "support": "way/971212668",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "kingscross",
+    "name": "Flat model roof study",
+    "support": "way/416601731",
+    "elevation": 12.025,
+    "length": 110.49,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "kingscross",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "kingscross",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 61.31,
+    "people": 15,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "kingscross",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 30.41,
+    "people": 7,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "coaldrops",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "coaldrops",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 65.11,
+    "people": 16,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "coaldrops",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 43.96,
+    "people": 10,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-105",
+    "name": "Flat model roof study",
+    "support": "way/222021576",
+    "elevation": 19.225,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-105",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 63.63,
+    "people": 15,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-106",
+    "name": "Flat model roof study",
+    "support": "relation/7972217",
+    "elevation": 38.425,
+    "length": 122.16,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-106",
+    "name": "Flat model roof study",
+    "support": "relation/7972217",
+    "elevation": 38.425,
+    "length": 112.37,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-106",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 68.48,
+    "people": 17,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-106",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 48.07,
+    "people": 12,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-107",
+    "name": "Flat model roof study",
+    "support": "way/532767917",
+    "elevation": 12.025,
+    "length": 128.41,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-107",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 77.86,
+    "people": 19,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-108",
+    "name": "Flat model roof study",
+    "support": "way/123257005",
+    "elevation": 25.625,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-108",
+    "name": "Flat model roof study",
+    "support": "way/123257010",
+    "elevation": 22.425,
+    "length": 96.65,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-108",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 115.71,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-108",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 102.45,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-108",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 52.53,
+    "people": 13,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-109",
+    "name": "Flat model roof study",
+    "support": "way/1492077992",
+    "elevation": 38.425,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-109",
+    "name": "Flat model roof study",
+    "support": "way/1492077991",
+    "elevation": 35.225,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-109",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-109",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 136.44,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-109",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 72.78,
+    "people": 18,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-110",
+    "name": "Flat model roof study",
+    "support": "way/1034811743",
+    "elevation": 12.025,
+    "length": 65.8,
+    "people": 16,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-110",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 102.59,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-111",
+    "name": "Flat model roof study",
+    "support": "way/51517078",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-111",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 127.25,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-111",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 48.82,
+    "people": 12,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-112",
+    "name": "Flat model roof study",
+    "support": "way/27822406",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-112",
+    "name": "Flat model roof study",
+    "support": "way/1007450843",
+    "elevation": 12.025,
+    "length": 38.61,
+    "people": 9,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-112",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-113",
+    "name": "Flat model roof study",
+    "support": "way/27815160",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-113",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 38.2,
+    "people": 9,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-113",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 19.74,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-114",
+    "name": "Flat model roof study",
+    "support": "way/31342846",
+    "elevation": 12.025,
+    "length": 68.82,
+    "people": 17,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-114",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 44.9,
+    "people": 11,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-114",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 34.9,
+    "people": 8,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-115",
+    "name": "Flat model roof study",
+    "support": "way/98992534",
+    "elevation": 16.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-115",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 54.51,
+    "people": 13,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-115",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 37.58,
+    "people": 9,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-115",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 24.99,
+    "people": 6,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-116",
+    "name": "Flat model roof study",
+    "support": "way/31632019",
+    "elevation": 28.825,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-116",
+    "name": "Flat model roof study",
+    "support": "way/45887816",
+    "elevation": 12.825,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-116",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-116",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-116",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 126.06,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-117",
+    "name": "Flat model roof study",
+    "support": "way/30574798",
+    "elevation": 25.625,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-117",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-117",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 106.91,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-118",
+    "name": "Flat model roof study",
+    "support": "way/126040466",
+    "elevation": 12.025,
+    "length": 103.95,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-118",
+    "name": "Flat model roof study",
+    "support": "way/30581460",
+    "elevation": 22.425,
+    "length": 117.12,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-118",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-118",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-118",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-119",
+    "name": "Flat model roof study",
+    "support": "way/499315778",
+    "elevation": 12.025,
+    "length": 73.93,
+    "people": 18,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-119",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 29.11,
+    "people": 7,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-120",
+    "name": "Flat model roof study",
+    "support": "way/230254103",
+    "elevation": 12.025,
+    "length": 45.62,
+    "people": 11,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-120",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 49.62,
+    "people": 12,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-121",
+    "name": "Flat model roof study",
+    "support": "way/1051338908",
+    "elevation": 19.225,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-121",
+    "name": "Flat model roof study",
+    "support": "way/98978143",
+    "elevation": 19.225,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-121",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-121",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-121",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-122",
+    "name": "Flat model roof study",
+    "support": "way/99369288",
+    "elevation": 12.025,
+    "length": 114.69,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-122",
+    "name": "Flat model roof study",
+    "support": "way/99369290",
+    "elevation": 12.025,
+    "length": 113.14,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-122",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-122",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 138.78,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-122",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 68.45,
+    "people": 17,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-123",
+    "name": "Flat model roof study",
+    "support": "way/451774333",
+    "elevation": 12.025,
+    "length": 57.53,
+    "people": 14,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-123",
+    "name": "Flat model roof study",
+    "support": "way/451774339",
+    "elevation": 12.025,
+    "length": 57.53,
+    "people": 14,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-123",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 119.52,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-123",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 66.37,
+    "people": 16,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-123",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 37.98,
+    "people": 9,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-125",
+    "name": "Flat model roof study",
+    "support": "way/217343570",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-125",
+    "name": "Flat model roof study",
+    "support": "way/217343573",
+    "elevation": 12.025,
+    "length": 93.58,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-125",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-125",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-125",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-126",
+    "name": "Flat model roof study",
+    "support": "way/823583853",
+    "elevation": 12.025,
+    "length": 58.76,
+    "people": 14,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-126",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 61.47,
+    "people": 15,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-126",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 7.4,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-128",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 15.72,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-128",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 15.7,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-129",
+    "name": "Flat model roof study",
+    "support": "way/514629992",
+    "elevation": 22.425,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-129",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-131",
+    "name": "Flat model roof study",
+    "support": "way/110514129",
+    "elevation": 12.025,
+    "length": 57.96,
+    "people": 14,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-131",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 41.08,
+    "people": 10,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-132",
+    "name": "Flat model roof study",
+    "support": "way/131196074",
+    "elevation": 6.425,
+    "length": 35.34,
+    "people": 8,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-132",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 24.89,
+    "people": 6,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-132",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 13.99,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-133",
+    "name": "Flat model roof study",
+    "support": "way/22823385",
+    "elevation": 9.625,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-133",
+    "name": "Flat model roof study",
+    "support": "way/126895244",
+    "elevation": 12.025,
+    "length": 126.35,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-133",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-134",
+    "name": "Flat model roof study",
+    "support": "way/107005592",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-134",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-135",
+    "name": "Flat model roof study",
+    "support": "way/104239155",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-135",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-136",
+    "name": "Flat model roof study",
+    "support": "way/232592410",
+    "elevation": 12.025,
+    "length": 31.64,
+    "people": 7,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-136",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 12.15,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-137",
+    "name": "Flat model roof study",
+    "support": "way/65272940",
+    "elevation": 12.025,
+    "length": 48.45,
+    "people": 12,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-137",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 43.72,
+    "people": 10,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-137",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 14.69,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-138",
+    "name": "Flat model roof study",
+    "support": "way/110388485",
+    "elevation": 12.025,
+    "length": 53.12,
+    "people": 13,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-138",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 77.85,
+    "people": 19,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-139",
+    "name": "Flat model roof study",
+    "support": "way/24653374",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-139",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-139",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 90.65,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-140",
+    "name": "Flat model roof study",
+    "support": "way/116406472",
+    "elevation": 12.025,
+    "length": 130.36,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-140",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 85.45,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-140",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 45.82,
+    "people": 11,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-141",
+    "name": "Flat model roof study",
+    "support": "way/26709894",
+    "elevation": 12.825,
+    "length": 134.74,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-141",
+    "name": "Flat model roof study",
+    "support": "way/672994234",
+    "elevation": 6.425,
+    "length": 68.64,
+    "people": 17,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-141",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-141",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 125.57,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-141",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 94.49,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-142",
+    "name": "Flat model roof study",
+    "support": "way/5983916",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-142",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-142",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 18.34,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-145",
+    "name": "Flat model roof study",
+    "support": "way/324239673",
+    "elevation": 12.025,
+    "length": 41.38,
+    "people": 10,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-145",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 96.01,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-146",
+    "name": "Flat model roof study",
+    "support": "way/4768526",
+    "elevation": 12.825,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-146",
+    "name": "Flat model roof study",
+    "support": "way/4768526",
+    "elevation": 12.825,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-146",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-146",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 139.44,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-147",
+    "name": "Flat model roof study",
+    "support": "way/42003475",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-147",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-147",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 56.46,
+    "people": 14,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-148",
+    "name": "Flat model roof study",
+    "support": "way/229395041",
+    "elevation": 12.025,
+    "length": 135.61,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-148",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 78.48,
+    "people": 19,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-148",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 24.88,
+    "people": 6,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-149",
+    "name": "Flat model roof study",
+    "support": "relation/7708006",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-149",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-149",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 88.97,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-149",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 46.91,
+    "people": 11,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-150",
+    "name": "Flat model roof study",
+    "support": "relation/3427378",
+    "elevation": 22.425,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-150",
+    "name": "Flat model roof study",
+    "support": "way/125005334",
+    "elevation": 22.425,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-150",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-150",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-150",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-151",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 133.52,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-151",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 50.6,
+    "people": 12,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-152",
+    "name": "Flat model roof study",
+    "support": "way/48920484",
+    "elevation": 12.025,
+    "length": 113.31,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-152",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-153",
+    "name": "Flat model roof study",
+    "support": "way/187242337",
+    "elevation": 6.425,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-153",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 69.17,
+    "people": 17,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-153",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 40.06,
+    "people": 10,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-154",
+    "name": "Flat model roof study",
+    "support": "way/166387795",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-154",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-155",
+    "name": "Flat model roof study",
+    "support": "relation/13690281",
+    "elevation": 12.025,
+    "length": 96.05,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-155",
+    "name": "Flat model roof study",
+    "support": "way/225215357",
+    "elevation": 12.025,
+    "length": 58.18,
+    "people": 14,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-155",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 72.36,
+    "people": 18,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-155",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 28.46,
+    "people": 7,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-156",
+    "name": "Flat model roof study",
+    "support": "relation/16773990",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-156",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-156",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 19.1,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-157",
+    "name": "Flat model roof study",
+    "support": "way/147085563",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-157",
+    "name": "Flat model roof study",
+    "support": "way/688182954",
+    "elevation": 12.025,
+    "length": 121.29,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-157",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-157",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 89.86,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-157",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 67.92,
+    "people": 16,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-158",
+    "name": "Flat model roof study",
+    "support": "relation/912489",
+    "elevation": 52.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-158",
+    "name": "Flat model roof study",
+    "support": "way/116537666",
+    "elevation": 60.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-158",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-158",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-159",
+    "name": "Flat model roof study",
+    "support": "way/467392974",
+    "elevation": 35.225,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-159",
+    "name": "Flat model roof study",
+    "support": "way/467392975",
+    "elevation": 25.625,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-159",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-160",
+    "name": "Flat model roof study",
+    "support": "way/309150487",
+    "elevation": 10.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-160",
+    "name": "Flat model roof study",
+    "support": "way/309127757",
+    "elevation": 7.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-160",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-160",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-160",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 57.83,
+    "people": 14,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-161",
+    "name": "Flat model roof study",
+    "support": "way/420026096",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-161",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 136.38,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-162",
+    "name": "Flat model roof study",
+    "support": "way/276058203",
+    "elevation": 12.025,
+    "length": 119.22,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-162",
+    "name": "Flat model roof study",
+    "support": "way/276066518",
+    "elevation": 12.025,
+    "length": 75.91,
+    "people": 18,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-162",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 88.38,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-163",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 8.89,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-164",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 8.9,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-165",
+    "name": "Flat model roof study",
+    "support": "way/837365180",
+    "elevation": 9.625,
+    "length": 47.77,
+    "people": 11,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-165",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 17.34,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-166",
+    "name": "Flat model roof study",
+    "support": "way/264131965",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-166",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 62.94,
+    "people": 15,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-166",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 24.49,
+    "people": 6,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-166",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 12.05,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-167",
+    "name": "Flat model roof study",
+    "support": "way/376433458",
+    "elevation": 12.025,
+    "length": 137.54,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-167",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 35.89,
+    "people": 8,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-167",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 22.99,
+    "people": 5,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-167",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 17.69,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-168",
+    "name": "Flat model roof study",
+    "support": "way/790885940",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-168",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 109.03,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-168",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 82.45,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-168",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 38.17,
+    "people": 9,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-169",
+    "name": "Flat model roof study",
+    "support": "way/8081646",
+    "elevation": 12.025,
+    "length": 125.06,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-169",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 38.37,
+    "people": 9,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-169",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 31.43,
+    "people": 7,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-170",
+    "name": "Flat model roof study",
+    "support": "way/10790633",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-170",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-170",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 44.48,
+    "people": 11,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-171",
+    "name": "Flat model roof study",
+    "support": "way/302294388",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-171",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-171",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 39.88,
+    "people": 9,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-172",
+    "name": "Flat model roof study",
+    "support": "way/51567584",
+    "elevation": 51.225,
+    "length": 96.72,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-172",
+    "name": "Flat model roof study",
+    "support": "way/51567584",
+    "elevation": 51.225,
+    "length": 31.63,
+    "people": 7,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-172",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 90.98,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-172",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 23.47,
+    "people": 5,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-173",
+    "name": "Flat model roof study",
+    "support": "way/324249929",
+    "elevation": 64.025,
+    "length": 105.63,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-173",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 79.29,
+    "people": 19,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-173",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 14.37,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-173",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 9.36,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-174",
+    "name": "Flat model roof study",
+    "support": "way/1268088794",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-174",
+    "name": "Flat model roof study",
+    "support": "way/1268088795",
+    "elevation": 12.025,
+    "length": 111.33,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-174",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 73.24,
+    "people": 18,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-174",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 57.24,
+    "people": 14,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-174",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 20.77,
+    "people": 5,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-175",
+    "name": "Flat model roof study",
+    "support": "way/251066862",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-175",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 41.1,
+    "people": 10,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-175",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 11.9,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-176",
+    "name": "Flat model roof study",
+    "support": "way/84842537",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-176",
+    "name": "Flat model roof study",
+    "support": "way/84842539",
+    "elevation": 12.025,
+    "length": 57.71,
+    "people": 14,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-176",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-176",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 73.76,
+    "people": 18,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-177",
+    "name": "Flat model roof study",
+    "support": "relation/3641032",
+    "elevation": 12.825,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-177",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 59.24,
+    "people": 14,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-177",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 51.26,
+    "people": 12,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-177",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 50.08,
+    "people": 12,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-178",
+    "name": "Flat model roof study",
+    "support": "way/45748937",
+    "elevation": 16.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-178",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 31.19,
+    "people": 7,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-178",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 25.1,
+    "people": 6,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-179",
+    "name": "Flat model roof study",
+    "support": "relation/11705443",
+    "elevation": 9.625,
+    "length": 61.52,
+    "people": 15,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-179",
+    "name": "Flat model roof study",
+    "support": "way/854498661",
+    "elevation": 9.625,
+    "length": 76.39,
+    "people": 19,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-179",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 132.36,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-179",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 6.51,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-180",
+    "name": "Flat model roof study",
+    "support": "way/12164834",
+    "elevation": 9.625,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-180",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-180",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 81.85,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-180",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 58.03,
+    "people": 14,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-181",
+    "name": "Flat model roof study",
+    "support": "way/472894496",
+    "elevation": 9.625,
+    "length": 63.33,
+    "people": 15,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-181",
+    "name": "Flat model roof study",
+    "support": "way/472894497",
+    "elevation": 6.425,
+    "length": 46.39,
+    "people": 11,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-181",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 132.2,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-182",
+    "name": "Flat model roof study",
+    "support": "way/130410583",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-182",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 100.82,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-182",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 28.88,
+    "people": 7,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-183",
+    "name": "Flat model roof study",
+    "support": "way/28289924",
+    "elevation": 12.025,
+    "length": 102.59,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-183",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 127.55,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-184",
+    "name": "Flat model roof study",
+    "support": "way/23941901",
+    "elevation": 12.025,
+    "length": 116.17,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-184",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "aquatics",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-186",
+    "name": "Flat model roof study",
+    "support": "way/104341570",
+    "elevation": 6.425,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-186",
+    "name": "Flat model roof study",
+    "support": "way/645435271",
+    "elevation": 22.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-186",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-187",
+    "name": "Flat model roof study",
+    "support": "relation/10266378",
+    "elevation": 53.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-187",
+    "name": "Flat model roof study",
+    "support": "way/843430381",
+    "elevation": 12.025,
+    "length": 98.88,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-187",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-187",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-188",
+    "name": "Flat model roof study",
+    "support": "way/125200166",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-188",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-188",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 97.72,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-189",
+    "name": "Flat model roof study",
+    "support": "way/180020078",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-189",
+    "name": "Flat model roof study",
+    "support": "way/149953722",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-189",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-189",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-189",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-190",
+    "name": "Flat model roof study",
+    "support": "way/1371161565",
+    "elevation": 38.425,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-190",
+    "name": "Flat model roof study",
+    "support": "way/1371161568",
+    "elevation": 35.225,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-190",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 117.85,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-190",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 82.8,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-190",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 27.77,
+    "people": 6,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-191",
+    "name": "Flat model roof study",
+    "support": "way/1337950248",
+    "elevation": 9.625,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-191",
+    "name": "Flat model roof study",
+    "support": "way/1337950246",
+    "elevation": 51.225,
+    "length": 107.32,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-191",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 134.77,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-192",
+    "name": "Flat model roof study",
+    "support": "way/156819613",
+    "elevation": 9.625,
+    "length": 72.44,
+    "people": 18,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-192",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 9.88,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-193",
+    "name": "Flat model roof study",
+    "support": "way/182764906",
+    "elevation": 6.425,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-193",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-194",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-196",
+    "name": "Flat model roof study",
+    "support": "way/51947908",
+    "elevation": 12.025,
+    "length": 104.82,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-196",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 131.34,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "canadasquare",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 76.1,
+    "people": 19,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "canadasquare",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 63.41,
+    "people": 15,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "canadasquare",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 11.64,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "crossrail",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-200",
+    "name": "Flat model roof study",
+    "support": "way/159852280",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-200",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-200",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "nationaltheatre",
+    "name": "Flat model roof study",
+    "support": "way/319343598",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "nationaltheatre",
+    "name": "Flat model roof study",
+    "support": "way/150143259",
+    "elevation": 21.525,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "nationaltheatre",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "nationaltheatre",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 134.31,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "festivalhall",
+    "name": "Flat model roof study",
+    "support": "way/5987419",
+    "elevation": 19.225,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "festivalhall",
+    "name": "Flat model roof study",
+    "support": "way/151768363",
+    "elevation": 22.425,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "festivalhall",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 48.4,
+    "people": 12,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-203",
+    "name": "Flat model roof study",
+    "support": "way/25913652",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-203",
+    "name": "Flat model roof study",
+    "support": "way/1267913729",
+    "elevation": 12.025,
+    "length": 46.17,
+    "people": 11,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-203",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 35.63,
+    "people": 8,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-203",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 6.92,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "hayward",
+    "name": "Flat model roof study",
+    "support": "way/25913653",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "hayward",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 21.16,
+    "people": 5,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "hayward",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 11.53,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-205",
+    "name": "Flat model roof study",
+    "support": "way/150702283",
+    "elevation": 4.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-205",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 82.76,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-205",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 75.0,
+    "people": 18,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-205",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 45.14,
+    "people": 11,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-206",
+    "name": "Flat model roof study",
+    "support": "relation/1789966",
+    "elevation": 45.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-206",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-206",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-206",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 129.08,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-208",
+    "name": "Flat model roof study",
+    "support": "way/4245075",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-208",
+    "name": "Flat model roof study",
+    "support": "way/428337499",
+    "elevation": 12.025,
+    "length": 77.32,
+    "people": 19,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-208",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-208",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-208",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 101.59,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-210",
+    "name": "Flat model roof study",
+    "support": "way/23486376",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-210",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 47.9,
+    "people": 11,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-211",
+    "name": "Flat model roof study",
+    "support": "way/109866484",
+    "elevation": 12.025,
+    "length": 85.74,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-211",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 34.34,
+    "people": 8,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-214",
+    "name": "Flat model roof study",
+    "support": "way/1128334644",
+    "elevation": 7.425,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-214",
+    "name": "Flat model roof study",
+    "support": "way/1128334645",
+    "elevation": 4.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-214",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 22.12,
+    "people": 5,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-214",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 18.34,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-214",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 11.59,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "millennium",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 56.72,
+    "people": 14,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "millennium",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 41.12,
+    "people": 10,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "millennium",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 40.01,
+    "people": 10,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-216",
+    "name": "Flat model roof study",
+    "support": "way/1370727566",
+    "elevation": 3.525,
+    "length": 70.83,
+    "people": 17,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-216",
+    "name": "Flat model roof study",
+    "support": "way/1370681035",
+    "elevation": 39.525,
+    "length": 35.0,
+    "people": 8,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-216",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 126.47,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-216",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 58.79,
+    "people": 14,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-216",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 31.2,
+    "people": 7,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-217",
+    "name": "Flat model roof study",
+    "support": "way/82770861",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-217",
+    "name": "Flat model roof study",
+    "support": "way/82770907",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-217",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 117.82,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-217",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 111.32,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-217",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 79.65,
+    "people": 19,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "shard",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 49.4,
+    "people": 12,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "shard",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 7.02,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-219",
+    "name": "Flat model roof study",
+    "support": "way/1380025088",
+    "elevation": 8.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-219",
+    "name": "Flat model roof study",
+    "support": "way/1380025087",
+    "elevation": 8.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-219",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-219",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 99.76,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-219",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 87.73,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-220",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 96.91,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-220",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 42.91,
+    "people": 10,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-222",
+    "name": "Flat model roof study",
+    "support": "way/93612990",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-222",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 75.81,
+    "people": 18,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-222",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 11.56,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-223",
+    "name": "Flat model roof study",
+    "support": "way/102403106",
+    "elevation": 6.425,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-223",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 131.59,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-223",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 52.03,
+    "people": 13,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-223",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 12.27,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-225",
+    "name": "Flat model roof study",
+    "support": "way/157137089",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-225",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 52.44,
+    "people": 13,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-226",
+    "name": "Flat model roof study",
+    "support": "way/146412246",
+    "elevation": 12.025,
+    "length": 38.52,
+    "people": 9,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-226",
+    "name": "Flat model roof study",
+    "support": "way/146412243",
+    "elevation": 12.025,
+    "length": 31.41,
+    "people": 7,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-226",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 28.89,
+    "people": 7,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-226",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 17.47,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-226",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 11.35,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-227",
+    "name": "Flat model roof study",
+    "support": "way/260845427",
+    "elevation": 12.025,
+    "length": 106.24,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-227",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 128.11,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-228",
+    "name": "Flat model roof study",
+    "support": "way/467803674",
+    "elevation": 12.025,
+    "length": 113.41,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-228",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 86.22,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-228",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 35.56,
+    "people": 8,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-229",
+    "name": "Flat model roof study",
+    "support": "way/72881037",
+    "elevation": 12.825,
+    "length": 120.99,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-229",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 36.37,
+    "people": 9,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-229",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 22.56,
+    "people": 5,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-229",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 14.25,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "laban",
+    "name": "Flat model roof study",
+    "support": "way/28211077",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "laban",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 135.24,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "laban",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 65.67,
+    "people": 16,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-231",
+    "name": "Flat model roof study",
+    "support": "way/1211610974",
+    "elevation": 12.025,
+    "length": 82.37,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-231",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 56.03,
+    "people": 14,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-231",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 11.31,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-232",
+    "name": "Flat model roof study",
+    "support": "way/52717005",
+    "elevation": 12.025,
+    "length": 111.57,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-232",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 135.5,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "queenshouse",
+    "name": "Flat model roof study",
+    "support": "relation/15327163",
+    "elevation": 9.625,
+    "length": 133.37,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "queenshouse",
+    "name": "Flat model roof study",
+    "support": "way/1127317648",
+    "elevation": 3.225,
+    "length": 82.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "queenshouse",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "navalcollege",
+    "name": "Flat model roof study",
+    "support": "relation/3206883",
+    "elevation": 12.825,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "navalcollege",
+    "name": "Flat model roof study",
+    "support": "way/1125965429",
+    "elevation": 12.825,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "navalcollege",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "navalcollege",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "navalcollege",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "observatory",
+    "name": "Flat model roof study",
+    "support": "way/268533444",
+    "elevation": 12.025,
+    "length": 90.98,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "observatory",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 35.84,
+    "people": 8,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "observatory",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 29.61,
+    "people": 7,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-236",
+    "name": "Flat model roof study",
+    "support": "way/1096947172",
+    "elevation": 12.825,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-236",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-236",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 44.77,
+    "people": 11,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-237",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-237",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 139.25,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-237",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 138.93,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-238",
+    "name": "Flat model roof study",
+    "support": "way/151942966",
+    "elevation": 22.425,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-238",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 112.45,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-238",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 36.15,
+    "people": 9,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-239",
+    "name": "Flat model roof study",
+    "support": "way/17110975",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-239",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-240",
+    "name": "Flat model roof study",
+    "support": "way/209281563",
+    "elevation": 12.025,
+    "length": 96.86,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-240",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 116.63,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-241",
+    "name": "Flat model roof study",
+    "support": "relation/1403938",
+    "elevation": 12.825,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-241",
+    "name": "Flat model roof study",
+    "support": "way/1174788216",
+    "elevation": 12.025,
+    "length": 88.56,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-241",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-241",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 126.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-241",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 61.94,
+    "people": 15,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-242",
+    "name": "Flat model roof study",
+    "support": "way/998276956",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-242",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-242",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 90.71,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-243",
+    "name": "Flat model roof study",
+    "support": "way/375901213",
+    "elevation": 9.625,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-243",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 76.55,
+    "people": 19,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-244",
+    "name": "Flat model roof study",
+    "support": "way/192338447",
+    "elevation": 12.025,
+    "length": 44.18,
+    "people": 11,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-244",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 71.51,
+    "people": 17,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-245",
+    "name": "Flat model roof study",
+    "support": "way/8614496",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-245",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-245",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 82.7,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-246",
+    "name": "Flat model roof study",
+    "support": "relation/13656740",
+    "elevation": 12.025,
+    "length": 83.01,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-246",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 73.44,
+    "people": 18,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-247",
+    "name": "Flat model roof study",
+    "support": "way/451796438",
+    "elevation": 25.625,
+    "length": 119.97,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-247",
+    "name": "Flat model roof study",
+    "support": "way/451796439",
+    "elevation": 57.625,
+    "length": 117.42,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-247",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-247",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 63.29,
+    "people": 15,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-247",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 40.92,
+    "people": 10,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-248",
+    "name": "Flat model roof study",
+    "support": "way/67163594",
+    "elevation": 3.225,
+    "length": 73.38,
+    "people": 18,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-248",
+    "name": "Flat model roof study",
+    "support": "way/596180046",
+    "elevation": 3.225,
+    "length": 36.75,
+    "people": 9,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-248",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 16.59,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-248",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 14.46,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-248",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 8.3,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "peckham",
+    "name": "Flat model roof study",
+    "support": "way/286359532",
+    "elevation": 19.025,
+    "length": 97.49,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "peckham",
+    "name": "Flat model roof study",
+    "support": "way/286359527",
+    "elevation": 21.425,
+    "length": 51.05,
+    "people": 12,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "peckham",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 36.51,
+    "people": 9,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "peckham",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 31.7,
+    "people": 7,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "peckham",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 7.67,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-250",
+    "name": "Flat model roof study",
+    "support": "way/78230941",
+    "elevation": 19.225,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-250",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 61.78,
+    "people": 15,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-250",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 35.06,
+    "people": 8,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-250",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 31.24,
+    "people": 7,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-251",
+    "name": "Flat model roof study",
+    "support": "way/667186508",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-251",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-255",
+    "name": "Flat model roof study",
+    "support": "way/210442848",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-255",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 101.05,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-255",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 92.88,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-255",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 51.26,
+    "people": 12,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-256",
+    "name": "Flat model roof study",
+    "support": "way/4961350",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-256",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 124.52,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-256",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 58.76,
+    "people": 14,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-257",
+    "name": "Flat model roof study",
+    "support": "way/4969018",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-257",
+    "name": "Flat model roof study",
+    "support": "way/25354396",
+    "elevation": 9.625,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-257",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-257",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-257",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-258",
+    "name": "Flat model roof study",
+    "support": "way/287700169",
+    "elevation": 12.025,
+    "length": 119.98,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-258",
+    "name": "Flat model roof study",
+    "support": "way/287700166",
+    "elevation": 12.025,
+    "length": 109.02,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-258",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-258",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 126.5,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-258",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 102.21,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-259",
+    "name": "Flat model roof study",
+    "support": "way/5028281",
+    "elevation": 12.825,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-259",
+    "name": "Flat model roof study",
+    "support": "way/4768629",
+    "elevation": 9.625,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-259",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-259",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-259",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-260",
+    "name": "Flat model roof study",
+    "support": "way/26595743",
+    "elevation": 32.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-260",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-261",
+    "name": "Flat model roof study",
+    "support": "way/24436446",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-261",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-261",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 130.9,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-261",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 116.47,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-262",
+    "name": "Flat model roof study",
+    "support": "relation/29795",
+    "elevation": 12.825,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-262",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-262",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-262",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-264",
+    "name": "Flat model roof study",
+    "support": "way/952279006",
+    "elevation": 25.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-264",
+    "name": "Flat model roof study",
+    "support": "way/952279000",
+    "elevation": 18.025,
+    "length": 39.64,
+    "people": 9,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-264",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-264",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-265",
+    "name": "Flat model roof study",
+    "support": "way/195776683",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-265",
+    "name": "Flat model roof study",
+    "support": "way/438951124",
+    "elevation": 25.625,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-265",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-265",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 23.68,
+    "people": 5,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-265",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 18.34,
+    "people": 4,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-266",
+    "name": "Flat model roof study",
+    "support": "way/640554759",
+    "elevation": 28.825,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-266",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-267",
+    "name": "Flat model roof study",
+    "support": "way/115594423",
+    "elevation": 12.025,
+    "length": 111.59,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-267",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 117.69,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-268",
+    "name": "Flat model roof study",
+    "support": "way/785816280",
+    "elevation": 6.425,
+    "length": 47.0,
+    "people": 11,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-268",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 44.41,
+    "people": 11,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-268",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 13.67,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-269",
+    "name": "Flat model roof study",
+    "support": "relation/904705",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-269",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-269",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 85.59,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-269",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 73.28,
+    "people": 18,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-270",
+    "name": "Flat model roof study",
+    "support": "way/27186032",
+    "elevation": 12.025,
+    "length": 113.44,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-270",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 134.96,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-271",
+    "name": "Flat model roof study",
+    "support": "way/161783824",
+    "elevation": 12.025,
+    "length": 120.09,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-271",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 108.58,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-271",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 10.2,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-272",
+    "name": "Flat model roof study",
+    "support": "way/777427856",
+    "elevation": 6.425,
+    "length": 90.34,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-272",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-272",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 38.92,
+    "people": 9,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-272",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 13.78,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-273",
+    "name": "Flat model roof study",
+    "support": "way/384365298",
+    "elevation": 19.225,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-273",
+    "name": "Flat model roof study",
+    "support": "way/93299693",
+    "elevation": 19.225,
+    "length": 79.64,
+    "people": 19,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-273",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-273",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 106.97,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-273",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 64.05,
+    "people": 16,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-274",
+    "name": "Flat model roof study",
+    "support": "way/10807065",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-274",
+    "name": "Flat model roof study",
+    "support": "relation/3946488",
+    "elevation": 9.625,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-274",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-274",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-274",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 98.57,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-275",
+    "name": "Flat model roof study",
+    "support": "way/5317958",
+    "elevation": 9.625,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-275",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 97.4,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-275",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 85.96,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-275",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 12.56,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-276",
+    "name": "Flat model roof study",
+    "support": "relation/11833610",
+    "elevation": 6.425,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-276",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 83.16,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-276",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 29.92,
+    "people": 7,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-277",
+    "name": "Flat model roof study",
+    "support": "way/28682626",
+    "elevation": 19.225,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-277",
+    "name": "Flat model roof study",
+    "support": "way/532097395",
+    "elevation": 22.425,
+    "length": 89.67,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-277",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 14.95,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-278",
+    "name": "Flat model roof study",
+    "support": "way/947381552",
+    "elevation": 6.425,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-278",
+    "name": "Flat model roof study",
+    "support": "way/1422052603",
+    "elevation": 3.225,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-278",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-278",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 98.32,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-278",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 57.0,
+    "people": 14,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-279",
+    "name": "Flat model roof study",
+    "support": "way/971387735",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-279",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 12.96,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-279",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 12.1,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-280",
+    "name": "Flat model roof study",
+    "support": "way/27416521",
+    "elevation": 6.425,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-280",
+    "name": "Flat model roof study",
+    "support": "way/27416522",
+    "elevation": 32.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-280",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-280",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-280",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-281",
+    "name": "Flat model roof study",
+    "support": "way/24444440",
+    "elevation": 32.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-281",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 99.14,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-281",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 84.83,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-282",
+    "name": "Flat model roof study",
+    "support": "way/97398691",
+    "elevation": 19.225,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-282",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 64.08,
+    "people": 16,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-282",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 22.12,
+    "people": 5,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-282",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 10.07,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-283",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 14.31,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-284",
+    "name": "Flat model roof study",
+    "support": "relation/8048633",
+    "elevation": 12.025,
+    "length": 93.25,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-284",
+    "name": "Flat model roof study",
+    "support": "relation/8048634",
+    "elevation": 12.025,
+    "length": 52.17,
+    "people": 13,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-284",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-284",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 7.71,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-285",
+    "name": "Flat model roof study",
+    "support": "way/45775334",
+    "elevation": 12.025,
+    "length": 101.13,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-285",
+    "name": "Flat model roof study",
+    "support": "way/209445864",
+    "elevation": 12.025,
+    "length": 81.49,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-285",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-286",
+    "name": "Flat model roof study",
+    "support": "way/312265219",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-286",
+    "name": "Flat model roof study",
+    "support": "way/224384558",
+    "elevation": 12.025,
+    "length": 122.42,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-286",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-286",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-287",
+    "name": "Flat model roof study",
+    "support": "way/43916258",
+    "elevation": 12.025,
+    "length": 68.76,
+    "people": 17,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-287",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 94.6,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-288",
+    "name": "Flat model roof study",
+    "support": "relation/3609579",
+    "elevation": 9.625,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-288",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-288",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 47.47,
+    "people": 11,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-289",
+    "name": "Flat model roof study",
+    "support": "relation/334994",
+    "elevation": 9.625,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-289",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-289",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 82.05,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-289",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 33.44,
+    "people": 8,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-290",
+    "name": "Flat model roof study",
+    "support": "way/4803632",
+    "elevation": 3.225,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-290",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-291",
+    "name": "Flat model roof study",
+    "support": "way/4804904",
+    "elevation": 3.225,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-291",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-292",
+    "name": "Flat model roof study",
+    "support": "way/4805797",
+    "elevation": 6.425,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-292",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-292",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 62.31,
+    "people": 15,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-293",
+    "name": "Flat model roof study",
+    "support": "way/28410119",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-293",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-294",
+    "name": "Flat model roof study",
+    "support": "way/963229384",
+    "elevation": 7.025,
+    "length": 43.19,
+    "people": 10,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-294",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 124.85,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-294",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 10.19,
+    "people": 3,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-295",
+    "name": "Flat model roof study",
+    "support": "relation/21104",
+    "elevation": 9.625,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-295",
+    "name": "Flat model roof study",
+    "support": "way/519425546",
+    "elevation": 12.025,
+    "length": 105.05,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-295",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-295",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 112.36,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-295",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 96.83,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-296",
+    "name": "Flat model roof study",
+    "support": "way/968602609",
+    "elevation": 19.225,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-296",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "battersea",
+    "name": "Flat model roof study",
+    "support": "way/452939933",
+    "elevation": 50.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "battersea",
+    "name": "Flat model roof study",
+    "support": "way/452939927",
+    "elevation": 30.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "battersea",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "battersea",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "battersea",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 61.76,
+    "people": 15,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-299",
+    "name": "Flat model roof study",
+    "support": "way/93728248",
+    "elevation": 12.025,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-299",
+    "name": "Flat model roof study",
+    "support": "way/232846778",
+    "elevation": 12.025,
+    "length": 124.18,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-299",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 109.31,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-299",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 69.52,
+    "people": 17,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-299",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 52.61,
+    "people": 13,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-300",
+    "name": "Flat model roof study",
+    "support": "way/360989833",
+    "elevation": 35.225,
+    "length": 140.0,
+    "people": 20,
+    "kind": "model-surface"
+  },
+  {
+    "landmark": "catalog-300",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 140.0,
+    "people": 20,
+    "kind": "near-facade"
+  },
+  {
+    "landmark": "catalog-300",
+    "name": "Near-building walk",
+    "support": null,
+    "elevation": 0.085,
+    "length": 63.16,
+    "people": 15,
+    "kind": "near-facade"
   }
 ]

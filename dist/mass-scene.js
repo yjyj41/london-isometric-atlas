@@ -223,7 +223,7 @@ export async function createAtlas(city,onSelect) {
   }
  }
  function render(){requestAnimationFrame(render);
-  if(people.update(performance.now(),{camera,pixelsPerMetre:height*zoom/view,hidden:document.hidden,reducedMotion:reducedMotion.matches,blocked:id=>!!fullImport||custom.has(id)}))dirty=true;
+  if(people.update(performance.now(),{camera,pixelsPerMetre:height*zoom/view,hidden:document.hidden,reducedMotion:reducedMotion.matches,selected:active,blocked:id=>!!fullImport||custom.has(id)}))dirty=true;
   for(const [id,a]of finishAnimations){
    const t=reducedMotion.matches?1:a.start===null?0:Math.min(1,(performance.now()-a.start)/a.duration),ease=t*t*(3-2*t);
    finishMaterials.get(id).userData.reveal.value=a.from+(a.to-a.from)*ease;dirty=true;
