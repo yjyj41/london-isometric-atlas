@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - 'dist/**'
+      - 'bootstrap.py'
+      - 'london-atlas-*.zip'
       - '.github/workflows/deploy-pages.yml'
   workflow_dispatch:
 
@@ -26,6 +28,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+      - name: Restore bundled libraries and model downloads
+        run: python bootstrap.py
+      - name: Verify browser libraries
+        run: |
+          test -s dist/vendor/three.module.js
+          test -s dist/vendor/three.core.js
+          test -s dist/assets/city.json
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload static atlas
