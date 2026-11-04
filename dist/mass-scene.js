@@ -83,10 +83,13 @@ export async function createAtlas(city,onSelect) {
   $('#scale-line').style.width=(nice*height*zoom/view)+'px';$('#scale-label').textContent=nice>=1000?(nice/1000)+' km':nice+' m';dirty=true;
  }
  function reset(){zoom=1;target.set((xmin+xmax)/2,0,-(ymin+ymax)/2);sync()}
- function resize(){width=host.clientWidth;height=host.clientHeight;renderer.setSize(width,height);view=Math.max(3000,((xmax-xmin)+(ymax-ymin))*.707/(width/height)*1.12);sync()}
+ let framed=false;
+ function resize(){const w=host.clientWidth,h=host.clientHeight;if(!w||!h)return;width=w;height=h;renderer.setSize(width,height);view=Math.max(3000,((xmax-xmin)+(ymax-ymin))*.707/(width/height)*1.12);
+  // Frame central London once the map has a real size (it can start hidden or at 0 px).
+  if(!framed){framed=true;target.set(-250,0,120);zoom=T.MathUtils.clamp(view/2200,.55,maxZoom());}
+  sync()}
  new ResizeObserver(resize).observe(host);resize();
- // Start at a readable central-London scale. The full-map control includes Isokon.
- target.set(-250,0,120);zoom=T.MathUtils.clamp(view/2200,.55,maxZoom());sync();
+ // resize() starts at a readable central-London scale. The full-map control includes Isokon.
  function setZoom(f){zoom=T.MathUtils.clamp(zoom*f,.55,maxZoom());sync()}
  function select(id,focus=true){labelsDirty=true;active=id;const bb=objectBounds(id);boxHelper.box.copy(bb);boxHelper.visible=!bb.isEmpty()&&!visited.has(id);
   if(focus&&!bb.isEmpty()){
